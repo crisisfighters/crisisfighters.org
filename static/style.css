@@ -1,4 +1,21 @@
-section.initiatives-wrapper th,
-section.initiatives-wrapper td {
+article.initiatives-wrapper th,
+article.initiatives-wrapper td {
     font-size: 10px 
+}
+
+article.initiatives-wrapper > h1,
+article.initiatives-wrapper > h2,
+article.initiatives-wrapper > p,
+article.initiatives-wrapper > ul {
+    margin: 1rem 10vw;
+    max-width: 80vw;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article p {
+    text-align: left;
 }

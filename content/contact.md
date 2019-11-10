@@ -4,11 +4,12 @@ featured_image: '/images/gohugo-default-sample-hero-image.jpg'
 omit_header_text: false
 description: We'd love to hear from you
 type: page
-menu: main
+menu:
+  main:
+    weight: 200
 
 ---
 
+Join the revolution, tell us what you think or ask us any question! Use this little form to reach out:
 
-This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the the shortcode to make it work. Check out [Formspree](https://formspree.io/) for a simple, free form service. 
-
-{{< form-contact action="https://example.com"  >}}
+{{< form-contact action="https://formspree.io/xnqqpvkn"  >}}
