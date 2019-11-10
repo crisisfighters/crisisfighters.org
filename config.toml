@@ -1,4 +1,4 @@
-baseURL = "http://www.extinctionfighters.org/"
+baseURL = "https://www.extinctionfighters.org/"
 languageCode = "en-us"
 title = "Extinction Fighters"
 theme = "ananke"

@@ -1,6 +1,6 @@
 ---
 title: Project Ideas
-featured_image: '/images/gohugo-default-sample-hero-image.jpg'
+featured_image: '/images/trash.jpg'
 omit_header_text: false
 description: What would you do to stop the crisis?
 type: page

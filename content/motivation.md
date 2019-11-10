@@ -1,6 +1,6 @@
 ---
 title: Motivation
-featured_image: '/images/gohugo-default-sample-hero-image.jpg'
+featured_image: '/images/wildfire.jpg'
 omit_header_text: true
 type: page
 menu:

@@ -1,6 +1,6 @@
 ---
 title: Contact
-featured_image: '/images/gohugo-default-sample-hero-image.jpg'
+featured_image: '/images/wildfire.jpg'
 omit_header_text: false
 description: We'd love to hear from you
 type: page
