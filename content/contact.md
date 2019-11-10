@@ -1,7 +1,7 @@
 ---
 title: Contact
-featured_image: "/images/notebook.jpg"
-omit_header_text: true
+featured_image: '/images/gohugo-default-sample-hero-image.jpg'
+omit_header_text: false
 description: We'd love to hear from you
 type: page
 menu: main
