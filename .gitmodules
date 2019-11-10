@@ -1,6 +1,6 @@
 [submodule "static/initiatives-files"]
 	path = static/initiatives-files
-	url = git@github.com:extinctionfighters/initiatives.git
+	url = https://github.com/extinctionfighters/initiatives
 [submodule "themes/ananke"]
 	path = themes/ananke
-	url = git@github.com:extinctionfighters/gohugo-theme-ananke.git
+	url = https://github.com/extinctionfighters/gohugo-theme-ananke
