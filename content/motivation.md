@@ -11,7 +11,7 @@ menu:
 # How we might stop the Climate Crisis
 _tldr; Calls to change individual behavior distract from what's necessary. Our planet will become largely uninhabitable unless we quickly move the political mainstream to enforcing immediate, impactful action. Assessing the efficiency of existing and new initiatives in a crowd-sourced, data-driven way allows to efficiently funnel resources (time & money) to give us a fighting chance._
 
-See [full story on Medium](https://medium.com/@alexthiel/stop-climate-crisis-65239105cf93).
+See [this story on Medium](https://medium.com/@alexthiel/stop-climate-crisis-65239105cf93).
 
 ### Context: The Scientific Consensus
 * We caused the climate crisis and heated our planet up by 1.1°C.
@@ -24,7 +24,7 @@ See [full story on Medium](https://medium.com/@alexthiel/stop-climate-crisis-652
 
 ---
 
-### We're at a crossroads:
+### We're at a crossroads
 1. We swiftly & drastically cut emissions to buy time to transition our economy. It leaves us ~3 years for radical action but it's possible.
 2. We let the problem grow too big to solve. At today's emission rate we'd either have to go to zero emissions in 2027 or leave an uninhabitable earth for our children.
 
@@ -42,10 +42,10 @@ Even if everybody who has the economic freedom to do so, goes to zero emissions,
 
 Let's look at the most important options:
 
-1. Technology. Not fast enough unless pushed politically. Even fast-spreading technologies strongly appealing to individuals (e.g. mobile phones) take decades to disseminate. It's fair to assume that climate technology comes too late unless pushed politically.
-2. Voluntary Change of Individual Behavior. Not working without social pressure and political enforcement. I can't think of a way to make billions of humans change their ways within 1–5 years.
-3. Market Forces. Today's situation is proof that this doesn't work. Lack of regulation allowed profit-oriented companies to neglect their environmental impact for centuries. Books are filled with examples. To name a tiny fraction: the [Amazon's deforestation](https://en.wikipedia.org/wiki/Deforestation_of_the_Amazon_rainforest), planes are still allowed to fly without compensating for emissions, the [palm oil](https://en.wikipedia.org/wiki/Social_and_environmental_impact_of_palm_oil), [industrial agriculture](https://www.ucsusa.org/resources/hidden-costs-industrial-agriculture), [terrible](https://www.bbc.com/news/10313107) [oil](https://en.wikipedia.org/wiki/Exxon_Valdez_oil_spill) [spills](https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill)).
-4. Policy & Regulation. Rapidly moving a fossil-based economy to renewables and penalizing climate-affecting behavior is possible. [Policies](https://www.eea.europa.eu/themes) and [ideas](https://www.washingtonpost.com/news/opinions/wp/2019/01/02/feature/opinion-here-are-11-climate-change-policies-to-fight-for-in-2019/) exist but [implementation lacks very far behind](https://climateactiontracker.org/). The challenge is to that public opinion is not sufficiently demanding it
+1. **Technology.** Not fast enough unless pushed politically. Even fast-spreading technologies strongly appealing to individuals (e.g. mobile phones) take decades to disseminate. It's fair to assume that climate technology comes too late unless pushed politically.
+2. **Voluntary Change of Individual Behavior.** Not working without social pressure and political enforcement. I can't think of a way to make billions of humans change their ways within 1–5 years.
+3. **Market Forces.** Today's situation is proof that this doesn't work. Lack of regulation allowed profit-oriented companies to neglect their environmental impact for centuries. Books are filled with examples. To name a tiny fraction: the [Amazon's deforestation](https://en.wikipedia.org/wiki/Deforestation_of_the_Amazon_rainforest), planes are still allowed to fly without compensating for emissions, the [palm oil](https://en.wikipedia.org/wiki/Social_and_environmental_impact_of_palm_oil), [industrial agriculture](https://www.ucsusa.org/resources/hidden-costs-industrial-agriculture), [terrible](https://www.bbc.com/news/10313107) [oil](https://en.wikipedia.org/wiki/Exxon_Valdez_oil_spill) [spills](https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill)).
+4. **Policy & Regulation.** Rapidly moving a fossil-based economy to renewables and penalizing climate-affecting behavior is possible. [Policies](https://www.eea.europa.eu/themes) and [ideas](https://www.washingtonpost.com/news/opinions/wp/2019/01/02/feature/opinion-here-are-11-climate-change-policies-to-fight-for-in-2019/) exist but [implementation lacks very far behind](https://climateactiontracker.org/). The challenge is to that public opinion is not sufficiently demanding it
 
 The only feasible option is Policy & Regulation. But how do we get governments and organizations to act? Even repressive regimes react to public opinion: **Large-scale public pressure works**.
 

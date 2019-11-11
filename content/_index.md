@@ -20,7 +20,7 @@ Few people have time to do deep research about the climate crisis. There are fac
 
 [Find out and help](survey)
 
-## Brave people are fighting extinction. Let’s help them.
+## Brave people are fighting the crisis. Let’s help them.
 Calls to change individual behavior distract from what’s necessary. Our planet will become largely uninhabitable unless we quickly move the political mainstream to enforcing immediate, impactful action. 
 
 We’re using the power of the crowd to compile and assess initiatives that are fighting the climate crisis. Want to help? This will show you where to invest your energy.
