@@ -11,7 +11,7 @@ menu:
 
 # Crowd-sourcing to collect convincing facts
 
-To act rationally, a society must understand the gravity of a threat, even if it's abstract and complex ([read more](about)).
+To act rationally, a society must understand the gravity of a threat, even if it's abstract and complex ([read more](motivation)).
 
 * This survey presents you with facts that make the climate crisis tangible.
 * With crowd-sourcing we can determine what's most convincing, easy to understand and able to trigger action.
