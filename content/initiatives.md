@@ -10,7 +10,7 @@ menu:
 
 ## Contribute
 
-* You can add initiatives and update data - everything's open source. Go to [github.com/extinctionfighters/initiatives](https://github.com/extinctionfighters/initiatives).
+* You can add initiatives and update data - everything's open source. Go to [github.com/crisisfighters/initiatives](https://github.com/crisisfighters/initiatives).
 * If you're not used to working with GitHub, drop us an email at [initiatives@reasn.de](initiatives@reasn.de).
 
 # These initiatives fight the crisis

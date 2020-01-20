@@ -13,7 +13,7 @@ menu:
 We're a group of friends, a lot of work has been done so far by [Andre](mailto:andre@reasn.de), [Alexander](https://www.alexthiel.de) and many others. [Join us](contact)!
 
 # Open Source Software
-This website is open source. You can download, fork and modify it at [github.com/extinctionfighters/extinctionfighters.org](https://github.com/extinctionfighters/extinctionfighters.org/).
+This website is open source. You can download, fork and modify it at [github.com/crisisfighters/crisisfighters.org](https://github.com/crisisfighters/crisisfighters.org/).
 
 ### Many thanks to these great tools
 * [Netlify](https://netlify.com) (free)
