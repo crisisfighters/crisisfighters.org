@@ -1,5 +1,5 @@
 ---
-title: "Collaboration and Data can stop the crisis."
+title: "Let's stop the breakdown"
 featured_image: '/images/trash.jpg'
 description: ""
 ---
