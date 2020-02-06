@@ -33,6 +33,7 @@ Academic and popular science author Jared Diamond reviews the causes of historic
 
 # Must Watch Films
 
+<img style="float: left; width: 20%; margin-right: 10px" src="/images/must-read/An_Inconvenient_Truth_Film_Poster.jpg">
 ### [An Inconvenient Truth](https://en.wikipedia.org/wiki/An_Inconvenient_Truth)
 This documentary follows Al Gore on the lecture circuit as he campaigns to raise public awareness of the dangers of global heating and calls for immediate action to curb its destructive effects on the environment. 
 
