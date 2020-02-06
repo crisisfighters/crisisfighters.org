@@ -30,3 +30,17 @@ Our current policies will lead to a heating of 4C by 2100 (and much more afterwa
 ### [Collapse: How Societies Choose to Fail or Succeed](https://en.wikipedia.org/wiki/Collapse%3A_How_Societies_Choose_to_Fail_or_Succeed), by Jared Diamond
 
 Academic and popular science author Jared Diamond reviews the causes of historical instances of societal collapse — and what coping strategies failed or turned out successful. Diamond also explains that humanity collectively faces, on a much larger scale, many of the same issues, with possibly catastrophic near-future consequences to many of the world's populations.
+
+
+# Other Interesting Reads
+
+<img style="float: left; width: 20%" src="/images/must-read/The_End_of_Nature-cover.jpg">
+### [The End of Nature](https://en.wikipedia.org/wiki/The_End_of_Nature), by Bill McKibben
+
+The first book on climate change addressed at a wider audience. The author offers two paths forward: "The Defiant Reflex" or a "more humble" way of living.
+
+True nature, which was independent of human influence, has been replaced by an artificial nature in whose processes human beings play a part.
+
+This concept may not seem frightening but McKibben points out that the changes we have made, and are continuing to make, in the chemistry of our atmosphere are not the kind of environmental changes we have experienced in the past. We cannot escape them by fleeing to the woods. We have progressed beyond removing parts of the earth from the domain of true nature -- through farming, mining, construction -- to actually altering the global processes that define our environment.
+
+The human hand acting on the earth is not a guiding hand but a clumsy hand. Most of our influence on climate, for example, has been inadvertent. The new natural world we have made -- complete with changing temperatures, sea levels, and atmospheric chemistry -- will be less predictable and perhaps more violent than the natural world of the past. The human race has evolved in the old natural world that brings hurricanes and other natural disasters; on a large scale this is quite predictable. McKibben tries to give a sense of the magnitude of the risk we take as we fiddle with the controls of "spaceship Earth" (an expression McKibben uses and an idea whose implications he should have discussed). 
