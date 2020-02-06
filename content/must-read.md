@@ -9,6 +9,8 @@ menu:
     weight: 20
 ---
 
+How can you easily get a scientifically sound overview on the climate crisis? This page tries to answer that question while trying hard to keep the list as short as possible.
+
 # Must Read Articles
 To understand the climate crisis and where we are today, it’s worth understanding the timeline, the impact, where we are today and where we’ll most likely end up in a few decades. These articles and books do an extraordinary job at this. We selected them from many hundreds of texts about the crisis and suggest reading them in the given order.
 
