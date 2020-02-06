@@ -1,5 +1,5 @@
 ---
-title: Project Ideas
+title: Ideas
 featured_image: '/images/trash.jpg'
 omit_header_text: false
 description: Small things that could help the fight against the crisis.
