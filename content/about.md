@@ -1,8 +1,8 @@
 ---
 title: About
-featured_image: '/images/trash.jpg'
+featured_image: '/images/wildfire.jpg'
 omit_header_text: false
-description: We'd love to hear from you
+description: Join our effort!
 type: page
 menu:
   main:
@@ -22,6 +22,8 @@ This website is open source. You can download, fork and modify it at [github.com
 
 ### Many thanks to amazing photographers
 
-* "[Forest wildfire](https://www.flickr.com/photos/132152588@N03/22412407671)" by [project_lm9](https://www.flickr.com/photos/132152588@N03) is licensed under [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=rich)
+* [Forest wildfire](https://www.flickr.com/photos/132152588@N03/22412407671) by [project_lm9](https://www.flickr.com/photos/132152588@N03) is licensed under [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=rich).
 
-* "[pollution trash i desquido](https://pixabay.com/photos/pollution-trash-i-desquido-1861133)" by [Thomas Wright](https://pixabay.com/users/BilingualColombia-3851956) is licensed under the [Pixabay License](https://pixabay.com/service/license/) and free for commercial use with o attribution required.
+* [pollution trash i desquido](https://pixabay.com/photos/pollution-trash-i-desquido-1861133) by [Thomas Wright](https://pixabay.com/users/BilingualColombia-3851956) is licensed under the [Pixabay License](https://pixabay.com/service/license/).
+
+* [Shot Up](https://www.flickr.com/photos/19779889@N00/4343683727) by [arbyreed](https://www.flickr.com/photos/19779889@N00) is licensed under [CC BY-NC-SA 2.0](https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch).

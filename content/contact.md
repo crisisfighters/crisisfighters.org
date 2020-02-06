@@ -1,8 +1,8 @@
 ---
 title: Contact
-featured_image: '/images/wildfire.jpg'
+featured_image: '/images/trash.jpg'
 omit_header_text: false
-description: We'd love to hear from you
+description: We'd love to hear from you!
 type: page
 menu:
   main:

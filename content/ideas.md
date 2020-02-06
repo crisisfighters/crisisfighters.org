@@ -1,6 +1,6 @@
 ---
 title: Ideas
-featured_image: '/images/trash.jpg'
+featured_image: '/images/desert.jpg'
 omit_header_text: false
 description: Small things that could help the fight against the crisis.
 type: page
