@@ -9,7 +9,7 @@ menu:
     weight: 80
 ---
 
-In addition to the great [initiatives](initiatives) that are alread out there, we want to collect inspiring ideas. [Reach out](mailto:hi@crisisfighters.org) to add more.
+In addition to the great [initiatives](initiatives) that are already out there, we want to collect inspiring ideas. [Reach out](mailto:hi@crisisfighters.org) to add more.
 
 ## Decision Tree - "What can I do?" (Yet to be named)
 Many people ask themselves how they can help and googling that yields a lot of irrelevant info around personal consumption. While that's good and helps a tiny little bit, in reality we need to change mainstream politics globally.
