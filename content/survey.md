@@ -4,9 +4,9 @@ featured_image: '/images/wildfire.jpg'
 omit_header_text: true
 description: The most convincing facts.
 type: page
-menu:
-  main:
-    weight: 20
+# menu:
+  # main:
+    # weight: 20
 ---
 
 # Crowd-sourcing to collect convincing facts
