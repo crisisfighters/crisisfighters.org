@@ -15,7 +15,7 @@ Unfortunately there is no conference yet that connects the global movement to fi
 
 
 
-# 2. Potentially Relevant Conferences
+# 2. Interesting Conferences
 
 ### [Climate Leadership Conference](https://climateleadershipconference.org/) (Detroit, USA)
 Aimed at connecting people from businesses, governments and other organizations, talks at this conference look into how to deal with the climate crisis. There is high corporate attendance and questions of fundamental change in our economic system and society seem to be underrepresented.
