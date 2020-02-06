@@ -31,6 +31,10 @@ Our current policies will lead to a heating of 4C by 2100 (and much more afterwa
 
 Academic and popular science author Jared Diamond reviews the causes of historical instances of societal collapse — and what coping strategies failed or turned out successful. Diamond also explains that humanity collectively faces, on a much larger scale, many of the same issues, with possibly catastrophic near-future consequences to many of the world's populations.
 
+# Must Watch Films
+
+### [An Inconvenient Truth](https://en.wikipedia.org/wiki/An_Inconvenient_Truth)
+This documentary follows Al Gore on the lecture circuit as he campaigns to raise public awareness of the dangers of global heating and calls for immediate action to curb its destructive effects on the environment. 
 
 # Other Interesting Reads
 
