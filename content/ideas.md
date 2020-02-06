@@ -11,9 +11,15 @@ menu:
 
 In addition to the great [initiatives](initiatives) that are already out there, we want to collect inspiring ideas. [Email us](mailto:hi@crisisfighters.org) to add more.
 
-## Monthly Crisis Mitigation Meetups in Hamburg and Berlin
+## Monthly Crisis Mitigation Meetups in Hamburg and Berlin, Germany
 > Meeting monthly to share the latest science and discuss strategy
 The idea is to give updated overviews on global initiatives that try to change the political mainstream and influence governments. In addition to that an open discussion on how to stop the crisis could be held.
+
+
+## A Global Conference on Fighting the Climate Crisis
+> What strategies work in which country? How can we connect activists worldwide?
+There is no global conference on mitigating the climate crisis that's open to the paying public. The UN organizes very important conferences organized by governments but there is no place for NGOs and activists to exchange strategies and most importantly to network and collaborate on a global scale.
+
 
 ## Decision Tree - "What can I do?" (Yet to be named)
 > A beautiful interactive decision tree that lets people find out how they can save civilization
