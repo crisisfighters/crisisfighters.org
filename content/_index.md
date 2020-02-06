@@ -1,28 +1,33 @@
 ---
-title: "Let's stop the breakdown"
-featured_image: '/images/trash.jpg'
+title: People fight the Crisis.
+featured_image: '/images/desert.jpg'
 description: ""
 ---
 
-We collaboratively collect and assess initiatives fighting the crisis of our climate and natural world.
+Hi!
 
-# It's bad.
+The breakdown of our climate and natural world (pollution, extinction, habitat loss) threatens our civilization.
 
-* Vertebrates die out 114x faster than normal. Insects might be mostly extinct by 2100.
+Hundreds of initiatives worldwide are fighting hard to keep the crisis from getting worse.
+This website attempts to collect relevant information for people who want to join the fight.
+Everything you see here is crowdsourced and you can change it yourself!
 
-* Every decade since the 80s is the hottest on record.
+* Every decade since the 80s has been the hottest on record.
 
-* With currently implemented policies, the planet will heat by 4C until the end of the century.
+* Vertebrates die out 114x faster than normal.
 
-* The crisis self-accelerates ("Tipping Points")
+* With today's policies, the planet will heat by more than 4C until 2100 and _much more beyond_.
 
-Few people have time to do deep research about the climate crisis. There are facts that convince people to act. We want to find them using crowd-sourcing.
+Unless we drastically reduce emissions soon, large parts of Earth will become uninhabitable and civilization as we know it will break down before 2200.
 
-[Find out and help](survey)
+# This won't end well...
 
-## Brave people are fighting the crisis. Let’s help them.
-Calls to change individual behavior distract from what’s necessary. Our planet will become largely uninhabitable unless we quickly move the political mainstream to enforcing immediate, impactful action. 
+... but even if it's to late to avoid devastating damage to earth and our children (which will take many decades to become visible), we can still fight to stop the crisis before it threatens civilization.
 
-We’re using the power of the crowd to compile and assess initiatives that are fighting the climate crisis. Want to help? This will show you where to invest your energy.
+# Get Started:
 
-[Browse Initiatives](initiatives)
+* [Must Read](must-read)
+
+* [Browse Initiatives](initiatives)
+
+* Learn [About Us](about-us) and our [Motivation](motivation)
