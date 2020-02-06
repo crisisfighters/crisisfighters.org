@@ -2,18 +2,23 @@
 title: Project Ideas
 featured_image: '/images/trash.jpg'
 omit_header_text: false
-description: What would you do to stop the crisis?
+description: Small things that could help the fight against the crisis.
 type: page
 menu:
   main:
     weight: 80
 ---
 
-In addition to the great [initiatives](initiatives) that are already out there, we want to collect inspiring ideas. [Reach out](mailto:hi@crisisfighters.org) to add more.
+In addition to the great [initiatives](initiatives) that are already out there, we want to collect inspiring ideas. [Email us](mailto:hi@crisisfighters.org) to add more.
 
 ## Decision Tree - "What can I do?" (Yet to be named)
+> A beautiful interactive decision tree that lets people find out how they can save civilization
+
 Many people ask themselves how they can help and googling that yields a lot of irrelevant info around personal consumption. While that's good and helps a tiny little bit, in reality we need to change mainstream politics globally.
-This idea is to create a beautiful, fun to use web page that allows people to answer a few questions to find out how they could contribute. Examples: Are you good at giving presentations? - Get a training as climate leader or similar. Are you a lawyer? - Join on of the many environmental litigation efforts; Do you own publicly traded stock? - Delegate your voting rights to Urgewald and similar initiatives; What city do you live in? - List of initiatives that have a local presence.
+
+This idea is to create a beautiful, fun to use web page that allows people to answer a few questions to find out how they could contribute.
+
+Examples: Are you good at giving presentations? - Get a training as climate leader or similar. Are you a lawyer? - Join on of the many environmental litigation efforts; Do you own publicly traded stock? - Delegate your voting rights to Urgewald and similar initiatives; What city do you live in? - List of initiatives that have a local presence.
 
 ## flyGood.io
 > A mobile web app that allows offsetting flights and tipping initiatives
