@@ -10,12 +10,12 @@ menu:
 
 This page aims to collect conferences with a global perspective on the climate crisis and how to mitigate it.
 
-# Highly Recommendable Conferences
+# 1. Highly Recommendable Conferences
 Unfortunately there is no conference yet that connects the global movement to fight the climate crisis. Having this and having it lead by the civil society instead of governments would be a powerful platform to connect, learn and empower the movement. That's why establishing such a conference made it on our list of [Ideas](/ideas).
 
 
 
-# Potentially Relevant Conferences
+# 2. Potentially Relevant Conferences
 
 ### [Climate Leadership Conference](https://climateleadershipconference.org/) (Detroit, USA)
 Aimed at connecting people from businesses, governments and other organizations, talks at this conference look into how to deal with the climate crisis. There is high corporate attendance and questions of fundamental change in our economic system and society seem to be underrepresented.
@@ -33,7 +33,7 @@ the University of Agriculture Peshawar Pakistan. As of February '20 the scientif
 ### [International Conference on Climate Change](https://climatechangeconferences.com/) (Kuala Lumpur, Malaysia)
 This conference has only 7 speakers. They seem to have academic backgrounds. We're not sure if this conference is relevant.
 
-# Discouraged Conferences
+# 3. Discouraged Conferences
 
 ### [International Conference on Climate Change](https://climateconference.heartland.org) (Las Vegas, USA)
 * This is a most likely fossil industry funded (organized by the Heartland Institute) conference for climate deniers where paid scientist propagate lies.
@@ -47,6 +47,6 @@ This conference has only 7 speakers. They seem to have academic backgrounds. We'
 * There are no speakers with strong scientific credentials, organized by a company organizing dozens of unrelated conferences. 
 * Reason enough for us to question its political and scientific relevance.
 
-### Various conferences organized by waset.org](https://waset.org/climate-change-conferences)
+### [Various conferences organized by waset.org](https://waset.org/climate-change-conferences)
 * The website contains auto-generated, exactly identical pages for every single of these conferences. There are submissions for each one but the question remains how much they're about improving CVs as opposed to presenting genuine science.
 * If you know more, please share, we might be wrong.
