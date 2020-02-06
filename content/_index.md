@@ -22,7 +22,7 @@ Unless we drastically reduce emissions soon, large parts of Earth will become un
 
 # This won't end well...
 
-... but even if it's to late to avoid devastating damage to earth and our children (which will take many decades to become visible), we can still fight to stop the crisis before it threatens civilization.
+... but even if it's to late to avoid devastating damage to earth and our children (which will take many decades to become visible), we can still fight to stop the crisis before it threatens civilization itself.
 
 # Get Started:
 
