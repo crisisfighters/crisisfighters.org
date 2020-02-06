@@ -13,6 +13,8 @@ This page aims to collect conferences with a global perspective on the climate c
 # Highly Recommendable Conferences
 Unfortunately there is no conference yet that connects the global movement to fight the climate crisis. Having this and having it lead by the civil society instead of governments would be a powerful platform to connect, learn and empower the movement. That's why establishing such a conference made it on our list of [Ideas](/ideas).
 
+
+
 # Potentially Relevant Conferences
 
 ### [Climate Leadership Conference](https://climateleadershipconference.org/) (Detroit, USA)
