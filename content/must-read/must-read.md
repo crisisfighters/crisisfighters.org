@@ -14,8 +14,11 @@ To understand the climate crisis and where we are today, it’s worth understand
 
 > These texts are thoroughly researched (some come with extensive footnotes), renowned and frequently quoted.
 
+<img style="float: left; width: 20%" src="images/Keeling.png">
 ## [Losing Earth: The Decade We Almost Stopped Climate Change](https://www.nytimes.com/interactive/2018/08/01/magazine/climate-change-losing-earth.html) by Nathaniel Rich, New York Times, 2018
 The impact of fossil fuel on the climate was first discovered in the 50s. It will come as an agonizing revelation to many readers to understand how thoroughly the problem was grasped and how the crisis was almost avoided in the 70s and 80s. An insightful story of how hard it can be to make long term challenges politically relevant.
+
+By Source (WP:NFCC#4), Fair use, https://en.wikipedia.org/w/index.php?curid=58046097
 
 ## [The uninhabitable Earth](http://nymag.com/intelligencer/2017/07/climate-change-earth-too-hot-for-humans.html) by David Wallace-Wells, New York Magazine, 2017
 Our current policies will lead to a heating of 4C by 2100 (and much more afterwards). This influential article explores what earth would actually look like at various degrees of heating. A version of the article is available with footnotes and citations for all relevant claims.
