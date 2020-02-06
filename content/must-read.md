@@ -34,8 +34,8 @@ Academic and popular science author Jared Diamond reviews the causes of historic
 # Must Watch Films
 
 <img style="float: left; width: 20%; margin-right: 10px" src="/images/must-read/L_homme a mange la Terre.jpg">
-### [L'homme a mangé la Terre](https://boutique.arte.tv/detail/homme_a_mange_la_terre) (2019)
-English: "Man ate the Earth" - From the industrial revolution to today, this documentary minuitiously illustrated the course of development of humanity into the Antrophocene and the continued destruction of the planet.
+### [L'homme a mangé la Terre](https://boutique.arte.tv/detail/homme_a_mange_la_terre) (“Man ate the Earth”) (2019)
+From the industrial revolution to today, this documentary minuitiously illustrated the course of development of humanity into the Antrophocene and the continued destruction of the planet.
 
 Sadly this great documentary is not easily available on the internet. Please reach out to us if you know how it can be accessed (legally).
 
