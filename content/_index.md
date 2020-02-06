@@ -6,7 +6,7 @@ description: ""
 
 Hi!
 
-The breakdown of our climate and natural world (pollution, extinction, habitat loss) threatens our civilization.
+The breakdown of our climate and natural world (heating, pollution, extinction, desertification) threatens our civilization.
 
 Hundreds of initiatives worldwide are fighting hard to keep the crisis from getting worse.
 This website attempts to collect relevant information for people who want to join the fight.
