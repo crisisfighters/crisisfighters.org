@@ -8,11 +8,7 @@ menu:
     weight: 50
 ---
 
-# Highlights
-
-## Supporting activists
-
-## Litigation
+**🚧 Under Construction:** During our research we were positively overwhelmed by how many initiatives there are. Therefore this page is neither nice nor intuitive to use. We're on it!
 
 ## Contribute
 
