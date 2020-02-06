@@ -8,6 +8,12 @@ menu:
     weight: 50
 ---
 
+# Highlights
+
+## Supporting activists
+
+## Litigation
+
 ## Contribute
 
 * You can add initiatives and update data - everything's open source. Go to [github.com/crisisfighters/initiatives](https://github.com/crisisfighters/initiatives).
