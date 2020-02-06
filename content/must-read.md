@@ -34,14 +34,14 @@ Academic and popular science author Jared Diamond reviews the causes of historic
 # Must Watch Films
 
 <img style="float: left; width: 20%; margin-right: 10px" src="/images/must-read/L_homme a mange la Terre.jpg">
-### [L'homme a mangé la Terre](https://boutique.arte.tv/detail/homme_a_mange_la_terre)
+### [L'homme a mangé la Terre](https://boutique.arte.tv/detail/homme_a_mange_la_terre) (2019)
 English: "Man ate the Earth" - From the industrial revolution to today, this documentary minuitiously illustrated the course of development of humanity into the Antrophocene and the continued destruction of the planet.
 
 Sadly this great documentary is not easily available on the internet. Please reach out to us if you know how it can be accessed (legally).
 
 
 <img style="float: left; width: 20%; margin-right: 10px" src="/images/must-read/An_Inconvenient_Truth_Film_Poster.jpg">
-### [An Inconvenient Truth](https://en.wikipedia.org/wiki/An_Inconvenient_Truth)
+### [An Inconvenient Truth](https://en.wikipedia.org/wiki/An_Inconvenient_Truth) (2006)
 This documentary follows Al Gore on the lecture circuit as he campaigns to raise public awareness of the dangers of global heating and calls for immediate action to curb its destructive effects on the environment.
 
 It is the first documentary to win 2 Oscars and remains influential to today.
