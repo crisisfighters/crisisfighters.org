@@ -43,7 +43,7 @@ the University of Agriculture Peshawar Pakistan. As of February '20 the scientif
 
 
 ### [International Conference on Climate Change](https://climatechangeconferences.com/) (Kuala Lumpur, Malaysia)
-This conference has only 7 speakers. They seem to have academic backgrounds. We're not sure if this conference is relevant.
+This conference has only seven speakers. They seem to have academic backgrounds. We're not sure if this conference is relevant.
 
 🗓 The next date is February 27, 2020.
 
