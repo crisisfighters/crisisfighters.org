@@ -9,7 +9,7 @@ menu:
     weight: 80
 ---
 
-In addition to the great [initiatives](initiatives) that are alread out there, we want to collect inspiring ideas. [Reach out](mailto:ideas@reasn.de) to add more.
+In addition to the great [initiatives](initiatives) that are alread out there, we want to collect inspiring ideas. [Reach out](mailto:hi@crisisfighters.org) to add more.
 
 ## flyGood.io
 > A mobile web app that allows offsetting flights and tipping initiatives
