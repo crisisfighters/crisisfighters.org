@@ -1,5 +1,5 @@
 ---
-title: People fight the Crisis.
+title: Fight like your world depends on it
 featured_image: '/images/desert.jpg'
 description: ""
 ---
