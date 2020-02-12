@@ -13,9 +13,7 @@ This website attempts to collect relevant information for people who want to joi
 Everything you see here is crowdsourced and you can change it yourself!
 
 * Every decade since the 80s has been the hottest on record.
-
 * Vertebrates die out 114x faster than normal.
-
 * With today's policies, the planet will heat by more than 4C until 2100 and _much more beyond_.
 
 Unless we drastically reduce emissions soon, large parts of Earth will become uninhabitable and civilization as we know it will break down before 2200.
@@ -27,7 +25,5 @@ Unless we drastically reduce emissions soon, large parts of Earth will become un
 # Get Started:
 
 * [Must Read](must-read)
-
 * [Browse Initiatives](initiatives)
-
 * Learn [About Us](about-us) and our [Motivation](motivation)
