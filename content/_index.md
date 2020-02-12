@@ -1,12 +1,12 @@
 ---
-title: Fight like your world depends on it
+title: Fight like your world depends on it.
 featured_image: '/images/desert.jpg'
 description: ""
 ---
 
-Hi!
+Hello!
 
-The breakdown of our climate and natural world (heating, pollution, extinction, desertification) threatens our civilization.
+The emergency (breakdown of climate and natural world) [threatens our civilization](https://rebellion.earth/the-truth/the-emergency).
 
 Hundreds of initiatives worldwide are fighting hard to keep the crisis from getting worse.
 This website attempts to collect relevant information for people who want to join the fight.
