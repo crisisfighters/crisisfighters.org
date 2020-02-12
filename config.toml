@@ -8,6 +8,9 @@ DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 enableRobotsTXT = true
 
+[markup.goldmark.renderer]
+  unsafe= true
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
