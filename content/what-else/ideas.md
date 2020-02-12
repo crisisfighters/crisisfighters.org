@@ -3,10 +3,10 @@ title: Ideas
 featured_image: '/images/desert.jpg'
 omit_header_text: false
 description: Small things that could help the fight against the crisis.
+weight: 20
+summary:
+  We collect inspiring ideas that could help the movement. Some are tiny, some are unrealistically big. [Reach out]((mailto:hi@crisisfighters.org)) to talk about them and to add ideas! 
 type: page
-menu:
-  main:
-    weight: 80
 ---
 
 In addition to the great [initiatives](initiatives) that are already out there, we want to collect inspiring ideas. [Email us](mailto:hi@crisisfighters.org) to add more.

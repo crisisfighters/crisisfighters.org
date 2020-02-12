@@ -1,14 +1,18 @@
 ---
 title: "Initiatives"
-description: Who's doing what and how much impact do they have?
 omit_header_text: true
 type: initiatives-wide
+description: Who's doing what and how much impact do they have?
+summary: The heart of our efforts. A browsable list of initiatives that fight the climate crisis. In the future we'll also provide a decision helper to quickly tell you where to invest your time or money.
+
 menu:
   main:
-    weight: 50
+    weight: 30
 ---
 
 **🚧 Under Construction:** During our research we were positively overwhelmed by how many initiatives there are. Therefore this page is neither nice nor intuitive to use. We're on it!
+
+We believe that the best way to stop the crisis is changing public opinion and government policy (see [Motivation](/motivation)).
 
 ## Contribute
 
