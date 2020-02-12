@@ -5,7 +5,7 @@ omit_header_text: true
 type: page
 menu:
   main:
-    weight: 100
+    weight: 70
 ---
 
 # How we might stop the Climate Crisis
