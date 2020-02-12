@@ -18,7 +18,7 @@ Everything you see here is crowdsourced and you can change it yourself!
 
 Unless we drastically reduce emissions soon, large parts of Earth will become uninhabitable and civilization as we know it will break down before 2200.
 
-# This won't end well...
+# It won't end well...
 
 ... but even if it's to late to avoid devastating damage to earth and our children (which will take many decades to become visible), we can still fight to stop the crisis before it kills our future.
 
