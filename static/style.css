@@ -20,3 +20,6 @@ article p,
 article ul {
     text-align: left;
 }
+article ul {
+    padding-left: 1.25rem
+}
