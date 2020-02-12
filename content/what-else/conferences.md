@@ -19,6 +19,8 @@ Unfortunately there is no conference yet that connects the global movement to fi
 * There is high corporate attendance and questions of fundamental change in our economic system and society seem to be underrepresented.
 * 🗓 The next date is March 4, 2020.
 
+#### [CERES 2020](https://events.ceres.org/event/37e45177-b6c5-44eb-bb9f-21e35d779d56) (New York City)
+* This investor summit on climate risk aims at connecting influential capital market leaders to accelerate and scale up innovative solutions on the most pressing global sustainability challenges. These leading executives will map out the urgent steps for increased investor and corporate action on sustainability risks and opportunities across diverse sectors of the economy. The Investor Summit on Climate Risk and the Ceres Conference will converge for the first time to offer integrated programming at the Sheraton Times Square in New York City from March 23 to March 26. By integrating these events, participants will have greater access to solution-oriented dialogue and networking opportunities. Topics will address the climate crisis, deforestation, water shortages, and inequitable workplaces. On March 23, the official programming will be preceded by invitation-only Ceres’ network member meetings and a high-level invite-only dinner.
 
 #### [United Nations Climate Change Conference](https://www.ukcop26.org/) (Glasgow, UK)
 * Yearly conferences as formal meetings of the UNFCCC parties to assess progress in dealing with the climate crisis and establish legally binding obligations to reduce their greenhouse gas emissions.
