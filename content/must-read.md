@@ -44,8 +44,11 @@ Sadly this great documentary is not easily available on the internet. Please rea
 ### [An Inconvenient Truth](https://en.wikipedia.org/wiki/An_Inconvenient_Truth) (2006)
 This documentary follows Al Gore on the lecture circuit as he campaigns to raise public awareness of the dangers of global heating and calls for immediate action to curb its destructive effects on the environment.
 
-It is the first documentary to win 2 Oscars and remains influential to today.
+It is the first documentary to win two Oscars and remains influential to today.
 
+<img style="float: left; width: 20%; margin-right: 10px" src="/images/must-read/An_Inconvenient_Sequel_Truth_to_Power_Movie_Poster.png">
+### [An Inconvenient Sequel: Truth To Power](https://en.wikipedia.org/wiki/An_Inconvenient_Sequel%3A_Truth_to_Power)
+An update to An Invonvenient Truth that includes the Paris Climate Agreement, some references to the [Climate Reality Project](https://www.climaterealityproject.org/). It also looks at newer events and scientific findings that unsurprisingly are even more serious than before.
 
 
 # Other Interesting Reads
