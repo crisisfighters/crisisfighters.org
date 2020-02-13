@@ -1,5 +1,5 @@
 ---
-title: Add your talent to the fight!
+title: Add Your Talent to the Fight!
 featured_image: '/images/desert.jpg'
 description: ""
 ---
