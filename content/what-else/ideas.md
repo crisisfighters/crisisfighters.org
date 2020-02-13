@@ -39,7 +39,7 @@ flyGood.io will be a mobile webapp that allows users of modern smartphones to pa
 
 * It uses the web payments API to allow payments in 3 clicks (no credit card data needs to be entered)
 * Should provide a MyTaxi/FreeNow like interface to send a 10%, 15% or 20% tip to Fridays for Future or Extinction Rebellion (more initiatives to follow)
-* Can be used by FFF activists on airports to give out buttons to travellers using it (turning flight shaming into something constructive)
+* Can be used by Fridays for Future activists on airports to give out buttons to travellers using it (turning flight shaming into something constructive)
 
 
 ### You can move this forward by helping with the implementation, Stripe and setting up a legal entity

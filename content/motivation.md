@@ -9,7 +9,7 @@ menu:
 ---
 
 # How we might stop the Climate Crisis
-_tldr; Calls to change individual behavior distract from what's necessary. Our planet will become largely uninhabitable unless we quickly move the political mainstream to enforcing immediate, impactful action. Assessing the efficiency of existing and new initiatives in a crowd-sourced, data-driven way allows to efficiently funnel resources (time & money) to give us a fighting chance._
+Calls to change individual behavior distract from what's necessary. Our planet will become largely uninhabitable unless we quickly move the political mainstream to enforcing immediate, impactful action. Assessing the efficiency of existing and new initiatives in a crowd-sourced, data-driven way allows to efficiently funnel resources (time & money) to give us a fighting chance._
 
 See [this story on Medium](https://medium.com/@alexthiel/stop-climate-crisis-65239105cf93).
 

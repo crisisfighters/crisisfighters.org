@@ -20,5 +20,4 @@ This page is crowdsourced, that means you [can change and improve everything](co
 
 ... but even if it's to late to avoid devastating damage to earth and our children (which will take many decades to become visible), we can still fight to stop the crisis before it kills our future.
 
-
-🚀 Start fixing the world - browse [initiatives](initiatives).
+<a href="https://www.crisisfighters.org/initiatives/ideas/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1" style="font-size: 2.5rem; width: 100%; text-align: center;">🚀 Browse Initiatives</a>
