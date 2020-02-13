@@ -1,5 +1,5 @@
 ---
-title: Fight like your world depends on it.
+title: Add your talent to the fight!
 featured_image: '/images/desert.jpg'
 description: ""
 ---
@@ -8,13 +8,14 @@ Hello!
 
 The emergency (breakdown of climate and natural world) [threatens our civilization](https://rebellion.earth/the-truth/the-emergency).
 
-Hundreds of initiatives worldwide are fighting hard to keep the crisis from getting worse.
-This website attempts to collect relevant information for people who want to join the fight.
-Everything you see here is crowdsourced and you can change it yourself!
-
 * Every decade since the 80s has been the hottest on record.
 * Vertebrates die out 114x faster than normal.
 * With today's policies, the planet will heat by more than 4C until 2100 and _much more beyond_.
+
+Hundreds of initiatives worldwide are fighting hard to keep the crisis from getting worse.
+We help you find out how you can contribute the most efficiently.
+Everything you see here is crowdsourced and you can change it yourself!
+
 
 Unless we drastically reduce emissions soon, large parts of Earth will become uninhabitable and civilization as we know it will break down before 2200.
 
