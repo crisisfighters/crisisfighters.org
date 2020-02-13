@@ -4,8 +4,6 @@ featured_image: '/images/desert.jpg'
 description: ""
 ---
 
-Hello!
-
 The emergency (breakdown of climate and natural world) [threatens our civilization](https://rebellion.earth/the-truth/the-emergency).
 
 * Every decade since the 80s has been the hottest on record.
