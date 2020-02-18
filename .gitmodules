@@ -1,6 +1,3 @@
-[submodule "static/initiatives-files"]
-	path = static/initiatives-files
-	url = https://github.com/crisisfighters/initiatives
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/crisisfighters/gohugo-theme-ananke
