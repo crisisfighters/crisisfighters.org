@@ -1,0 +1,9 @@
+{
+  "name": "initiatives",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "./test.js"
+  },
+  "dependencies": {
+  }
+}
