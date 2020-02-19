@@ -1,0 +1,25 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+<article class="recruiter-wrapper mid-gray">
+    {{ .Content }}
+
+    <link href="/initiatives-files/style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/9.1.0/markdown-it.min.js"
+            integrity="sha256-TkN8s0Xn8oiroeIyHkXDjt+W71FdPsdjFmn3jKbLgxQ=" crossorigin="anonymous"></script>
+    <script>
+        // Allows node.js `require()`
+        const exports = {};
+    </script>
+    </script>
+    <script src="/initiatives-files/data.js"></script>
+    <script src="/initiatives-files/fields.js"></script>
+    <script src="/initiatives-files/recruiter.js"></script>
+    <script src="/initiatives-files/tag-labels.js"></script>
+    <script>
+        renderInitiatives("grid", exports);
+    </script>
+</article>
+{{ end }}
