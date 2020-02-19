@@ -3,7 +3,9 @@
 <article class="recruiter-wrapper mid-gray">
     {{ .Content }}
 
-    <link href="/initiatives-files/style.css" rel="stylesheet" type="text/css">
+    <link href="/initiatives-files/style-recruiter.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/9.1.0/markdown-it.min.js"
+            integrity="sha256-TkN8s0Xn8oiroeIyHkXDjt+W71FdPsdjFmn3jKbLgxQ=" crossorigin="anonymous"></script>
     <style type="text/css">
     
     </style>
@@ -19,6 +21,7 @@
     <script src="/initiatives-files/recruiter.js"></script>
     <script>
         resultScreenApp();
+        logInvalidTags();
     </script>
 </article>
 {{ end }}

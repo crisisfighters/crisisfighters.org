@@ -1,0 +1,20 @@
+.results-element {
+    border: 1px dashed green;
+    margin: 10px;
+    padding: 10px;
+}
+
+.initiative {
+    background-color: aqua;    
+}
+.initiative:nth-child(2) {
+background-color: aquamarine;
+}
+
+.results-tag {
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    display: inline-block;
+    padding: 4px 6px;
+    font-size: 0.8rem;
+}

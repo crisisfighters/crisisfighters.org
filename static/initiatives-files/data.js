@@ -70,7 +70,7 @@ exports.data = [
             name: "WWF",
             link: "http://wwf.panda.org/",
             label: "wwf",
-            keywords: ["conservation", "ngo"],
+            tags: ["conservation", "ngo"],
         },
         description: {
             content: "The WWF is active since 1961 and therefore a well experienced player within the environmental engagement game. The biggest Pro on WWF is that it is well known and People trust the organization. They do not have a precise focus on the climate crises but there is also a focus on it. One of their goals for 2030 is to reduce greenhouse gas emissions by 40%.",
@@ -100,7 +100,7 @@ exports.data = [
             name: "Greenpeace",
             link: "https://www.greenpeace.org/international/",
             label: "greenpeace",
-            keywords: ["conservation", "ngo"],
+            tags: ["conservation", "ngo"],
         },
         description: {
             content: "Greenpeace is another big player. They also do work on a big scale as you can see on the Income they have to put them into their projects. Greenpeace has a lot of Actions going on.",
@@ -119,7 +119,7 @@ exports.data = [
         meta: {
             name: "Ende Gelände",
             link: "https://www.ende-gelaende.org/",
-            keywords: ["coal", "europe", "germany", "is-grassroots", "civil-disobedience"],
+            tags: ["coal", "europe", "germany", "is-grassroots", "civil-disobedience"],
             label: "ende-gelaende",
         },
         established: {
@@ -171,7 +171,7 @@ exports.data = [
             name: "CERES",
             link: "https://www.ceres.org/",
             label: "ceres",
-            keywords: ["private-sector"]
+            tags: ["lobby-corporations"]
         },
         established: {
             content: "1989",
@@ -216,7 +216,7 @@ exports.data = [
         meta: {
             name: "Limity Jsme My",
             link: "https://limityjsmemy.cz/en/",
-            keywords: ["coal", "czech republic", "is-grassroots", "civil disobedience"],
+            tags: ["coal", "czech republic", "is-grassroots", "civil disobedience"],
             label: "limity-jsme-my",
         },
     },
@@ -225,7 +225,7 @@ exports.data = [
             name: "350.org",
             link: "https://350.org/",
             label: "350-org",
-            keywords: ["is-grassroots", "trainings", "is-network"],
+            tags: ["is-grassroots", "trainings", "is-network"],
         },
         description: {
             content: "350.org's goal is to end the use of fossil fuels and transition to renewable energy by building a global, grassroots movement. " +
@@ -313,7 +313,7 @@ exports.data = [
         meta: {
             name: "Earthjustice",
             link: "https://earthjustice.org/",
-            keywords: ["litigation"],
+            tags: ["litigation"],
             label: "earthjustice",
         },
         description: {
@@ -355,7 +355,7 @@ exports.data = [
         meta: {
             name: "Union of concerned Scientists",
             link: "http://ucsusa.org/",
-            keywords: ["science"],
+            tags: ["science"],
             label: "ucs",
         },
         description: {
@@ -392,7 +392,7 @@ exports.data = [
         meta: {
             name: "Hambacher Forst",
             link: "https://hambacherforst.org/",
-            keywords: ["protest", "fossil", "civil-disobedience", "europe", "germany"],
+            tags: ["protest", "fossil", "civil-disobedience", "europe", "germany"],
             label: "hambacher-forst",
         },
         description: {
@@ -439,7 +439,7 @@ exports.data = [
         meta: {
             name: "IPCC",
             link: "https://www.ipcc.ch/",
-            keywords: ["government", "science"],
+            tags: ["government", "science"],
             label: "IPCC",
         },
         established: {
@@ -472,7 +472,7 @@ exports.data = [
         meta: {
             name: "Green Climate Fund",
             link: "https://www.greenclimate.fund/home",
-            keywords: ["is-fund", "is-public"],
+            tags: ["is-fund", "is-public"],
             label: "Green Climate Fund",
         },
         established: {
@@ -496,7 +496,7 @@ exports.data = [
         meta: {
             name: "ClimateWorks",
             link: "https://www.climateworks.org/",
-            keywords: ["is-fund", "activist-support", "shareholder"],
+            tags: ["is-fund", "activist-support", "shareholder"],
             label: "climate-works",
         },
         description: {
@@ -549,7 +549,7 @@ exports.data = [
             name: "Fridays for Future",
             link: "https://fridaysforfuture.org/",
             label: "fridays-for-future",
-            keywords: ["protest", "is-grassroots"],
+            tags: ["protest", "is-grassroots"],
         },
         description: {
             content: "Friday for Future (FFF) started with the individual protest of [Greta Tunberg](https://en.wikipedia.org/wiki/Greta_Thunberg). " +
@@ -591,7 +591,7 @@ exports.data = [
             name: "Sunrise Movement",
             link: "https://www.sunrisemovement.org/",
             label: "sunrise",
-            keywords: ["is-grassroots", "is-ngo", "is-network", "activist-support","training", "us", "policy", "green new deal"], 
+            tags: ["is-grassroots", "is-ngo", "is-network", "activist-support","training", "us", "policy", "green new deal"], 
         },
         description: {
             content: "To stop climate change and create jobs in the process, Sunrise advocates for a green new deal with the American public and the democratic party in particular",
@@ -625,7 +625,7 @@ exports.data = [
             name: "urgenda",
             link: "https://www.urgenda.nl",
             label: "urgenda",
-            keywords: ["litigation", "europe", "netherlands"],
+            tags: ["litigation", "europe", "netherlands"],
         },
         description: {
             content: "urgenda successfully sued the Dutch government for violating citizens' human rights by inaction on the climate crisis, forcing the government to take more drastic action in 2020.",
@@ -648,7 +648,7 @@ exports.data = [
         meta: {
             name: "Protect the Planet",
             link: "https://www.protect-the-planet.de",
-            keywords: ["litigation", "europe"],
+            tags: ["litigation", "europe"],
             label: "protect-the-planet",
         },
         description: {
@@ -672,7 +672,7 @@ exports.data = [
         meta: {
             name: "CLimate Action Network",
             link: "http://climatenetwork.org/",
-            keywords: ["activist-support", "infrastructure"],
+            tags: ["activist-support", "infrastructure"],
             label: "climate-action-network",
         },
         description: {
@@ -701,7 +701,7 @@ exports.data = [
         meta: {
             name: "Urgewald",
             link: "https://www.urgewald.org",
-            keywords: ["activist-support", "divestment", "fossil", "shareholder"],
+            tags: ["use-stock-voting-rights", "goal-divestment", "fossil", "is-ngo"],
             label: "urgewald",
         },
         description: {
@@ -746,7 +746,7 @@ exports.data = [
         meta: {
             name: "Climate Reality Project",
             link: "https://www.climaterealityproject.org/",
-            keywords: ["activist-support", "stipends", "training"],
+            tags: ["activist-support", "stipends", "training"],
             label: "climate-realtiy-project",
         },
         description: {
@@ -787,7 +787,7 @@ exports.data = [
         meta: {
             name: "Climate Emergency Fund",
             link: "https://climateemergencyfund.org",
-            keywords: ["activist-support", "stipends", "is-fund"],
+            tags: ["activist-support", "stipends", "is-fund"],
             label: "climate-emergency-fund",
         },
         description: {
@@ -819,7 +819,7 @@ exports.data = [
         meta: {
             name: "12/06/2020 Olympia",
             link: "https://www.startnext.com/12062020",
-            keywords: ["petition", "networking", "event"],
+            tags: ["petition", "networking", "event"],
             label: "12-06-2020-olympia",
         },
         description: {
@@ -836,7 +836,7 @@ exports.data = [
         meta: {
             name: "German Zero",
             link: "https://germanzero.de/",
-            keywords: ["policy", "legislation"],
+            tags: ["policy", "legislation"],
             label: "12-06-2020-olympia",
         },
         description: {
@@ -852,7 +852,7 @@ exports.data = [
         meta: {
             name: "Hamburg muss handeln",
             link: "http://hamburg-muss-handeln.de/",
-            keywords: ["is-owned-by-companies", "legislation", "local", "is-grassroots"],
+            tags: ["is-owned-by-companies", "legislation", "local"],
             label: "hamburg-muss-handeln",
         },
         description: {
@@ -864,7 +864,7 @@ exports.data = [
         meta: {
             name: "Fossil Free",
             link: "https://gofossilfree.org/",
-            keywords: ["is-grassroots", "legislation", "private-sector", "is-network", "is-ngo"],
+            tags: ["is-grassroots", "legislation", "private-sector", "is-network", "is-ngo"],
             label: "fossil-free",
         },
         description: {
@@ -880,7 +880,7 @@ exports.data = [
         meta: {
             name: "Scientists for Future",
             link: "https://www.scientists4future.org/",
-            keywords: ["science", "is-grassroots", "education", "is-ngo"],
+            tags: ["science", "education", "is-ngo"],
             label: "scientists-for-future",
         },
         description: {
@@ -896,7 +896,7 @@ exports.data = [
         meta: {
             name: "Europe Beyond Coal",
             link: "https://www.beyond-coal.eu",
-            keywords: ["coal", "is-grassroots", "education", "is-network", "is-ngo"],
+            tags: ["coal", "is-grassroots", "education", "is-network", "is-ngo"],
             label: "europe-beyond-coal",
         },
         description: {
@@ -909,7 +909,7 @@ exports.data = [
         meta: {
             name: "Bankwatch",
             link: "https://bankwatch.org/",
-            keywords: ["finance", "divestment", "watchdog", "is-ngo"],
+            tags: ["finance", "goal-divestment", "watchdog", "is-ngo"],
             label: "bank-watch",
         },
         description: {
@@ -924,7 +924,7 @@ exports.data = [
         meta: {
             name: "Development YES - Open Pit Mines NO",
             link: "https://rozwojtak-odkrywkinie.pl",
-            keywords: ["coal", "is-grassroots", "is-ngo"],
+            tags: ["coal", "is-grassroots", "is-ngo"],
             label: "development-yes-open-pit-mines-no",
         },
         description: {
@@ -937,7 +937,7 @@ exports.data = [
         meta: {
             name: "REDD.plus",
             link: "https://www.redd.plus/",
-            keywords: ["offsetting", "reforestation", "deforestation", "private-sector", "public-sector"],
+            tags: ["offsetting", "reforestation", "deforestation", "private-sector", "public-sector"],
             label: "redd-dot-plus",
         },
         description: {
@@ -950,7 +950,7 @@ exports.data = [
         meta: {
             name: "Voluntary REDD+ Database",
             link: "http://www.fao.org/forestry/vrd/data/",
-            keywords: ["offsetting", "reforestation", "deforestation", "public-sector"],
+            tags: ["offsetting", "reforestation", "deforestation", "public-sector"],
             label: "redd-dot-plus",
         },
         description: {
@@ -965,7 +965,7 @@ exports.data = [
         meta: {
             name: "Sandbag",
             link: "https://sandbag.org.uk/",
-            keywords: ["legislation", "think-tank", "projection", "science", "ngo"],
+            tags: ["legislation", "think-tank", "projection", "science", "ngo"],
             label: "sandbag",
         },
         description: {
@@ -980,7 +980,7 @@ exports.data = [
         meta: {
             name: "C2ES",
             link: "https://www.c2es.org/",
-            keywords: ["legislation", "think-tank", "policy", "targets-private-sector"],
+            tags: ["legislation", "is-think-tank", "policy", "lobby-corporations"],
             label: "c2es",
         },
         description: {
@@ -998,7 +998,7 @@ exports.data = [
         meta: {
             name: "The Climate Registry",
             link: "https://www.theclimateregistry.org",
-            keywords: ["reporting", "measuring", "modelling", "targets-private-sector", "ngo"],
+            tags: ["reporting", "measuring", "modelling", "targets-private-sector", "ngo"],
             label: "the-climate-registry",
         },
         description: {
@@ -1016,7 +1016,7 @@ exports.data = [
         meta: {
             name: "EIT Climate-KIC",
             link: "https://www.climate-kic.org",
-            keywords: ["think-tank", "network", "financing", "ppp"],
+            tags: ["think-tank", "network", "financing", "ppp"],
             label: "eit-climate-kic",
         },
         description: {
@@ -1029,7 +1029,7 @@ exports.data = [
         meta: {
             name: "Friends of the Earth",
             link: "https://www.foei.org/",
-            keywords: ["litigation", "network", "ngo"],
+            tags: ["litigation", "network", "ngo"],
             label: "friends-of-the-earth",
         },
         description: {
@@ -1049,7 +1049,7 @@ exports.data = [
         meta: {
             name: "Energy Cities",
             link: "https://energy-cities.eu/",
-            keywords: ["public-sector", "network", "housing", "divest", "financing", "energy"],
+            tags: ["good-at-cities-and-housing", "is-network", "is-public", "divest", "financing", "energy"],
             label: "energy-cities",
         },
         description: {
@@ -1079,7 +1079,7 @@ exports.data = [
         meta: {
             name: "Transition",
             link: "https://transitionnetwork.org",
-            keywords: ["is-ngo", "is-network", "housing", "is-grassroots", "local", "energy"],
+            tags: ["is-ngo", "is-network", "housing", "is-grassroots", "local", "energy"],
             label: "transition",
         },
         description: {
@@ -1105,7 +1105,7 @@ exports.data = [
         meta: {
             name: "Conservation International",
             link: "https://www.conservation.org/",
-            keywords: ["conservation", "ngo"],
+            tags: ["goal-conservation", "ngo"],
             label: "conservation",
         },
         description: {
@@ -1141,7 +1141,7 @@ exports.data = [
         meta: {
             name: "World Business Council for Sustainable Development",
             link: "https://www.wbcsd.org/",
-            keywords: ["private-sector", "corporate", "network", "think-tank"],
+            tags: ["lobby-corporation", "is-owned-by-companies", "is-network", "think-tank"],
             label: "wbcsd",
         },
         description: {
@@ -1166,7 +1166,7 @@ exports.data = [
         meta: {
             name: "Giving Green",
             link: "https://www.idinsight.org/givinggreen",
-            keywords: ["ngo", "efficiency-assessment"],
+            tags: ["ngo", "efficiency-assessment"],
             label: "giving-green",
         },
         description: {
@@ -1182,7 +1182,7 @@ exports.data = [
         meta: {
             name: "Clean Air Taskforce",
             link: "https://www.catf.us/",
-            keywords: ["ngo", "legislation", "energy", "technology"],
+            tags: ["ngo", "legislation", "energy", "technology"],
             label: "catf",
         },
         description: {
@@ -1196,7 +1196,7 @@ exports.data = [
         meta: {
             name: "ImpactMatters - Climate Change",
             link: "https://www.impactmatters.org/top-lists/climate-change/",
-            keywords: ["ngo", "impact-assessment", "tree-planting"],
+            tags: ["ngo", "impact-assessment", "tree-planting"],
             label: "impact-matters",
         },
         description: {
@@ -1212,7 +1212,7 @@ exports.data = [
         meta: {
             name: "Rainforest Foundation US",
             link: "https://rainforestfoundation.org",
-            keywords: ["is-ngo", "rainforest", "goal-conservation", "indigenous-communities"],
+            tags: ["is-ngo", "rainforest", "goal-conservation", "indigenous-communities"],
             label: "rainforest-foundation",
         },
         description: {

@@ -9,5 +9,3 @@ menu: false
 
 **🚧 Under Construction 🚧** 
 
-[Take the survey](https://services342876.typeform.com/to/H8DLJt)
-

@@ -1,12 +1,20 @@
+var invalidTags = [];
 function resultScreenApp() {
     const urlParams = new URLSearchParams(window.location.search);
     
+    const convert = name => urlParams
+        .get(name)
+        .split(', ')
+        .filter(v=> v !== '_____')
+        .map(labelToTag)
+        .filter(tag => tag);
+
     const params = {
-        role: labelToTag(urlParams.get('role')),
-        goals: urlParams.get('goals').split(', ').map(labelToTag).filter(tag => tag),
-        types: urlParams.get('types').split(', ').map(labelToTag).filter(tag => tag),
-        skills: urlParams.get('skills').split(', ').map(labelToTag).filter(tag => tag),
-        investment: labelToTag(urlParams.get('investment')),
+        role: convert('role')[0],
+        goals: convert('goals'),
+        types: convert('types'),
+        skills: convert('skills'),
+        investment: convert('investment')[0],
     };
     const resultDescriptor = determineResultDescriptor(params);
 
@@ -15,11 +23,11 @@ function resultScreenApp() {
     if(resultDescriptor.locationMissing) {
         renderLocationSelector(resultDescriptor.result);
     } else {
-        renderResultScreen(resultDescriptor.result);
+        renderResultScreen(params, resultDescriptor.result);
     }
 }
 
-function renderLocationSelector(result) {
+function renderLocationSelector(params, result) {
     const template = Handlebars.compile(`
     {{#each element}}
         <li>{{this.type}}</li>
@@ -28,26 +36,83 @@ function renderLocationSelector(result) {
     document.getElementById('recruiter-screen').innerHTML = template({elements: result});
 }
 
-function renderResultScreen(elements) {
+function renderResultScreen(params, elements) {
 
     const isPresentInCity = () => false;
 
+    const md = window.markdownit();
+
     const renderResults = elements => `
-        <h1>Result</h1>
-        ${elements.map(renderElement).join()}
+        <h4>The data you entered
+        (<a href="https://services342876.typeform.com/to/H8DLJt">start over</a>)
+        </h4>
+        <p>
+        ${['role', 'goals', 'types', 'skills', 'investment'].reduce((acc, p) => {
+            const group = [].concat(params[p] || []);
+            console.log(123, group);
+            return group.length > 0
+                ? [ ...acc, renderInputTagGroup(p, group)]
+                : acc;
+        }, [])
+        .join('. ')}
+        </p>
+        ${elements.map(renderElement).join('')}
         `;
 
-    const renderElement = (element) =>
-        element.type === 'initiatives'
-        ? initiativeSet(element)
-        : `<p>Unknown: ${element.type}</p>`;
+    const renderInputTagGroup = (param, responseTags) => `
+    <span class="results-input-tag-group">
+        <span class="results-input-tag-group-question">${questionToLabel(param)}: </span>
+        ${responseTags
+            .map(tag => `<span class="results-tag input-tag-${tag}">${tagToLabel(tag)}</span>`)
+            .join(' ')}
+    </span>
+    `;
 
-    const initiativeSet = ({copy, query}) =>`
-        <div class="result-initiative-set">
-            <h2>Initiatives</h2>
-            <p>${copy}</p>
-            <div class="result-initiatives-wrapper">
-            ${queryInitiatives(query, isPresentInCity).map(initiative)}
+    const renderElement = (element, index) => {
+        switch(element.type){
+            case 'initiatives': return initiativeSet(element, index + 1)
+            case 'restart-link': return restartLink(index + 1);
+            case 'cf-b2b': return crisisFightersB2B(index + 1);
+            case 'ideas': return ideas(index + 1);
+            case 'contribute': return contribute(index + 1);
+            default: return `<p>Unknown: ${element.type}</p>`;
+        }
+    }
+    
+    const restartLink = () => `
+    <div class="results-element results-help-others">
+        <h2>Interested in other initiatives?</h2>
+        <p>There are other, very interesting initiatives that you could join as an individual.</p>
+        <button>Find Interesting Initiatives</button>
+    </div>`;
+
+    const crisisFightersB2B = index => `
+    <div class="results-element results-crisisfighters-b2b">
+        <h2>Suggestion ${index}: Make your company part of the solution</h2>
+        <p>Ask your employees to put one hour per month into improving CrisisFighters and talk about it to get more people to engage.</p>
+        <button>CrisisFighters B2B</button>
+    </div>`;
+
+    const ideas = index => `
+    <div class="results-element results-ideas">
+        <h2>Suggestion ${index}: Start Your Own</h2>
+        <p>There are many good ideas out there for how you can invest your time best. We collect some of them. Check them out, use them and add your own!</p>
+        <button>Show Ideas</button>
+    </div>`;
+
+    const contribute = index => `
+    <div class="results-element results-contribute">
+        <h2>Suggestion ${index}: Help CrisisFighters.org!</h2>
+        <p>TODO copy. Crowd-sourcing, talking about it</p>
+        <button>Contribute</button>
+    </div>`;
+
+    const initiativeSet = ({headline, description, query}, index) =>`
+        <div class="results-element results-initiative-set">
+            <h2>Suggestion ${index}: ${md.renderInline(headline)}</h2>
+            <p>${md.renderInline(description)}</p>
+            <div class="results-initiatives-wrapper">
+            ${queryInitiatives(query, isPresentInCity).map(initiative).join('')}
             </div>
         </div>
         `;
@@ -56,20 +121,20 @@ function renderResultScreen(elements) {
         <div class="initiative">
             <h3><a href="${initiative.meta.link}" target="_blank">${initiative.meta.name}</a></h3>
             <div class="initiative-tag-wrapper">
-                ${initiative.meta.keywords ? initiative.meta.keywords.map(tag).join() : ''}
+                ${initiative.meta.tags ? initiative.meta.tags.map(tag).join('') : ''}
             </div
-            <p>${initiative.description ? initiative.description.content : ''}</p>
+            <p>${md.renderInline(initiative.description ? initiative.description.content : '')}</p>
         </div>
         `;
 
     const tag = tag => `
-        <span="result-tag result-tag-${tag}">${tagToLabel(tag)}</span>
+        <span class="results-tag results-tag-${tag}">${tagToLabel(tag)}</span>
         `;
 
     document.getElementById('recruiter-screen').innerHTML = renderResults(elements);
 }
 function queryInitiatives(query, isPresentInCity) {
-    return exports.data.filter(initiative => query(initiative.meta.keywords || [], isPresentInCity));
+    return exports.data.filter(initiative => query(initiative.meta.tags || [], isPresentInCity));
 }
 
 function determineResultDescriptor(params) {
@@ -78,17 +143,21 @@ function determineResultDescriptor(params) {
             result: [
                 {
                     type: 'initiatives',
-                    copy: 'Collaborate with these organizations to improve energy efficiency and wellbeing',
-                    query: tags => tags.includes('good-at-cities-and-housing'),
+                    headline: 'Are you a member of these networks?',
+                    description: 'These networks connect and help cities to make housing more energy-efficient and move cities closer to the goal of net carbon neutrality.',
+                    query: tags => tags.includes('good-at-cities-and-housing')
+                    && tags.includes('is-network'),
                 },
                 {
                     type: 'initiatives',
-                    copy: 'If your cities holds stock in publicly traded companies',
+                    headline: 'Does your Municipality own stock?',
+                    description: 'These initiatives let you transfer your stock voting rights. They then go to annual meetings to exercise these rights in the best interest of sustainable development, fighting the climate crisis and protecting human rights.',
                     query: tags => tags.includes('use-stock-voting-rights'),
                 },
                 {
                     type: 'initiatives',
-                    copy: 'Provide event space and rooms for workshops of these initiatives',
+                    headline: 'Support Grassroots Initiatives',
+                    description: 'It\'s likely that one or more of these initiatives have local groups in your city. Grassroots initiatives often have a hard time finding space to do workshops or meet. Probably you know how to provide them with desperately needed space at no or small cost.',
                     query: tags => tags.includes('is-grassroots'),
                 },
                 { type: 'restart-link' },
@@ -100,8 +169,11 @@ function determineResultDescriptor(params) {
             result : [
                 {
                     type: 'initiatives',
-                    copy: 'These organizations work with corporations. Wanna join?',
-                    query: tags => tags.includes('lobby-corporations') && tags.includes('is-network'),
+                    headline: 'These Initiatives work with Corporations',
+                    description: 'TODO tags',
+                    query: tags => 
+                    tags.includes('lobby-corporations')
+                    || tags.includes('is-owned-by-companies'),
                 },
                 { type: 'cf-b2b' },
                 { type: 'restart-link' },
@@ -113,12 +185,14 @@ function determineResultDescriptor(params) {
             result: [
                 {
                     type: 'initiatives',
-                    copy: 'These initiatives can provide you with funding',
+                    headline: 'These Funds might support you',
+                    description: 'Of course this depends on what kind of NGO you run and your financial needs. These funds try their best at providing resources to individuals or initiatives that fight the climate crisis.',
                     query: tags => tags.includes('is-fund'),
                 },
                 {
                     type: 'initiatives',
-                    copy: 'It might be interesting to join one of these networks',
+                    headline: 'Thought about joining a network?',
+                    description: 'The movement is stronger together. These networks connect initiatives and individuals to exchange ideas and coordinate.',
                     query: tags => tags.includes('is-network'),
                 },
                 { type: 'restart-link' },
@@ -127,26 +201,38 @@ function determineResultDescriptor(params) {
     }
 
     // assuming user-special-none')
-
-    // tags = [is-ngo, uses-civil-disobedience]
-    // types = [is-ngo, is-fund]
-
     return {
         locationMissing: params.investment === 'user-investment-time',
         result: [
             {
                 type: 'initiatives',
-                copy: 'These initiatives are interesting for you',
-                query: (tags, isPresentInCity) =>
-                    tags.some(tag => params.types.includes(tag))
-                    && tags.some(tag => params.goals.includes(tag))
-                    && tags.some(tag => params.skills.includes(tag))
+                headline: 'These are your relevant initiatives',
+                description: 'If you fell something is wrong or missing, please reach out or contribute',
+                query: (tags, isPresentInCity) => {
+                    // console.log(params.goals);
+                    return tags.some(tag => params.types.includes(tag))
+                    // && tags.some(tag => params.goals.includes(tag))
+                    && (
+                        params.investment === 'user-investment-money'
+                        || tags.some(tag => params.skills.includes(tag))
+                    )
                     && (
                         tags.includes('is-grassroots')
                         ||
                         params.investment === 'user-investment-time'
                         && isPresentInCity()
-                    ),
+                    )
+                    },
+                // query: (tags, isPresentInCity) =>
+                //     tags.some(tag => params.types.includes(tag))
+                //     && tags.some(tag => params.goals.includes(tag))
+                //     && tags.some(tag => params.skills.includes(tag))
+                //     && (
+                //         tags.includes('is-grassroots')
+                //         ||
+                //         params.investment === 'user-investment-time'
+                //         && isPresentInCity()
+                //     ),
                 // query: '(' + [
                 //     params.types.join(' || '),
                 //     params.goals.join(' || '),
@@ -177,6 +263,9 @@ function labelToTag(label) {
             return tag;
         }
     }
+    if(!invalidTags.includes("label: " + label)) {
+        invalidTags.push("label: " + label);
+    }
     return null;
 }
 
@@ -186,6 +275,23 @@ function tagToLabel(tag) {
             return exports.tagLabels[tag];
         }
     }
+    if(!invalidTags.includes(tag)) {
+        invalidTags.push(tag);
+    }
     return null;
 }
 
+function logInvalidTags(){
+    console.log('Invalid Tags:');
+    console.log(invalidTags);
+}
+
+function questionToLabel(param){
+    return ({
+        role: 'Special Role',
+        goals: 'Goals',
+        types: 'Types of Initiative',
+        skills: 'Skills',
+        investment: 'Your Contribution',
+    })[param];
+}
