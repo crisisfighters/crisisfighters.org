@@ -1,4 +1,5 @@
 var invalidTags = [];
+
 function resultScreenApp() {
     const urlParams = new URLSearchParams(window.location.search);
     
@@ -19,25 +20,76 @@ function resultScreenApp() {
     const resultDescriptor = determineResultDescriptor(params);
 
     console.log(params);
-    console.log(resultDescriptor);
     if(resultDescriptor.locationMissing) {
-        renderLocationSelector(resultDescriptor.result);
+        renderLocationSelector(params, resultDescriptor);
     } else {
-        renderResultScreen(params, resultDescriptor.result);
+        renderResultScreen(params, resultDescriptor);
     }
+    logInvalidTags();
 }
 
-function renderLocationSelector(params, result) {
-    const template = Handlebars.compile(`
-    {{#each element}}
-        <li>{{this.type}}</li>
-    {{/each}}
-    `);
-    document.getElementById('recruiter-screen').innerHTML = template({elements: result});
+function renderLocationSelector(params, resultDescriptor) {
+    
+    document.getElementById('recruiter-screen').innerHTML = `
+        <input id="result-town-input" placeholder="Enter your address" type="text"/>
+        <button id="result-town-submit" disabled>Show me the results</button>
+    `;
+    const input = document.getElementById('result-town-input');
+    const submit = document.getElementById('result-town-submit');
+    let lastResult = null;
+    
+    const isUsable = () => lastResult
+        && lastResult.locality
+        && lastResult.countryLong
+        && lastResult.countryCode;
+
+    submit.onclick = () => isUsable()
+        ? renderResultScreen(params, {
+            ...resultDescriptor,
+            locationMissing: false,
+            location: lastResult
+        })
+        : true;
+
+    input.onfocus = function geolocate() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(position => {
+            const geolocation = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            autocomplete.setBounds(new google.maps.Circle(
+                {center: geolocation, radius: position.coords.accuracy}).getBounds());
+          });
+        }
+      };
+
+      const autocomplete = new google.maps.places.Autocomplete(
+        input,
+        {
+            types: ['(cities)'],
+            fields: ['address_component'],
+        });
+      autocomplete.addListener('place_changed', () => {
+        const place = autocomplete.getPlace();
+        const locality = place.address_components.filter(c => c.types.includes('locality'))[0];
+        const country = place.address_components.filter(c => c.types.includes('country'))[0];
+        lastResult = {
+            locality : locality ? locality.short_name: null,
+            countryLong : country ? country.long_name: null,
+            countryCode : country ? country.short_name: null,
+        };
+        
+        if(isUsable()) {
+            submit.removeAttribute('disabled');
+        }
+      });
 }
 
-function renderResultScreen(params, elements) {
+function renderResultScreen(params, {result: elements, location}) {
 
+    console.log(location);
+    console.log(elements);
     const isPresentInCity = () => false;
 
     const md = window.markdownit();
@@ -49,7 +101,6 @@ function renderResultScreen(params, elements) {
         <p>
         ${['role', 'goals', 'types', 'skills', 'investment'].reduce((acc, p) => {
             const group = [].concat(params[p] || []);
-            console.log(123, group);
             return group.length > 0
                 ? [ ...acc, renderInputTagGroup(p, group)]
                 : acc;

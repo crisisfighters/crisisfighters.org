@@ -119,7 +119,7 @@ exports.data = [
         meta: {
             name: "Ende Gelände",
             link: "https://www.ende-gelaende.org/",
-            tags: ["coal", "europe", "germany", "is-grassroots", "civil-disobedience"],
+            tags: ["goal-fight-fossil", "is-grassroots", "civil-disobedience", "skill-influencer", "skill-flyering", "skill-jurist"],
             label: "ende-gelaende",
         },
         established: {
@@ -216,7 +216,7 @@ exports.data = [
         meta: {
             name: "Limity Jsme My",
             link: "https://limityjsmemy.cz/en/",
-            tags: ["coal", "czech republic", "is-grassroots", "civil disobedience"],
+            tags: ["goal-fight-fossil", "czech republic", "is-grassroots", "civil disobedience"],
             label: "limity-jsme-my",
         },
     },
@@ -392,7 +392,7 @@ exports.data = [
         meta: {
             name: "Hambacher Forst",
             link: "https://hambacherforst.org/",
-            tags: ["protest", "fossil", "civil-disobedience", "europe", "germany"],
+            tags: ["protest", "goal-fight-fossil", "civil-disobedience", "europe", "germany"],
             label: "hambacher-forst",
         },
         description: {
@@ -864,7 +864,7 @@ exports.data = [
         meta: {
             name: "Fossil Free",
             link: "https://gofossilfree.org/",
-            tags: ["is-grassroots", "legislation", "private-sector", "is-network", "is-ngo"],
+            tags: ["is-grassroots", "goal-fight-fossil", "private-sector", "is-network", "is-ngo"],
             label: "fossil-free",
         },
         description: {
