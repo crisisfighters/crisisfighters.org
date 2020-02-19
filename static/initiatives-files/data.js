@@ -119,7 +119,7 @@ exports.data = [
         meta: {
             name: "Ende Gelände",
             link: "https://www.ende-gelaende.org/",
-            keywords: ["coal", "europe", "germany", "grassroots", "civil disobedience"],
+            keywords: ["coal", "europe", "germany", "is-grassroots", "civil-disobedience"],
             label: "ende-gelaende",
         },
         established: {
@@ -216,7 +216,7 @@ exports.data = [
         meta: {
             name: "Limity Jsme My",
             link: "https://limityjsmemy.cz/en/",
-            keywords: ["coal", "czech republic", "grassroots", "civil disobedience"],
+            keywords: ["coal", "czech republic", "is-grassroots", "civil disobedience"],
             label: "limity-jsme-my",
         },
     },
@@ -225,7 +225,7 @@ exports.data = [
             name: "350.org",
             link: "https://350.org/",
             label: "350-org",
-            keywords: ["grassroots", "trainings", "connecting initiatives"],
+            keywords: ["is-grassroots", "trainings", "is-network"],
         },
         description: {
             content: "350.org's goal is to end the use of fossil fuels and transition to renewable energy by building a global, grassroots movement. " +
@@ -472,7 +472,7 @@ exports.data = [
         meta: {
             name: "Green Climate Fund",
             link: "https://www.greenclimate.fund/home",
-            keywords: ["fund", "government"],
+            keywords: ["is-fund", "is-public"],
             label: "Green Climate Fund",
         },
         established: {
@@ -496,7 +496,7 @@ exports.data = [
         meta: {
             name: "ClimateWorks",
             link: "https://www.climateworks.org/",
-            keywords: ["fund", "activist-support", "shareholder"],
+            keywords: ["is-fund", "activist-support", "shareholder"],
             label: "climate-works",
         },
         description: {
@@ -549,7 +549,7 @@ exports.data = [
             name: "Fridays for Future",
             link: "https://fridaysforfuture.org/",
             label: "fridays-for-future",
-            keywords: ["protest", "grassroots"],
+            keywords: ["protest", "is-grassroots"],
         },
         description: {
             content: "Friday for Future (FFF) started with the individual protest of [Greta Tunberg](https://en.wikipedia.org/wiki/Greta_Thunberg). " +
@@ -591,7 +591,7 @@ exports.data = [
             name: "Sunrise Movement",
             link: "https://www.sunrisemovement.org/",
             label: "sunrise",
-            keywords: ["grassroots", "activist-support","training", "us", "policy", "green new deal"], 
+            keywords: ["is-grassroots", "is-ngo", "is-network", "activist-support","training", "us", "policy", "green new deal"], 
         },
         description: {
             content: "To stop climate change and create jobs in the process, Sunrise advocates for a green new deal with the American public and the democratic party in particular",
@@ -787,7 +787,7 @@ exports.data = [
         meta: {
             name: "Climate Emergency Fund",
             link: "https://climateemergencyfund.org",
-            keywords: ["activist-support", "stipends", "funding"],
+            keywords: ["activist-support", "stipends", "is-fund"],
             label: "climate-emergency-fund",
         },
         description: {
@@ -819,7 +819,7 @@ exports.data = [
         meta: {
             name: "12/06/2020 Olympia",
             link: "https://www.startnext.com/12062020",
-            keywords: ["petition", "networking", "event", "grassroots"],
+            keywords: ["petition", "networking", "event"],
             label: "12-06-2020-olympia",
         },
         description: {
@@ -852,7 +852,7 @@ exports.data = [
         meta: {
             name: "Hamburg muss handeln",
             link: "http://hamburg-muss-handeln.de/",
-            keywords: ["private-sector", "legislation", "local", "grassroots"],
+            keywords: ["is-owned-by-companies", "legislation", "local", "is-grassroots"],
             label: "hamburg-muss-handeln",
         },
         description: {
@@ -864,7 +864,7 @@ exports.data = [
         meta: {
             name: "Fossil Free",
             link: "https://gofossilfree.org/",
-            keywords: ["grassroots", "legislation", "private-sector", "network", "ngo"],
+            keywords: ["is-grassroots", "legislation", "private-sector", "is-network", "is-ngo"],
             label: "fossil-free",
         },
         description: {
@@ -880,7 +880,7 @@ exports.data = [
         meta: {
             name: "Scientists for Future",
             link: "https://www.scientists4future.org/",
-            keywords: ["science", "grassroots", "education", "ngo"],
+            keywords: ["science", "is-grassroots", "education", "is-ngo"],
             label: "scientists-for-future",
         },
         description: {
@@ -896,7 +896,7 @@ exports.data = [
         meta: {
             name: "Europe Beyond Coal",
             link: "https://www.beyond-coal.eu",
-            keywords: ["coal", "grassroots", "education", "network", "ngo"],
+            keywords: ["coal", "is-grassroots", "education", "is-network", "is-ngo"],
             label: "europe-beyond-coal",
         },
         description: {
@@ -909,7 +909,7 @@ exports.data = [
         meta: {
             name: "Bankwatch",
             link: "https://bankwatch.org/",
-            keywords: ["finance", "divestment", "watchdog", "ngo"],
+            keywords: ["finance", "divestment", "watchdog", "is-ngo"],
             label: "bank-watch",
         },
         description: {
@@ -924,7 +924,7 @@ exports.data = [
         meta: {
             name: "Development YES - Open Pit Mines NO",
             link: "https://rozwojtak-odkrywkinie.pl",
-            keywords: ["coal", "grassroots", "ngo"],
+            keywords: ["coal", "is-grassroots", "is-ngo"],
             label: "development-yes-open-pit-mines-no",
         },
         description: {
@@ -1079,7 +1079,7 @@ exports.data = [
         meta: {
             name: "Transition",
             link: "https://transitionnetwork.org",
-            keywords: ["ngo", "network", "housing", "grassroots", "local", "energy"],
+            keywords: ["is-ngo", "is-network", "housing", "is-grassroots", "local", "energy"],
             label: "transition",
         },
         description: {
@@ -1212,7 +1212,7 @@ exports.data = [
         meta: {
             name: "Rainforest Foundation US",
             link: "https://rainforestfoundation.org",
-            keywords: ["ngo", "rainforest", "conservation", "indigenous-communities"],
+            keywords: ["is-ngo", "rainforest", "goal-conservation", "indigenous-communities"],
             label: "rainforest-foundation",
         },
         description: {
