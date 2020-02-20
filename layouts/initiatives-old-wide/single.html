@@ -1,0 +1,45 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+<article class="initiatives-wrapper mid-gray">
+    {{ .Content }}
+
+    <link href="/initiatives-files/style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    body {
+        /* Makes <body> expand horizontally with the table */
+        /* display:inline-block; */
+        /* min-width:100%; */
+        background-color: black
+    }
+    html {
+        background-color: black
+    }
+    main {
+        display:inline-block; 
+        min-width:100%;
+        background: white;
+        padding-bottom: 6rem !important;
+        
+    }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/9.1.0/markdown-it.min.js"
+            integrity="sha256-TkN8s0Xn8oiroeIyHkXDjt+W71FdPsdjFmn3jKbLgxQ=" crossorigin="anonymous"></script>
+    <table id="grid">
+        <thead>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script>
+        // Allows node.js `require()`
+        const exports = {};
+    </script>
+    </script>
+    <script src="/initiatives-files/initiatives.js"></script>
+    <script src="/initiatives-files/fields.js"></script>
+    <script src="/initiatives-files/script.js"></script>
+    <script>
+        renderInitiatives("grid", exports);
+    </script>
+</article>
+{{ end }}

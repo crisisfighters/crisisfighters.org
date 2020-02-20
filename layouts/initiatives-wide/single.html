@@ -1,45 +1,26 @@
 {{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
 {{ define "main" }}
-<article class="initiatives-wrapper mid-gray">
+<article class="recruiter-wrapper mid-gray">
     {{ .Content }}
 
-    <link href="/initiatives-files/style.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-    body {
-        /* Makes <body> expand horizontally with the table */
-        /* display:inline-block; */
-        /* min-width:100%; */
-        background-color: black
-    }
-    html {
-        background-color: black
-    }
-    main {
-        display:inline-block; 
-        min-width:100%;
-        background: white;
-        padding-bottom: 6rem !important;
-        
-    }
-    </style>
+    <link href="/initiatives-files/style-recruiter.css" rel="stylesheet" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/9.1.0/markdown-it.min.js"
             integrity="sha256-TkN8s0Xn8oiroeIyHkXDjt+W71FdPsdjFmn3jKbLgxQ=" crossorigin="anonymous"></script>
-    <table id="grid">
-        <thead>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+            
+    <style type="text/css">
+    
+    </style>
+    <div id="recruiter-screen">Loading ...</div>
     <script>
-        // Allows node.js `require()`
+        // Allows node.js `require()` in included files
         const exports = {};
     </script>
     </script>
-    <script src="/initiatives-files/data.js"></script>
+    <script src="/initiatives-files/initiatives.js"></script>
     <script src="/initiatives-files/fields.js"></script>
-    <script src="/initiatives-files/script.js"></script>
-    <script>
-        renderInitiatives("grid", exports);
-    </script>
+    <script src="/initiatives-files/tag-labels.js"></script>
+    <script src="/initiatives-files/recruiter.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdWGGzRnF_DNDDDonCyv1FWxRK4dBWt7U&libraries=places&callback=resultScreenApp"
+    async defer></script>
 </article>
 {{ end }}

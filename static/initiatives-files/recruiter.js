@@ -10,6 +10,16 @@ function resultScreenApp() {
         .map(labelToTag)
         .filter(tag => tag);
 
+    if(!urlParams.has('role')
+        || !urlParams.has('goals')
+        || !urlParams.has('types')
+        || !urlParams.has('skills')
+        || !urlParams.has('investment')
+    
+    ) {
+        return renderStartPage();
+    }
+
     const params = {
         role: convert('role')[0],
         goals: convert('goals'),
@@ -17,7 +27,12 @@ function resultScreenApp() {
         skills: convert('skills'),
         investment: convert('investment')[0],
     };
-    const resultDescriptor = determineResultDescriptor(params);
+    const location = {
+        locality: urlParams.get('locality'),
+        country: urlParams.get('country'),
+        countryCode: urlParams.get('countryCode'),
+    }
+    const resultDescriptor = determineResultDescriptor(params, location);
 
     console.log(params);
     if(resultDescriptor.locationMissing) {
@@ -26,6 +41,13 @@ function resultScreenApp() {
         renderResultScreen(params, resultDescriptor);
     }
     logInvalidTags();
+}
+
+function renderStartPage() {
+    document.getElementById('recruiter-screen').innerHTML = `
+        <h4>Find where you can contribute</h4>
+        <a href="https://services342876.typeform.com/to/H8DLJt">Show questions</a>
+        `;
 }
 
 function renderLocationSelector(params, resultDescriptor) {
@@ -40,15 +62,12 @@ function renderLocationSelector(params, resultDescriptor) {
     
     const isUsable = () => lastResult
         && lastResult.locality
-        && lastResult.countryLong
+        && lastResult.country
         && lastResult.countryCode;
 
     submit.onclick = () => isUsable()
-        ? renderResultScreen(params, {
-            ...resultDescriptor,
-            locationMissing: false,
-            location: lastResult
-        })
+        ? document.location.href= document.location.href + 
+            `&locality=${lastResult.locality}&country=${lastResult.country}&countryCode=${lastResult.countryCode}`
         : true;
 
     input.onfocus = function geolocate() {
@@ -76,7 +95,7 @@ function renderLocationSelector(params, resultDescriptor) {
         const country = place.address_components.filter(c => c.types.includes('country'))[0];
         lastResult = {
             locality : locality ? locality.short_name: null,
-            countryLong : country ? country.long_name: null,
+            country : country ? country.long_name: null,
             countryCode : country ? country.short_name: null,
         };
         
@@ -132,14 +151,12 @@ function renderResultScreen(params, {result: elements, location}) {
         ${elements.map(renderElement).join('')}
         `;
 
-    const renderInputTagGroup = (param, responseTags) => `
-    <span class="results-input-tag-group">
+    const renderInputTagGroup = (param, responseTags) => 
+    `<span class="results-input-tag-group">
         <span class="results-input-tag-group-question">${questionToLabel(param)}: </span>
         ${responseTags
             .map(tag => `<span class="results-tag input-tag-${tag}">${tagToLabel(tag)}</span>`)
-            .join(' ')}
-    </span>
-    `;
+            .join('')}</span>`;
 
     const renderElement = (element, index) => {
         switch(element.type){
@@ -187,32 +204,59 @@ function renderResultScreen(params, {result: elements, location}) {
             <div class="results-initiatives-wrapper">
             ${queryInitiatives(query, isPresentInCity).map(initiative).join('')}
             </div>
-        </div>
-        `;
-    
+        </div>`;
+
+        const sortOrder = ['good', 'is', 'use', 'support'];
+        const sortTags = (a, b) => {
+            return sortOrder.indexOf(a.substr(0, a.indexOf('-')))
+            - sortOrder.indexOf(b.substr(0, b.indexOf('-')))
+            ;
+        };
+        const tagShouldBeInList = tag => tag.indexOf('skill-') !== 0
+            && tag.indexOf('join-') !== 0;
+
     const initiative = initiative => `
         <div class="initiative">
             <h3><a href="${initiative.meta.link}" target="_blank">${initiative.meta.name}</a></h3>
             <div class="initiative-tag-wrapper">
-                ${[...initiative.meta.tagsInteresting, ...initiative.meta.tagsRelevant].map(tag).join('')}
+            ${initiative.meta.tagsRelevant.sort(sortTags).filter(tagShouldBeInList).map(tag(true)).join('')}
+            ${initiative.meta.tagsInteresting.sort(sortTags).filter(tagShouldBeInList).map(tag(false)).join('')}
             </div
             <p>${md.renderInline(initiative.description ? initiative.description.content : '')}</p>
         </div>
         `;
 
-    const tag = tag => `
-        <span class="results-tag results-tag-${tag}">${tagToLabel(tag)}</span>
+    const tag = relevant => tag => {
+        const classes = [
+            'results-tag',
+            ...(relevant ? ['results-tag-relevant'] : []),
+            'results-tag-' + tag.substr(0, tag.indexOf('-')),
+            'results-tag-' + tag
+        ];
+        return `
+            <span class="${classes.join(' ')}">${tagToLabel(tag)}</span>
         `;
-
+    }
+    
     document.getElementById('recruiter-screen').innerHTML = renderResults(elements);
 }
 function queryInitiatives(query, isPresentInCity) {
-    return exports.initiatives.filter(initiative => query(
-        [...initiative.meta.tagsInteresting, ...initiative.meta.tagsRelevant],
-        isPresentInCity));
+    return exports.initiatives
+        .filter(initiative => query(
+            [...initiative.meta.tagsInteresting, ...initiative.meta.tagsRelevant],
+            isPresentInCity))
+        .sort((a, b) => 
+            [...b.meta.tagsInteresting, ...b.meta.tagsRelevant]
+            .filter(t => t.indexOf('good-') === 0)
+            .legth
+            -
+            [...a.meta.tagsInteresting, ...a.meta.tagsRelevant]
+            .filter(t => t.indexOf('good-') === 0)
+            .length
+        );
 }
 
-function determineResultDescriptor(params) {
+function determineResultDescriptor(params, location) {
     if(params.role === 'user-special-city-official') {
         return {
             result: [
@@ -275,9 +319,10 @@ function determineResultDescriptor(params) {
         };
     }
 
-    // assuming user-special-none')
+    // assuming user-special-none'
     return {
-        locationMissing: params.investment === 'user-investment-time',
+        locationMissing: params.investment === 'user-investment-time'
+                        && !location.countryCode,
         result: [
             {
                 type: 'initiatives',
