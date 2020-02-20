@@ -185,7 +185,7 @@ function renderResultScreen(params, {result: elements}, location) {
     
     const nothingFound = () => `
     <div class="results-element results-help-others">
-        <h2>No Initiatives matched your Criteria</h2>
+        <h2>No Initiatives Match your Criteria</h2>
         <p>Don't worry. This happens. The easy solution is to select more options that could be relevant to you.</p>
         <button>Start Over</button>
     </div>`;
