@@ -3,7 +3,24 @@ exports.initiatives = [
     "meta": {
       "name": "ClientEarth",
       "link": "https://www.clientearth.org/",
-      "label": "client-earth"
+      "label": "client-earth",
+      "tagsInteresting": [
+        "skill-flyering",
+        "skill-influencer",
+        "skill-translator",
+        "join-unpaid"
+      ],
+      "tagsRelevant": [
+        "is-ngo",
+        "skill-jurist",
+        "join-paid",
+        "join-internship",
+        "goal-fight-fossil",
+        "goal-conservation",
+        "use-litigation",
+        "target-government",
+        "target-corporations"
+      ]
     },
     "description": {
       "content": [
@@ -38,7 +55,27 @@ exports.initiatives = [
     "meta": {
       "name": "Extinction Rebellion",
       "link": "https://rebellion.earth",
-      "label": "extinction-rebellion"
+      "label": "extinction-rebellion",
+      "tagsInteresting": [
+        "is-ngo",
+        "target-government"
+      ],
+      "tagsRelevant": [
+        "is-grassroots",
+        "skill-jurist",
+        "skill-flyering",
+        "skill-creative-media",
+        "skill-influencer",
+        "skill-project-or-event-management",
+        "skill-social-media-aficionado",
+        "skill-translator",
+        "join-unpaid",
+        "support-connect-activists-or-initiatives",
+        "support-train-activists",
+        "use-civil-disobedience",
+        "use-protests",
+        "presence-usa"
+      ]
     },
     "description": {
       "content": "Extinction Rebellion (XR) is an international movement that uses non-violent civil disobedience in an attempt to halt mass extinction and minimise the risk of social collapse.",
@@ -76,10 +113,21 @@ exports.initiatives = [
       "name": "WWF",
       "link": "http://wwf.panda.org/",
       "label": "wwf",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "skill-flyering",
+        "join-unpaid"
+      ],
       "tagsRelevant": [
-        "conservation",
-        "ngo"
+        "is-ngo",
+        "join-paid",
+        "join-internship",
+        "goal-conservation",
+        "propagate-conservation",
+        "lobby-government",
+        "target-government",
+        "lobby-corporations",
+        "target-corporations",
+        "presence-usa"
       ]
     },
     "description": {
@@ -113,10 +161,21 @@ exports.initiatives = [
       "name": "Greenpeace",
       "link": "https://www.greenpeace.org/international/",
       "label": "greenpeace",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "skill-flyering",
+        "join-unpaid"
+      ],
       "tagsRelevant": [
-        "conservation",
-        "ngo"
+        "is-ngo",
+        "join-paid",
+        "join-internship",
+        "goal-conservation",
+        "propagate-conservation",
+        "lobby-government",
+        "target-government",
+        "lobby-corporations",
+        "target-corporations",
+        "presence-usa"
       ]
     },
     "description": {
@@ -139,14 +198,26 @@ exports.initiatives = [
     "meta": {
       "name": "Ende Gelände",
       "link": "https://www.ende-gelaende.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
-        "goal-fight-fossil",
-        "is-grassroots",
-        "civil-disobedience",
+      "tagsInteresting": [
+        "is-ngo",
         "skill-influencer",
+        "skill-project-or-event-management",
+        "skill-social-media-aficionado",
+        "skill-translator",
+        "join-unpaid",
+        "good-at-energy-transformation",
+        "support-connect-activists-or-initiatives",
+        "target-government"
+      ],
+      "tagsRelevant": [
+        "is-grassroots",
+        "skill-jurist",
         "skill-flyering",
-        "skill-jurist"
+        "skill-creative-media",
+        "goal-fight-fossil",
+        "use-civil-disobedience",
+        "use-protests",
+        "target-corporations"
       ],
       "label": "ende-gelaende"
     },
@@ -198,7 +269,14 @@ exports.initiatives = [
       "label": "ceres",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "lobby-corporations"
+        "is-ngo",
+        "is-network",
+        "join-paid",
+        "join-internship",
+        "lobby-government",
+        "target-government",
+        "lobby-corporations",
+        "target-corporations"
       ]
     },
     "established": {
@@ -241,19 +319,41 @@ exports.initiatives = [
     "meta": {
       "name": "World Resource Institution",
       "link": "https://www.wri.org/",
-      "label": "world-resource-institution"
+      "label": "world-resource-institution",
+      "tagsInteresting": [],
+      "tagsRelevant": [
+        "is-ngo",
+        "join-paid",
+        "join-internship",
+        "propagate-conservation",
+        "presence-usa"
+      ]
     }
   },
   {
     "meta": {
       "name": "Limity Jsme My",
       "link": "https://limityjsmemy.cz/en/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "skill-project-or-event-management",
+        "skill-translator",
+        "join-unpaid",
+        "good-at-energy-transformation",
+        "goal-conservation",
+        "support-connect-activists-or-initiatives",
+        "lobby-government",
+        "target-government"
+      ],
       "tagsRelevant": [
-        "goal-fight-fossil",
-        "czech republic",
         "is-grassroots",
-        "civil disobedience"
+        "is-ngo",
+        "skill-jurist",
+        "skill-flyering",
+        "goal-fight-fossil",
+        "use-civil-disobedience",
+        "use-protests",
+        "target-corporations",
+        "presence-usa"
       ],
       "label": "limity-jsme-my"
     }
@@ -266,8 +366,14 @@ exports.initiatives = [
       "tagsInteresting": [],
       "tagsRelevant": [
         "is-grassroots",
-        "trainings",
-        "is-network"
+        "is-ngo",
+        "is-network",
+        "join-paid",
+        "join-internship",
+        "support-train-activists",
+        "use-litigation",
+        "lobby-government",
+        "target-government"
       ]
     },
     "description": {
@@ -315,7 +421,18 @@ exports.initiatives = [
     "meta": {
       "name": "Sierra Club",
       "link": "https://www.sierraclub.org/",
-      "label": "sierra-club"
+      "label": "sierra-club",
+      "tagsInteresting": [],
+      "tagsRelevant": [
+        "is-ngo",
+        "join-paid",
+        "join-internship",
+        "goal-conservation",
+        "propagate-conservation",
+        "lobby-government",
+        "target-government",
+        "presence-poland"
+      ]
     },
     "established": {
       "content": "1892",
@@ -362,9 +479,22 @@ exports.initiatives = [
     "meta": {
       "name": "Earthjustice",
       "link": "https://earthjustice.org/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "skill-flyering",
+        "skill-influencer",
+        "skill-translator",
+        "join-unpaid"
+      ],
       "tagsRelevant": [
-        "litigation"
+        "is-ngo",
+        "skill-jurist",
+        "join-paid",
+        "join-internship",
+        "goal-fight-fossil",
+        "goal-conservation",
+        "use-litigation",
+        "target-government",
+        "target-corporations"
       ],
       "label": "earthjustice"
     },
@@ -410,7 +540,14 @@ exports.initiatives = [
       "link": "http://ucsusa.org/",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "science"
+        "is-ngo",
+        "skill-scientist",
+        "join-paid",
+        "join-internship",
+        "knowledge-science-and-education",
+        "lobby-government",
+        "target-government",
+        "presence-usa"
       ],
       "label": "ucs"
     },
@@ -449,13 +586,28 @@ exports.initiatives = [
     "meta": {
       "name": "Hambacher Forst",
       "link": "https://hambacherforst.org/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "is-ngo",
+        "skill-flyering",
+        "skill-influencer",
+        "skill-project-or-event-management",
+        "skill-social-media-aficionado",
+        "skill-translator",
+        "join-unpaid",
+        "good-at-energy-transformation",
+        "support-connect-activists-or-initiatives"
+      ],
       "tagsRelevant": [
-        "protest",
+        "is-grassroots",
+        "skill-jurist",
+        "skill-creative-media",
         "goal-fight-fossil",
-        "civil-disobedience",
-        "europe",
-        "germany"
+        "goal-conservation",
+        "knowledge-reveal-links-between-industry-and-politics",
+        "use-civil-disobedience",
+        "use-protests",
+        "target-government",
+        "target-corporations"
       ],
       "label": "hambacher-forst"
     },
@@ -504,17 +656,31 @@ exports.initiatives = [
     "meta": {
       "name": "NRDC",
       "link": "https://www.nrdc.org/",
-      "label": "nrdc"
+      "label": "nrdc",
+      "tagsInteresting": [],
+      "tagsRelevant": [
+        "is-ngo",
+        "skill-jurist",
+        "join-paid",
+        "join-internship",
+        "knowledge-science-and-education"
+      ]
     }
   },
   {
     "meta": {
       "name": "IPCC",
       "link": "https://www.ipcc.ch/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "goal-divestment",
+        "knowledge-educate-students"
+      ],
       "tagsRelevant": [
-        "government",
-        "science"
+        "is-public",
+        "knowledge-projections",
+        "knowledge-science-and-education",
+        "lobby-government",
+        "presence-usa"
       ],
       "label": "IPCC"
     },
@@ -553,10 +719,14 @@ exports.initiatives = [
     "meta": {
       "name": "Green Climate Fund",
       "link": "https://www.greenclimate.fund/home",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "support-train-activists"
+      ],
       "tagsRelevant": [
+        "is-ngo",
         "is-fund",
-        "is-public"
+        "join-paid",
+        "join-internship"
       ],
       "label": "Green Climate Fund"
     },
@@ -580,11 +750,15 @@ exports.initiatives = [
     "meta": {
       "name": "ClimateWorks",
       "link": "https://www.climateworks.org/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "join-internship"
+      ],
       "tagsRelevant": [
+        "is-ngo",
         "is-fund",
-        "activist-support",
-        "shareholder"
+        "join-paid",
+        "support-grant-for-projects",
+        "support-grant-for-individuals"
       ],
       "label": "climate-works"
     },
@@ -629,10 +803,23 @@ exports.initiatives = [
       "name": "Fridays for Future",
       "link": "https://fridaysforfuture.org/",
       "label": "fridays-for-future",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "is-ngo",
+        "skill-jurist"
+      ],
       "tagsRelevant": [
-        "protest",
-        "is-grassroots"
+        "is-grassroots",
+        "skill-flyering",
+        "skill-creative-media",
+        "skill-influencer",
+        "skill-project-or-event-management",
+        "skill-social-media-aficionado",
+        "skill-translator",
+        "join-unpaid",
+        "support-connect-activists-or-initiatives",
+        "use-protests",
+        "target-government",
+        "presence-usa"
       ]
     },
     "description": {
@@ -681,16 +868,27 @@ exports.initiatives = [
       "name": "Sunrise Movement",
       "link": "https://www.sunrisemovement.org/",
       "label": "sunrise",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "skill-jurist",
+        "skill-creative-media",
+        "skill-project-or-event-management",
+        "lobby-government",
+        "target-government",
+        "presence-usa"
+      ],
       "tagsRelevant": [
         "is-grassroots",
         "is-ngo",
-        "is-network",
-        "activist-support",
-        "training",
-        "us",
-        "policy",
-        "green new deal"
+        "skill-flyering",
+        "skill-influencer",
+        "skill-social-media-aficionado",
+        "join-paid",
+        "join-unpaid",
+        "knowledge-propose-legislation",
+        "support-connect-activists-or-initiatives",
+        "support-train-activists",
+        "use-civil-disobedience",
+        "use-protests"
       ]
     },
     "description": {
@@ -724,11 +922,17 @@ exports.initiatives = [
       "name": "urgenda",
       "link": "https://www.urgenda.nl",
       "label": "urgenda",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "skill-flyering",
+        "skill-influencer",
+        "join-unpaid"
+      ],
       "tagsRelevant": [
-        "litigation",
-        "europe",
-        "netherlands"
+        "is-ngo",
+        "skill-jurist",
+        "use-litigation",
+        "target-government",
+        "target-corporations"
       ]
     },
     "description": {
@@ -756,10 +960,18 @@ exports.initiatives = [
     "meta": {
       "name": "Protect the Planet",
       "link": "https://www.protect-the-planet.de",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "skill-flyering",
+        "skill-influencer",
+        "join-unpaid"
+      ],
       "tagsRelevant": [
-        "litigation",
-        "europe"
+        "is-ngo",
+        "skill-jurist",
+        "goal-fight-fossil",
+        "use-litigation",
+        "target-government",
+        "target-corporations"
       ],
       "label": "protect-the-planet"
     },
@@ -790,8 +1002,11 @@ exports.initiatives = [
       "link": "http://climatenetwork.org/",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "activist-support",
-        "infrastructure"
+        "is-ngo",
+        "is-network",
+        "join-internship",
+        "support-connect-activists-or-initiatives",
+        "presence-usa"
       ],
       "label": "climate-action-network"
     },
@@ -827,10 +1042,12 @@ exports.initiatives = [
       "link": "https://www.urgewald.org",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "use-stock-voting-rights",
+        "is-ngo",
         "goal-divestment",
-        "fossil",
-        "is-ngo"
+        "use-stock-voting-rights",
+        "lobby-corporations",
+        "target-corporations",
+        "presence-usa"
       ],
       "label": "urgewald"
     },
@@ -874,11 +1091,15 @@ exports.initiatives = [
     "meta": {
       "name": "Climate Reality Project",
       "link": "https://www.climaterealityproject.org/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "skill-influencer"
+      ],
       "tagsRelevant": [
-        "activist-support",
-        "stipends",
-        "training"
+        "is-ngo",
+        "knowledge-science-and-education",
+        "support-connect-activists-or-initiatives",
+        "support-train-activists",
+        "presence-usa"
       ],
       "label": "climate-realtiy-project"
     },
@@ -929,9 +1150,14 @@ exports.initiatives = [
       "link": "https://climateemergencyfund.org",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "activist-support",
-        "stipends",
-        "is-fund"
+        "is-ngo",
+        "is-fund",
+        "skill-influencer",
+        "support-connect-activists-or-initiatives",
+        "support-grant-for-projects",
+        "support-grant-for-individuals",
+        "target-government",
+        "presence-usa"
       ],
       "label": "climate-emergency-fund"
     },
@@ -970,11 +1196,13 @@ exports.initiatives = [
     "meta": {
       "name": "12/06/2020 Olympia",
       "link": "https://www.startnext.com/12062020",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "support-connect-activists-or-initiatives",
+        "lobby-government"
+      ],
       "tagsRelevant": [
-        "petition",
-        "networking",
-        "event"
+        "knowledge-propose-legislation",
+        "target-government"
       ],
       "label": "12-06-2020-olympia"
     },
@@ -993,10 +1221,14 @@ exports.initiatives = [
     "meta": {
       "name": "German Zero",
       "link": "https://germanzero.de/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "target-public"
+      ],
       "tagsRelevant": [
-        "policy",
-        "legislation"
+        "is-ngo",
+        "knowledge-propose-legislation",
+        "lobby-government",
+        "target-government"
       ],
       "label": "12-06-2020-olympia"
     },
@@ -1017,9 +1249,10 @@ exports.initiatives = [
       "link": "http://hamburg-muss-handeln.de/",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "is-owned-by-companies",
-        "legislation",
-        "local"
+        "is-ngo",
+        "is-network",
+        "lobby-government",
+        "lobby-corporations"
       ],
       "label": "hamburg-muss-handeln"
     },
@@ -1033,13 +1266,22 @@ exports.initiatives = [
     "meta": {
       "name": "Fossil Free",
       "link": "https://gofossilfree.org/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "is-think-tank",
+        "goal-decentralized-energy-ownership"
+      ],
       "tagsRelevant": [
-        "is-grassroots",
-        "goal-fight-fossil",
-        "private-sector",
+        "is-ngo",
         "is-network",
-        "is-ngo"
+        "good-at-energy-transformation",
+        "goal-fight-fossil",
+        "goal-divestment",
+        "knowledge-propose-legislation",
+        "propagate-divestment",
+        "lobby-government",
+        "target-government",
+        "lobby-corporations",
+        "target-corporations"
       ],
       "label": "fossil-free"
     },
@@ -1058,11 +1300,15 @@ exports.initiatives = [
     "meta": {
       "name": "Scientists for Future",
       "link": "https://www.scientists4future.org/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "join-unpaid"
+      ],
       "tagsRelevant": [
-        "science",
-        "education",
-        "is-ngo"
+        "is-ngo",
+        "knowledge-science-and-education",
+        "knowledge-educate-students",
+        "use-protests",
+        "lobby-government"
       ],
       "label": "scientists-for-future"
     },
@@ -1081,13 +1327,24 @@ exports.initiatives = [
     "meta": {
       "name": "Europe Beyond Coal",
       "link": "https://www.beyond-coal.eu",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "is-think-tank",
+        "goal-decentralized-energy-ownership",
+        "knowledge-science-and-education",
+        "target-public"
+      ],
       "tagsRelevant": [
-        "coal",
-        "is-grassroots",
-        "education",
+        "is-ngo",
         "is-network",
-        "is-ngo"
+        "good-at-energy-transformation",
+        "goal-fight-fossil",
+        "goal-divestment",
+        "knowledge-assess-companies",
+        "propagate-divestment",
+        "lobby-government",
+        "target-government",
+        "lobby-corporations",
+        "target-corporations"
       ],
       "label": "europe-beyond-coal"
     },
@@ -1103,10 +1360,12 @@ exports.initiatives = [
       "link": "https://bankwatch.org/",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "finance",
+        "is-ngo",
+        "is-network",
         "goal-divestment",
-        "watchdog",
-        "is-ngo"
+        "knowledge-assess-companies",
+        "propagate-divestment",
+        "lobby-government"
       ],
       "label": "bank-watch"
     },
@@ -1120,11 +1379,13 @@ exports.initiatives = [
     "meta": {
       "name": "Development YES - Open Pit Mines NO",
       "link": "https://rozwojtak-odkrywkinie.pl",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "good-at-energy-transformation"
+      ],
       "tagsRelevant": [
-        "coal",
-        "is-grassroots",
-        "is-ngo"
+        "is-ngo",
+        "goal-fight-fossil",
+        "use-protests"
       ],
       "label": "development-yes-open-pit-mines-no"
     },
@@ -1138,13 +1399,14 @@ exports.initiatives = [
     "meta": {
       "name": "REDD.plus",
       "link": "https://www.redd.plus/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "is-ppp",
+        "propagate-conservation"
+      ],
       "tagsRelevant": [
-        "offsetting",
-        "reforestation",
-        "deforestation",
-        "private-sector",
-        "public-sector"
+        "is-owned-by-companies",
+        "goal-carbon-regulation",
+        "goal-reforestation"
       ],
       "label": "redd-dot-plus"
     },
@@ -1158,12 +1420,14 @@ exports.initiatives = [
     "meta": {
       "name": "Voluntary REDD+ Database",
       "link": "http://www.fao.org/forestry/vrd/data/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "propagate-conservation"
+      ],
       "tagsRelevant": [
-        "offsetting",
-        "reforestation",
-        "deforestation",
-        "public-sector"
+        "is-public",
+        "skill-software-engineer",
+        "goal-carbon-regulation",
+        "goal-reforestation"
       ],
       "label": "redd-dot-plus"
     },
@@ -1179,11 +1443,10 @@ exports.initiatives = [
       "link": "https://sandbag.org.uk/",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "legislation",
-        "think-tank",
-        "projection",
-        "science",
-        "ngo"
+        "is-ngo",
+        "is-think-tank",
+        "knowledge-projections",
+        "knowledge-propose-legislation"
       ],
       "label": "sandbag"
     },
@@ -1199,9 +1462,9 @@ exports.initiatives = [
       "link": "https://www.c2es.org/",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "legislation",
         "is-think-tank",
-        "policy",
+        "knowledge-propose-legislation",
+        "target-government",
         "lobby-corporations"
       ],
       "label": "c2es"
@@ -1223,11 +1486,11 @@ exports.initiatives = [
       "link": "https://www.theclimateregistry.org",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "reporting",
-        "measuring",
-        "modelling",
-        "targets-private-sector",
-        "ngo"
+        "is-ngo",
+        "knowledge-projections",
+        "knowledge-assess-companies",
+        "lobby-corporations",
+        "target-corporations"
       ],
       "label": "the-climate-registry"
     },
@@ -1246,12 +1509,16 @@ exports.initiatives = [
     "meta": {
       "name": "EIT Climate-KIC",
       "link": "https://www.climate-kic.org",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "support-grant-for-individuals"
+      ],
       "tagsRelevant": [
-        "think-tank",
-        "network",
-        "financing",
-        "ppp"
+        "is-public",
+        "is-ppp",
+        "is-think-tank",
+        "support-connect-activists-or-initiatives",
+        "support-train-activists",
+        "support-grant-for-projects"
       ],
       "label": "eit-climate-kic"
     },
@@ -1267,9 +1534,15 @@ exports.initiatives = [
       "link": "https://www.foei.org/",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "litigation",
-        "network",
-        "ngo"
+        "is-grassroots",
+        "is-ngo",
+        "is-network",
+        "goal-conservation",
+        "propagate-conservation",
+        "use-litigation",
+        "lobby-government",
+        "target-government",
+        "presence-usa"
       ],
       "label": "friends-of-the-earth"
     },
@@ -1288,14 +1561,19 @@ exports.initiatives = [
     "meta": {
       "name": "Energy Cities",
       "link": "https://energy-cities.eu/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "goal-deploy-nuclear"
+      ],
       "tagsRelevant": [
-        "good-at-cities-and-housing",
-        "is-network",
         "is-public",
-        "divest",
-        "financing",
-        "energy"
+        "is-think-tank",
+        "is-network",
+        "good-at-energy-transformation",
+        "goal-deploy-renewables",
+        "good-at-cities-and-housing",
+        "goal-energy-independent-housing",
+        "goal-increase-communal-energy-efficiency",
+        "presence-netherlands"
       ],
       "label": "energy-cities"
     },
@@ -1324,14 +1602,25 @@ exports.initiatives = [
     "meta": {
       "name": "Transition",
       "link": "https://transitionnetwork.org",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "goal-sustainable-consumption",
+        "goal-conservation",
+        "support-connect-activists-or-initiatives",
+        "propagate-conservation",
+        "use-protests"
+      ],
       "tagsRelevant": [
+        "is-grassroots",
         "is-ngo",
         "is-network",
-        "housing",
-        "is-grassroots",
-        "local",
-        "energy"
+        "good-at-energy-transformation",
+        "goal-decentralized-energy-ownership",
+        "goal-deploy-renewables",
+        "good-at-cities-and-housing",
+        "goal-energy-independent-housing",
+        "goal-increase-communal-energy-efficiency",
+        "support-train-activists",
+        "presence-usa"
       ],
       "label": "transition"
     },
@@ -1362,8 +1651,11 @@ exports.initiatives = [
       "link": "https://www.conservation.org/",
       "tagsInteresting": [],
       "tagsRelevant": [
+        "is-ngo",
         "goal-conservation",
-        "ngo"
+        "propagate-conservation",
+        "lobby-government",
+        "target-government"
       ],
       "label": "conservation"
     },
@@ -1399,10 +1691,13 @@ exports.initiatives = [
       "link": "https://www.wbcsd.org/",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "lobby-corporation",
+        "is-think-tank",
         "is-owned-by-companies",
         "is-network",
-        "think-tank"
+        "join-paid",
+        "lobby-corporations",
+        "target-corporations",
+        "presence-usa"
       ],
       "label": "wbcsd"
     },
@@ -1428,8 +1723,8 @@ exports.initiatives = [
       "link": "https://www.idinsight.org/givinggreen",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "ngo",
-        "efficiency-assessment"
+        "knowledge-assess-initiatives",
+        "presence-usa"
       ],
       "label": "giving-green"
     },
@@ -1443,12 +1738,18 @@ exports.initiatives = [
     "meta": {
       "name": "Clean Air Taskforce",
       "link": "https://www.catf.us/",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "goal-fight-fossil",
+        "goal-carbon-regulation",
+        "goal-sustainable-consumption",
+        "use-litigation",
+        "presence-usa"
+      ],
       "tagsRelevant": [
-        "ngo",
-        "legislation",
-        "energy",
-        "technology"
+        "is-ngo",
+        "is-think-tank",
+        "use-protests",
+        "presence-poland"
       ],
       "label": "catf"
     },
@@ -1464,9 +1765,8 @@ exports.initiatives = [
       "link": "https://www.impactmatters.org/top-lists/climate-change/",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "ngo",
-        "impact-assessment",
-        "tree-planting"
+        "knowledge-assess-initiatives",
+        "scope-global"
       ],
       "label": "impact-matters"
     },
@@ -1480,12 +1780,16 @@ exports.initiatives = [
     "meta": {
       "name": "Rainforest Foundation US",
       "link": "https://rainforestfoundation.org",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "lobby-government",
+        "target-government"
+      ],
       "tagsRelevant": [
         "is-ngo",
-        "rainforest",
+        "goal-reforestation",
         "goal-conservation",
-        "indigenous-communities"
+        "propagate-conservation",
+        "presence-usa"
       ],
       "label": "rainforest-foundation"
     },
@@ -1504,9 +1808,21 @@ exports.initiatives = [
     "meta": {
       "name": "CrisisFighters.org",
       "link": "https://www.CrisisFighters.org",
-      "tagsInteresting": [],
+      "tagsInteresting": [
+        "skill-translator",
+        "join-unpaid"
+      ],
       "tagsRelevant": [
-        "is-ngo"
+        "is-ngo",
+        "is-network",
+        "skill-software-engineer",
+        "skill-flyering",
+        "skill-influencer",
+        "skill-project-or-event-management",
+        "skill-social-media-aficionado",
+        "support-connect-activists-or-initiatives",
+        "support-train-activists",
+        "presence-usa"
       ]
     },
     "description": {
