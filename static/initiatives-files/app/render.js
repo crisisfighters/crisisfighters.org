@@ -120,7 +120,7 @@ function renderResultScreen(params, {result: elements}, location) {
         ]
         .join('. ')}
         </p>
-        ${elements.map(renderElement).join('')}
+        ${renderElements(elements)}
         `;
 
     const tag = relevant => tag => {
@@ -149,15 +149,31 @@ function renderResultScreen(params, {result: elements}, location) {
             })
             .join('')}</span>`;
 
-    const renderElement = (element, index) => {
-        switch(element.type){
-            case 'initiatives': return initiativeSet(element, index + 1)
-            case 'restart-link': return restartLink(index + 1);
-            case 'cf-b2b': return crisisFightersB2B(index + 1);
-            case 'ideas': return ideas(index + 1);
-            case 'contribute': return contribute(index + 1);
-            default: return `<p>Unknown: ${element.type}</p>`;
-        }
+    const renderElements = elements => {
+        let gaps = 0;
+        let showedNotFoundMessage = false;
+        return elements.map((element, index) => {
+            const realIndex = index + 1  - gaps;
+            switch(element.type){
+                case 'initiatives': {
+                    const initiatives = queryInitiatives(element.query);
+                    if(initiatives.length === 0) {
+                        gaps++;
+                        if(showedNotFoundMessage) {
+                            return '';
+                        }
+                        showedNotFoundMessage = true;
+                        return nothingFound();
+                    }
+                    return initiativeSet(element.headline, element.description, initiatives, realIndex);
+                }
+                case 'restart-link': return restartLink(realIndex);
+                case 'cf-b2b': return crisisFightersB2B(realIndex);
+                case 'ideas': return ideas(realIndex);
+                case 'contribute': return contribute(realIndex);
+                default: return `<p>Unknown: ${element.type}</p>`;
+            }
+        }).join('');
     }
     
     const restartLink = () => `
@@ -165,6 +181,13 @@ function renderResultScreen(params, {result: elements}, location) {
         <h2>Interested in other initiatives?</h2>
         <p>There are other, very interesting initiatives that you could join as an individual.</p>
         <button>Find Interesting Initiatives</button>
+    </div>`;
+    
+    const nothingFound = () => `
+    <div class="results-element results-help-others">
+        <h2>No Initiatives matched your Criteria</h2>
+        <p>Don't worry. This happens. The easy solution is to select more options that could be relevant to you.</p>
+        <button>Start Over</button>
     </div>`;
 
     const crisisFightersB2B = index => `
@@ -188,12 +211,12 @@ function renderResultScreen(params, {result: elements}, location) {
         <button>Contribute</button>
     </div>`;
 
-    const initiativeSet = ({headline, description, query}, index) =>`
+    const initiativeSet = (headline, description, initiatives, index) =>`
         <div class="results-element results-initiative-set">
             <h2>Suggestion ${index}: ${md.renderInline(headline)}</h2>
             <p>${md.renderInline(description)}</p>
             <div class="results-initiatives-wrapper">
-            ${queryInitiatives(query).map(initiative).join('')}
+            ${initiatives.map(initiative).join('')}
             </div>
         </div>`;
 
