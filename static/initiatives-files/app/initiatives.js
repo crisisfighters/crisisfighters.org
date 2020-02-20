@@ -1,10 +1,10 @@
 var invalidTags = [];
 
-function queryInitiatives(query, isPresentInCity) {
+function queryInitiatives(query) {
     return exports.initiatives
         .filter(initiative => query(
             [...initiative.meta.tagsInteresting, ...initiative.meta.tagsRelevant],
-            isPresentInCity))
+            ))
         .sort((a, b) => 
             [...b.meta.tagsInteresting, ...b.meta.tagsRelevant]
             .filter(t => t.indexOf('good-') === 0)

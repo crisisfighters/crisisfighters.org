@@ -28,6 +28,9 @@ background-color: aquamarine;
 .results-tag-support {
     background-color: lightblue
 }
+.results-tag-goal {
+    background-color: white;
+}
 .results-tag-target {
     background-color: pink
 }

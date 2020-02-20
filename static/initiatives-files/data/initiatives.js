@@ -72,7 +72,8 @@ exports.initiatives = [
         "support-connect-activists-or-initiatives",
         "support-train-activists",
         "use-civil-disobedience",
-        "use-protests"
+        "use-protests",
+        "l-global"
       ]
     },
     "description": {
@@ -123,7 +124,9 @@ exports.initiatives = [
         "lobby-government",
         "target-government",
         "lobby-corporations",
-        "target-corporations"
+        "target-corporations",
+        "l-global",
+        "l-de"
       ]
     },
     "description": {
@@ -169,7 +172,9 @@ exports.initiatives = [
         "lobby-government",
         "target-government",
         "lobby-corporations",
-        "target-corporations"
+        "target-corporations",
+        "l-global",
+        "l-de"
       ]
     },
     "description": {
@@ -210,7 +215,8 @@ exports.initiatives = [
         "goal-fight-fossil",
         "use-civil-disobedience",
         "use-protests",
-        "target-corporations"
+        "target-corporations",
+        "l-de"
       ],
       "label": "ende-gelaende"
     },
@@ -268,7 +274,8 @@ exports.initiatives = [
         "lobby-government",
         "target-government",
         "lobby-corporations",
-        "target-corporations"
+        "target-corporations",
+        "l-us"
       ]
     },
     "established": {
@@ -341,7 +348,8 @@ exports.initiatives = [
         "goal-fight-fossil",
         "use-civil-disobedience",
         "use-protests",
-        "target-corporations"
+        "target-corporations",
+        "l-pl"
       ],
       "label": "limity-jsme-my"
     }
@@ -363,7 +371,9 @@ exports.initiatives = [
         "support-train-activists",
         "use-litigation",
         "lobby-government",
-        "target-government"
+        "target-government",
+        "l-global",
+        "l-us"
       ]
     },
     "description": {
@@ -419,7 +429,8 @@ exports.initiatives = [
         "goal-conservation",
         "propagate-conservation",
         "lobby-government",
-        "target-government"
+        "target-government",
+        "l-us"
       ]
     },
     "established": {
@@ -534,7 +545,8 @@ exports.initiatives = [
         "join-internship",
         "knowledge-science-and-education",
         "lobby-government",
-        "target-government"
+        "target-government",
+        "l-global"
       ],
       "label": "ucs"
     },
@@ -593,7 +605,8 @@ exports.initiatives = [
         "use-civil-disobedience",
         "use-protests",
         "target-government",
-        "target-corporations"
+        "target-corporations",
+        "l-de"
       ],
       "label": "hambacher-forst"
     },
@@ -648,7 +661,8 @@ exports.initiatives = [
         "skill-jurist",
         "join-paid",
         "join-internship",
-        "knowledge-science-and-education"
+        "knowledge-science-and-education",
+        "l-us"
       ]
     }
   },
@@ -664,7 +678,8 @@ exports.initiatives = [
         "is-public",
         "knowledge-projections",
         "knowledge-science-and-education",
-        "lobby-government"
+        "lobby-government",
+        "l-global"
       ],
       "label": "IPCC"
     },
@@ -802,7 +817,8 @@ exports.initiatives = [
         "good-new-norms-and-values",
         "support-connect-activists-or-initiatives",
         "use-protests",
-        "target-government"
+        "target-government",
+        "l-global"
       ]
     },
     "description": {
@@ -913,7 +929,8 @@ exports.initiatives = [
         "skill-jurist",
         "use-litigation",
         "target-government",
-        "target-corporations"
+        "target-corporations",
+        "l-nl"
       ]
     },
     "description": {
@@ -986,7 +1003,9 @@ exports.initiatives = [
         "is-ngo",
         "is-network",
         "join-internship",
-        "support-connect-activists-or-initiatives"
+        "support-connect-activists-or-initiatives",
+        "l-global",
+        "l-us"
       ],
       "label": "climate-action-network"
     },
@@ -1077,7 +1096,8 @@ exports.initiatives = [
         "is-ngo",
         "knowledge-science-and-education",
         "support-connect-activists-or-initiatives",
-        "support-train-activists"
+        "support-train-activists",
+        "l-global"
       ],
       "label": "climate-realtiy-project"
     },
@@ -1134,7 +1154,8 @@ exports.initiatives = [
         "support-connect-activists-or-initiatives",
         "support-grant-for-projects",
         "support-grant-for-individuals",
-        "target-government"
+        "target-government",
+        "l-global"
       ],
       "label": "climate-emergency-fund"
     },
@@ -1179,7 +1200,8 @@ exports.initiatives = [
       ],
       "tagsRelevant": [
         "knowledge-propose-legislation",
-        "target-government"
+        "target-government",
+        "l-de"
       ],
       "label": "12-06-2020-olympia"
     },
@@ -1205,7 +1227,8 @@ exports.initiatives = [
         "is-ngo",
         "knowledge-propose-legislation",
         "lobby-government",
-        "target-government"
+        "target-government",
+        "l-de"
       ],
       "label": "12-06-2020-olympia"
     },
@@ -1229,7 +1252,8 @@ exports.initiatives = [
         "is-ngo",
         "is-network",
         "lobby-government",
-        "lobby-corporations"
+        "lobby-corporations",
+        "l-de"
       ],
       "label": "hamburg-muss-handeln"
     },
@@ -1321,7 +1345,56 @@ exports.initiatives = [
         "lobby-government",
         "target-government",
         "lobby-corporations",
-        "target-corporations"
+        "target-corporations",
+        "l-al",
+        "l-ad",
+        "l-at",
+        "l-bg",
+        "l-by",
+        "l-be",
+        "l-ba",
+        "l-hr",
+        "l-cy",
+        "l-cz",
+        "l-ee",
+        "l-de",
+        "l-dk",
+        "l-fi",
+        "l-fr",
+        "l-gf",
+        "l-pf",
+        "l-tf",
+        "l-gi",
+        "l-gr",
+        "l-gl",
+        "l-va",
+        "l-hu",
+        "l-is",
+        "l-ie",
+        "l-im",
+        "l-it",
+        "l-lv",
+        "l-li",
+        "l-lt",
+        "l-lu",
+        "l-md",
+        "l-mc",
+        "l-mn",
+        "l-ms",
+        "l-me",
+        "l-ma",
+        "l-nl",
+        "l-no",
+        "l-pl",
+        "l-pt",
+        "l-ro",
+        "l-ru",
+        "l-rs",
+        "l-sk",
+        "l-si",
+        "l-es",
+        "l-se",
+        "l-ch"
       ],
       "label": "europe-beyond-coal"
     },
@@ -1400,7 +1473,6 @@ exports.initiatives = [
       ],
       "tagsRelevant": [
         "is-public",
-        "skill-software-engineer",
         "goal-carbon-regulation",
         "goal-reforestation"
       ],
@@ -1493,7 +1565,57 @@ exports.initiatives = [
         "is-think-tank",
         "support-connect-activists-or-initiatives",
         "support-train-activists",
-        "support-grant-for-projects"
+        "support-grant-for-projects",
+        "l-al",
+        "l-ad",
+        "l-at",
+        "l-bg",
+        "l-by",
+        "l-be",
+        "l-ba",
+        "l-hr",
+        "l-cy",
+        "l-cz",
+        "l-ee",
+        "l-de",
+        "l-dk",
+        "l-fi",
+        "l-fr",
+        "l-gf",
+        "l-pf",
+        "l-tf",
+        "l-gi",
+        "l-gr",
+        "l-gl",
+        "l-va",
+        "l-hu",
+        "l-is",
+        "l-ie",
+        "l-im",
+        "l-it",
+        "l-lv",
+        "l-li",
+        "l-lt",
+        "l-lu",
+        "l-md",
+        "l-mc",
+        "l-mn",
+        "l-ms",
+        "l-me",
+        "l-ma",
+        "l-nl",
+        "l-no",
+        "l-pl",
+        "l-pt",
+        "l-ro",
+        "l-ru",
+        "l-rs",
+        "l-sk",
+        "l-si",
+        "l-es",
+        "l-se",
+        "l-ch",
+        "l-tr"
       ],
       "label": "eit-climate-kic"
     },
@@ -1518,7 +1640,8 @@ exports.initiatives = [
         "propagate-conservation",
         "use-litigation",
         "lobby-government",
-        "target-government"
+        "target-government",
+        "l-global"
       ],
       "label": "friends-of-the-earth"
     },
@@ -1548,7 +1671,57 @@ exports.initiatives = [
         "goal-deploy-renewables",
         "good-cities-and-housing",
         "goal-energy-independent-housing",
-        "goal-increase-communal-energy-efficiency"
+        "goal-increase-communal-energy-efficiency",
+        "l-al",
+        "l-ad",
+        "l-at",
+        "l-bg",
+        "l-by",
+        "l-be",
+        "l-ba",
+        "l-hr",
+        "l-cy",
+        "l-cz",
+        "l-ee",
+        "l-de",
+        "l-dk",
+        "l-fi",
+        "l-fr",
+        "l-gf",
+        "l-pf",
+        "l-tf",
+        "l-gi",
+        "l-gr",
+        "l-gl",
+        "l-va",
+        "l-hu",
+        "l-is",
+        "l-ie",
+        "l-im",
+        "l-it",
+        "l-lv",
+        "l-li",
+        "l-lt",
+        "l-lu",
+        "l-md",
+        "l-mc",
+        "l-mn",
+        "l-ms",
+        "l-me",
+        "l-ma",
+        "l-nl",
+        "l-no",
+        "l-pl",
+        "l-pt",
+        "l-ro",
+        "l-ru",
+        "l-rs",
+        "l-sk",
+        "l-si",
+        "l-es",
+        "l-se",
+        "l-ch",
+        "l-tr"
       ],
       "label": "energy-cities"
     },
@@ -1582,8 +1755,7 @@ exports.initiatives = [
         "goal-sustainable-consumption",
         "goal-conservation",
         "support-connect-activists-or-initiatives",
-        "propagate-conservation",
-        "use-protests"
+        "propagate-conservation"
       ],
       "tagsRelevant": [
         "is-grassroots",
@@ -1596,7 +1768,8 @@ exports.initiatives = [
         "good-cities-and-housing",
         "goal-energy-independent-housing",
         "goal-increase-communal-energy-efficiency",
-        "support-train-activists"
+        "support-train-activists",
+        "l-global"
       ],
       "label": "transition"
     },
@@ -1672,7 +1845,8 @@ exports.initiatives = [
         "is-network",
         "join-paid",
         "lobby-corporations",
-        "target-corporations"
+        "target-corporations",
+        "l-global"
       ],
       "label": "wbcsd"
     },
@@ -1698,7 +1872,8 @@ exports.initiatives = [
       "link": "https://www.idinsight.org/givinggreen",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "knowledge-assess-initiatives"
+        "knowledge-assess-initiatives",
+        "l-global"
       ],
       "label": "giving-green"
     },
@@ -1714,14 +1889,14 @@ exports.initiatives = [
       "link": "https://www.catf.us/",
       "tagsInteresting": [
         "goal-fight-fossil",
-        "goal-carbon-regulation",
         "goal-sustainable-consumption",
         "use-litigation"
       ],
       "tagsRelevant": [
         "is-ngo",
         "is-think-tank",
-        "use-protests"
+        "use-protests",
+        "l-us"
       ],
       "label": "catf"
     },
@@ -1737,7 +1912,8 @@ exports.initiatives = [
       "link": "https://www.impactmatters.org/top-lists/climate-change/",
       "tagsInteresting": [],
       "tagsRelevant": [
-        "knowledge-assess-initiatives"
+        "knowledge-assess-initiatives",
+        "l-global"
       ],
       "label": "impact-matters"
     },
@@ -1759,7 +1935,8 @@ exports.initiatives = [
         "is-ngo",
         "goal-reforestation",
         "goal-conservation",
-        "propagate-conservation"
+        "propagate-conservation",
+        "l-us"
       ],
       "label": "rainforest-foundation"
     },
@@ -1791,7 +1968,8 @@ exports.initiatives = [
         "skill-project-or-event-management",
         "skill-social-media-aficionado",
         "support-connect-activists-or-initiatives",
-        "support-train-activists"
+        "support-train-activists",
+        "l-global"
       ]
     },
     "description": {

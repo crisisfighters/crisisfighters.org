@@ -1,7 +1,9 @@
 exports.logic = {
     sortOrder: ['good', 'is', 'goal', 'use', 'support'],
     tagShouldBeVisibleInList: tag => tag.indexOf('skill-') !== 0
-            && tag.indexOf('join-') !== 0,
+        && tag.indexOf('join-') !== 0
+        && tag.indexOf('l-') !== 0
+        && tag.indexOf('propagate-') !== 0,
     determineResultDescriptor: (params, location) => {
         if(params.role === 'user-special-city-official') {
             return {
@@ -74,40 +76,25 @@ exports.logic = {
                     type: 'initiatives',
                     headline: 'These are your relevant initiatives',
                     description: 'If you fell something is wrong or missing, please reach out or contribute',
-                    query: (tags, isPresentInCity) => {
+                    query: tags => {
                         // console.log(params.goals);
                         return tags.some(tag => params.types.includes(tag))
-                        // && tags.some(tag => params.goals.includes(tag))
+                        && tags.some(tag => params.goals.includes(tag))
                         && ( 
                              params.investment === 'user-investment-money'
                             || tags.some(tag => params.skills.includes(tag))
                         )
                         && (
-                            tags.includes('is-grassroots')
+                            params.investment === 'user-investment-money'
                             ||
-                            params.investment === 'user-investment-time'
-                            && isPresentInCity()
+                            (
+                                // user-investment-time
+                                tags.includes('l-global')
+                                ||
+                                tags.includes('l-' + location.countryCode)
+                            )
                         )
                         },
-                    // query: (tags, isPresentInCity) =>
-                    //     tags.some(tag => params.types.includes(tag))
-                    //     && tags.some(tag => params.goals.includes(tag))
-                    //     && tags.some(tag => params.skills.includes(tag))
-                    //     && (
-                    //         tags.includes('is-grassroots')
-                    //         ||
-                    //         params.investment === 'user-investment-time'
-                    //         && isPresentInCity()
-                    //     ),
-                    // query: '(' + [
-                    //     params.types.join(' || '),
-                    //     params.goals.join(' || '),
-                    //     params.skills.join(' || '),
-                    //     params.investment === 'user-investment-time'
-                    //     ? 'is-grassroots || {{LOCATION_CONDITION}}'
-                    //     : 'is-grassroots'
-                    // ].filter(e => e)
-                    // .join(') && (') + ')',
                 }, 
                 ...(
                     params.skills.includes('skill-creative-media')
