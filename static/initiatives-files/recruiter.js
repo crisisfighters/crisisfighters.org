@@ -194,7 +194,7 @@ function renderResultScreen(params, {result: elements, location}) {
         <div class="initiative">
             <h3><a href="${initiative.meta.link}" target="_blank">${initiative.meta.name}</a></h3>
             <div class="initiative-tag-wrapper">
-                ${initiative.meta.tags ? initiative.meta.tags.map(tag).join('') : ''}
+                ${[...initiative.meta.tagsInteresting, ...initiative.meta.tagsRelevant].map(tag).join('')}
             </div
             <p>${md.renderInline(initiative.description ? initiative.description.content : '')}</p>
         </div>
@@ -207,7 +207,9 @@ function renderResultScreen(params, {result: elements, location}) {
     document.getElementById('recruiter-screen').innerHTML = renderResults(elements);
 }
 function queryInitiatives(query, isPresentInCity) {
-    return exports.data.filter(initiative => query(initiative.meta.tags || [], isPresentInCity));
+    return exports.initiatives.filter(initiative => query(
+        [...initiative.meta.tagsInteresting, ...initiative.meta.tagsRelevant],
+        isPresentInCity));
 }
 
 function determineResultDescriptor(params) {
@@ -285,8 +287,8 @@ function determineResultDescriptor(params) {
                     // console.log(params.goals);
                     return tags.some(tag => params.types.includes(tag))
                     // && tags.some(tag => params.goals.includes(tag))
-                    && (
-                        params.investment === 'user-investment-money'
+                    && ( 
+                         params.investment === 'user-investment-money'
                         || tags.some(tag => params.skills.includes(tag))
                     )
                     && (
