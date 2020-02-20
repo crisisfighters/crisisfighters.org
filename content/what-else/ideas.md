@@ -27,10 +27,9 @@ Examples: Are you good at giving presentations? - Get a training as climate lead
 
 flyGood.io will be a mobile webapp that allows users of modern smartphones to pay for tree planting initiatives that offset their flights’ CO2e emissions.
 
-* It uses the web payments API to allow payments in 3 clicks (no credit card data needs to be entered)
-* Should provide a MyTaxi/FreeNow like interface to send a 10%, 15% or 20% tip to Fridays for Future or Extinction Rebellion (more initiatives to follow)
-* Can be used by Fridays for Future activists on airports to give out buttons to travellers using it (turning flight shaming into something constructive)
-
+* It uses the web payments API to allow payments in 3 clicks (no credit card data needs to be entered).
+* Should provide a MyTaxi/FreeNow like interface to send a 10%, 15% or 20% tip to Fridays for Future or Extinction Rebellion (more initiatives to follow).
+* Can be used by Fridays for Future activists on airports to give out buttons to travellers using it (turning flight shaming into something constructive).
 
 ### You can make this happen by helping with the design, implementation, Stripe or setting up a legal entity
 * Technical implementation is trivial
@@ -44,3 +43,5 @@ The idea is to give updated overviews on global initiatives that try to change t
 > What strategies work in which country? How can we connect activists worldwide?
 There is no global conference on mitigating the climate crisis that's open to the paying public. The UN organizes very important conferences organized by governments but there is no place for NGOs and activists to exchange strategies and most importantly to network and collaborate on a global scale.
 
+## Find out What the temperatures will be like in 2200 and 2300
+Today’s debate focuses on how hot it will be in 2100. With our current policies we’re most likely to hit 4C, (In 2015, [leading scientists said there’s a 10% chance to end up at 6C](https://www.independent.co.uk/environment/climate-change/global-warming-experts-say-temperatures-could-rise-by-6c-by-2100-with-cataclysmic-results-10193506.html). Emissions kept rising since). What’s not being looked at is that without bringing a halt to emissions soon, temperatures will continue rising afterwards. There’s little point in having an earth that by 2100 at least a few billion people can still inhabit if it becomes uninhabitable a century later.

@@ -12,8 +12,8 @@ menu:
 
 # Who's helping here?
 We're a group of friends, a lot of work has been done so far by
-* Andre  [✉️](mailto:andre@crisisfighters.org)
-* Alexander [✉️](mailto:alexander@crisisfighters.org), [🌐](https://www.alexthiel.de), [LinkedIn](https://www.linkedin.com/in/reasn/)
+* Andre  [✉️](mailto:andre@crisisfighters.org), [Twitter](https://www.twitter.com/andre_oderwas)
+* Alexander [✉️](mailto:alexander@crisisfighters.org), [🌐](https://www.alexthiel.de), [LinkedIn](https://www.linkedin.com/in/reasn/), [Twitter](https://www.twitter.com/alexanderthiel)
 * And many others. [Join us](mailto:hi@crisisfighters.org)!
 
 ## Contact

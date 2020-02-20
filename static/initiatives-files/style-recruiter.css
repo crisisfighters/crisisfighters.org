@@ -1,0 +1,40 @@
+.results-element {
+    border: 1px dashed green;
+    margin: 10px;
+    padding: 10px;
+}
+
+.initiative {
+    background-color: aqua;
+}
+.initiative:nth-child(2) {
+background-color: aquamarine;
+}
+
+.tag {
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    display: inline-block;
+    padding: 4px 6px;
+    margin: 1px;
+    font-size: 0.8rem;
+}
+.tag-relevant {
+    font-weight: bold;
+}
+.tag-use {
+    background-color: lightyellow
+}
+.tag-support {
+    background-color: lightblue
+}
+.tag-goal {
+    background-color: white;
+}
+.tag-target {
+    background-color: pink
+}
+.tag-good {
+    background-color: lightgreen;
+    border: 1px solid green
+}
