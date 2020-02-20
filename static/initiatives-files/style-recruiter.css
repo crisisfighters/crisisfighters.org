@@ -11,7 +11,7 @@
 background-color: aquamarine;
 }
 
-.results-tag {
+.tag {
     border-radius: 5px;
     background-color: #e0e0e0;
     display: inline-block;
@@ -19,22 +19,22 @@ background-color: aquamarine;
     margin: 1px;
     font-size: 0.8rem;
 }
-.results-tag-relevant {
+.tag-relevant {
     font-weight: bold;
 }
-.results-tag-use {
+.tag-use {
     background-color: lightyellow
 }
-.results-tag-support {
+.tag-support {
     background-color: lightblue
 }
-.results-tag-goal {
+.tag-goal {
     background-color: white;
 }
-.results-tag-target {
+.tag-target {
     background-color: pink
 }
-.results-tag-good {
+.tag-good {
     background-color: lightgreen;
     border: 1px solid green
 }

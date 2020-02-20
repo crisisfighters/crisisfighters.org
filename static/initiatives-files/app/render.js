@@ -116,11 +116,30 @@ function renderResultScreen(params, {result: elements}, location) {
         ${elements.map(renderElement).join('')}
         `;
 
+    const tag = relevant => tag => {
+        const classes = [
+            'tag',
+            ...(relevant ? ['tag-relevant'] : []),
+            'tag-' + tag.substr(0, tag.indexOf('-')),
+            'tag-' + tag
+        ];
+        return `
+            <span class="${classes.join(' ')}">${tagToLabel(tag)}</span>
+        `;
+    }
+
     const renderInputTagGroup = (param, responseTags) => 
     `<span class="results-input-tag-group">
         <span class="results-input-tag-group-question">${questionToLabel(param)}: </span>
         ${responseTags
-            .map(tag => `<span class="results-tag input-tag-${tag}">${tagToLabel(tag)}</span>`)
+            .map(tag => {
+                const classes = [
+                    'tag',
+                    'tag-' + tag.substr(0, tag.indexOf('-')),
+                    'tag-' + tag
+                ];
+                return `<span class="${classes.join(' ')}">${tagToLabel(tag)}</span>`
+            })
             .join('')}</span>`;
 
     const renderElement = (element, index) => {
@@ -201,18 +220,6 @@ function renderResultScreen(params, {result: elements}, location) {
             <p>${md.renderInline(initiative.description ? initiative.description.content : '')}</p>
         </div>
         `;
-
-    const tag = relevant => tag => {
-        const classes = [
-            'results-tag',
-            ...(relevant ? ['results-tag-relevant'] : []),
-            'results-tag-' + tag.substr(0, tag.indexOf('-')),
-            'results-tag-' + tag
-        ];
-        return `
-            <span class="${classes.join(' ')}">${tagToLabel(tag)}</span>
-        `;
-    }
     
     document.getElementById('recruiter-screen').innerHTML = renderResults(elements);
 }
