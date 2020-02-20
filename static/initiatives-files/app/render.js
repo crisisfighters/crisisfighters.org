@@ -1,8 +1,15 @@
 
 function renderStartPage() {
     document.getElementById('recruiter-screen').innerHTML = `
-        <h4>Find where you can contribute</h4>
-        <a href="https://services342876.typeform.com/to/H8DLJt">Show questions</a>
+    <div class="initiatives-welcome-wrapper">
+    <h2>Initiatives</h2>
+        <ul>
+            <li>We are working hard to collect all relevant initiatives that fight the climate crisis.</li>
+            <li>Today, we have 50+ initiatives in our databse.</li>
+        </ul>
+        <h3>The Crisis Recruiter</h3>
+        <p>By anwswering a few quick questions, we can show you what initiatives you should invest your time or money into.</p>
+        <a href="https://services342876.typeform.com/to/H8DLJt" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1" style="font-size: 2.0rem; text-align: center;">Where I can help?</a>
         `;
 }
 
@@ -107,7 +114,7 @@ function renderResultScreen(params, {result: elements}, location) {
                 ? [ ...acc, renderInputTagGroup(p, group)]
                 : acc;
             }, []),
-            ...(location
+            ...(location && location.country
                  ? [`Country: ${location.country}.`]
                 : [])
         ]

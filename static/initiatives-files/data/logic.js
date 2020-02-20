@@ -7,13 +7,19 @@ exports.logic = {
     determineResultDescriptor: (params, location) => {
         if(params.role === 'user-special-city-official') {
             return {
+                locationMissing: !location.countryCode,
                 result: [
                     {
                         type: 'initiatives',
                         headline: 'Are you a member of these networks?',
                         description: 'These networks connect and help cities to make housing more energy-efficient and move cities closer to the goal of net carbon neutrality.',
-                        query: tags => tags.includes('good-at-cities-and-housing')
-                        && tags.includes('is-network'),
+                        query: tags => tags.includes('good-cities-and-housing')
+                            && tags.includes('is-network')
+                            && (
+                                tags.includes('l-global')
+                                ||
+                                tags.includes('l-' + location.countryCode)
+                            ),
                     },
                     {
                         type: 'initiatives',
@@ -25,7 +31,12 @@ exports.logic = {
                         type: 'initiatives',
                         headline: 'Support Grassroots Initiatives',
                         description: 'It\'s likely that one or more of these initiatives have local groups in your city. Grassroots initiatives often have a hard time finding space to do workshops or meet. Probably you know how to provide them with desperately needed space at no or small cost.',
-                        query: tags => tags.includes('is-grassroots'),
+                        query: tags => tags.includes('is-grassroots')
+                            && (
+                                tags.includes('l-global')
+                                ||
+                                tags.includes('l-' + location.countryCode)
+                            ),
                     },
                     { type: 'restart-link' },
                 ]
@@ -94,7 +105,7 @@ exports.logic = {
                                 tags.includes('l-' + location.countryCode)
                             )
                         )
-                        },
+                    },
                 }, 
                 ...(
                     params.skills.includes('skill-creative-media')
