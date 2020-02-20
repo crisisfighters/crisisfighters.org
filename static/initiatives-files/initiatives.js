@@ -76,7 +76,8 @@ exports.initiatives = [
       "name": "WWF",
       "link": "http://wwf.panda.org/",
       "label": "wwf",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "conservation",
         "ngo"
       ]
@@ -112,7 +113,8 @@ exports.initiatives = [
       "name": "Greenpeace",
       "link": "https://www.greenpeace.org/international/",
       "label": "greenpeace",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "conservation",
         "ngo"
       ]
@@ -137,7 +139,8 @@ exports.initiatives = [
     "meta": {
       "name": "Ende Gelände",
       "link": "https://www.ende-gelaende.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "goal-fight-fossil",
         "is-grassroots",
         "civil-disobedience",
@@ -193,7 +196,8 @@ exports.initiatives = [
       "name": "CERES",
       "link": "https://www.ceres.org/",
       "label": "ceres",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "lobby-corporations"
       ]
     },
@@ -244,7 +248,8 @@ exports.initiatives = [
     "meta": {
       "name": "Limity Jsme My",
       "link": "https://limityjsmemy.cz/en/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "goal-fight-fossil",
         "czech republic",
         "is-grassroots",
@@ -258,7 +263,8 @@ exports.initiatives = [
       "name": "350.org",
       "link": "https://350.org/",
       "label": "350-org",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "is-grassroots",
         "trainings",
         "is-network"
@@ -356,7 +362,8 @@ exports.initiatives = [
     "meta": {
       "name": "Earthjustice",
       "link": "https://earthjustice.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "litigation"
       ],
       "label": "earthjustice"
@@ -401,7 +408,8 @@ exports.initiatives = [
     "meta": {
       "name": "Union of concerned Scientists",
       "link": "http://ucsusa.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "science"
       ],
       "label": "ucs"
@@ -441,7 +449,8 @@ exports.initiatives = [
     "meta": {
       "name": "Hambacher Forst",
       "link": "https://hambacherforst.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "protest",
         "goal-fight-fossil",
         "civil-disobedience",
@@ -502,7 +511,8 @@ exports.initiatives = [
     "meta": {
       "name": "IPCC",
       "link": "https://www.ipcc.ch/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "government",
         "science"
       ],
@@ -543,7 +553,8 @@ exports.initiatives = [
     "meta": {
       "name": "Green Climate Fund",
       "link": "https://www.greenclimate.fund/home",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "is-fund",
         "is-public"
       ],
@@ -569,7 +580,8 @@ exports.initiatives = [
     "meta": {
       "name": "ClimateWorks",
       "link": "https://www.climateworks.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "is-fund",
         "activist-support",
         "shareholder"
@@ -617,7 +629,8 @@ exports.initiatives = [
       "name": "Fridays for Future",
       "link": "https://fridaysforfuture.org/",
       "label": "fridays-for-future",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "protest",
         "is-grassroots"
       ]
@@ -668,7 +681,8 @@ exports.initiatives = [
       "name": "Sunrise Movement",
       "link": "https://www.sunrisemovement.org/",
       "label": "sunrise",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "is-grassroots",
         "is-ngo",
         "is-network",
@@ -710,7 +724,8 @@ exports.initiatives = [
       "name": "urgenda",
       "link": "https://www.urgenda.nl",
       "label": "urgenda",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "litigation",
         "europe",
         "netherlands"
@@ -741,7 +756,8 @@ exports.initiatives = [
     "meta": {
       "name": "Protect the Planet",
       "link": "https://www.protect-the-planet.de",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "litigation",
         "europe"
       ],
@@ -772,7 +788,8 @@ exports.initiatives = [
     "meta": {
       "name": "CLimate Action Network",
       "link": "http://climatenetwork.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "activist-support",
         "infrastructure"
       ],
@@ -808,7 +825,8 @@ exports.initiatives = [
     "meta": {
       "name": "Urgewald",
       "link": "https://www.urgewald.org",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "use-stock-voting-rights",
         "goal-divestment",
         "fossil",
@@ -856,7 +874,8 @@ exports.initiatives = [
     "meta": {
       "name": "Climate Reality Project",
       "link": "https://www.climaterealityproject.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "activist-support",
         "stipends",
         "training"
@@ -908,7 +927,8 @@ exports.initiatives = [
     "meta": {
       "name": "Climate Emergency Fund",
       "link": "https://climateemergencyfund.org",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "activist-support",
         "stipends",
         "is-fund"
@@ -950,7 +970,8 @@ exports.initiatives = [
     "meta": {
       "name": "12/06/2020 Olympia",
       "link": "https://www.startnext.com/12062020",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "petition",
         "networking",
         "event"
@@ -972,7 +993,8 @@ exports.initiatives = [
     "meta": {
       "name": "German Zero",
       "link": "https://germanzero.de/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "policy",
         "legislation"
       ],
@@ -993,7 +1015,8 @@ exports.initiatives = [
     "meta": {
       "name": "Hamburg muss handeln",
       "link": "http://hamburg-muss-handeln.de/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "is-owned-by-companies",
         "legislation",
         "local"
@@ -1010,7 +1033,8 @@ exports.initiatives = [
     "meta": {
       "name": "Fossil Free",
       "link": "https://gofossilfree.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "is-grassroots",
         "goal-fight-fossil",
         "private-sector",
@@ -1034,7 +1058,8 @@ exports.initiatives = [
     "meta": {
       "name": "Scientists for Future",
       "link": "https://www.scientists4future.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "science",
         "education",
         "is-ngo"
@@ -1056,7 +1081,8 @@ exports.initiatives = [
     "meta": {
       "name": "Europe Beyond Coal",
       "link": "https://www.beyond-coal.eu",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "coal",
         "is-grassroots",
         "education",
@@ -1075,7 +1101,8 @@ exports.initiatives = [
     "meta": {
       "name": "Bankwatch",
       "link": "https://bankwatch.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "finance",
         "goal-divestment",
         "watchdog",
@@ -1093,7 +1120,8 @@ exports.initiatives = [
     "meta": {
       "name": "Development YES - Open Pit Mines NO",
       "link": "https://rozwojtak-odkrywkinie.pl",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "coal",
         "is-grassroots",
         "is-ngo"
@@ -1110,7 +1138,8 @@ exports.initiatives = [
     "meta": {
       "name": "REDD.plus",
       "link": "https://www.redd.plus/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "offsetting",
         "reforestation",
         "deforestation",
@@ -1129,7 +1158,8 @@ exports.initiatives = [
     "meta": {
       "name": "Voluntary REDD+ Database",
       "link": "http://www.fao.org/forestry/vrd/data/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "offsetting",
         "reforestation",
         "deforestation",
@@ -1147,7 +1177,8 @@ exports.initiatives = [
     "meta": {
       "name": "Sandbag",
       "link": "https://sandbag.org.uk/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "legislation",
         "think-tank",
         "projection",
@@ -1166,7 +1197,8 @@ exports.initiatives = [
     "meta": {
       "name": "C2ES",
       "link": "https://www.c2es.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "legislation",
         "is-think-tank",
         "policy",
@@ -1189,7 +1221,8 @@ exports.initiatives = [
     "meta": {
       "name": "The Climate Registry",
       "link": "https://www.theclimateregistry.org",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "reporting",
         "measuring",
         "modelling",
@@ -1213,7 +1246,8 @@ exports.initiatives = [
     "meta": {
       "name": "EIT Climate-KIC",
       "link": "https://www.climate-kic.org",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "think-tank",
         "network",
         "financing",
@@ -1231,7 +1265,8 @@ exports.initiatives = [
     "meta": {
       "name": "Friends of the Earth",
       "link": "https://www.foei.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "litigation",
         "network",
         "ngo"
@@ -1253,7 +1288,8 @@ exports.initiatives = [
     "meta": {
       "name": "Energy Cities",
       "link": "https://energy-cities.eu/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "good-at-cities-and-housing",
         "is-network",
         "is-public",
@@ -1288,7 +1324,8 @@ exports.initiatives = [
     "meta": {
       "name": "Transition",
       "link": "https://transitionnetwork.org",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "is-ngo",
         "is-network",
         "housing",
@@ -1323,7 +1360,8 @@ exports.initiatives = [
     "meta": {
       "name": "Conservation International",
       "link": "https://www.conservation.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "goal-conservation",
         "ngo"
       ],
@@ -1359,7 +1397,8 @@ exports.initiatives = [
     "meta": {
       "name": "World Business Council for Sustainable Development",
       "link": "https://www.wbcsd.org/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "lobby-corporation",
         "is-owned-by-companies",
         "is-network",
@@ -1387,7 +1426,8 @@ exports.initiatives = [
     "meta": {
       "name": "Giving Green",
       "link": "https://www.idinsight.org/givinggreen",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "ngo",
         "efficiency-assessment"
       ],
@@ -1403,7 +1443,8 @@ exports.initiatives = [
     "meta": {
       "name": "Clean Air Taskforce",
       "link": "https://www.catf.us/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "ngo",
         "legislation",
         "energy",
@@ -1421,7 +1462,8 @@ exports.initiatives = [
     "meta": {
       "name": "ImpactMatters - Climate Change",
       "link": "https://www.impactmatters.org/top-lists/climate-change/",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "ngo",
         "impact-assessment",
         "tree-planting"
@@ -1438,7 +1480,8 @@ exports.initiatives = [
     "meta": {
       "name": "Rainforest Foundation US",
       "link": "https://rainforestfoundation.org",
-      "tags": [
+      "tagsInteresting": [],
+      "tagsRelevant": [
         "is-ngo",
         "rainforest",
         "goal-conservation",
