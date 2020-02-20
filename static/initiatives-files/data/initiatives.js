@@ -3,7 +3,6 @@ exports.initiatives = [
     "meta": {
       "name": "ClientEarth",
       "link": "https://www.clientearth.org/",
-      "label": "client-earth",
       "tagsInteresting": [
         "skill-flyering",
         "skill-influencer",
@@ -55,7 +54,6 @@ exports.initiatives = [
     "meta": {
       "name": "Extinction Rebellion",
       "link": "https://rebellion.earth",
-      "label": "extinction-rebellion",
       "tagsInteresting": [
         "is-ngo",
         "target-government"
@@ -70,6 +68,7 @@ exports.initiatives = [
         "skill-social-media-aficionado",
         "skill-translator",
         "join-unpaid",
+        "good-new-norms-and-values",
         "support-connect-activists-or-initiatives",
         "support-train-activists",
         "use-civil-disobedience",
@@ -111,7 +110,6 @@ exports.initiatives = [
     "meta": {
       "name": "WWF",
       "link": "http://wwf.panda.org/",
-      "label": "wwf",
       "tagsInteresting": [
         "skill-flyering",
         "join-unpaid"
@@ -158,7 +156,6 @@ exports.initiatives = [
     "meta": {
       "name": "Greenpeace",
       "link": "https://www.greenpeace.org/international/",
-      "label": "greenpeace",
       "tagsInteresting": [
         "skill-flyering",
         "join-unpaid"
@@ -202,7 +199,6 @@ exports.initiatives = [
         "skill-social-media-aficionado",
         "skill-translator",
         "join-unpaid",
-        "good-energy-transformation",
         "support-connect-activists-or-initiatives",
         "target-government"
       ],
@@ -263,7 +259,6 @@ exports.initiatives = [
     "meta": {
       "name": "CERES",
       "link": "https://www.ceres.org/",
-      "label": "ceres",
       "tagsInteresting": [],
       "tagsRelevant": [
         "is-ngo",
@@ -316,7 +311,6 @@ exports.initiatives = [
     "meta": {
       "name": "World Resource Institution",
       "link": "https://www.wri.org/",
-      "label": "world-resource-institution",
       "tagsInteresting": [],
       "tagsRelevant": [
         "is-ngo",
@@ -334,7 +328,6 @@ exports.initiatives = [
         "skill-project-or-event-management",
         "skill-translator",
         "join-unpaid",
-        "good-energy-transformation",
         "goal-conservation",
         "support-connect-activists-or-initiatives",
         "lobby-government",
@@ -357,7 +350,6 @@ exports.initiatives = [
     "meta": {
       "name": "350.org",
       "link": "https://350.org/",
-      "label": "350-org",
       "tagsInteresting": [],
       "tagsRelevant": [
         "is-grassroots",
@@ -367,6 +359,7 @@ exports.initiatives = [
         "skill-influencer",
         "join-paid",
         "join-internship",
+        "good-new-norms-and-values",
         "support-train-activists",
         "use-litigation",
         "lobby-government",
@@ -418,7 +411,6 @@ exports.initiatives = [
     "meta": {
       "name": "Sierra Club",
       "link": "https://www.sierraclub.org/",
-      "label": "sierra-club",
       "tagsInteresting": [],
       "tagsRelevant": [
         "is-ngo",
@@ -589,7 +581,6 @@ exports.initiatives = [
         "skill-social-media-aficionado",
         "skill-translator",
         "join-unpaid",
-        "good-energy-transformation",
         "support-connect-activists-or-initiatives"
       ],
       "tagsRelevant": [
@@ -651,7 +642,6 @@ exports.initiatives = [
     "meta": {
       "name": "NRDC",
       "link": "https://www.nrdc.org/",
-      "label": "nrdc",
       "tagsInteresting": [],
       "tagsRelevant": [
         "is-ngo",
@@ -796,7 +786,6 @@ exports.initiatives = [
     "meta": {
       "name": "Fridays for Future",
       "link": "https://fridaysforfuture.org/",
-      "label": "fridays-for-future",
       "tagsInteresting": [
         "is-ngo",
         "skill-jurist"
@@ -810,6 +799,7 @@ exports.initiatives = [
         "skill-social-media-aficionado",
         "skill-translator",
         "join-unpaid",
+        "good-new-norms-and-values",
         "support-connect-activists-or-initiatives",
         "use-protests",
         "target-government"
@@ -860,7 +850,6 @@ exports.initiatives = [
     "meta": {
       "name": "Sunrise Movement",
       "link": "https://www.sunrisemovement.org/",
-      "label": "sunrise",
       "tagsInteresting": [
         "skill-jurist",
         "skill-creative-media",
@@ -876,6 +865,7 @@ exports.initiatives = [
         "skill-social-media-aficionado",
         "join-paid",
         "join-unpaid",
+        "good-new-norms-and-values",
         "knowledge-propose-legislation",
         "support-connect-activists-or-initiatives",
         "support-train-activists",
@@ -913,7 +903,6 @@ exports.initiatives = [
     "meta": {
       "name": "urgenda",
       "link": "https://www.urgenda.nl",
-      "label": "urgenda",
       "tagsInteresting": [
         "skill-flyering",
         "skill-influencer",
@@ -1367,9 +1356,7 @@ exports.initiatives = [
     "meta": {
       "name": "Development YES - Open Pit Mines NO",
       "link": "https://rozwojtak-odkrywkinie.pl",
-      "tagsInteresting": [
-        "good-energy-transformation"
-      ],
+      "tagsInteresting": [],
       "tagsRelevant": [
         "is-ngo",
         "goal-fight-fossil",

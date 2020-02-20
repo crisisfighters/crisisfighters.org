@@ -2,7 +2,7 @@
 const { writeFileSync, readFileSync } = require('fs');
 const { join } = require('path');
 
-const path = join(__dirname, '..','static', 'initiatives-files', 'initiatives.js');
+const path = join(__dirname, '..','static', 'initiatives-files','data', 'initiatives.js');
 const newTags = JSON.parse(readFileSync(join(__dirname, 'input.json')).toString());
 const arrayDiff = (a, b) => a
     .filter(x => !b.includes(x))
@@ -22,8 +22,6 @@ const difference = arrayDiff(localNames, newNames);
 if(difference.length !== 0) {
     throw new Error('Existing and new initiatives don\'t match. Differences: ' + difference.join(', '));
 }
-
-
 
 const logDiff = (a, b) => {
     

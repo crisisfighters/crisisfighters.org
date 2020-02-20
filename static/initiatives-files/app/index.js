@@ -32,7 +32,7 @@ function resultScreenApp() {
         country: urlParams.get('country'),
         countryCode: urlParams.get('countryCode'),
     }
-    const resultDescriptor = determineResultDescriptor(params, location);
+    const resultDescriptor = exports.logic.determineResultDescriptor(params, location);
 
     console.log(params);
     if(resultDescriptor.locationMissing) {
@@ -206,21 +206,32 @@ function renderResultScreen(params, {result: elements, location}) {
             </div>
         </div>`;
 
-        const sortOrder = ['good', 'is', 'use', 'support'];
+        const {sortOrder} = exports.logic;
         const sortTags = (a, b) => {
-            return sortOrder.indexOf(a.substr(0, a.indexOf('-')))
-            - sortOrder.indexOf(b.substr(0, b.indexOf('-')))
-            ;
+            const posA = sortOrder.indexOf(a.substr(0, a.indexOf('-')));
+            const posB = sortOrder.indexOf(b.substr(0, b.indexOf('-')));
+            return  posA >= 0 && posB >=0
+                ? posA - posB
+                : posA === -1
+                  ? 1
+                  : -1;
         };
-        const tagShouldBeInList = tag => tag.indexOf('skill-') !== 0
-            && tag.indexOf('join-') !== 0;
+    const {tagShouldBeVisibleInList} = exports.logic;
 
     const initiative = initiative => `
         <div class="initiative">
             <h3><a href="${initiative.meta.link}" target="_blank">${initiative.meta.name}</a></h3>
             <div class="initiative-tag-wrapper">
-            ${initiative.meta.tagsRelevant.sort(sortTags).filter(tagShouldBeInList).map(tag(true)).join('')}
-            ${initiative.meta.tagsInteresting.sort(sortTags).filter(tagShouldBeInList).map(tag(false)).join('')}
+            ${initiative.meta.tagsRelevant
+                .sort(sortTags)
+                .filter(tagShouldBeVisibleInList)
+                .map(tag(true))
+                .join('')}
+            ${initiative.meta.tagsInteresting
+                .sort(sortTags)
+                .filter(tagShouldBeVisibleInList)
+                .map(tag(false))
+                .join('')}
             </div
             <p>${md.renderInline(initiative.description ? initiative.description.content : '')}</p>
         </div>
@@ -239,179 +250,4 @@ function renderResultScreen(params, {result: elements, location}) {
     }
     
     document.getElementById('recruiter-screen').innerHTML = renderResults(elements);
-}
-function queryInitiatives(query, isPresentInCity) {
-    return exports.initiatives
-        .filter(initiative => query(
-            [...initiative.meta.tagsInteresting, ...initiative.meta.tagsRelevant],
-            isPresentInCity))
-        .sort((a, b) => 
-            [...b.meta.tagsInteresting, ...b.meta.tagsRelevant]
-            .filter(t => t.indexOf('good-') === 0)
-            .legth
-            -
-            [...a.meta.tagsInteresting, ...a.meta.tagsRelevant]
-            .filter(t => t.indexOf('good-') === 0)
-            .length
-        );
-}
-
-function determineResultDescriptor(params, location) {
-    if(params.role === 'user-special-city-official') {
-        return {
-            result: [
-                {
-                    type: 'initiatives',
-                    headline: 'Are you a member of these networks?',
-                    description: 'These networks connect and help cities to make housing more energy-efficient and move cities closer to the goal of net carbon neutrality.',
-                    query: tags => tags.includes('good-at-cities-and-housing')
-                    && tags.includes('is-network'),
-                },
-                {
-                    type: 'initiatives',
-                    headline: 'Does your Municipality own stock?',
-                    description: 'These initiatives let you transfer your stock voting rights. They then go to annual meetings to exercise these rights in the best interest of sustainable development, fighting the climate crisis and protecting human rights.',
-                    query: tags => tags.includes('use-stock-voting-rights'),
-                },
-                {
-                    type: 'initiatives',
-                    headline: 'Support Grassroots Initiatives',
-                    description: 'It\'s likely that one or more of these initiatives have local groups in your city. Grassroots initiatives often have a hard time finding space to do workshops or meet. Probably you know how to provide them with desperately needed space at no or small cost.',
-                    query: tags => tags.includes('is-grassroots'),
-                },
-                { type: 'restart-link' },
-            ]
-        };
-
-    } else if(params.role === 'user-special-high-in-corporate') {
-        return {
-            result : [
-                {
-                    type: 'initiatives',
-                    headline: 'These Initiatives work with Corporations',
-                    description: 'TODO tags',
-                    query: tags => 
-                    tags.includes('lobby-corporations')
-                    || tags.includes('is-owned-by-companies'),
-                },
-                { type: 'cf-b2b' },
-                { type: 'restart-link' },
-            ],
-        };
-
-    } else if(params.role === 'user-special-high-in-ngo') {
-        return {
-            result: [
-                {
-                    type: 'initiatives',
-                    headline: 'These Funds might support you',
-                    description: 'Of course this depends on what kind of NGO you run and your financial needs. These funds try their best at providing resources to individuals or initiatives that fight the climate crisis.',
-                    query: tags => tags.includes('is-fund'),
-                },
-                {
-                    type: 'initiatives',
-                    headline: 'Thought about joining a network?',
-                    description: 'The movement is stronger together. These networks connect initiatives and individuals to exchange ideas and coordinate.',
-                    query: tags => tags.includes('is-network'),
-                },
-                { type: 'restart-link' },
-            ]
-        };
-    }
-
-    // assuming user-special-none'
-    return {
-        locationMissing: params.investment === 'user-investment-time'
-                        && !location.countryCode,
-        result: [
-            {
-                type: 'initiatives',
-                headline: 'These are your relevant initiatives',
-                description: 'If you fell something is wrong or missing, please reach out or contribute',
-                query: (tags, isPresentInCity) => {
-                    // console.log(params.goals);
-                    return tags.some(tag => params.types.includes(tag))
-                    // && tags.some(tag => params.goals.includes(tag))
-                    && ( 
-                         params.investment === 'user-investment-money'
-                        || tags.some(tag => params.skills.includes(tag))
-                    )
-                    && (
-                        tags.includes('is-grassroots')
-                        ||
-                        params.investment === 'user-investment-time'
-                        && isPresentInCity()
-                    )
-                    },
-                // query: (tags, isPresentInCity) =>
-                //     tags.some(tag => params.types.includes(tag))
-                //     && tags.some(tag => params.goals.includes(tag))
-                //     && tags.some(tag => params.skills.includes(tag))
-                //     && (
-                //         tags.includes('is-grassroots')
-                //         ||
-                //         params.investment === 'user-investment-time'
-                //         && isPresentInCity()
-                //     ),
-                // query: '(' + [
-                //     params.types.join(' || '),
-                //     params.goals.join(' || '),
-                //     params.skills.join(' || '),
-                //     params.investment === 'user-investment-time'
-                //     ? 'is-grassroots || {{LOCATION_CONDITION}}'
-                //     : 'is-grassroots'
-                // ].filter(e => e)
-                // .join(') && (') + ')',
-            }, 
-            ...(
-                params.skills.includes('skill-creative-media')
-                ? [{
-                    type: 'creative-brief'
-                }]
-                : []
-            ),
-            { type: 'ideas' },
-            { type: 'contribute' },
-        ]
-    };
-    throw new Error('Could not determine');
-}
-
-function labelToTag(label) {
-    for(let tag in exports.tagLabels) {
-        if(exports.tagLabels[tag] === label) {
-            return tag;
-        }
-    }
-    if(!invalidTags.includes("label: " + label)) {
-        invalidTags.push("label: " + label);
-    }
-    return null;
-}
-
-function tagToLabel(tag) {
-    for(let tagEntry in exports.tagLabels) {
-        if(tagEntry === tag) {
-            return exports.tagLabels[tag];
-        }
-    }
-    if(!invalidTags.includes(tag)) {
-        invalidTags.push(tag);
-    }
-    return null;
-}
-
-function logInvalidTags(){
-    console.log('Invalid Tags:');
-    console.log(invalidTags);
-}
-
-function questionToLabel(param){
-    return ({
-        role: 'Special Role',
-        goals: 'Goals',
-        types: 'Types of Initiative',
-        skills: 'Skills',
-        investment: 'Your Contribution',
-    })[param];
 }
