@@ -71,7 +71,14 @@ exports.logic = {
                         type: 'initiatives',
                         headline: 'Thought about joining a network?',
                         description: 'The movement is stronger together. These networks connect initiatives and individuals to exchange ideas and coordinate.',
-                        query: tags => tags.includes('is-network'),
+                        query: tags => tags.includes('is-network')
+                            && tags.includes('support-connect-activists-or-initiatives'),
+                    },
+                    {
+                        type: 'initiatives',
+                        headline: 'Here the members of your NGO can get training?',
+                        description: 'Many initiatives offer training and educational resources for activists. Your NGO can benefit from these resources.',
+                        query: tags => tags.includes('support-train-activists'),
                     },
                     { type: 'restart-link' },
                 ],

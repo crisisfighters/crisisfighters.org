@@ -1961,7 +1961,6 @@ exports.initiatives = [
       ],
       "tagsRelevant": [
         "is-ngo",
-        "is-network",
         "skill-software-engineer",
         "skill-flyering",
         "skill-influencer",
