@@ -786,7 +786,7 @@ exports.initiatives = [
   },
   {
     "meta": {
-      "name": "CLimate Action Network",
+      "name": "Climate Action Network",
       "link": "http://climatenetwork.org/",
       "tagsInteresting": [],
       "tagsRelevant": [
@@ -1499,5 +1499,19 @@ exports.initiatives = [
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-16"
     }
+  }, {
+    "meta": {
+      "name": "CrisisFighters.org",
+      "link": "https://www.CrisisFighters.org",
+      "tagsInteresting": [],
+      "tagsRelevant": [
+        "is-ngo"
+      ]
+    },
+    "description": {
+      "content": "CrisisFighters collect information on all relevant initiatives fighting the climate crisis to allow interested people to quickly find out where to best invest their time.",
+      "updatedBy": "Alexander",
+      "updatedAt": "2020-02-20"
+    },
   }
 ];
