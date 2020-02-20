@@ -44,14 +44,36 @@ exports.logic = {
     
         } else if(params.role === 'user-special-high-in-corporate') {
             return {
+                locationMissing: !location.countryCode,
                 result : [
                     {
                         type: 'initiatives',
                         headline: 'These Initiatives work with Corporations',
                         description: 'TODO tags',
                         query: tags => 
-                        tags.includes('lobby-corporations')
-                        || tags.includes('is-owned-by-companies'),
+                            (
+                                tags.includes('lobby-corporations')
+                                ||
+                                tags.includes('is-owned-by-companies')
+                            )
+                            && (
+                                tags.includes('l-global')
+                                ||
+                                tags.includes('l-' + location.countryCode)
+                            ),
+                    },
+                    {
+                        type: 'initiatives',
+                        headline: 'Is your Company part of these networks?',
+                        description: 'These initiatives connect companies to support each other in realizing a more sustainable vision for the future.',
+                        query: tags => 
+                            tags.includes('is-network')
+                            && tags.includes('target-corporations')
+                            && (
+                                tags.includes('l-global')
+                                ||
+                                tags.includes('l-' + location.countryCode)
+                            ),
                     },
                     { type: 'cf-b2b' },
                     { type: 'restart-link' },
