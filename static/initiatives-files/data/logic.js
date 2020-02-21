@@ -1,4 +1,5 @@
 exports.logic = {
+    surveyLink: 'https://services342876.typeform.com/to/H8DLJt',
     sortOrder: ['good', 'is', 'goal', 'use', 'support'],
     tagShouldBeVisibleInList: tag => tag.indexOf('skill-') !== 0
         && tag.indexOf('join-') !== 0

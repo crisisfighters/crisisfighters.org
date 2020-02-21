@@ -1,4 +1,9 @@
 
+
+function button(link, label) {
+    return `<a href="${link}" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1" style="font-size: 2.0rem; text-align: center;">${label}</a>`
+};
+
 function renderStartPage() {
     document.getElementById('recruiter-screen').innerHTML = `
     <div class="initiatives-welcome-wrapper">
@@ -9,7 +14,7 @@ function renderStartPage() {
         </ul>
         <h3>The Crisis Recruiter</h3>
         <p>By anwswering a few quick questions, we can show you what initiatives you should invest your time or money into.</p>
-        <a href="https://services342876.typeform.com/to/H8DLJt" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1" style="font-size: 2.0rem; text-align: center;">Where I can help?</a>
+        ${button(exports.logic.surveyLink, 'Where can I help?')}
         `;
 }
 
@@ -104,7 +109,7 @@ function renderResultScreen(params, {result: elements}, location) {
     
     const renderResults = elements => `
         <h4>The data you entered
-        (<a href="https://services342876.typeform.com/to/H8DLJt">start over</a>)
+        (<a href="${exports.logic.surveyLink}">start over</a>)
         </h4>
         <p>
         ${[
@@ -169,7 +174,7 @@ function renderResultScreen(params, {result: elements}, location) {
                 }
                 case 'restart-link': return restartLink(realIndex);
                 case 'cf-b2b': return crisisFightersB2B(realIndex);
-                case 'ideas': return ideas(realIndex);
+                case '': return ideas(realIndex);
                 case 'contribute': return contribute(realIndex);
                 default: return `<p>Unknown: ${element.type}</p>`;
             }
@@ -180,35 +185,36 @@ function renderResultScreen(params, {result: elements}, location) {
     <div class="results-element results-help-others">
         <h2>Interested in other initiatives?</h2>
         <p>There are other, very interesting initiatives that you could join as an individual.</p>
-        <button>Find Interesting Initiatives</button>
+        ${button(exports.logic.surveyLink, 'Start Over')}
     </div>`;
     
     const nothingFound = () => `
     <div class="results-element results-help-others">
         <h2>No Initiatives Match your Criteria</h2>
         <p>Don't worry. This happens. The easy solution is to select more options that could be relevant to you.</p>
-        <button>Start Over</button>
+        ${button(exports.logic.surveyLink, 'Start Over')}
     </div>`;
 
     const crisisFightersB2B = index => `
     <div class="results-element results-crisisfighters-b2b">
         <h2>Suggestion ${index}: Make your company part of the solution</h2>
         <p>Ask your employees to put one hour per month into improving CrisisFighters and talk about it to get more people to engage.</p>
-        <button>CrisisFighters B2B</button>
+        ${button('/b2b', 'CrisisFighters B2B')}
     </div>`;
 
     const ideas = index => `
     <div class="results-element results-ideas">
         <h2>Suggestion ${index}: Start Your Own</h2>
         <p>There are many good ideas out there for how you can invest your time best. We collect some of them. Check them out, use them and add your own!</p>
-        <button>Show Ideas</button>
+        ${button('/what-else/ideas', 'Ideas')}
     </div>`;
 
     const contribute = index => `
     <div class="results-element results-contribute">
         <h2>Suggestion ${index}: Help CrisisFighters.org!</h2>
         <p>TODO copy. Crowd-sourcing, talking about it</p>
-        <button>Contribute</button>
+        ${button('/contribute', 'Contribute')}
+
     </div>`;
 
     const initiativeSet = (headline, description, initiatives, index) =>`
