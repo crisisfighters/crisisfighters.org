@@ -254,11 +254,6 @@ exports.initiatives = [
       "content": "[Facebook](https://www.facebook.com/BaggerStoppen/): 37.461\n [Twitter](https://twitter.com/Ende__Gelaende): 32.800\n [Instagram](https://www.instagram.com/ende__gelaende/): 30.938",
       "updatedBy": "Andre",
       "updatedAt": "2019-11-13"
-    },
-    "pressArticles": {
-      "content": "They have a [press section](https://www.ende-gelaende.org/en/pressreview/) with a lot of english and german press releases of media and of themself.",
-      "updatedBy": "Andre",
-      "updatedAt": "2019-11-13"
     }
   },
   {
@@ -1258,7 +1253,7 @@ exports.initiatives = [
       "label": "hamburg-muss-handeln"
     },
     "description": {
-      "content": "A coalition of 300+ companies and organizations from Hamburg to express support for the demands of Fridays for Future. Also provides advice for upcoming state elections.",
+      "content": "An open letter addresses at local governments to embrace Fridays for Future's demands. 300+ companies and organizations from Hamburg signed it. Hamburg muss handeln also provides climate-focused advice for upcoming state elections.",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-15"
     }
@@ -1319,7 +1314,7 @@ exports.initiatives = [
       "updatedAt": "2020-02-15"
     },
     "established": {
-      "content": "Probably [2019](https://www.scientists4future.org/about/faq/)",
+      "content": "[2018/2019](https://www.scientists4future.org/about/faq/)",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-15"
     }
@@ -1399,7 +1394,7 @@ exports.initiatives = [
       "label": "europe-beyond-coal"
     },
     "description": {
-      "content": "They pressure governments, investors and insurers to stop supporting extraction and burning of coal in Europe. They track all planned and running [coal plants in the EU](https://beyond-coal.eu/data/) with data on health impact and emissions Europe Beyond Coal is supported by HEAL, WWF, Foundation “Development YES – Open-Pit Mines NO”, Greenpeace, CEE Bankwatch, ClientEarth and CAN Europe",
+      "content": "They raise awareness with decision makers and the public about the impact of current and planned coal-based power-supplies. This puts pressure governments, investors and insurers to stop supporting extraction and burning of coal in Europe. They track all planned and running [coal plants in the EU](https://beyond-coal.eu/data/) with data on health impact and emissions Europe Beyond Coal is supported by HEAL, WWF, Foundation “Development YES – Open-Pit Mines NO”, Greenpeace, CEE Bankwatch, ClientEarth and CAN Europe",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-15"
     }
@@ -1498,7 +1493,7 @@ exports.initiatives = [
       "label": "sandbag"
     },
     "description": {
-      "content": "This registry visualizes REDD+ initiatives in members of the [Coalition of Rainforest Nations](https://www.rainforestcoalition.org). It shows which countries (without rainforests) are funding these initiatives. The data doesn't come with dates and seems a bit abandoned overall. It's hosted by the FAO (Food and Agriculture Organization at the UN). Also there are [serious concerns about REDD+](https://en.wikipedia.org/wiki/Reducing_emissions_from_deforestation_and_forest_degradation#Concerns).",
+      "content": "Sandbag is a think tank that lobbies governments for high-impact pro-climate legislation. Their mission is to provide targeted, evidence-based advocacy at the points of highest leverage by providing analyses and data tools They're based in London and Brussels.",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-15"
     }
@@ -1731,7 +1726,7 @@ exports.initiatives = [
       "updatedAt": "2020-02-16"
     },
     "actions": {
-      "content": "- Advocacy work in Brussels and EU member states to increase cities' influence on European governance and legal frameworks on energy transition.\n- Events for members of the network to connect and share experiences.\n- Demonstration and lighthouse projects for new solutions.\n- Documenting and sharing stories off participatory energy transitions with leaders and the public\nA list of concrete [projects is available online](https://energy-cities.eu/projects/).",
+      "content": "- Advocacy work in Brussels and EU member states to increase cities' influence on European governance and legal frameworks on energy transition.\n- Events for members of the network to connect and share experiences.\n- Demonstration and lighthouse projects for new solutions.\n- Documenting and sharing stories of participatory energy transitions with leaders and the public\nA list of concrete [projects is available online](https://energy-cities.eu/projects/).",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-16"
     },
@@ -1878,7 +1873,7 @@ exports.initiatives = [
       "label": "giving-green"
     },
     "description": {
-      "content": "[IDinsight](https://www.idinsight.org/) works on assessing the efficiency (ratio of effort to impact) of initiatives fighting poverty. Giving Green is a project by IDinsight that tries to give clear funding recommendations. The website describes the project as being in Beta stage. Many of the recommendations are drawn from [IDinsight itself](https://www.idinsight.org/giving-green-short-term-recommendations) or are sourced from a [report by the Founder's Pledge](https://founderspledge.com/stories/climate-change-executive-summary) and [recommend initiatives focusing on US politics or the REDD+ mechanism](https://www.idinsight.org/giving-green-long-term-recommendations). Giving Green attempts to solve a key question in the fight against the climate crisis but seems to be in a very early stage in doing so.",
+      "content": "[IDinsight](https://www.idinsight.org/) works on assessing the efficiency (ratio of effort to impact) of initiatives fighting poverty. Giving Green is a project by IDinsight that tries to give clear funding recommendations to potential investors. The website describes the project as being in Beta stage. Many of the recommendations are drawn from [IDinsight itself](https://www.idinsight.org/giving-green-short-term-recommendations) or are sourced from a [report by the Founder's Pledge](https://founderspledge.com/stories/climate-change-executive-summary) and [recommend initiatives focusing on US politics or the REDD+ mechanism](https://www.idinsight.org/giving-green-long-term-recommendations). Giving Green attempts to solve a key question in the fight against the climate crisis but seems to be in a very early stage in doing so.",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-16"
     }
@@ -1901,7 +1896,7 @@ exports.initiatives = [
       "label": "catf"
     },
     "description": {
-      "content": "The CATF lobbies US governmental institutions to reduce emissions of greenhouse gases. In addition they work to structure future [technical options for carbon-reduced energy production](https://www.catf.us/work/advanced-energy-systems/). CATF aims to assist corporates and governments in designing future energy systems based on renewables, biofuels, nuclear and systemic improvements of grids and consumption.",
+      "content": "The CATF lobbies US governmental institutions to reduce emissions of greenhouse gases. In addition they work to structure future [technical options for carbon-reduced energy production](https://www.catf.us/work/advanced-energy-systems/). CATF lobbies and supports corporates and governments in designing future energy systems based on renewables, biofuels, nuclear and systemic improvements of grids and consumption.",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-16"
     }
@@ -1918,7 +1913,7 @@ exports.initiatives = [
       "label": "impact-matters"
     },
     "description": {
-      "content": "Here, Impact Matters analyses the efficiency of tree planting initiatives. It is an attempt to provide donors with the most efficient ways of fighting climate change. While tree planting is important, changing public opinion and governments is arguably more impactful. Also they seem to rely on impact statements by the organizations they list. There seems to be no independent scientific assessment. That makes initiatives overstating their impact more likely to receive funding.",
+      "content": "On this website, Impact Matters analyses the efficiency of tree planting initiatives. It is an attempt to provide donors with the most efficient ways of fighting climate change. [Research](https://www.pnas.org/content/117/5/2354) shows that other fields than tree planting are equally or more important, yet they're omitted here. Also they seem to rely on impact statements by the organizations they list. There seems to be no independent scientific assessment. That makes initiatives overstating their impact more likely to receive funding.",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-16"
     }
@@ -1941,12 +1936,12 @@ exports.initiatives = [
       "label": "rainforest-foundation"
     },
     "description": {
-      "content": "The Rainforest Foundation works on-the-ground to secure land rights for indigenous people. They train indigenous communities to use technology to protect their forests. The Foundation invests directly in indigenous communities and provides them with the tools, training, and resources necessary to protect their rainforests. So far they protected more than 134 km² of rainforest.",
+      "content": "The Rainforest Foundation works on-the-ground to secure land rights for indigenous people. They train indigenous communities to use technology to protect their forests. The Foundation invests directly in indigenous communities and provides them with the tools, training, and resources necessary to protect their rainforests. So far they protected [more than 134 km² of rainforest](https://rainforestfoundation.org/what-we-do/).",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-16"
     },
     "actions": {
-      "content": "Supply legal and technical support to allow indigenous communities to make decisions and influence public policy\n- Build networks of indigenous technical experts who manage and analyze satellite data, monitor their forests and take action to keep illegal loggers, miners, and traffickers off of their ancestral lands.\n-Support leaders and indigenous institutions",
+      "content": "Supply legal and technical support to allow indigenous communities to make decisions and influence public policy\n- Build networks of indigenous technical experts who manage and analyze satellite data, monitor their forests and take action to keep illegal loggers, miners, and traffickers off of their ancestral lands.\n- Support leaders and indigenous institutions",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-16"
     }
