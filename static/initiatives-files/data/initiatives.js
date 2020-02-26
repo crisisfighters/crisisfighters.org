@@ -178,9 +178,24 @@ exports.initiatives = [
       ]
     },
     "description": {
-      "content": "Greenpeace is another big player. They also do work on a big scale as you can see on the Income they have to put them into their projects. Greenpeace has a lot of Actions going on.",
+      "content": "Greenpeace is a big envirnomental NGO, working in independent national and regional organizations. Their actions vary from publishing often cited reports, civil disobedience or several actions on their own ships.",
       "updatedBy": "Andre",
-      "updatedAt": "2019-08-18"
+      "updatedAt": "2020-02-23"
+    },
+    "actions": {
+      "content": "Help for individual action like their [Guide to sue your local government for inaction regarding the climate crisis](https://storage.googleapis.com/planet4-international-stateless/2018/12/4fdd4d8a-peoples_guide_fnl_2.pdf)\n Their actions of civil disobedience attract worldwide press attention like at the [auto show](https://www.thelocal.de/20190914/climate-protesters-to-disrupt-frankfurt-auto-show) in Frankfurt, Germany.\n Due their expierence and knowledge they act as consultant for public organizations and other NGOs.",
+      "updatedBy": "Andre",
+      "updatedAt": "2020-02-23"
+    },
+    "activeCountries": {
+      "content": "[27 offices](https://www.greenpeace.org/international/explore/about/worldwide/) worldwide.",
+      "updatedBy": "Andre",
+      "updatedAt": "2020-01-14"
+    },
+    "yearlyIncome": {
+      "content": "- 360M € in [2018](https://drive.google.com/file/d/1y2OzoAnRBcQh5MX2hjO_iwjhy8mQJ4vC/view#page=28)\n- 360M € in [2017](https://drive.google.com/file/d/1y2OzoAnRBcQh5MX2hjO_iwjhy8mQJ4vC/view#page=28)",
+      "updatedBy": "Andre",
+      "updatedAt": "2020-01-14"
     },
     "established": {
       "content": "[1971](http://www.tiki-toki.com/timeline/entry/594418/Greenpeace/#vars!date=1942-02-09_13:52:01!)",
