@@ -1963,7 +1963,7 @@ exports.initiatives = [
       "label": "impact-matters"
     },
     "description": {
-      "content": "On this website, Impact Matters analyses the efficiency of tree planting initiatives. It is an attempt to provide donors with the most efficient ways of fighting climate change. [Research](https://www.pnas.org/content/117/5/2354) shows that other fields than tree planting are equally or more important, yet they're omitted here. Also they seem to rely on impact statements by the organizations they list. There seems to be no independent scientific assessment. That makes initiatives overstating their impact more likely to receive funding.",
+      "content": "On this website, Impact Matters analyses the efficiency of tree planting initiatives. It is an attempt to provide donors with the most efficient ways of fighting climate change. [Research](https://www.pnas.org/content/117/5/2354) shows that other fields than tree planting are equally or more important, yet they're omitted here. Also they state to rely on impact statements by the organizations they list without independent scientific assessment. Their claim that they analyzed the suggested initiatives can be considered misleading. The same holds for their suggestion to offset years of your personal carbon emissions without asking aything about your consumption.",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-16"
     }
