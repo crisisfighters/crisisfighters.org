@@ -1,7 +1,7 @@
 ---
 title: About us
 featured_image: '/images/wildfire.jpg'
-omit_header_text: false
+omit_header_text: true
 description: Reach out and contribute to improve this website!
 type: page
 menu:

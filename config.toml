@@ -1,6 +1,6 @@
 baseURL = "https://www.crisisfighters.org/"
 languageCode = "en-us"
-title = "Crisis Fighters"
+title = "CrisisFighters.org"
 theme = "ananke"
 
 MetaDataFormat = "yaml"

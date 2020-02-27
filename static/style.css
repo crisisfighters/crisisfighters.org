@@ -1,3 +1,61 @@
+.theme {
+    shade: #195C9C;
+    red: #EC3026;
+    highlight: #0F81E9;
+    primary: #ECFF1C;
+    primary-shade: #8F9C02;
+}
+
+header {
+    /* There's an ugly white grayish bar between header and content that this hack effectively hides */
+    margin-bottom: -10px;
+}
+
+.header-logo-wrapper {
+    background: #9AFF2B;
+    color: black;
+}
+.header-logo-wrapper:hover {
+    color: #8F9C02;
+}
+
+.header-logo {
+    height: 2rem;
+    vertical-align: text-top;
+}
+
+.header-title-inner {
+    background:#0F81E9;
+    font-weight: bold;
+}
+
+.header-subtitle-inner {
+    background:#0F81E9;
+}
+
+.header-nav {
+    background: #EC3026;
+}
+
+main {
+    background: #195C9C;
+}
+
+article {
+    background: white;
+}
+
+article > section:first-child {
+    padding-top: 0
+}
+
+article h1 {
+    background: #EC3026;
+    color: white;
+    padding: 0 2rem;
+    margin: 0 -2rem;
+}
+
 article.initiatives-wrapper th,
 article.initiatives-wrapper td {
     font-size: 10px 
@@ -22,4 +80,37 @@ article ul {
 }
 article ul {
     padding-left: 1.25rem
+}
+
+
+.button {
+
+}
+
+.button {
+    margin: 2rem auto;
+    margin-bottom: 3rem;
+    padding: 0.1rem 1rem;
+    font-weight: 400;
+    text-align: center;
+    background: #9AFF2B;
+    display: block;
+    width: fit-content;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+.button:hover {
+    color: #195C9C;
+    transition: color 100ms;
+}
+
+.button-primary {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    padding: 0.2rem 2rem;
+    font-size: 2.5rem;
+    border-radius: 2rem;
 }
