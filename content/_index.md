@@ -10,7 +10,7 @@ The breakdown of our climate and natural world [threatens our civilization](http
 * Vertebrates die out 114x faster than normal.
 * With today's policies, the planet will heat by more than 4C until 2100 and _much more beyond_.
 
-<a href="/must-read" class="button button">Learn more at <span style="font-weight: bold">Must Read</span></a>
+<a href="/must-read" class="button">Learn more at <span class="button-text-highlight">Must Read</span></a>
 
 *Hundreds of initiatives worldwide* fight hard to keep the crisis from getting worse.
 We help you find out how you can contribute most efficiently.
@@ -21,4 +21,4 @@ This page is crowdsourced, that means you [can change and improve everything](co
 
 It's to late to avoid damage to earth and our children (takes decades to become visible), but we stop the crisis before it kills more of our future.
 
-<a href="https://www.crisisfighters.org/initiatives/ideas/" class="button button-primary">Launch <span style="font-weight: bold">Crisis Recruiter</span></a>
+<a href="https://www.crisisfighters.org/initiatives/ideas/" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>

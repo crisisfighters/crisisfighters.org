@@ -5,6 +5,17 @@ description: ""
 weight: 30
 ---
 
-The focus of CrisisFighters.org is to collect [Initiatives](initiatives) from all over the world that you can join to fight the crisis.
+We collect [Initiatives](/initiatives) from all over the world that fight the crisis.
 
-That makes this website a great place to collect other useful information as well.
+But there are more things worth documenting:
+
+# Ideas
+We collect inspiring ideas that could help the movement. Some are tiny, some are unrealistically big. [Reach out]((mailto:hi@crisisfighters.org)) to talk about them and to add ideas! 
+
+
+<a href="/what-else/ideas" class="button">Check out <span class="button-text-highlight">Ideas</span></a>
+
+# Conferences
+Let's collect what interesting conferences are happening throughout the year.
+
+<a href="/what-else/conferences" class="button">Check out <span class="button-text-highlight">Conferences</span></a>

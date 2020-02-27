@@ -2,7 +2,6 @@
 title: Conferences
 omit_header_text: true
 description: ""
-summary: Let's collect what interesting conferences are happening throughout the year.
 type: page
 ---
 

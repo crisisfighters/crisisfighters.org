@@ -4,8 +4,6 @@ featured_image: '/images/desert.jpg'
 omit_header_text: false
 description: Small things that could help the fight against the crisis.
 weight: 20
-summary:
-  We collect inspiring ideas that could help the movement. Some are tiny, some are unrealistically big. [Reach out]((mailto:hi@crisisfighters.org)) to talk about them and to add ideas! 
 type: page
 ---
 
