@@ -1,7 +1,7 @@
 ---
 title: Our Future Needs You.
 featured_image: '/images/desert.jpg'
-description: ""
+description: "Learn how you have the biggest impact the crisis!"
 ---
 
 The breakdown of our climate and natural world [threatens our civilization](https://rebellion.earth/the-truth/the-emergency). The best available science says:
