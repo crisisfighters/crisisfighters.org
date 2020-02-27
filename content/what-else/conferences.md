@@ -1,17 +1,22 @@
 ---
 title: Conferences
-omit_header_text: true
+featured_image: '/images/desert.jpg'
+omit_header_text: false
 description: ""
 type: page
 ---
 
 This page contains all conferences with a global perspective on the climate crisis and how to mitigate it.
 
-## 1. Highly Recommendable Conferences
-Unfortunately there is no conference yet that connects the global movement to fight the climate crisis. Having this and having it lead by the civil society instead of governments would be a powerful platform to connect, learn and empower the movement. That's why establishing such a conference made it on our list of [Ideas](/ideas).
+# Recommendable Conferences
+
+#### [United Nations Climate Change Conference](https://www.ukcop26.org/) (Glasgow, UK)
+* Yearly conferences as formal meetings of the UNFCCC parties to assess progress in dealing with the climate crisis and establish legally binding obligations to reduce their greenhouse gas emissions.
+* While *there is no access for private individuals* there's a multitude of events for the civil society around UN climate conferences.
+* 🗓 The next date is November 9, 2020.
 
 
-## 2. Interesting Conferences
+# Interesting Conferences
 
 #### [Climate Leadership Conference](https://climateleadershipconference.org/) (Detroit, USA)
 * Aimed at connecting people from businesses, governments and other organizations, talks at this conference look into how to deal with the climate crisis.
@@ -20,12 +25,6 @@ Unfortunately there is no conference yet that connects the global movement to fi
 
 #### [CERES 2020](https://events.ceres.org/event/37e45177-b6c5-44eb-bb9f-21e35d779d56) (New York City)
 * This investor summit on climate risk aims at connecting influential capital market leaders to accelerate and scale up innovative solutions on the most pressing global sustainability challenges. These leading executives will map out the urgent steps for increased investor and corporate action on sustainability risks and opportunities across diverse sectors of the economy. The Investor Summit on Climate Risk and the Ceres Conference will converge for the first time to offer integrated programming at the Sheraton Times Square in New York City from March 23 to March 26. By integrating these events, participants will have greater access to solution-oriented dialogue and networking opportunities. Topics will address the climate crisis, deforestation, water shortages, and inequitable workplaces. On March 23, the official programming will be preceded by invitation-only Ceres’ network member meetings and a high-level invite-only dinner.
-
-#### [United Nations Climate Change Conference](https://www.ukcop26.org/) (Glasgow, UK)
-* Yearly conferences as formal meetings of the UNFCCC parties to assess progress in dealing with the climate crisis and establish legally binding obligations to reduce their greenhouse gas emissions.
-* There is no access for private individuals.
-* 🗓 The next date is November 9, 2020.
-
 
 #### [re:publica](https://re-publica.com) (Berlin, Germany)
 * Renowned conference with interesting talks on media, digital tehcnology and its impact on societies and politics. Great for networking and a political take on technology. Not specifically focused on the climate crisis.
@@ -45,7 +44,7 @@ Unfortunately there is no conference yet that connects the global movement to fi
 * 🗓 The next date is February 27, 2020.
 
 
-## 3. Discouraged Conferences
+# Discouraged Conferences
 
 #### [International Conference on Climate Change](https://climateconference.heartland.org) (Las Vegas, USA)
 * This is a most likely fossil industry funded (organized by the Heartland Institute) conference for climate deniers where paid scientist propagate lies.
