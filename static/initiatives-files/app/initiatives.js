@@ -1,5 +1,9 @@
 var invalidTags = [];
 
+function numberOfInitiatives() {
+    return exports.initiatives.length;
+}
+
 function queryInitiatives(query) {
     return exports.initiatives
         .filter(initiative => query(

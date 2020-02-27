@@ -107,6 +107,11 @@ article ul {
     transition: color 100ms;
 }
 
+.button:disabled {
+    transition: none;
+    color: #8F9C02;
+}
+
 .button-primary {
     margin-top: 4rem;
     margin-bottom: 6rem;

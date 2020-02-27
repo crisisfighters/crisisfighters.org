@@ -1,7 +1,7 @@
 ---
 title: "Initiatives"
 omit_header_text: true
-type: initiatives-wide
+type: initiatives
 description: TODO
 
 menu:

@@ -1,32 +1,43 @@
 
 
-function button(link, label) {
-    return `<a href="${link}" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1" style="font-size: 2.0rem; text-align: center;">${label}</a>`
+function button(link, label, primary) {
+    return `<a href="${link}" class="button ${primary ? 'button-primary' : ''}">${renderMd(label)}</a>`
 };
 
 function renderStartPage() {
     document.getElementById('recruiter-screen').innerHTML = `
-    <div class="initiatives-welcome-wrapper">
-    <h2>Initiatives</h2>
+    <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+      <div class="nested-copy-line-height lh-copy f4 nested-img mid-gray">
+        <h1>Initiatives</h1>
         <ul>
-            <li>We are working hard to collect all relevant initiatives that fight the climate crisis.</li>
-            <li>Today, we have 50+ initiatives in our databse.</li>
+            <li>We work hard to collect all relevant initiatives that fight the climate crisis.</li>
+            <li>Today, we have ${numberOfInitiatives()} initiatives in our database.</li>
         </ul>
-        <h3>The Crisis Recruiter</h3>
+        <h2>The Crisis Recruiter</h2>
         <p>By anwswering a few quick questions, we can show you what initiatives you should invest your time or money into.</p>
-        ${button(exports.logic.surveyLink, 'Where can I help?')}
+        ${button(exports.logic.surveyLink, 'Launch **Crisis Recruiter**', true)}
+      </header>
+    </article>
+  </div>
         `;
 }
 
 function renderLocationSelector(params, resultDescriptor) {
     
     document.getElementById('recruiter-screen').innerHTML = `
-    <div class="initiatives-country-wrapper">
-    <h2>Please select a country</h2>
-    <p>We will only suggest initiatives that are either global or present in your country.
-    </p>
-        <input id="result-town-input" placeholder="Region or country..." type="text"/>
-        <button id="result-town-submit" disabled>Show me the results</button>
+    <div class="flex-l mt2 mw8 center">
+      <article class="center cf pv5 ph3 ph4-ns mw7">
+        <header>
+          <div class="nested-copy-line-height lh-copy f4 nested-img mid-gray">
+            <h1>Please select a country</h1>
+            <p>We will only suggest initiatives that are either global or present in your country.
+            </p>
+            <input id="result-town-input" placeholder="Region or country..." type="text"/>
+            <button id="result-town-submit" class="button button-primary" disabled>Show <span style="font-weight: bold">Results</span></button>
+        </header>
+      </article>
     </div>
     `;
     const input = document.getElementById('result-town-input');
@@ -79,33 +90,7 @@ function renderLocationSelector(params, resultDescriptor) {
       });
 }
 
-function setLinkTargetToBlank(md) {
-    // Thanks to https://github.com/markdown-it/markdown-it/blob/bda94b0521f206a02427ec58cb9a848d9c993ccb/docs/architecture.md
-    
-    const defaultRender = md.renderer.rules.link_open || function(tokens, idx, options, env, self) {
-        return self.renderToken(tokens, idx, options);
-    };
-
-    md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
-        // If you are sure other plugins can't add `target` - drop check below
-        const aIndex = tokens[idx].attrIndex('target');
-    
-        if (aIndex < 0) {
-            tokens[idx].attrPush(['target', '_blank']); // add new attribute
-        } else {
-            tokens[idx].attrs[aIndex][1] = '_blank';    // replace value of existing attr
-        }
-        // pass token to default renderer.
-        return defaultRender(tokens, idx, options, env, self);
-    };
-
-}
 function renderResultScreen(params, {result: elements}, location) {
-
-    console.log(elements);
-
-    const md = window.markdownit();
-    setLinkTargetToBlank(md);
     
     const renderResults = elements => `
         <h4>The data you entered
@@ -219,8 +204,8 @@ function renderResultScreen(params, {result: elements}, location) {
 
     const initiativeSet = (headline, description, initiatives, index) =>`
         <div class="results-element results-initiative-set">
-            <h2>Suggestion ${index}: ${md.renderInline(headline)}</h2>
-            <p>${md.renderInline(description)}</p>
+            <h2>Suggestion ${index}: ${renderMd(headline)}</h2>
+            <p>${renderMd(description)}</p>
             <div class="results-initiatives-wrapper">
             ${initiatives.map(initiative).join('')}
             </div>
@@ -253,7 +238,7 @@ function renderResultScreen(params, {result: elements}, location) {
                 .map(tag(false))
                 .join('')}
             </div
-            <p>${md.renderInline(initiative.description ? initiative.description.content : '')}</p>
+            <p>${renderMd(initiative.description ? initiative.description.content : '')}</p>
         </div>
         `;
     
