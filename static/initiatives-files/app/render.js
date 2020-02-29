@@ -141,24 +141,27 @@ const renderInputTagGroup = (param, responseTags) =>
 const renderElements = elements => {
     let gaps = 0;
     let showedNotFoundMessage = false;
+    let showedInitiatives = false;
     return elements.map((element, index) => {
         const realIndex = index + 1  - gaps;
         switch(element.type){
             case 'initiatives': {
                 const initiatives = queryInitiatives(element.query);
                 if(initiatives.length === 0) {
+                    console.log('Didn\'t find anything for query', element.query);
                     gaps++;
-                    if(showedNotFoundMessage) {
+                    if(showedInitiatives || showedNotFoundMessage) {
                         return '';
                     }
                     showedNotFoundMessage = true;
                     return nothingFound();
                 }
+                showedInitiatives = true;
                 return initiativeSet(element.headline, element.description, initiatives, realIndex);
             }
             case 'restart-link': return restartLink(realIndex);
             case 'cf-b2b': return crisisFightersB2B(realIndex);
-            case '': return ideas(realIndex);
+            case 'ideas': return ideas(realIndex);
             case 'contribute': return contribute(realIndex);
             default: return `<p>Unknown: ${element.type}</p>`;
         }
