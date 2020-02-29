@@ -48,13 +48,3 @@ function logInvalidTags(){
     console.log('Invalid Tags:');
     console.log(invalidTags);
 }
-
-function questionToLabel(param){
-    return ({
-        role: 'Special Role',
-        goals: 'Goals',
-        types: 'Types of Initiative',
-        skills: 'Skills',
-        investment: 'Your Contribution',
-    })[param];
-}

@@ -1,10 +1,14 @@
 exports.tagLabels = {
-  'user-special-none': 'None',
-  'user-special-city-official': 'City Official',
-  'user-special-high-in-ngo': 'High-level position in an NGO',
-  'user-special-high-in-corporate': 'High-level position in a corporation',
+  'user-special-city-official': 'I\'m a city official',
+  'user-special-high-in-ngo': 'I have a high position in an NGO',
+  'user-special-high-in-corporate': 'I have a high position in a corporation (1000+ employees)',
+  'user-special-creative': 'I\'m a creative or work in Advertising or the Media',
+  'user-special-none': 'None of the above',
   'user-investment-time': 'Time',
   'user-investment-money': 'Money',
+  'user-time-employment': 'Employment',
+  'user-time-internship': 'Internship',
+  'user-time-volunteer': 'Occasional Voluntary Help',
   'is-public': 'Public (federal;state;municipial) Initiative',
   'is-grassroots': 'Grassroots',
   'is-ngo': 'NGO',
@@ -26,7 +30,7 @@ exports.tagLabels = {
   'join-internship': 'Paid Internships',
   'join-unpaid': 'Unpaid Contributions',
   'goal-decentralized-energy-ownership': 'Decentralized Energy Ownership',
-  'goal-fight-fossil': 'Fight Fossil fuels',
+  'goal-fight-fossil': 'Fight Fossil Fuels',
   'goal-deploy-renewables': 'Deploy Renewable Energy',
   'goal-deploy-nuclear': 'Deploy Nuclear Energy',
   'goal-carbon-neutral-cities': 'Carbon Neutral Cities',
@@ -74,5 +78,4 @@ exports.tagLabels = {
   'use-litigation': 'Use Litigation',
   'use-protests': 'Use Protests',
   'use-stock-voting-rights': 'Use Stock Voting Rights',
-  '': ''
 };

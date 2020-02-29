@@ -1,12 +1,34 @@
 exports.logic = {
     surveyLink: 'https://services342876.typeform.com/to/H8DLJt',
     sortOrder: ['good', 'is', 'goal', 'use', 'support'],
+    possibleParams: ['role', 'investment', 'time'],
+    questionToLabel: param => ({
+        role: 'Special Role',
+        investment: 'Your Contribution',
+        time: 'Your Involvement',
+    })[param],
+    extractParams: urlParams => {
+        const convert = name => urlParams
+            .get(name)
+            .split(', ')
+            .filter(v=> v !== '_____')
+            .map(labelToTag)
+            .filter(tag => tag);
+
+        return urlParams.has('role') && urlParams.has('investment') && urlParams.has('time')
+               ? {
+                    role: convert('role')[0],
+                    investment: convert('investment')[0],
+                    time: convert('time'),
+                }
+               : null;
+    },
     tagShouldBeVisibleInList: tag => tag.indexOf('skill-') !== 0
         && tag.indexOf('join-') !== 0
         && tag.indexOf('l-') !== 0
         && tag.indexOf('propagate-') !== 0,
-    determineResultDescriptor: (params, location) => {
-        if(params.role === 'user-special-city-official') {
+    determineResultDescriptor: (userParams, location) => {
+        if(userParams.role === 'user-special-city-official') {
             return {
                 locationMissing: !location.countryCode,
                 result: [
@@ -43,7 +65,7 @@ exports.logic = {
                 ]
             };
     
-        } else if(params.role === 'user-special-high-in-corporate') {
+        } else if(userParams.role === 'user-special-high-in-corporate') {
             return {
                 locationMissing: !location.countryCode,
                 result : [
@@ -81,7 +103,7 @@ exports.logic = {
                 ],
             };
     
-        } else if(params.role === 'user-special-high-in-ngo') {
+        } else if(userParams.role === 'user-special-high-in-ngo') {
             return {
                 result: [
                     {
@@ -109,8 +131,15 @@ exports.logic = {
         }
     
         // assuming user-special-none'
+
+        const joinTags = userParams.time.map(t => ({
+            'user-time-employment': 'join-paid',
+            'user-time-internship': 'join-internship',
+            'user-time-volunteer': 'join-unpaid',
+        }[t]));
+
         return {
-            locationMissing: params.investment === 'user-investment-time'
+            locationMissing: userParams.investment === 'user-investment-time'
                             && !location.countryCode,
             result: [
                 {
@@ -118,27 +147,24 @@ exports.logic = {
                     headline: 'These are your relevant initiatives',
                     description: 'If you fell something is wrong or missing, please reach out or contribute',
                     query: tags => {
-                        // console.log(params.goals);
-                        return tags.some(tag => params.types.includes(tag))
-                        && tags.some(tag => params.goals.includes(tag))
-                        && ( 
-                             params.investment === 'user-investment-money'
-                            || tags.some(tag => params.skills.includes(tag))
-                        )
-                        && (
-                            params.investment === 'user-investment-money'
-                            ||
-                            (
-                                // user-investment-time
-                                tags.includes('l-global')
-                                ||
-                                tags.includes('l-' + location.countryCode)
-                            )
-                        )
+                        // console.log(userParams.goals);
+                        return  ( 
+                            userParams.investment === 'user-investment-money'
+                                    || tags.some(tag => joinTags.includes(tag))
+                                ) && (
+                                    userParams.investment === 'user-investment-money'
+                                    ||
+                                    (
+                                        // user-investment-time
+                                        tags.includes('l-global')
+                                        ||
+                                        tags.includes('l-' + location.countryCode)
+                                    )
+                                )
                     },
                 }, 
                 ...(
-                    params.skills.includes('skill-creative-media')
+                    userParams.role === 'user-special-creative'
                     ? [{
                         type: 'creative-brief'
                     }]
@@ -149,7 +175,7 @@ exports.logic = {
                     headline: 'Do you know of any high-carbon projects',
                     description: 'In the [2016 Paris Agreement](https://en.wikipedia.org/wiki/Paris_Agreement), 194 states agreed bindingly to limit global heating to 1.5C. Do you know of a planned high-carbon project in your town or country? If the Paris agreement hasn\'t been considered during planning or the project or policy would make it much harder for your country to meet its commitment in the Paris Agreement, there\'s a realistic chance that you can stop it. The first successes include the fight against a [third runway for London Heathrow](https://www.theguardian.com/environment/2020/feb/27/heathrow-third-runway-ruled-illegal-over-climate-change) and a judgment in favor of [Urgenda](https://www.urgenda.nl) to force the Dutch Government to abide by the Paris Agreement](https://www.urgenda.nl/en/themas/climate-case/).\n\nThis worked before. When 35 countries, including the USSR agreed to upholding human rights in the [1975 Helsinki Accord](https://en.wikipedia.org/wiki/Helsinki_Accords), that had [far-reaching political impact](https://en.wikipedia.org/wiki/Helsinki_Accords#Reception_and_impact) and contributed Glasnost and Perestroika.\n\nThe initiatives below succcessfully use litigation as a tool.',
                     query: tags => {
-                        // console.log(params.goals);
+                        // console.log(userParams.goals);
                         return  tags.some(tag => joinTags.includes('use-litigation'))
                                 &&
                                 (

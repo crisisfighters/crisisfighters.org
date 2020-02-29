@@ -105,6 +105,7 @@ article ul {
 .button:hover {
     color: #195C9C;
     transition: color 100ms;
+    cursor: pointer;
 }
 
 .button:disabled {
