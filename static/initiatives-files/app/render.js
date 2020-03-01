@@ -207,7 +207,7 @@ const contribute = index => `
 const initiativeSet = (headline, description, initiatives, index) =>`
     <div class="results-element results-initiative-set">
         <h2>Suggestion ${index}: ${renderMd(headline)}</h2>
-        <p>${renderMd(description)}</p>
+        <p>${renderMdParagraph(description)}</p>
         <div class="results-initiatives-wrapper">
         ${initiatives.map(initiative).join('')}
         </div>
@@ -240,7 +240,7 @@ const initiative = initiative => {
                 .map(tag(false))
                 .join('')}
             </div
-            <p>${renderMd(initiative.description ? initiative.description.content : '')}</p>
+            <p>${renderMdParagraph(initiative.description ? initiative.description.content : '')}</p>
         </div>`
     };
 

@@ -6,6 +6,14 @@ function renderMd(input) {
     return window.md.renderInline(input);
 }
 
+function renderMdParagraph(input) {
+    if(!window.md) {
+        window.md = window.markdownit();
+        setLinkTargetToBlank(window.md);
+    }
+    return window.md.render(input);
+}
+
 function setLinkTargetToBlank(md) {
     // Thanks to https://github.com/markdown-it/markdown-it/blob/bda94b0521f206a02427ec58cb9a848d9c993ccb/docs/architecture.md
     

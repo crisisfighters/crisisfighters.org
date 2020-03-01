@@ -121,7 +121,7 @@ exports.logic = {
                     },
                     {
                         type: 'initiatives',
-                        headline: 'Here the members of your NGO can get training?',
+                        headline: 'Here the members of your NGO can get training',
                         description: 'Many initiatives offer training and educational resources for activists. Your NGO can benefit from these resources.',
                         query: tags => tags.includes('support-train-activists'),
                     },
@@ -144,7 +144,7 @@ exports.logic = {
             result: [
                 {
                     type: 'initiatives',
-                    headline: 'Help Here.',
+                    headline: 'Help Here:',
                     description: 'If you fell something is wrong or missing, please reach out or contribute',
                     query: tags => {
                         // console.log(userParams.goals);
