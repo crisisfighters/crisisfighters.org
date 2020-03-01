@@ -14,8 +14,7 @@ exports.initiatives = [
         "skill-jurist",
         "join-paid",
         "join-internship",
-        "goal-fight-fossil",
-        "goal-conservation",
+        "goal-deploy-renewables",
         "use-litigation",
         "target-government",
         "target-corporations"
@@ -68,7 +67,7 @@ exports.initiatives = [
         "skill-social-media-aficionado",
         "skill-translator",
         "join-unpaid",
-        "good-new-norms-and-values",
+        "goal-sustainable-consumption",
         "support-connect-activists-or-initiatives",
         "support-train-activists",
         "use-civil-disobedience",
@@ -119,7 +118,6 @@ exports.initiatives = [
         "is-ngo",
         "join-paid",
         "join-internship",
-        "goal-conservation",
         "propagate-conservation",
         "lobby-government",
         "target-government",
@@ -167,7 +165,6 @@ exports.initiatives = [
         "is-ngo",
         "join-paid",
         "join-internship",
-        "goal-conservation",
         "propagate-conservation",
         "lobby-government",
         "target-government",
@@ -227,7 +224,7 @@ exports.initiatives = [
         "skill-jurist",
         "skill-flyering",
         "skill-creative-media",
-        "goal-fight-fossil",
+        "goal-deploy-renewables",
         "use-civil-disobedience",
         "use-protests",
         "target-corporations",
@@ -380,7 +377,6 @@ exports.initiatives = [
         "skill-project-or-event-management",
         "skill-translator",
         "join-unpaid",
-        "goal-conservation",
         "support-connect-activists-or-initiatives",
         "lobby-government",
         "target-government"
@@ -390,11 +386,11 @@ exports.initiatives = [
         "is-ngo",
         "skill-jurist",
         "skill-flyering",
-        "goal-fight-fossil",
+        "goal-deploy-renewables",
         "use-civil-disobedience",
         "use-protests",
         "target-corporations",
-        "l-pl"
+        "l-pt"
       ],
       "label": "limity-jsme-my"
     }
@@ -412,7 +408,7 @@ exports.initiatives = [
         "skill-influencer",
         "join-paid",
         "join-internship",
-        "good-new-norms-and-values",
+        "goal-sustainable-consumption",
         "support-train-activists",
         "use-litigation",
         "lobby-government",
@@ -471,7 +467,6 @@ exports.initiatives = [
         "is-ngo",
         "join-paid",
         "join-internship",
-        "goal-conservation",
         "propagate-conservation",
         "lobby-government",
         "target-government",
@@ -534,8 +529,7 @@ exports.initiatives = [
         "skill-jurist",
         "join-paid",
         "join-internship",
-        "goal-fight-fossil",
-        "goal-conservation",
+        "goal-deploy-renewables",
         "use-litigation",
         "target-government",
         "target-corporations"
@@ -644,8 +638,7 @@ exports.initiatives = [
         "is-grassroots",
         "skill-jurist",
         "skill-creative-media",
-        "goal-fight-fossil",
-        "goal-conservation",
+        "goal-deploy-renewables",
         "knowledge-reveal-links-between-industry-and-politics",
         "use-civil-disobedience",
         "use-protests",
@@ -716,7 +709,7 @@ exports.initiatives = [
       "name": "IPCC",
       "link": "https://www.ipcc.ch/",
       "tagsInteresting": [
-        "goal-divestment",
+        "goal-carbon-regulation",
         "knowledge-educate-students"
       ],
       "tagsRelevant": [
@@ -859,7 +852,7 @@ exports.initiatives = [
         "skill-social-media-aficionado",
         "skill-translator",
         "join-unpaid",
-        "good-new-norms-and-values",
+        "goal-sustainable-consumption",
         "support-connect-activists-or-initiatives",
         "use-protests",
         "target-government",
@@ -926,7 +919,7 @@ exports.initiatives = [
         "skill-social-media-aficionado",
         "join-paid",
         "join-unpaid",
-        "good-new-norms-and-values",
+        "goal-sustainable-consumption",
         "knowledge-propose-legislation",
         "support-connect-activists-or-initiatives",
         "support-train-activists",
@@ -975,7 +968,7 @@ exports.initiatives = [
         "use-litigation",
         "target-government",
         "target-corporations",
-        "l-nl"
+        "l-no"
       ]
     },
     "description": {
@@ -1011,7 +1004,7 @@ exports.initiatives = [
       "tagsRelevant": [
         "is-ngo",
         "skill-jurist",
-        "goal-fight-fossil",
+        "goal-deploy-renewables",
         "use-litigation",
         "target-government",
         "target-corporations"
@@ -1087,7 +1080,7 @@ exports.initiatives = [
       "tagsInteresting": [],
       "tagsRelevant": [
         "is-ngo",
-        "goal-divestment",
+        "goal-carbon-regulation",
         "use-stock-voting-rights",
         "lobby-corporations",
         "target-corporations"
@@ -1314,14 +1307,14 @@ exports.initiatives = [
       "link": "https://gofossilfree.org/",
       "tagsInteresting": [
         "is-think-tank",
-        "goal-decentralized-energy-ownership"
+        "goal-fight-fossil"
       ],
       "tagsRelevant": [
         "is-ngo",
         "is-network",
-        "good-energy-transformation",
-        "goal-fight-fossil",
-        "goal-divestment",
+        "goal-decentralized-energy-ownership",
+        "goal-deploy-renewables",
+        "goal-carbon-regulation",
         "knowledge-propose-legislation",
         "propagate-divestment",
         "lobby-government",
@@ -1375,16 +1368,16 @@ exports.initiatives = [
       "link": "https://www.beyond-coal.eu",
       "tagsInteresting": [
         "is-think-tank",
-        "goal-decentralized-energy-ownership",
+        "goal-fight-fossil",
         "knowledge-science-and-education",
         "target-public"
       ],
       "tagsRelevant": [
         "is-ngo",
         "is-network",
-        "good-energy-transformation",
-        "goal-fight-fossil",
-        "goal-divestment",
+        "goal-decentralized-energy-ownership",
+        "goal-deploy-renewables",
+        "goal-carbon-regulation",
         "knowledge-assess-companies",
         "propagate-divestment",
         "lobby-government",
@@ -1439,7 +1432,8 @@ exports.initiatives = [
         "l-si",
         "l-es",
         "l-se",
-        "l-ch"
+        "l-ch",
+        "l-tr"
       ],
       "label": "europe-beyond-coal"
     },
@@ -1457,7 +1451,7 @@ exports.initiatives = [
       "tagsRelevant": [
         "is-ngo",
         "is-network",
-        "goal-divestment",
+        "goal-carbon-regulation",
         "knowledge-assess-companies",
         "propagate-divestment",
         "lobby-government"
@@ -1477,7 +1471,7 @@ exports.initiatives = [
       "tagsInteresting": [],
       "tagsRelevant": [
         "is-ngo",
-        "goal-fight-fossil",
+        "goal-deploy-renewables",
         "use-protests"
       ],
       "label": "development-yes-open-pit-mines-no"
@@ -1498,8 +1492,8 @@ exports.initiatives = [
       ],
       "tagsRelevant": [
         "is-owned-by-companies",
-        "goal-carbon-regulation",
-        "goal-reforestation"
+        "good-new-norms-and-values",
+        "goal-conservation"
       ],
       "label": "redd-dot-plus"
     },
@@ -1518,8 +1512,8 @@ exports.initiatives = [
       ],
       "tagsRelevant": [
         "is-public",
-        "goal-carbon-regulation",
-        "goal-reforestation"
+        "good-new-norms-and-values",
+        "goal-conservation"
       ],
       "label": "redd-dot-plus"
     },
@@ -1537,8 +1531,18 @@ exports.initiatives = [
       "tagsRelevant": [
         "is-ngo",
         "is-think-tank",
+        "join-paid",
+        "good-energy-transformation",
+        "goal-deploy-renewables",
+        "goal-deploy-nuclear",
+        "goal-carbon-regulation",
+        "good-new-norms-and-values",
         "knowledge-projections",
-        "knowledge-propose-legislation"
+        "knowledge-assess-companies",
+        "knowledge-propose-legislation",
+        "knowledge-transparency-of-impact-of-goods-and-services",
+        "lobby-government",
+        "target-government"
       ],
       "label": "sandbag"
     },
@@ -1626,7 +1630,6 @@ exports.initiatives = [
         "l-dk",
         "l-fi",
         "l-fr",
-        "l-gf",
         "l-pf",
         "l-tf",
         "l-gi",
@@ -1660,7 +1663,8 @@ exports.initiatives = [
         "l-es",
         "l-se",
         "l-ch",
-        "l-tr"
+        "l-tr",
+        "l-af"
       ],
       "label": "eit-climate-kic"
     },
@@ -1681,7 +1685,6 @@ exports.initiatives = [
         "is-network",
         "skill-flyering",
         "skill-influencer",
-        "goal-conservation",
         "propagate-conservation",
         "use-litigation",
         "lobby-government",
@@ -1706,17 +1709,17 @@ exports.initiatives = [
       "name": "Energy Cities",
       "link": "https://energy-cities.eu/",
       "tagsInteresting": [
-        "goal-deploy-nuclear"
+        "good-cities-and-housing"
       ],
       "tagsRelevant": [
         "is-public",
         "is-think-tank",
         "is-network",
-        "good-energy-transformation",
-        "goal-deploy-renewables",
-        "good-cities-and-housing",
-        "goal-energy-independent-housing",
+        "goal-decentralized-energy-ownership",
+        "goal-deploy-nuclear",
+        "goal-carbon-neutral-cities",
         "goal-increase-communal-energy-efficiency",
+        "good-at-finance-and-subsidies",
         "l-al",
         "l-ad",
         "l-at",
@@ -1732,7 +1735,6 @@ exports.initiatives = [
         "l-dk",
         "l-fi",
         "l-fr",
-        "l-gf",
         "l-pf",
         "l-tf",
         "l-gi",
@@ -1766,7 +1768,8 @@ exports.initiatives = [
         "l-es",
         "l-se",
         "l-ch",
-        "l-tr"
+        "l-tr",
+        "l-af"
       ],
       "label": "energy-cities"
     },
@@ -1797,8 +1800,7 @@ exports.initiatives = [
       "link": "https://transitionnetwork.org",
       "tagsInteresting": [
         "skill-flyering",
-        "goal-sustainable-consumption",
-        "goal-conservation",
+        "good-education",
         "support-connect-activists-or-initiatives",
         "propagate-conservation"
       ],
@@ -1807,12 +1809,12 @@ exports.initiatives = [
         "is-ngo",
         "is-network",
         "skill-influencer",
-        "good-energy-transformation",
         "goal-decentralized-energy-ownership",
-        "goal-deploy-renewables",
-        "good-cities-and-housing",
-        "goal-energy-independent-housing",
+        "goal-fight-fossil",
+        "goal-deploy-nuclear",
+        "goal-carbon-neutral-cities",
         "goal-increase-communal-energy-efficiency",
+        "good-at-finance-and-subsidies",
         "support-train-activists",
         "l-global"
       ],
@@ -1846,7 +1848,6 @@ exports.initiatives = [
       "tagsInteresting": [],
       "tagsRelevant": [
         "is-ngo",
-        "goal-conservation",
         "propagate-conservation",
         "lobby-government",
         "target-government"
@@ -1933,8 +1934,8 @@ exports.initiatives = [
       "name": "Clean Air Taskforce",
       "link": "https://www.catf.us/",
       "tagsInteresting": [
-        "goal-fight-fossil",
-        "goal-sustainable-consumption",
+        "goal-deploy-renewables",
+        "good-education",
         "use-litigation"
       ],
       "tagsRelevant": [
@@ -1978,7 +1979,6 @@ exports.initiatives = [
       ],
       "tagsRelevant": [
         "is-ngo",
-        "goal-reforestation",
         "goal-conservation",
         "propagate-conservation",
         "l-us"
@@ -2012,7 +2012,6 @@ exports.initiatives = [
         "skill-project-or-event-management",
         "skill-social-media-aficionado",
         "support-connect-activists-or-initiatives",
-        "support-train-activists",
         "l-global"
       ]
     },
