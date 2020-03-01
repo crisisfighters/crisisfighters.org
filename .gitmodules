@@ -1,4 +1,0 @@
-[submodule "themes/ananke"]
-	path = themes/ananke
-#	url = git@github.com:crisisfighters/crisisfighters-org-gohugo-theme-ananke.git
-        url =  https://github.com/crisisfighters/gohugo-theme-ananke
