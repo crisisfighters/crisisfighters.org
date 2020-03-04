@@ -1,6 +1,7 @@
 {{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
 {{ define "main" }}
-<article class="recruiter-wrapper mid-gray">
+<div class="flex-l mw8 center">
+<article class="recruiter-wrapper center cf pb5 ph3 ph4-ns">
     {{ .Content }}
 
     <link href="/initiatives-files/style-recruiter.css" rel="stylesheet" type="text/css">
@@ -10,7 +11,7 @@
     <style type="text/css">
     
     </style>
-    <div id="recruiter-screen">Loading ...</div>
+    <div class="" id="recruiter-screen">Loading ...</div>
     <script>
         // Allows node.js `require()` in included files
         const exports = {};
@@ -20,10 +21,11 @@
     <script src="/initiatives-files/app/initiatives.js"></script>
     <script src="/initiatives-files/app/markdown.js"></script>
     <script src="/initiatives-files/app/render.js"></script>
+    <script src="/initiatives-files/app/logic.js"></script>
     <script src="/initiatives-files/data/initiatives.js"></script>
-    <script src="/initiatives-files/data/logic.js"></script>
     <script src="/initiatives-files/data/tag-labels.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdWGGzRnF_DNDDDonCyv1FWxRK4dBWt7U&libraries=places&callback=resultScreenApp"
     async defer></script>
 </article>
+</div>
 {{ end }}

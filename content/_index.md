@@ -1,7 +1,7 @@
 ---
 title: Our Future Needs You.
 featured_image: '/images/desert.jpg'
-description: "Learn how you have the biggest impact the crisis!"
+description: "Learn how you can go out and save our world!"
 ---
 
 The breakdown of our climate and natural world [threatens our civilization](https://rebellion.earth/the-truth/the-emergency). The best available science says:
@@ -17,7 +17,7 @@ We help you find out how you can contribute most efficiently.
 
 This page is crowdsourced, that means you [can change and improve everything](contribute). We compile [initiatives](initiatives), [events](conferences), [ideas](ideas) and more so you quickly find out where your skills make the most impact.
 
-## The Crisis Won't End Well
+## You can have a big impact.
 
 It's to late to avoid damage to earth and our children (takes decades to become visible), but we stop the crisis before it kills more of our future.
 

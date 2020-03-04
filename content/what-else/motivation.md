@@ -3,9 +3,7 @@ title: Motivation
 featured_image: '/images/wildfire.jpg'
 omit_header_text: true
 type: page
-menu:
-  main:
-    weight: 70
+
 ---
 
 # How we might stop the Climate Crisis

@@ -5,9 +5,10 @@ description: ""
 weight: 30
 ---
 
-We collect [Initiatives](/initiatives) from all over the world that fight the crisis.
+We help you in supporting the best [Initiatives](/initiatives). Read what else we're up to:
 
-But there are more things worth documenting:
+# Our Motivation
+Read our thoughts on how to stop the crisis. They're the [motivation behind CrisisFighters](/what-else/motivation)
 
 # Ideas
 We collect inspiring ideas that could help the movement. Some are tiny, some are unrealistically big. [Reach out]((mailto:hi@crisisfighters.org)) to talk about them and to add ideas! 

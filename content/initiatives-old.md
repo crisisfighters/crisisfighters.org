@@ -10,7 +10,7 @@ menu: false
 
 **🚧 Under Construction:** During our research we were positively overwhelmed by how many initiatives there are. Therefore this page is neither nice nor intuitive to use. We're on it!
 
-We believe that the best way to stop the crisis is changing public opinion and government policy (see [Motivation](/motivation)).
+We believe that the best way to stop the crisis is changing public opinion and government policy (see [Motivation](/what-else/motivation)).
 
 ## Contribute
 
@@ -18,4 +18,4 @@ We believe that the best way to stop the crisis is changing public opinion and g
 * If you're not used to working with GitHub, drop us an email at [hi@CrisisFighters.org](hi@crisisfighters.org).
 
 # These initiatives fight the crisis
-To allow you to invest your time and money wisely, we collect data about the efficiency of existing and new initiatives via crowd-sourcing ([read more](motivation)). Check them out below:
+To allow you to invest your time and money wisely, we collect data about the efficiency of existing and new initiatives via crowd-sourcing ([read more](/what-else/motivation)). Check them out below:

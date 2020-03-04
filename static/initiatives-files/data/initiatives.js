@@ -323,7 +323,7 @@ exports.initiatives = [
   },
   {
     "meta": {
-      "name": "World Resource Institution",
+      "name": "World Resources Institute",
       "link": "https://www.wri.org/",
       "tagsInteresting": [],
       "tagsRelevant": [

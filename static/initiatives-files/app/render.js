@@ -6,17 +6,17 @@ function button(link, label, primary) {
 
 function renderStartPage() {
     document.getElementById('recruiter-screen').innerHTML = `
-    <div class="flex-l mt2 mw8 center">
-    <article class="center cf pv5 ph3 ph4-ns mw7">
+    <div class="flex-l mw8 center">
+    <article class="center cf pb5 mw7">
       <header>
       <div class="nested-copy-line-height lh-copy f4 nested-img mid-gray">
-        <h1>Initiatives</h1>
+        <h1>Find Initiatives with Crisis Recruiter</h1>
         <ul>
-            <li>We work hard to collect all relevant initiatives that fight the climate crisis.</li>
-            <li>Today, we have ${numberOfInitiatives()} initiatives in our database.</li>
+            <li>So far, we've collected and tagged ${numberOfInitiatives()} initiatives that fight the climate crisis.</li>
+            <li><b>This page is a technical preview.</b> The designer is on their way to save the day.</li>
         </ul>
-        <h2>The Crisis Recruiter</h2>
-        <p>By anwswering a few quick questions, we can show you what initiatives you should invest your time or money into.</p>
+        
+        <p>By answering a few quick questions, we can show you what initiatives you should invest your time or money into.</p>
         ${button(exports.logic.surveyLink, 'Launch **Crisis Recruiter**', true)}
       </header>
     </article>
@@ -27,8 +27,8 @@ function renderStartPage() {
 function renderLocationSelector(params, resultDescriptor) {
     
     document.getElementById('recruiter-screen').innerHTML = `
-    <div class="flex-l mt2 mw8 center">
-      <article class="center cf pv5 ph3 ph4-ns mw7">
+    <div class="flex-l mw8 center">
+      <article class="center cf pb5 mw7">
         <header>
           <div class="nested-copy-line-height lh-copy f4 nested-img mid-gray">
             <h1>Please select a country</h1>

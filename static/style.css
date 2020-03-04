@@ -8,12 +8,12 @@
 
 header {
     /* There's an ugly white grayish bar between header and content that this hack effectively hides */
-    margin-bottom: -10px;
+    /* margin-bottom: -10x; */
 }
 
 .header-logo-wrapper {
-    background: #9AFF2B;
-    color: black;
+    /* background: #9AFF2B; */
+    /* color: black; */
 }
 .header-logo-wrapper:hover {
     color: #8F9C02;
@@ -38,7 +38,7 @@ header {
 }
 
 main {
-    background: #195C9C;
+    /* background: #195C9C; */
 }
 
 article {
@@ -54,6 +54,9 @@ article h1 {
     color: white;
     padding: 0 2rem;
     margin: 2rem -2rem 0;
+}
+article h1:first-child {
+    margin-top: 0
 }
 
 article.initiatives-wrapper th,
