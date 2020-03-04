@@ -85,11 +85,6 @@ article ul {
     padding-left: 1.25rem
 }
 
-
-.button {
-
-}
-
 .button {
     margin: 2rem auto;
     margin-bottom: 3rem;
@@ -114,6 +109,7 @@ article ul {
 .button:disabled {
     transition: none;
     color: #8F9C02;
+    cursor: default
 }
 
 .button-primary {
@@ -126,4 +122,9 @@ article ul {
 
 .button-text-highlight {
     font-weight: bold;
+}
+
+#result-town-input {
+    margin: 0 auto;
+    display: block;
 }

@@ -32,9 +32,9 @@ function renderLocationSelector(params, resultDescriptor) {
         <header>
           <div class="nested-copy-line-height lh-copy f4 nested-img mid-gray">
             <h1>Please select a country</h1>
-            <p>We will only suggest initiatives that are either global or present in your country.
+            <p>This allows us to only suggest initiatives that are either global or present in your country.
             </p>
-            <input id="result-town-input" placeholder="Region or country..." type="text"/>
+            <input id="result-town-input" autofocus placeholder="Region or country..." type="text"/>
             <button id="result-town-submit" class="button button-primary" disabled>Show <span style="font-weight: bold">Results</span></button>
         </header>
       </article>
