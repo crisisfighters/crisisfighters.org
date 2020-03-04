@@ -144,7 +144,7 @@ exports.logic = {
             result: [
                 {
                     type: 'initiatives',
-                    headline: 'Help Here:',
+                    headline: 'Help Here',
                     description: 'If you fell something is wrong or missing, please reach out or contribute',
                     query: tags => {
                         // console.log(userParams.goals);

@@ -163,6 +163,7 @@ const renderElements = elements => {
             case 'cf-b2b': return crisisFightersB2B(realIndex);
             case 'ideas': return ideas(realIndex);
             case 'contribute': return contribute(realIndex);
+            case 'creative-brief': return creativeBrief(realIndex);
             default: return `<p>Unknown: ${element.type}</p>`;
         }
     }).join('');
@@ -201,6 +202,14 @@ const contribute = index => `
     <h2>Suggestion ${index}: Help CrisisFighters.org!</h2>
     <p>TODO copy. Crowd-sourcing, talking about it</p>
     ${button('/contribute', 'Contribute')}
+
+</div>`;
+
+const creativeBrief = index => `
+<div class="results-element results-creative-brief">
+    <h2>Suggestion ${index}: Run your own campaign!</h2>
+    <p>TODO copy. Crowd-sourcing, talking about it</p>
+    ${button('https://docs.google.com/document/d/1xrc1t-8ps30AXfwR2cogCuFc3FBbfFTX-VOwJCkW5-4', 'Check out our **Creative Brief** (draft)')}
 
 </div>`;
 
