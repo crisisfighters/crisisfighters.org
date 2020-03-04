@@ -9,14 +9,7 @@ type: page
 
 In addition to the great [initiatives](/initiatives) that are already out there, we want to collect inspiring ideas. [Email us](mailto:hi@crisisfighters.org) to add more.
 
-# Decision Tree - "What can I do?" (yet to be named)
-> A beautiful interactive decision tree that lets people find out how they can save civilization
-
-Many people ask themselves how they can help and googling that yields a lot of irrelevant info around personal consumption. While that's good and helps a tiny little bit, in reality we need to change mainstream politics globally.
-
-This idea is to create a beautiful, fun to use web page that allows people to answer a few questions to find out how they could contribute.
-
-Examples: Are you good at giving presentations? - Get a training as climate leader or similar. Are you a lawyer? - Join on of the many environmental litigation efforts; Do you own publicly traded stock? - Delegate your voting rights to Urgewald and similar initiatives; What city do you live in? - List of initiatives that have a local presence.
+# 
 
 # flyGood.io
 > A mobile web app that allows offsetting flights and tipping initiatives
@@ -32,6 +25,10 @@ flyGood.io will be a mobile webapp that allows users of modern smartphones to pa
 ### You can make this happen by helping with the design, implementation, Stripe or setting up a legal entity
 * Technical implementation is trivial
 * It’s not clear yet whether this requires a lot of book-keeping or if it can be set up without a legal entity. Please reach out if you know more!
+
+# Platform to let startup professionals help NGOs
+* Most NGOs have big needs when it comes to collecting, storing and analyzing data, project management, software engineering.
+* A small organization could match up NGOs and professionals in startups. This can work bottom-up by asking people to invest their private time and top-down with senior management (e.g. companies providing office space outside work hours to employees to help NGOs or (voluntarily) allocating work time to helping NGOs).
 
 # Monthly Crisis Mitigation Meetups in Hamburg and Berlin, Germany
 > Meeting monthly to share the latest science and discuss strategy
