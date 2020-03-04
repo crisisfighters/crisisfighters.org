@@ -45,6 +45,7 @@ function tagToLabel(tag) {
 }
 
 function logInvalidTags(){
-    console.log('Invalid Tags:');
-    console.log(invalidTags);
+    if(invalidTags) {
+        console.log('Invalid Tags:', invalidTags);
+    }
 }
