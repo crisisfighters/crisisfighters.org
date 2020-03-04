@@ -394,7 +394,7 @@ exports.initiatives = [
         "use-civil-disobedience",
         "use-protests",
         "target-corporations",
-        "l-pt"
+        "l-pl"
       ],
       "label": "limity-jsme-my"
     }
@@ -975,7 +975,7 @@ exports.initiatives = [
         "use-litigation",
         "target-government",
         "target-corporations",
-        "l-no"
+        "l-nl"
       ]
     },
     "description": {
@@ -1395,10 +1395,10 @@ exports.initiatives = [
         "l-ad",
         "l-at",
         "l-bg",
-        "l-by",
-        "l-be",
         "l-ba",
-        "l-hr",
+        "l-be",
+        "l-by",
+        "l-ch",
         "l-cy",
         "l-cz",
         "l-ee",
@@ -1407,7 +1407,7 @@ exports.initiatives = [
         "l-fi",
         "l-fr",
         "l-gf",
-        "l-pf",
+        "l-hr",
         "l-tf",
         "l-gi",
         "l-gr",
@@ -1439,7 +1439,7 @@ exports.initiatives = [
         "l-si",
         "l-es",
         "l-se",
-        "l-ch",
+        "l-pf",
         "l-tr"
       ],
       "label": "europe-beyond-coal"
@@ -1542,7 +1542,7 @@ exports.initiatives = [
         "good-identifying-best-levers",
         "goal-fight-fossil",
         "goal-deploy-renewables",
-        "good-at-finance-and-subsidies",
+        "good-finance-and-subsidies",
         "goal-divestment",
         "goal-carbon-regulation",
         "knowledge-projections",
@@ -1595,7 +1595,9 @@ exports.initiatives = [
         "knowledge-assess-companies",
         "do-certify-company-climate-impact",
         "lobby-corporations",
-        "target-corporations"
+        "target-corporations",
+        "l-ca",
+        "l-us"
       ],
       "label": "the-climate-registry"
     },
@@ -1628,10 +1630,10 @@ exports.initiatives = [
         "l-ad",
         "l-at",
         "l-bg",
-        "l-by",
-        "l-be",
         "l-ba",
-        "l-hr",
+        "l-be",
+        "l-by",
+        "l-ch",
         "l-cy",
         "l-cz",
         "l-ee",
@@ -1639,7 +1641,7 @@ exports.initiatives = [
         "l-dk",
         "l-fi",
         "l-fr",
-        "l-pf",
+        "l-hr",
         "l-tf",
         "l-gi",
         "l-gr",
@@ -1671,9 +1673,8 @@ exports.initiatives = [
         "l-si",
         "l-es",
         "l-se",
-        "l-ch",
-        "l-tr",
-        "l-af"
+        "l-pf",
+        "l-tr"
       ],
       "label": "eit-climate-kic"
     },
@@ -1734,10 +1735,10 @@ exports.initiatives = [
         "l-ad",
         "l-at",
         "l-bg",
-        "l-by",
-        "l-be",
         "l-ba",
-        "l-hr",
+        "l-be",
+        "l-by",
+        "l-ch",
         "l-cy",
         "l-cz",
         "l-ee",
@@ -1745,7 +1746,7 @@ exports.initiatives = [
         "l-dk",
         "l-fi",
         "l-fr",
-        "l-pf",
+        "l-hr",
         "l-tf",
         "l-gi",
         "l-gr",
@@ -1777,9 +1778,8 @@ exports.initiatives = [
         "l-si",
         "l-es",
         "l-se",
-        "l-ch",
-        "l-tr",
-        "l-af"
+        "l-pf",
+        "l-tr"
       ],
       "label": "energy-cities"
     },
