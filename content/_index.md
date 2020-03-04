@@ -1,7 +1,7 @@
 ---
 title: Our Future Needs You.
 featured_image: '/images/desert.jpg'
-description: Go out and save our world.
+description: Go out and save the world.
 ---
 
 The breakdown of our climate and natural world [threatens our civilization](https://rebellion.earth/the-truth/the-emergency). The best available science says:
