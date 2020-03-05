@@ -16,7 +16,7 @@ We collect inspiring ideas that could help the movement. Some are tiny, some are
 
 <a href="/what-else/ideas" class="button">Check out <span class="button-text-highlight">Ideas</span></a>
 
-# Conferences
-Let's collect what interesting conferences are happening throughout the year.
+# Calendar
+Let's collect what important events and conferences are happening throughout the year.
 
-<a href="/what-else/conferences" class="button">Check out <span class="button-text-highlight">Conferences</span></a>
+<a href="/what-else/calendar" class="button">Check out the <span class="button-text-highlight">Calendar</span></a>

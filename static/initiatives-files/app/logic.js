@@ -1,9 +1,10 @@
 exports.logic = {
     surveyLink: 'https://services342876.typeform.com/to/H8DLJt',
     sortOrder: ['good', 'is', 'goal', 'use', 'support'],
-    possibleParams: ['role', 'investment', 'time'],
+    possibleParams: ['role', 'employer', 'investment', 'time'],
     questionToLabel: param => ({
-        role: 'Special Role',
+        role: 'Role',
+        employer: 'Your Company',
         investment: 'Your Contribution',
         time: 'Your Involvement',
     })[param],
@@ -18,6 +19,7 @@ exports.logic = {
         return urlParams.has('role') && urlParams.has('investment') && urlParams.has('time')
                ? {
                     role: convert('role')[0],
+                    employer: convert('employer')[0],
                     investment: convert('investment')[0],
                     time: convert('time'),
                 }
@@ -31,7 +33,7 @@ exports.logic = {
 
         const locationMatches = tags => tags.includes('l-global') || tags.includes('l-' + location.countryCode);
 
-        if(userParams.role === 'user-special-city-official') {
+        if(userParams.role === 'user-role-city-official') {
             return {
                 locationMissing: !location.countryCode,
                 result: [
@@ -59,21 +61,17 @@ exports.logic = {
                 ]
             };
     
-        } else if(userParams.role === 'user-special-high-in-corporate') {
+        } else if(userParams.role === 'user-role-employed') {
             return {
                 locationMissing: !location.countryCode,
                 result : [
-                    userParams.TODO === 'TODO-building'
+                    userParams.employer === 'user-employer-building'
                     ? {
                         type: 'initiatives',
                         headline: 'Reduce your buildings\' impact on the climate',
                         description: 'TODO Reduce your carbon footprint and with support and certification from these organizations',
                         query: tags => 
-                            (
-                                tags.includes('lobby-corporations')
-                                ||
-                                tags.includes('is-owned-by-companies')
-                            )
+                            tags.includes('do-certify-company-building-climate-impact')
                             && locationMatches(tags),
                     }
                     : {
@@ -108,7 +106,7 @@ exports.logic = {
                 ],
             };
     
-        } else if(userParams.role === 'user-special-high-in-ngo') {
+        } else if(userParams.role === 'user-role-active-in-ngo') {
             return {
                 result: [
                     {
@@ -133,9 +131,33 @@ exports.logic = {
                     { type: 'restart-link' },
                 ],
             };
+        } else if(userParams.role === 'user-role-health-worker') {
+            return {
+                result: [
+                    {
+                        type: 'initiatives',
+                        headline: 'Connect with Health Workers who raise awareness in their communities',
+                        description: 'TODO copy',
+                        query: tags => tags.includes('relevant-for-health-workers') && locationMatches(tags),
+                    },
+                    { type: 'restart-link' },
+                ],
+            };
+        } else if(userParams.role === 'user-role-faith-leader') {
+            return {
+                result: [
+                    {
+                        type: 'initiatives',
+                        headline: 'Connect with Faith Leaders who raise awareness in their communities',
+                        description: 'TODO copy',
+                        query: tags => tags.includes('relevant-for-faith-leaders') && locationMatches(tags),
+                    },
+                    { type: 'restart-link' },
+                ],
+            };
         }
     
-        // assuming user-special-none'
+        // assuming user-role-none'
 
         const joinTags = userParams.time.map(t => ({
             'user-time-employment': 'join-paid',
@@ -165,7 +187,7 @@ exports.logic = {
                     },
                 }, 
                 ...(
-                    userParams.role === 'user-special-creative'
+                    userParams.role === 'user-role-creative'
                     ? [{
                         type: 'creative-brief'
                     }]

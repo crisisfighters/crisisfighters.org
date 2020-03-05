@@ -15,7 +15,7 @@ The breakdown of our climate and natural world [threatens our civilization](http
 *Hundreds of initiatives worldwide* fight hard to keep the crisis from getting worse.
 We help you find out how you can contribute most efficiently.
 
-This page is crowdsourced, that means you [can change and improve everything](contribute). We compile [initiatives](initiatives), [events](conferences), [ideas](ideas) and more so you quickly find out where your skills make the most impact.
+This page is crowdsourced, that means you [can change and improve everything](contribute). We compile [initiatives](initiatives), [events](/what-else/calendar), [ideas](ideas) and more so you quickly find out where your skills make the most impact.
 
 ## You can have a big impact.
 
