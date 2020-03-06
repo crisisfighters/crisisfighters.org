@@ -8,8 +8,8 @@ exports.initiatives = [
         "is-ngo",
         "goal-divestment",
         "use-stock-voting-rights",
-        "lobby-corporations",
-        "target-corporations"
+        "lobby-companies",
+        "target-companies"
       ],
       "label": "urgewald"
     },
@@ -61,8 +61,8 @@ exports.initiatives = [
         "join-internship",
         "lobby-government",
         "target-government",
-        "lobby-corporations",
-        "target-corporations",
+        "lobby-companies",
+        "target-companies",
         "l-us"
       ]
     },
@@ -403,7 +403,7 @@ exports.initiatives = [
         "goal-fight-fossil",
         "use-civil-disobedience",
         "use-protests",
-        "target-corporations",
+        "target-companies",
         "l-de"
       ],
       "label": "ende-gelaende"
@@ -468,7 +468,7 @@ exports.initiatives = [
         "use-civil-disobedience",
         "use-protests",
         "target-government",
-        "target-corporations",
+        "target-companies",
         "l-de"
       ],
       "label": "hambacher-forst"
@@ -535,7 +535,7 @@ exports.initiatives = [
         "goal-fight-fossil",
         "use-civil-disobedience",
         "use-protests",
-        "target-corporations",
+        "target-companies",
         "l-pl"
       ],
       "label": "limity-jsme-my"
@@ -577,8 +577,8 @@ exports.initiatives = [
         "propagate-divestment",
         "lobby-government",
         "target-government",
-        "lobby-corporations",
-        "target-corporations"
+        "lobby-companies",
+        "target-companies"
       ],
       "label": "fossil-free"
     },
@@ -613,8 +613,8 @@ exports.initiatives = [
         "propagate-divestment",
         "lobby-government",
         "target-government",
-        "lobby-corporations",
-        "target-corporations",
+        "lobby-companies",
+        "target-companies",
         "l-al",
         "l-ad",
         "l-at",
@@ -740,7 +740,7 @@ exports.initiatives = [
         "goal-conservation",
         "use-litigation",
         "target-government",
-        "target-corporations"
+        "target-companies"
       ]
     },
     "description": {
@@ -791,7 +791,7 @@ exports.initiatives = [
         "goal-conservation",
         "use-litigation",
         "target-government",
-        "target-corporations"
+        "target-companies"
       ],
       "label": "earthjustice"
     },
@@ -846,7 +846,7 @@ exports.initiatives = [
         "goal-fight-fossil",
         "use-litigation",
         "target-government",
-        "target-corporations"
+        "target-companies"
       ],
       "label": "protect-the-planet"
     },
@@ -885,7 +885,7 @@ exports.initiatives = [
         "skill-jurist",
         "use-litigation",
         "target-government",
-        "target-corporations",
+        "target-companies",
         "l-nl"
       ]
     },
@@ -926,8 +926,8 @@ exports.initiatives = [
         "propagate-conservation",
         "lobby-government",
         "target-government",
-        "lobby-corporations",
-        "target-corporations",
+        "lobby-companies",
+        "target-companies",
         "l-global",
         "l-de"
       ]
@@ -974,8 +974,8 @@ exports.initiatives = [
         "propagate-conservation",
         "lobby-government",
         "target-government",
-        "lobby-corporations",
-        "target-corporations",
+        "lobby-companies",
+        "target-companies",
         "l-global",
         "l-de"
       ]
@@ -1575,7 +1575,7 @@ exports.initiatives = [
         "is-ngo",
         "is-network",
         "lobby-government",
-        "lobby-corporations",
+        "lobby-companies",
         "l-de"
       ],
       "label": "hamburg-muss-handeln"
@@ -1691,9 +1691,14 @@ exports.initiatives = [
       "tagsInteresting": [],
       "tagsRelevant": [
         "is-think-tank",
+        "knowledge-projections",
+        "knowledge-assess-companies",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose",
         "knowledge-propose-legislation",
         "target-government",
-        "lobby-corporations"
+        "lobby-companies"
       ],
       "label": "c2es"
     },
@@ -1717,9 +1722,11 @@ exports.initiatives = [
         "is-ngo",
         "knowledge-projections",
         "knowledge-assess-companies",
-        "do-certify-company-climate-impact",
-        "lobby-corporations",
-        "target-corporations",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose",
+        "lobby-companies",
+        "target-companies",
         "l-ca",
         "l-us"
       ],
@@ -1955,8 +1962,8 @@ exports.initiatives = [
         "is-owned-by-companies",
         "is-network",
         "join-paid",
-        "lobby-corporations",
-        "target-corporations",
+        "lobby-companies",
+        "target-companies",
         "l-global"
       ],
       "label": "wbcsd"
@@ -2039,7 +2046,13 @@ exports.initiatives = [
       "name": "3Degrees",
       "link": "https://3degreesinc.com",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-consultancy",
+        "knowledge-assess-companies",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose"
+      ]
     }
   },
   {
@@ -2071,7 +2084,15 @@ exports.initiatives = [
       "name": "Beyond Coal Australia",
       "link": "https://www.beyondcoal.org.au",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-ngo",
+        "is-network",
+        "lobby-government",
+        "target-government",
+        "lobby-companies",
+        "target-companies",
+        "l-au"
+      ]
     }
   },
   {
@@ -2079,7 +2100,15 @@ exports.initiatives = [
       "name": "Beyond Coal US",
       "link": "https://coal.sierraclub.org",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-ngo",
+        "is-network",
+        "lobby-government",
+        "target-government",
+        "lobby-companies",
+        "target-companies",
+        "l-us"
+      ]
     }
   },
   {
@@ -2087,7 +2116,13 @@ exports.initiatives = [
       "name": "BSR",
       "link": "https://www.bsr.org",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-consultancy",
+        "knowledge-assess-companies",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose"
+      ]
     }
   },
   {
@@ -2103,7 +2138,14 @@ exports.initiatives = [
       "name": "CDP",
       "link": "https://www.cdp.net",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-consultancy",
+        "knowledge-assess-companies",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose",
+        "target-companies"
+      ]
     }
   },
   {
@@ -2111,7 +2153,9 @@ exports.initiatives = [
       "name": "Climate Action 100+",
       "link": "http://www.climateaction100.org",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "target-companies"
+      ]
     }
   },
   {
@@ -2127,7 +2171,14 @@ exports.initiatives = [
       "name": "Climate Disclosure Standards Board",
       "link": "https://www.cdsb.net",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-consultancy",
+        "knowledge-assess-companies",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose",
+        "target-companies"
+      ]
     }
   },
   {
@@ -2135,7 +2186,9 @@ exports.initiatives = [
       "name": "Climate Voice",
       "link": "https://climatevoice.org",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "target-students"
+      ]
     }
   },
   {
@@ -2159,7 +2212,15 @@ exports.initiatives = [
       "name": "ecoact",
       "link": "https://eco-act.com",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-consultancy",
+        "knowledge-assess-companies",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose",
+        "target-companies",
+        "l-global"
+      ]
     }
   },
   {
@@ -2167,7 +2228,10 @@ exports.initiatives = [
       "name": "ecoAmerica",
       "link": "https://ecoamerica.org",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "target-faith-leaders",
+        "target-medical-workers"
+      ]
     }
   },
   {
@@ -2175,7 +2239,9 @@ exports.initiatives = [
       "name": "Environmental Defense Fund",
       "link": "https://www.edf.org",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "support-train-professionals"
+      ]
     }
   },
   {
@@ -2183,7 +2249,10 @@ exports.initiatives = [
       "name": "EPA Center for Corporate Climate Leadership",
       "link": "https://www.epa.gov/climateleadership",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "consult-companies-disclose",
+        "target-companies"
+      ]
     }
   },
   {
@@ -2191,7 +2260,13 @@ exports.initiatives = [
       "name": "ICF",
       "link": "https://www.icf.com",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-consultancy",
+        "knowledge-assess-companies",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose"
+      ]
     }
   },
   {
@@ -2199,7 +2274,10 @@ exports.initiatives = [
       "name": "International Climate Initiative",
       "link": "https://www.international-climate-initiative.com",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-public",
+        "is-fund"
+      ]
     }
   },
   {
@@ -2207,7 +2285,15 @@ exports.initiatives = [
       "name": "International Living Future Institute",
       "link": "https://living-future.org",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-think-tank",
+        "is-consultancy",
+        "knowledge-assess-companies",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose",
+        "target-companies"
+      ]
     }
   },
   {
@@ -2223,7 +2309,18 @@ exports.initiatives = [
       "name": "Metabolic",
       "link": "https://www.metabolic.nl",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-think-tank",
+        "is-fund",
+        "is-consultancy",
+        "knowledge-assess-companies",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose",
+        "target-public",
+        "target-government",
+        "target-companies"
+      ]
     }
   },
   {
@@ -2231,7 +2328,9 @@ exports.initiatives = [
       "name": "München muss handeln",
       "link": "https://muenchen-muss-handeln.de",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "target-companies"
+      ]
     }
   },
   {
@@ -2271,7 +2370,12 @@ exports.initiatives = [
       "name": "Plan A",
       "link": "https://plana.earth",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-consultancy",
+        "knowledge-assess-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose"
+      ]
     }
   },
   {
@@ -2279,7 +2383,10 @@ exports.initiatives = [
       "name": "RE100",
       "link": "http://there100.org",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-network",
+        "target-companies"
+      ]
     }
   },
   {
@@ -2295,7 +2402,17 @@ exports.initiatives = [
       "name": "Science Based Targets",
       "link": "https://sciencebasedtargets.org",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-ngo",
+        "is-think-tank",
+        "is-network",
+        "is-consultancy",
+        "knowledge-assess-companies",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose",
+        "target-companies"
+      ]
     }
   },
   {
@@ -2311,7 +2428,10 @@ exports.initiatives = [
       "name": "Sustainable Development Technology Canada",
       "link": "https://www.sdtc.ca",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-public",
+        "is-fund"
+      ]
     }
   },
   {
@@ -2335,7 +2455,9 @@ exports.initiatives = [
       "name": "Under 2 Coalition",
       "link": "https://www.under2coalition.org",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "target-companies"
+      ]
     }
   },
   {
@@ -2343,7 +2465,15 @@ exports.initiatives = [
       "name": "We Mean Business Coalition",
       "link": "https://www.wemeanbusinesscoalition.org",
       "tagsInteresting": [],
-      "tagsRelevant": []
+      "tagsRelevant": [
+        "is-ngo",
+        "is-network",
+        "knowledge-assess-companies",
+        "certify-companies",
+        "consult-companies-reduce",
+        "consult-companies-disclose",
+        "target-companies"
+      ]
     }
   }
 ];
