@@ -23,7 +23,7 @@ This page contains relevant events and all conferences with a global perspective
 #### May 6: [re:publica](https://re-publica.com) (Berlin, Germany)
 * Renowned conference with interesting talks on media, digital tehcnology and its impact on societies and politics. Great for networking and a political take on technology. Not specifically focused on the climate crisis.
 
-#### September: [EU-China Summit on Trade and Climate Change] (Leipzig)
+#### September: EU-China Summit on Trade and Climate Change (Leipzig)
 Organised by Germany during its rotating presidency of the EU council, the EU-China summit takes place weeks before the October UN Biodiversity Conference and COP26 in November. What the EU and China agree on [will have influence on these events](https://www.climatechangenews.com/2019/11/11/eu-plots-climate-deal-china/).
 
 #### October 15: [UN Biodiversity Conference / CBD COP15](https://www.cbd.int/cop/) (Kunming, China)

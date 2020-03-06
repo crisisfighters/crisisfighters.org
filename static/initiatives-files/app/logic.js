@@ -65,40 +65,53 @@ exports.logic = {
             return {
                 locationMissing: !location.countryCode,
                 result : [
-                    userParams.employer === 'user-employer-building'
-                    ? {
+                    {
+                        type: 'aaa',
+                        headline: 'AAA',
+                        description: userParams.employer.includes('user-employer-high-ranking')
+                                ? 'TODO manager'
+                                : 'TODO organize',
+                    }, {
                         type: 'initiatives',
-                        headline: 'Reduce your buildings\' impact on the climate',
-                        description: 'TODO Reduce your carbon footprint and with support and certification from these organizations',
+                        headline: 'Have your company reduce and disclose its emissions',
+                        description: userParams.employer.includes('user-employer-high-ranking')
+                                ? 'TODO Reduce your carbon footprint and with support and certification from these organizations'
+                                : 'TODO organize to',
                         query: tags => 
-                            tags.includes('do-certify-company-building-climate-impact')
-                            && locationMatches(tags),
-                    }
-                    : {
+                                (
+                                    tags.includes('consult-companies-disclose')
+                                    || tags.includes('consult-companies-reduce')
+                                )
+                                && (
+                                    userParams.employer !== 'user-employer-building'
+                                    || tags.includes('consult-building-companies')
+                                )
+                                && locationMatches(tags),
+                    }, {
+                        type: 'initiatives',
+                        headline: 'Have your company disclose its emissions',
+                        description: userParams.employer.includes('user-employer-high-ranking')
+                                ? 'TODO Reduce your carbon footprint and with support and certification from these organizations'
+                                : 'TODO organize to',
+                        query: tags => 
+                                tags.includes('consult-companies-disclose')
+                                && (
+                                    userParams.employer !== 'user-employer-building'
+                                    || tags.includes('consult-building-companies')
+                                )
+                                && locationMatches(tags),
+                    }, {
                         type: 'initiatives',
                         headline: 'Get Certified for going Net Zero',
                         description: 'TODO Reduce your carbon footprint and with support and certification from these organizations',
-                        query: tags => tags.includes('do-certify-company-climate-impact') && locationMatches(tags),
-                    }
-                    , {
-                        type: 'initiatives',
-                        headline: 'These Initiatives work with Corporations',
-                        description: 'TODO tags',
-                        query: tags => 
-                            (
-                                tags.includes('lobby-corporations')
-                                ||
-                                tags.includes('is-owned-by-companies')
-                            )
-                            && locationMatches(tags),
-                    },
-                    {
+                        query: tags => tags.includes('certify-companies') && locationMatches(tags),
+                    }, {
                         type: 'initiatives',
                         headline: 'Is your Company part of these networks?',
                         description: 'These initiatives connect companies to support each other in realizing a more sustainable vision for the future.',
                         query: tags => 
                             tags.includes('is-network')
-                            && tags.includes('target-corporations')
+                            && tags.includes('target-companies')
                             && locationMatches(tags),
                     },
                     { type: 'cf-b2b' },

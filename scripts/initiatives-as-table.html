@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            // Allows node.js `require()` in included files
+            const exports = {};
+        </script>
+        <script src="../static/initiatives-files/data/initiatives.js"></script>
+    </head>
+    <body>
+        <table id="table"></table>
+        <script>
+            const table = document.getElementById('table');
+            let html = '';
+            for(let {meta} of exports.initiatives) {
+                html+= `<tr><td><a href="${meta.link}">${meta.name}</a></td></tr>`;
+            }
+            table.innerHTML = html
+        </script>
+    </body>
+</html>
