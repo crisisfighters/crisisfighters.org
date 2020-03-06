@@ -185,7 +185,7 @@ const nothingFound = () => `
 
 const crisisFightersB2B = index => `
 <div class="results-element results-crisisfighters-b2b">
-    <h2>Suggestion ${index}: Make your company part of the solution</h2>
+    <h2>Suggestion ${index}: Your Company can join CrisisFighters</h2>
     <p>Ask your employees to put one hour per month into improving CrisisFighters and talk about it to get more people to engage.</p>
     ${button('/b2b', 'CrisisFighters B2B')}
 </div>`;
