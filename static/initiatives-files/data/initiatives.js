@@ -2033,5 +2033,233 @@ exports.initiatives = [
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-20"
     }
+  }, {
+    "meta": {
+      "name": "Science Based Targets",
+      "link": "https://sciencebasedtargets.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Environmental Defense Fund",
+      "link": "https://www.edf.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Climate Central",
+      "link": "https://www.climatecentral.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "E2",
+      "link": "https://e2.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Better Energy",
+      "link": "https://www.betterenergy.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Local Governments for Sustainability",
+      "link": "https://www.iclei.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "International Living Future Institute",
+      "link": "https://living-future.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Rocky Mountain Institute",
+      "link": "https://rmi.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Nature Conservancy",
+      "link": "https://www.nature.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "CDP",
+      "link": "https://www.cdp.net",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Climate Disclosure Standards Board",
+      "link": "https://www.cdsb.net",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Arbor Day Foundation",
+      "link": "https://www.arborday.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Climate Voice",
+      "link": "https://climatevoice.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Sustainable Energy for All",
+      "link": "https://www.seforall.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "EPA Center for Corporate Climate Leadership",
+      "link": "https://www.epa.gov/climateleadership",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "BSR",
+      "link": "https://www.bsr.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "ecoAmerica",
+      "link": "https://ecoamerica.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "ecoact",
+      "link": "https://eco-act.com",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "International Climate Initiative",
+      "link": "https://www.international-climate-initiative.com",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "3Degrees",
+      "link": "https://3degreesinc.com",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Second Nature",
+      "link": "https://secondnature.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Sustainable Development Technology Canada",
+      "link": "https://www.sdtc.ca",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "ICF",
+      "link": "https://www.icf.com",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Metabolic",
+      "link": "https://www.metabolic.nl",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "American Society of Adaptation Professionals",
+      "link": "https://adaptationprofessionals.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "RE100",
+      "link": "http://there100.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Climate Action 100+",
+      "link": "http://www.climateaction100.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Under 2 Coalition",
+      "link": "https://www.under2coalition.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "The Climate Group",
+      "link": "https://www.theclimategroup.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "One Tree Planted",
+      "link": "https://onetreeplanted.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Plan A",
+      "link": "https://plana.earth",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Earth Guardians",
+      "link": "https://www.earthguardians.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Parents for Future Germany",
+      "link": "https://parentsforfuture.de/",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Parents for Future UK",
+      "link": "https://www.parentsforfuture.org.uk",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "München muss handeln",
+      "link": "https://muenchen-muss-handeln.de",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Beyond Coal Australia",
+      "link": "https://www.beyondcoal.org.au",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Beyond Coal US",
+      "link": "https://coal.sierraclub.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
+  }, {
+    "meta": {
+      "name": "Carbon Capture Coalition",
+      "link": "https://carboncapturecoalition.org",
+      "tagsInteresting": [],"tagsRelevant": []
+    }
   }
 ];
