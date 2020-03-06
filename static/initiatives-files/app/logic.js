@@ -35,7 +35,8 @@ exports.logic = {
         const locationMatches = tags => tags.includes('l-global') || tags.includes('l-' + location.countryCode);
 
         const result = {
-            locationMissing: false,
+            locationMissing: !location.countryCode,
+
             result: [],
         };
         // clone non-atomic values to make mutable;
@@ -45,9 +46,6 @@ exports.logic = {
         const time = [...userParams.time];
 
         if(role.includes('user-role-city-official')) {
-            
-            result.locationMissing = !location.countryCode;
-
             result.result.push({
                 type: 'initiatives',
                 headline: 'Is your municipality a member of these networks?',
@@ -71,7 +69,6 @@ exports.logic = {
         }
 
         if(role.includes('user-role-employed')) {
-            result.locationMissing = !location.countryCode;
             result.result.push({
                 type: 'aaa',
                 isInCompanyLeadership: company.includes('user-company-leadership'),
@@ -105,6 +102,7 @@ exports.logic = {
             result.result.push({ type: 'cf-b2b' });
         }
         if(role.includes('user-role-active-in-ngo')) {
+            result.locationMissing = false;
             result.result.push({
                 type: 'initiatives',
                 headline: 'These Funds might support you',
@@ -152,20 +150,18 @@ exports.logic = {
                 'user-time-volunteer': 'join-unpaid',
             }[t]));
 
-            result.result.locationMissing = investment === 'user-investment-time' && !location.countryCode,
+            if('user-investment-money') {
+                result.locationMissing = false;
+            }
+            const query = investment === 'user-investment-time'
+                            ? tags => tags.some(tag => joinTags.includes(tag)) && locationMatches(tags)
+                            : tags => true;
+
             result.result.push({
                 type: 'initiatives',
                 headline: 'Help Here',
                 description: 'If you fell something is wrong or missing, please reach out or contribute',
-                query: tags => ( 
-                                    investment === 'user-investment-money'
-                                    || tags.some(tag => joinTags.includes(tag))
-                                ) && (
-                                    investment === 'user-investment-money'
-                                    ||
-                                    // user-investment-time
-                                    locationMatches(tags)
-                                ),
+                query,
             });
         }
         if(role.includes('user-role-creative')) {
