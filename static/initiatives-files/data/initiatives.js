@@ -685,7 +685,58 @@ exports.initiatives = [
         "goal-divestment",
         "knowledge-assess-companies",
         "propagate-divestment",
-        "lobby-government"
+        "lobby-government",
+        "l-al",
+        "l-ad",
+        "l-at",
+        "l-bg",
+        "l-ba",
+        "l-be",
+        "l-by",
+        "l-ch",
+        "l-cy",
+        "l-cz",
+        "l-ee",
+        "l-de",
+        "l-dk",
+        "l-fi",
+        "l-fr",
+        "l-gb",
+        "l-gf",
+        "l-hr",
+        "l-tf",
+        "l-gi",
+        "l-gr",
+        "l-gl",
+        "l-va",
+        "l-hu",
+        "l-is",
+        "l-ie",
+        "l-im",
+        "l-it",
+        "l-lv",
+        "l-li",
+        "l-lt",
+        "l-lu",
+        "l-md",
+        "l-mc",
+        "l-mn",
+        "l-ms",
+        "l-me",
+        "l-ma",
+        "l-nl",
+        "l-no",
+        "l-pl",
+        "l-pt",
+        "l-ro",
+        "l-ru",
+        "l-rs",
+        "l-sk",
+        "l-si",
+        "l-es",
+        "l-se",
+        "l-pf",
+        "l-tr"
       ],
       "label": "bank-watch"
     },
@@ -1727,8 +1778,7 @@ exports.initiatives = [
         "consult-companies-disclose",
         "lobby-companies",
         "target-companies",
-        "l-ca",
-        "l-us"
+        "l-global"
       ],
       "label": "the-climate-registry"
     },
@@ -2051,7 +2101,8 @@ exports.initiatives = [
         "knowledge-assess-companies",
         "certify-companies",
         "consult-companies-reduce",
-        "consult-companies-disclose"
+        "consult-companies-disclose",
+        "l-global"
       ]
     }
   },
@@ -2121,7 +2172,8 @@ exports.initiatives = [
         "knowledge-assess-companies",
         "certify-companies",
         "consult-companies-reduce",
-        "consult-companies-disclose"
+        "consult-companies-disclose",
+        "l-global"
       ]
     }
   },
@@ -2144,7 +2196,8 @@ exports.initiatives = [
         "certify-companies",
         "consult-companies-reduce",
         "consult-companies-disclose",
-        "target-companies"
+        "target-companies",
+        "l-global"
       ]
     }
   },
@@ -2177,7 +2230,8 @@ exports.initiatives = [
         "certify-companies",
         "consult-companies-reduce",
         "consult-companies-disclose",
-        "target-companies"
+        "target-companies",
+        "l-global"
       ]
     }
   },
@@ -2265,7 +2319,8 @@ exports.initiatives = [
         "knowledge-assess-companies",
         "certify-companies",
         "consult-companies-reduce",
-        "consult-companies-disclose"
+        "consult-companies-disclose",
+        "l-global"
       ]
     }
   },
@@ -2292,7 +2347,8 @@ exports.initiatives = [
         "certify-companies",
         "consult-companies-reduce",
         "consult-companies-disclose",
-        "target-companies"
+        "target-companies",
+        "l-global"
       ]
     }
   },
@@ -2319,7 +2375,8 @@ exports.initiatives = [
         "consult-companies-disclose",
         "target-public",
         "target-government",
-        "target-companies"
+        "target-companies",
+        "l-nl"
       ]
     }
   },
@@ -2374,7 +2431,8 @@ exports.initiatives = [
         "is-consultancy",
         "knowledge-assess-companies",
         "consult-companies-reduce",
-        "consult-companies-disclose"
+        "consult-companies-disclose",
+        "l-de"
       ]
     }
   },
@@ -2385,7 +2443,8 @@ exports.initiatives = [
       "tagsInteresting": [],
       "tagsRelevant": [
         "is-network",
-        "target-companies"
+        "target-companies",
+        "l-global"
       ]
     }
   },
@@ -2411,7 +2470,8 @@ exports.initiatives = [
         "certify-companies",
         "consult-companies-reduce",
         "consult-companies-disclose",
-        "target-companies"
+        "target-companies",
+        "l-global"
       ]
     }
   },
@@ -2472,7 +2532,8 @@ exports.initiatives = [
         "certify-companies",
         "consult-companies-reduce",
         "consult-companies-disclose",
-        "target-companies"
+        "target-companies",
+        "l-global"
       ]
     }
   }
