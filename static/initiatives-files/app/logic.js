@@ -86,7 +86,7 @@ exports.logic = {
             result.result.push({
                 type: 'initiatives',
                 headline: 'Invest Here',
-                description: 'TODO If you fell something is wrong or missing, please reach out or contribute',
+                description: 'Each of the these initiatives is effective in at least one of the areas you want to invest in. Check out their websites to find out more and donate.',
                 query: tags => tags.some(tag => investmentArea.includes(tag)) && locationMatches(tags),
             });
         }
@@ -131,7 +131,7 @@ exports.logic = {
             result.locationMissing = false;
             result.result.push({
                 type: 'initiatives',
-                headline: 'These Funds might support you',
+                headline: 'These Funds might support your NGO',
                 description: 'Of course this depends on what kind of NGO you run and your financial needs. These funds try their best at providing resources to individuals or initiatives that fight the climate crisis.',
                 query: tags => tags.includes('is-fund'),
             });

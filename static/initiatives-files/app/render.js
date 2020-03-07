@@ -1,7 +1,8 @@
 
 
-function button(link, label, primary) {
-    return `<a href="${link}" class="button ${primary ? 'button-primary' : ''}">${renderMd(label)}</a>`
+function button(link, label, flags) {
+    const {primary, blank}  = flags || {};
+    return `<a href="${link}" ${blank ? 'target="_blank' : ''}class="button ${primary ? 'button-primary' : ''}">${renderMd(label)}</a>`
 };
 
 function renderStartPage() {
@@ -17,7 +18,7 @@ function renderStartPage() {
         </ul>
         
         <p>By answering a few quick questions, we can show you what initiatives you should invest your time or money into.</p>
-        ${button(exports.logic.surveyLink, 'Launch **Crisis Recruiter**', true)}
+        ${button(exports.logic.surveyLink, 'Launch **Crisis Recruiter**', {primary: true})}
       </header>
     </article>
   </div>
@@ -164,6 +165,7 @@ const renderElements = elements => {
             case 'ideas': return ideas(realIndex);
             case 'contribute': return contribute(realIndex);
             case 'creative-brief': return creativeBrief(realIndex);
+            case 'aaa': return aaa(realIndex);
             default: return `<p>Unknown: ${element.type}</p>`;
         }
     }).join('');
@@ -210,6 +212,23 @@ const creativeBrief = index => `
     <h2>Suggestion ${index}: Run your own campaign!</h2>
     <p>TODO copy. Crowd-sourcing, talking about it</p>
     ${button('https://docs.google.com/document/d/1xrc1t-8ps30AXfwR2cogCuFc3FBbfFTX-VOwJCkW5-4', 'Check out our **Creative Brief** (draft)')}
+
+</div>`;
+
+const aaa = index => `
+<div class="results-element results-creative-brief">
+    <h2>Suggestion ${index}: Transform your company with the AAA framework</h2>
+    <p>The Environmental Defense Fund created a powerful but easy 3-step framework to allow your company to execute a <b>science-based climate policy agenda</b>.</p>
+
+    <img align="right" src="https://business.edf.org/wp-content/uploads/AAA_GFX_1500.jpg" width="353" height="212">
+    
+    <p>Climate change poses an unprecedented threat to companies’ operations, value chains, employees and communities. The economic costs of climate change – from damage to facilities, disrupted operations and supply chains and lost productivity – are already in the hundreds of millions of dollars and expected to reach trillions. While voluntary actions to reduce emissions are important, only public policy can deliver reductions at the speed and scale needed to limit the worst impacts of climate change.<br><strong><em>That’s why climate policy advocacy is an essential element of corporate sustainability leadership.</em></strong></p><p><strong>As a company, your political influence is a critical tool in the fight against climate change</strong>.</p>
+
+    ${button(
+        'https://business.edf.org/insights/aaa-leadership-framework/',
+        'Check out the **AAA Framework**',
+        {primary: true, blank: true}
+    )}
 
 </div>`;
 
