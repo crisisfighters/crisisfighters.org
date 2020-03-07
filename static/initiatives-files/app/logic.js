@@ -196,21 +196,21 @@ exports.logic = {
         if(role.includes('user-role-health-worker')) {
             result.result.push({
                 type: 'initiatives',
-                headline: 'Connect with Health Workers who raise awareness in their communities',
-                description: 'TODO copy',
-                query: tags => tags.includes('relevant-for-health-workers') && locationMatches(tags),
+                headline: 'Connect with Health Workers to Raise Awareness',
+                description: 'These initiatives connect physicians and health workers who fight for protecting our environment.Check out their websites!',
+                query: tags => tags.includes('target-health-workers') && locationMatches(tags),
             });
         }
         if(role.includes('user-role-faith-leader')) {
             result.result.push({
                 type: 'initiatives',
-                headline: 'Connect with Faith Leaders who raise awareness in their communities',
-                description: 'TODO copy',
-                query: tags => tags.includes('relevant-for-faith-leaders') && locationMatches(tags),
+                headline: 'Connect with Faith Leaders to Raise Awareness',
+                description: 'These initiatives connect faith leaders who fight for protecting our environment. Check out their websites!',
+                query: tags => tags.includes('target-faith-leaders') && locationMatches(tags),
             });
         }
     
-        if(!role.includes('user-role-employed')) {
+        if(!role.includes('user-role-employed') && !role.includes('user-role-faith-leader')) {
             result.result.push({type: 'climate-pledge'});
         }
 
