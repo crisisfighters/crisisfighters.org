@@ -55,9 +55,8 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "is-network",
-        "join-paid",
-        "join-internship",
-        "lobby-government",
+        "suggest-employment",
+        "suggest-internship",
         "target-government",
         "lobby-companies",
         "target-companies",
@@ -108,7 +107,7 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "is-network",
-        "join-internship",
+        "suggest-internship",
         "support-connect-activists-or-initiatives",
         "l-global"
       ]
@@ -149,13 +148,13 @@ exports.initiatives = [
         "is-network",
         "skill-flyering",
         "skill-influencer",
-        "join-paid",
-        "join-internship",
+        "suggest-employment",
+        "suggest-internship",
+        "suggest-money",
         "good-new-norms-and-values",
         "support-train-activists",
         "use-litigation",
         "target-public",
-        "lobby-government",
         "target-government",
         "l-global"
       ]
@@ -214,7 +213,7 @@ exports.initiatives = [
         "skill-project-or-event-management",
         "skill-social-media-aficionado",
         "skill-translator",
-        "join-unpaid",
+        "suggest-volunteer",
         "good-new-norms-and-values",
         "support-connect-activists-or-initiatives",
         "support-train-activists",
@@ -267,7 +266,7 @@ exports.initiatives = [
         "skill-project-or-event-management",
         "skill-social-media-aficionado",
         "skill-translator",
-        "join-unpaid",
+        "suggest-volunteer",
         "good-new-norms-and-values",
         "support-connect-activists-or-initiatives",
         "use-protests",
@@ -327,8 +326,9 @@ exports.initiatives = [
         "skill-flyering",
         "skill-influencer",
         "skill-social-media-aficionado",
-        "join-paid",
-        "join-unpaid",
+        "suggest-employment",
+        "suggest-volunteer",
+        "suggest-money",
         "good-new-norms-and-values",
         "knowledge-propose-legislation",
         "support-connect-activists-or-initiatives",
@@ -336,7 +336,6 @@ exports.initiatives = [
         "use-civil-disobedience",
         "use-protests",
         "target-public",
-        "lobby-government",
         "target-government"
       ]
     },
@@ -376,7 +375,7 @@ exports.initiatives = [
         "skill-jurist",
         "skill-flyering",
         "skill-creative-media",
-        "join-unpaid",
+        "suggest-volunteer",
         "goal-fight-fossil",
         "use-civil-disobedience",
         "use-protests",
@@ -430,7 +429,7 @@ exports.initiatives = [
         "is-grassroots",
         "skill-jurist",
         "skill-creative-media",
-        "join-unpaid",
+        "suggest-volunteer",
         "goal-fight-fossil",
         "goal-conservation",
         "knowledge-reveal-links-between-industry-and-politics",
@@ -492,7 +491,8 @@ exports.initiatives = [
         "is-ngo",
         "skill-jurist",
         "skill-flyering",
-        "join-unpaid",
+        "suggest-volunteer",
+        "suggest-money",
         "goal-fight-fossil",
         "use-civil-disobedience",
         "use-protests",
@@ -529,6 +529,8 @@ exports.initiatives = [
         "is-ngo",
         "is-think-tank",
         "is-network",
+        "suggest-volunteer",
+        "suggest-money",
         "good-energy-transformation",
         "goal-decentralized-energy-ownership",
         "goal-fight-fossil",
@@ -536,7 +538,6 @@ exports.initiatives = [
         "knowledge-propose-legislation",
         "propagate-divestment",
         "target-public",
-        "lobby-government",
         "target-government",
         "lobby-companies",
         "target-companies"
@@ -562,6 +563,8 @@ exports.initiatives = [
         "is-ngo",
         "is-think-tank",
         "is-network",
+        "suggest-volunteer",
+        "suggest-money",
         "good-energy-transformation",
         "goal-decentralized-energy-ownership",
         "goal-fight-fossil",
@@ -569,7 +572,6 @@ exports.initiatives = [
         "knowledge-assess-companies",
         "propagate-divestment",
         "target-public",
-        "lobby-government",
         "target-government",
         "lobby-companies",
         "target-companies",
@@ -591,10 +593,10 @@ exports.initiatives = [
         "is-ngo",
         "is-think-tank",
         "is-network",
+        "suggest-money",
         "goal-divestment",
         "knowledge-assess-companies",
         "propagate-divestment",
-        "lobby-government",
         "target-government",
         "l-europe"
       ]
@@ -634,8 +636,9 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "skill-jurist",
-        "join-paid",
-        "join-internship",
+        "suggest-employment",
+        "suggest-internship",
+        "suggest-money",
         "goal-fight-fossil",
         "goal-conservation",
         "use-litigation",
@@ -678,8 +681,9 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "skill-jurist",
-        "join-paid",
-        "join-internship",
+        "suggest-employment",
+        "suggest-internship",
+        "suggest-money",
         "goal-fight-fossil",
         "goal-conservation",
         "use-litigation",
@@ -732,6 +736,7 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "skill-jurist",
+        "suggest-money",
         "goal-fight-fossil",
         "use-litigation",
         "target-government",
@@ -767,6 +772,7 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "skill-jurist",
+        "suggest-money",
         "use-litigation",
         "target-government",
         "target-companies",
@@ -800,12 +806,13 @@ exports.initiatives = [
       "link": "http://wwf.panda.org/",
       "tags": [
         "is-ngo",
-        "join-paid",
-        "join-internship",
+        "suggest-employment",
+        "suggest-internship",
+        "suggest-volunteer",
+        "suggest-money",
         "goal-conservation",
         "propagate-conservation",
         "target-public",
-        "lobby-government",
         "target-government",
         "lobby-companies",
         "target-companies",
@@ -845,12 +852,13 @@ exports.initiatives = [
       "link": "https://www.greenpeace.org/international/",
       "tags": [
         "is-ngo",
-        "join-paid",
-        "join-internship",
+        "suggest-employment",
+        "suggest-internship",
+        "suggest-volunteer",
+        "suggest-money",
         "goal-conservation",
         "propagate-conservation",
         "target-public",
-        "lobby-government",
         "target-government",
         "lobby-companies",
         "target-companies",
@@ -895,12 +903,13 @@ exports.initiatives = [
       "link": "https://www.sierraclub.org/",
       "tags": [
         "is-ngo",
-        "join-paid",
-        "join-internship",
+        "suggest-employment",
+        "suggest-internship",
+        "suggest-volunteer",
+        "suggest-money",
         "goal-conservation",
         "propagate-conservation",
         "target-public",
-        "lobby-government",
         "target-government",
         "l-us"
       ]
@@ -957,11 +966,12 @@ exports.initiatives = [
         "is-network",
         "skill-flyering",
         "skill-influencer",
+        "suggest-volunteer",
+        "suggest-money",
         "goal-conservation",
         "propagate-conservation",
         "use-litigation",
         "target-public",
-        "lobby-government",
         "target-government",
         "l-global"
       ]
@@ -986,7 +996,6 @@ exports.initiatives = [
         "is-ngo",
         "goal-conservation",
         "propagate-conservation",
-        "lobby-government",
         "target-government"
       ]
     },
@@ -1046,8 +1055,9 @@ exports.initiatives = [
       "link": "https://www.wri.org/",
       "tags": [
         "is-ngo",
-        "join-paid",
-        "join-internship",
+        "suggest-employment",
+        "suggest-internship",
+        "suggest-money",
         "propagate-conservation",
         "l-global"
       ]
@@ -1095,8 +1105,8 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "skill-jurist",
-        "join-paid",
-        "join-internship",
+        "suggest-employment",
+        "suggest-internship",
         "knowledge-science-and-education",
         "l-us"
       ]
@@ -1110,11 +1120,10 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "skill-scientist",
-        "join-paid",
-        "join-internship",
+        "suggest-employment",
+        "suggest-internship",
         "knowledge-science-and-education",
         "target-public",
-        "lobby-government",
         "target-government",
         "l-global"
       ]
@@ -1159,7 +1168,7 @@ exports.initiatives = [
         "is-public",
         "knowledge-projections",
         "knowledge-science-and-education",
-        "lobby-government",
+        "target-government",
         "l-global"
       ]
     },
@@ -1256,8 +1265,9 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "is-fund",
-        "join-paid",
-        "join-internship",
+        "suggest-employment",
+        "suggest-internship",
+        "suggest-money",
         "l-global"
       ]
     },
@@ -1285,8 +1295,9 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "is-fund",
-        "join-paid",
-        "join-internship",
+        "suggest-employment",
+        "suggest-internship",
+        "suggest-money",
         "support-grant-for-projects",
         "support-grant-for-individuals",
         "l-global"
@@ -1337,10 +1348,10 @@ exports.initiatives = [
         "is-ngo",
         "is-fund",
         "skill-influencer",
+        "suggest-money",
         "support-connect-activists-or-initiatives",
         "support-grant-for-projects",
         "support-grant-for-individuals",
-        "target-government",
         "l-global"
       ]
     },
@@ -1386,8 +1397,10 @@ exports.initiatives = [
         "skill-influencer",
         "skill-project-or-event-management",
         "skill-social-media-aficionado",
-        "join-unpaid",
-        "support-connect-activists-or-initiatives",
+        "suggest-volunteer",
+        "good-identifying-best-levers",
+        "knowledge-assess-initiatives",
+        "target-public",
         "l-global"
       ]
     },
@@ -1404,9 +1417,9 @@ exports.initiatives = [
       "label": "12-06-2020-olympia",
       "tags": [
         "is-ngo",
+        "suggest-money",
         "knowledge-propose-legislation",
         "target-public",
-        "lobby-government",
         "target-government",
         "l-de"
       ]
@@ -1430,7 +1443,7 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "is-network",
-        "lobby-government",
+        "target-government",
         "lobby-companies",
         "l-de"
       ]
@@ -1453,7 +1466,6 @@ exports.initiatives = [
         "knowledge-educate-students",
         "use-protests",
         "target-public",
-        "lobby-government",
         "target-government"
       ]
     },
@@ -1511,7 +1523,8 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "is-think-tank",
-        "join-paid",
+        "suggest-employment",
+        "suggest-money",
         "good-identifying-best-levers",
         "goal-fight-fossil",
         "goal-deploy-renewables",
@@ -1522,7 +1535,6 @@ exports.initiatives = [
         "knowledge-assess-companies",
         "knowledge-propose-legislation",
         "knowledge-transparency-of-impact-of-goods-and-services",
-        "lobby-government",
         "target-government"
       ]
     },
@@ -1539,6 +1551,7 @@ exports.initiatives = [
       "label": "c2es",
       "tags": [
         "is-think-tank",
+        "suggest-money",
         "knowledge-projections",
         "knowledge-assess-companies",
         "certify-companies",
@@ -1567,6 +1580,7 @@ exports.initiatives = [
       "label": "the-climate-registry",
       "tags": [
         "is-ngo",
+        "suggest-money",
         "knowledge-projections",
         "knowledge-assess-companies",
         "certify-companies",
@@ -1621,6 +1635,7 @@ exports.initiatives = [
         "good-energy-transformation",
         "goal-deploy-renewables",
         "good-cities-and-housing",
+        "goal-carbon-neutral-cities",
         "goal-energy-independent-housing",
         "goal-increase-communal-energy-efficiency",
         "l-europe"
@@ -1657,14 +1672,15 @@ exports.initiatives = [
         "is-ngo",
         "is-network",
         "skill-influencer",
+        "suggest-money",
         "good-energy-transformation",
         "goal-decentralized-energy-ownership",
         "goal-deploy-renewables",
         "good-cities-and-housing",
+        "goal-carbon-neutral-cities",
         "goal-energy-independent-housing",
         "goal-increase-communal-energy-efficiency",
         "goal-sustainable-consumption",
-        "support-train-activists",
         "l-global"
       ]
     },
@@ -1698,7 +1714,8 @@ exports.initiatives = [
         "is-think-tank",
         "is-owned-by-companies",
         "is-network",
-        "join-paid",
+        "suggest-employment",
+        "suggest-money",
         "lobby-companies",
         "target-companies",
         "l-global"
@@ -1728,6 +1745,7 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "is-think-tank",
+        "suggest-money",
         "goal-fight-fossil",
         "use-litigation",
         "use-protests",
@@ -1814,8 +1832,9 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "is-network",
+        "suggest-volunteer",
+        "suggest-money",
         "target-public",
-        "lobby-government",
         "target-government",
         "lobby-companies",
         "target-companies",
@@ -1830,8 +1849,9 @@ exports.initiatives = [
       "tags": [
         "is-ngo",
         "is-network",
+        "suggest-volunteer",
+        "suggest-money",
         "target-public",
-        "lobby-government",
         "target-government",
         "lobby-companies",
         "target-companies",
@@ -1926,7 +1946,10 @@ exports.initiatives = [
     "meta": {
       "name": "Earth Guardians",
       "link": "https://www.earthguardians.org",
-      "tags": []
+      "tags": [
+        "suggest-volunteer",
+        "suggest-money"
+      ]
     }
   },
   {
@@ -1949,6 +1972,7 @@ exports.initiatives = [
       "name": "ecoAmerica",
       "link": "https://ecoamerica.org",
       "tags": [
+        "suggest-volunteer",
         "target-faith-leaders",
         "target-medical-workers",
         "l-us"
@@ -2019,7 +2043,17 @@ exports.initiatives = [
     "meta": {
       "name": "Local Governments for Sustainability",
       "link": "https://www.iclei.org",
-      "tags": []
+      "tags": [
+        "is-public",
+        "is-network",
+        "good-energy-transformation",
+        "goal-deploy-renewables",
+        "good-cities-and-housing",
+        "goal-carbon-neutral-cities",
+        "goal-energy-independent-housing",
+        "goal-increase-communal-energy-efficiency",
+        "l-global"
+      ]
     }
   },
   {
@@ -2030,12 +2064,12 @@ exports.initiatives = [
         "is-think-tank",
         "is-fund",
         "is-consultancy",
+        "suggest-money",
         "knowledge-assess-companies",
         "certify-companies",
         "consult-companies-reduce",
         "consult-companies-disclose",
         "target-public",
-        "target-government",
         "target-companies",
         "l-nl"
       ]
@@ -2070,7 +2104,9 @@ exports.initiatives = [
       "name": "Parents for Future Germany",
       "link": "https://parentsforfuture.de/",
       "tags": [
-        "is-grassroots"
+        "is-grassroots",
+        "suggest-volunteer",
+        "suggest-money"
       ]
     }
   },
@@ -2079,7 +2115,9 @@ exports.initiatives = [
       "name": "Parents for Future UK",
       "link": "https://www.parentsforfuture.org.uk",
       "tags": [
-        "is-grassroots"
+        "is-grassroots",
+        "suggest-volunteer",
+        "suggest-money"
       ]
     }
   },
@@ -2123,6 +2161,7 @@ exports.initiatives = [
         "is-think-tank",
         "is-network",
         "is-consultancy",
+        "suggest-money",
         "knowledge-assess-companies",
         "certify-companies",
         "consult-companies-reduce",
@@ -2136,7 +2175,10 @@ exports.initiatives = [
     "meta": {
       "name": "Second Nature",
       "link": "https://secondnature.org",
-      "tags": []
+      "tags": [
+        "suggest-money",
+        "l-us"
+      ]
     }
   },
   {

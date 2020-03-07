@@ -15,9 +15,9 @@ exports.logic = {
                     ? 1
                     : -1;
     },
-    possibleParams: ['role', 'company', 'contribution', 'time', 'investment-area'],
+    possibleParams: ['investment-area', 'role', 'company', 'contribution', 'time'],
     questionToLabel: param => ({
-        role: 'Role',
+        role: 'You',
         company: 'Your Company',
         contribution: 'Your Contribution',
         time: 'Time Commitment',
@@ -45,7 +45,8 @@ exports.logic = {
     },
     tagShouldBeVisibleInList: tag => tag.indexOf('skill-') !== 0
         && tag.indexOf('join-') !== 0
-        && tag.indexOf('propagate-') !== 0,
+        && tag.indexOf('propagate-') !== 0
+        && tag.indexOf('suggest-') !==0,
 
     determineResultDescriptor: (userParams, location) => {
 
@@ -57,8 +58,8 @@ exports.logic = {
             locationMissing: !location.countryCode,
             result: [],
         };
-        // clone non-atomic values to make mutable;
-        const role = [...userParams.role];
+        // clone non-atomic values to make mutable and remove decorative options;
+        const role = userParams.role.filter(r => r !== 'user-role-none');
         const company = [...userParams.company];
         let contribution = [...userParams.contribution];
         let time = [...userParams.time];
@@ -105,7 +106,9 @@ exports.logic = {
                 type: 'initiatives',
                 headline: 'Invest Here',
                 description: 'Each of the these initiatives is effective in at least one of the areas you want to invest in. Check out their websites to find out more and donate.',
-                query: tags => tags.some(tag => investmentArea.includes(tag)) && locationMatches(tags),
+                query: tags => tags.some(tag => investmentArea.includes(tag))
+                                && tags.includes('suggest-money')
+                                && locationMatches(tags),
             });
         }
         if(role.includes('user-role-creative')) {
@@ -120,6 +123,7 @@ exports.logic = {
             result.result.push({
                 type: 'initiatives',
                 headline: 'Your Company should disclose and reduce its emissions.',
+                style: {small: true},
                 description: company.includes('user-company-leadership')
                         ? 'TODO Reduce your carbon footprint and with support and certification from these organizations'
                         : 'TODO organize to',
@@ -130,6 +134,7 @@ exports.logic = {
                 result.result.push({
                     type: 'initiatives',
                     headline: 'There are Special Certifications for the Building Industry',
+                    style: {small: true},
                     description: company.includes('user-company-leadership')
                             ? 'TODO Reduce your carbon footprint and with support and certification from these organizations'
                             : 'TODO organize to',
@@ -164,7 +169,7 @@ exports.logic = {
             });
             result.result.push({
                 type: 'initiatives',
-                headline: 'Here the members of your NGO can get training',
+                headline: 'Here your NGO\'s members can get training',
                 description: 'Many initiatives offer training and educational resources for activists. Your NGO can benefit from these resources.',
                 query: tags => tags.includes('support-train-activists'),
             });
@@ -192,21 +197,21 @@ exports.logic = {
         }
 
         if(!role.includes('user-role-employed')
-            && !role.includes('user-role-active-in-ngo')
             && !role.includes('user-role-city-official')
             && contribution.includes('user-contribution-time')) {
 
-            const joinTags = time.map(t => ({
-                'user-time-employment': 'join-paid',
-                'user-time-internship': 'join-internship',
-                'user-time-volunteer': 'join-unpaid',
+            const suggestTags = time.map(t => ({
+                'user-time-employment': 'suggest-employment',
+                'user-time-internship': 'suggest-internship',
+                'user-time-volunteer': 'suggest-volunteer',
             }[t]));
 
             result.result.push({
                 type: 'initiatives',
                 headline: 'Help Here',
-                description: 'TODO If you fell something is wrong or missing, please reach out or contribute',
-                query: tags => tags.some(tag => joinTags.includes(tag)) && locationMatches(tags),
+                description: `From the ${numberOfInitiatives()} initiatives in our databse, they best match your responnses and have the highest impact. Please check out their websites to learn more!`,
+                query: tags => tags.some(tag => suggestTags.includes(tag))
+                                && locationMatches(tags),
             });
 
         }

@@ -158,7 +158,7 @@ const renderElements = elements => {
                     return nothingFound();
                 }
                 showedInitiatives = true;
-                return initiativeSet(element.headline, element.description, initiatives, realIndex);
+                return initiativeSet(element, initiatives, realIndex);
             }
             case 'restart-link': return restartLink(realIndex);
             case 'cf-b2b': return crisisFightersB2B(realIndex);
@@ -242,20 +242,24 @@ const aaa = index => `
 
 </div>`;
 
-    const initiativeSet = (headline, description, initiatives, index) =>`
+    const initiativeSet = ({headline, description, style}, initiatives, index) =>`
     <div class="results-element results-initiative-set">
         <h2>Suggestion ${index}: ${renderMd(headline)}</h2>
         <div class="results-element-description">${renderMdParagraph(description)}</div>
         <div class="results-initiatives-wrapper">
-        ${initiatives.map(initiative).join('')}
+        ${initiatives.map(i => initiative(i, style)).join('')}
         </div>
     </div>`;
 
-const initiative = initiative => {
+const initiative = (initiative, style) => {
     const {tagShouldBeVisibleInList} = exports.logic;
+    const {small} = style || {};
     return`
         <div class="initiative">
             <h3><a href="${initiative.meta.link}" target="_blank">${initiative.meta.name}</a></h3>
+            ${small
+            ? ''
+            : `
             <div class="initiative-tag-wrapper">
             ${initiative.meta.tags
                 .sort(exports.logic.sortTags)
@@ -263,6 +267,7 @@ const initiative = initiative => {
                 .map(tag(true))
                 .join('')}
             </div>
+            `}
             <div class="initiative-description">
             ${renderMdParagraph(initiative.description ? initiative.description.content : '')}
             </div>
