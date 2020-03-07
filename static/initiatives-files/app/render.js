@@ -220,8 +220,8 @@ const climatePledge = index => `
 <div class="results-element results-creative-brief">
     <h2>Suggestion ${index}: Sign the Climate Pledge!</h2>
     <p>This is a new initiative to mobilize current and future workers to urge companies to take a pro-climate policy stand.</p>
-    <p>By signing this pledge you can state that <b>you will try hard to avoid working at companies that don't take bold steps</b> to become sustainable and advocate for pro-climate policies. This pledge has the power to put pressure on businesses worldwide to take meaningful action.</p>
-    ${button('https://climatevoice.org/', 'Sign the **Climate Pledge**', {})}
+    <p>By signing this pledge you can state that <b>you will try hard to avoid working for companies that don't take bold steps</b> to become sustainable and advocate for pro-climate policies. This pledge has the power to put pressure on businesses worldwide to take meaningful action.</p>
+    ${button('https://climatevoice.org/', 'Sign the **Climate Pledge**', {primary: true})}
 
 </div>`;
 
