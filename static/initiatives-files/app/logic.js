@@ -1,27 +1,31 @@
 exports.logic = {
     surveyLink: 'https://services342876.typeform.com/to/jkPJe0',
     sortOrder: ['good', 'is', 'goal', 'use', 'support'],
-    possibleParams: ['role', 'company', 'investment', 'time'],
+    possibleParams: ['role', 'company', 'contribution', 'time', 'investment-area'],
     questionToLabel: param => ({
         role: 'Role',
         company: 'Your Company',
-        investment: 'Your Contribution',
-        time: 'Your Involvement',
+        contribution: 'Your Contribution',
+        time: 'Time Commitment',
+        'investment-area': 'Areas',
     })[param],
     extractParams: urlParams => {
-        const convert = name => urlParams
+        
+        const convert = (name, m) => urlParams
             .get(name)
             .split(', ')
-            .filter(v=> v !== '_____')
+            .filter(v => v !== '_____')
+            .map(v => m ? m(v) : v)
             .map(labelToTag)
             .filter(tag => tag);
 
-        return urlParams.has('role') && urlParams.has('investment') && urlParams.has('time')
+        return urlParams.has('role') && urlParams.has('contribution') && urlParams.has('time')
                ? {
                     role: convert('role'),
                     company: convert('company'),
-                    investment: convert('investment')[0],
+                    contribution: convert('contribution'),
                     time: convert('time'),
+                    'investment-area': convert('investment-area', label => 'Good at ' + label),
                 }
                : null;
     },
@@ -42,8 +46,18 @@ exports.logic = {
         // clone non-atomic values to make mutable;
         const role = [...userParams.role];
         const company = [...userParams.company];
-        const {investment} = userParams;
-        const time = [...userParams.time];
+        let contribution = [...userParams.contribution];
+        let time = [...userParams.time];
+        const investmentArea = [...userParams['investment-area']];
+
+        if(time.includes('user-time-none')) {
+            // Because of possible logical jumps in between the question how the user wants to
+            // spend their time doesn't come right after the user stated that they want to invest time
+            // Therefore when asked how much time they want to spend, they can opt out off spending any
+            // time at all. The following lines make the data consistent again
+            contribution = contribution.filter(r => r !== 'user-contribution-time');
+            time = time.filter(t => t !== 'user-time-none');
+        }
 
         if(role.includes('user-role-city-official')) {
             result.result.push({
@@ -66,6 +80,18 @@ exports.logic = {
                 description: 'It\'s likely that one or more of these initiatives have local groups in your city. Grassroots initiatives often have a hard time finding space to do workshops or meet. Probably you know how to provide them with desperately needed space at no or small cost.',
                 query: tags => tags.includes('is-grassroots') && locationMatches(tags),
             });
+        }
+
+        if(contribution.includes('user-contribution-money')) {
+            result.result.push({
+                type: 'initiatives',
+                headline: 'Invest Here',
+                description: 'TODO If you fell something is wrong or missing, please reach out or contribute',
+                query: tags => tags.some(tag => investmentArea.includes(tag)) && locationMatches(tags),
+            });
+        }
+        if(role.includes('user-role-creative')) {
+            result.result.push({type: 'creative-brief'});
         }
 
         if(role.includes('user-role-employed')) {
@@ -142,7 +168,8 @@ exports.logic = {
     
         if(!role.includes('user-role-employed')
             && !role.includes('user-role-active-in-ngo')
-            && !role.includes('user-role-city-official')) {
+            && !role.includes('user-role-city-official')
+            && contribution.includes('user-contribution-time')) {
 
             const joinTags = time.map(t => ({
                 'user-time-employment': 'join-paid',
@@ -150,22 +177,13 @@ exports.logic = {
                 'user-time-volunteer': 'join-unpaid',
             }[t]));
 
-            if('user-investment-money') {
-                result.locationMissing = false;
-            }
-            const query = investment === 'user-investment-time'
-                            ? tags => tags.some(tag => joinTags.includes(tag)) && locationMatches(tags)
-                            : tags => true;
-
             result.result.push({
                 type: 'initiatives',
                 headline: 'Help Here',
-                description: 'If you fell something is wrong or missing, please reach out or contribute',
-                query,
+                description: 'TODO If you fell something is wrong or missing, please reach out or contribute',
+                query: tags => tags.some(tag => joinTags.includes(tag)) && locationMatches(tags),
             });
-        }
-        if(role.includes('user-role-creative')) {
-            result.result.push({type: 'creative-brief'});
+
         }
 
         result.result.push({

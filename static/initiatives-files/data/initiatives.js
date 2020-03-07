@@ -846,10 +846,7 @@ exports.initiatives = [
       ]
     },
     "description": {
-      "content": [
-        "ClientEarth is a charity that uses the power of the law to protect the planet and the people who live on it.",
-        " They are lawyers and environmental experts who are fighting against the climate crisis and to protect nature and the environment."
-      ],
+      "content": "ClientEarth is a charity that uses the power of the law to protect the planet and the people who live on it. They are lawyers and environmental experts who are fighting against the climate crisis and to protect nature and the environment.",
       "updatedBy": "Alexander",
       "updatedAt": "2019-08-18"
     },
