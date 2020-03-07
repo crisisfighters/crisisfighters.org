@@ -121,16 +121,18 @@ exports.logic = {
                 isInCompanyLeadership: company.includes('user-company-leadership'),
             });
 
-            company.includes('user-company-leadership')
-                        ? 'TODO Reduce your carbon footprint and with support and certification from these organizations'
-                        : 'TODO organize to'
-
-            const description = ['In addition to using the AA framework at your company, we can recommend these resources:',
-            '* CarbonNeutral.com [provides case studies](https://www.carbonneutral.com/examples) for companies of different sizes ($ 10M to $ 1B+ anual revenue) that go carbon neutral.',
-            '* The American Energy Star initiative provides a [23 page guide to create fun competitions](https://www.energystar.gov/buildings/tools-and-resources/energy-efficiency-competition-guide) for sustainable energy and water use.',
-            '* The US Environmental Protection Agency [provides a lot of resources](https://www.epa.gov/climateleadership) to start yourself.',
-            '',
-            'There are many consultancies that help making companies sustainable. Most of them are not-for profit. They provide you with free resources and concrete help on how to get started. And if your company takes that path, they\'re experienced guides along the way. Check out their websites to find out more.',
+            const description = [
+                'In addition to using the AA framework at your company, we can recommend these resources:',
+                '* CarbonNeutral.com [provides case studies](https://www.carbonneutral.com/examples) for companies of different sizes ($ 10M to $ 1B+ anual revenue) that go carbon neutral.',
+                '* The American Energy Star initiative provides a [23 page guide to create fun competitions](https://www.energystar.gov/buildings/tools-and-resources/energy-efficiency-competition-guide) for sustainable energy and water use.',
+                '* The US Environmental Protection Agency [provides a lot of resources](https://www.epa.gov/climateleadership) to start yourself.',
+                
+                // TODO find and add resource on how non-leadership members can organize
+                company.includes('user-company-leadership')
+                    ? ''
+                    : '',
+                
+                'There are many consultancies that help making companies sustainable. Most of them are not-for profit. They provide you with free resources and concrete help on how to get started. And if your company takes that path, they\'re experienced guides along the way. Check out their websites to find out more.',
             ].join('\n');
 
             result.result.push({
@@ -147,9 +149,11 @@ exports.logic = {
                     type: 'initiatives',
                     headline: 'There are Special Certifications for the Building Industry',
                     style: {small: true},
-                    description: company.includes('user-company-leadership')
-                            ? 'TODO Reduce your carbon footprint and with support and certification from these organizations'
-                            : 'TODO organize to',
+                    description: 'Building infrastructure to last is energy-intensive. These consultancies are specialized on the industry and are happy to help.'
+                    + // TODO find and add resource on how non-leadership members can organize
+                    company.includes('user-company-leadership')
+                        ? ''
+                        : '',
                     query: tags => tags.includes('consult-building-companies') && locationMatches(tags),
                 });
             }
@@ -162,7 +166,9 @@ exports.logic = {
                     && tags.includes('target-companies')
                     && locationMatches(tags),
             });
-            result.result.push({ type: 'cf-b2b' });
+            if(company.includes('user-company-less-than-1000-employees')) {
+                result.result.push({ type: 'cf-b2b' });
+            }
         }
         if(role.includes('user-role-active-in-ngo')) {
             result.locationMissing = false;
@@ -230,8 +236,8 @@ exports.logic = {
 
         result.result.push({
             type: 'initiatives',
-            headline: 'Stop High-Carbon Projects in your Area',
-            description: 'In the [2016 Paris Agreement](https://en.wikipedia.org/wiki/Paris_Agreement), 194 states agreed bindingly to limit global heating to 1.5C. Do you know of a planned high-carbon project in your town or country? If the Paris agreement hasn\'t been considered during planning or the project or policy would make it much harder for your country to meet its commitment in the Paris Agreement, there\'s a realistic chance that you can stop it. The first successes include the fight against a [third runway for London Heathrow](https://www.theguardian.com/environment/2020/feb/27/heathrow-third-runway-ruled-illegal-over-climate-change) and a judgment in favor of [Urgenda](https://www.urgenda.nl) to [force the Dutch Government to abide by the Paris Agreement](https://www.urgenda.nl/en/themas/climate-case/).\n\nThis worked before. When 35 countries, including the USSR agreed to upholding human rights in the [1975 Helsinki Accord](https://en.wikipedia.org/wiki/Helsinki_Accords), that had [far-reaching political impact](https://en.wikipedia.org/wiki/Helsinki_Accords#Reception_and_impact) and contributed Glasnost and Perestroika.\n\nThe initiatives below succcessfully use litigation as a tool.',
+            headline: 'Stop High-Carbon Projects',
+            description: 'In the [2016 Paris Agreement](https://en.wikipedia.org/wiki/Paris_Agreement), 194 states agreed bindingly to limit global heating to 1.5C. \n\n**Do you know of a planned high-carbon project in your town or country?**\n\nIf the Paris agreement hasn\'t been considered during planning or the project or policy would make it much harder for your country to meet its commitment in the Paris Agreement, **there\'s a chance that it can be stopped**. The first successes include the fight against a [third runway for London Heathrow](https://www.theguardian.com/environment/2020/feb/27/heathrow-third-runway-ruled-illegal-over-climate-change) and a judgment in favor of [Urgenda](https://www.urgenda.nl) to [force the Dutch Government to abide by the Paris Agreement](https://www.urgenda.nl/en/themas/climate-case/).\n\nHistory: This worked before. When 35 countries, including the USSR agreed to upholding human rights in the [1975 Helsinki Accord](https://en.wikipedia.org/wiki/Helsinki_Accords), that had [far-reaching political impact](https://en.wikipedia.org/wiki/Helsinki_Accords#Reception_and_impact) and contributed Glasnost and Perestroika.\n\nThe initiatives below can help you challenge high-carbon projects:',
             query: tags => tags.includes('use-litigation') && locationMatches(tags),
         });
         result.result.push({ type: 'ideas' });
