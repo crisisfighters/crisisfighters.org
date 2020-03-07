@@ -120,16 +120,28 @@ exports.logic = {
                 type: 'aaa',
                 isInCompanyLeadership: company.includes('user-company-leadership'),
             });
+
+            company.includes('user-company-leadership')
+                        ? 'TODO Reduce your carbon footprint and with support and certification from these organizations'
+                        : 'TODO organize to'
+
+            const description = ['In addition to using the AA framework at your company, we can recommend these resources:',
+            '* CarbonNeutral.com [provides case studies](https://www.carbonneutral.com/examples) for companies of different sizes ($ 10M to $ 1B+ anual revenue) that go carbon neutral.',
+            '* The American Energy Star initiative provides a [23 page guide to create fun competitions](https://www.energystar.gov/buildings/tools-and-resources/energy-efficiency-competition-guide) for sustainable energy and water use.',
+            '* The US Environmental Protection Agency [provides a lot of resources](https://www.epa.gov/climateleadership) to start yourself.',
+            '',
+            'There are many consultancies that help making companies sustainable. Most of them are not-for profit. They provide you with free resources and concrete help on how to get started. And if your company takes that path, they\'re experienced guides along the way. Check out their websites to find out more.',
+            ].join('\n');
+
             result.result.push({
                 type: 'initiatives',
                 headline: 'Your Company should disclose and reduce its emissions.',
                 style: {small: true},
-                description: company.includes('user-company-leadership')
-                        ? 'TODO Reduce your carbon footprint and with support and certification from these organizations'
-                        : 'TODO organize to',
+                description,
                 query: tags => 
                         tags.includes('consult-companies-reduce') && locationMatches(tags),
             });
+
             if(company.includes('user-company-building')) {
                 result.result.push({
                     type: 'initiatives',
