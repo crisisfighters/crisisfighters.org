@@ -209,7 +209,6 @@ exports.initiatives = [
       "name": "Extinction Rebellion",
       "link": "https://rebellion.earth",
       "tagsInteresting": [
-        "is-ngo",
         "target-government"
       ],
       "tagsRelevant": [
@@ -266,7 +265,6 @@ exports.initiatives = [
       "name": "Fridays for Future",
       "link": "https://fridaysforfuture.org/",
       "tagsInteresting": [
-        "is-ngo",
         "skill-jurist"
       ],
       "tagsRelevant": [
@@ -384,7 +382,6 @@ exports.initiatives = [
       "name": "Ende Gelände",
       "link": "https://www.ende-gelaende.org/",
       "tagsInteresting": [
-        "is-ngo",
         "skill-influencer",
         "skill-project-or-event-management",
         "skill-social-media-aficionado",
@@ -447,7 +444,6 @@ exports.initiatives = [
       "name": "Hambacher Forst",
       "link": "https://hambacherforst.org/",
       "tagsInteresting": [
-        "is-ngo",
         "skill-flyering",
         "skill-influencer",
         "skill-project-or-event-management",
