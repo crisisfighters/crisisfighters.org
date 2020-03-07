@@ -1,6 +1,20 @@
 exports.logic = {
     surveyLink: 'https://services342876.typeform.com/to/jkPJe0',
     sortOrder: ['good', 'is', 'goal', 'use', 'support', 'l'],
+    sortTags: (a, b) => {
+        const {sortOrder} = exports.logic;
+        const aStart = a.substr(0, a.indexOf('-'));
+        const bStart = b.substr(0, b.indexOf('-'));
+        const posA = sortOrder.indexOf(aStart);
+        const posB = sortOrder.indexOf(bStart);
+        return aStart === bStart
+            ? a.localeCompare(b)
+            : posA >= 0 && posB >=0
+                ? posA - posB
+                : posA === -1
+                    ? 1
+                    : -1;
+    },
     possibleParams: ['role', 'company', 'contribution', 'time', 'investment-area'],
     questionToLabel: param => ({
         role: 'Role',

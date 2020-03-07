@@ -242,7 +242,7 @@ const aaa = index => `
 
 </div>`;
 
-const initiativeSet = (headline, description, initiatives, index) =>`
+    const initiativeSet = (headline, description, initiatives, index) =>`
     <div class="results-element results-initiative-set">
         <h2>Suggestion ${index}: ${renderMd(headline)}</h2>
         <div class="results-element-description">${renderMdParagraph(description)}</div>
@@ -252,30 +252,15 @@ const initiativeSet = (headline, description, initiatives, index) =>`
     </div>`;
 
 const initiative = initiative => {
-    const {tagShouldBeVisibleInList, sortOrder} = exports.logic;
-        const sortTags = (a, b) => {
-        const posA = sortOrder.indexOf(a.substr(0, a.indexOf('-')));
-        const posB = sortOrder.indexOf(b.substr(0, b.indexOf('-')));
-        return  posA >= 0 && posB >=0
-            ? posA - posB
-            : posA === -1
-            ? 1
-            : -1;
-    };
-
+    const {tagShouldBeVisibleInList} = exports.logic;
     return`
         <div class="initiative">
             <h3><a href="${initiative.meta.link}" target="_blank">${initiative.meta.name}</a></h3>
             <div class="initiative-tag-wrapper">
-            ${initiative.meta.tagsRelevant
-                .sort(sortTags)
+            ${initiative.meta.tags
+                .sort(exports.logic.sortTags)
                 .filter(tagShouldBeVisibleInList)
                 .map(tag(true))
-                .join('')}
-            ${initiative.meta.tagsInteresting
-                .sort(sortTags)
-                .filter(tagShouldBeVisibleInList)
-                .map(tag(false))
                 .join('')}
             </div>
             <div class="initiative-description">
