@@ -44,22 +44,18 @@ const logDiff = (a, b) => {
 // process.exit(0);
 
 const replaceTags = initiative => {
-    for(let {n, x, i} of newTags) {
+    for(let {n, t} of newTags) {
         if(n === initiative.meta.name) {
-            const oldX = initiative.meta.tagsRelevant || [];
-            const oldI = initiative.meta.tagsInteresting || [];
+            const old = [...(initiative.meta.tags || [])];
             
-            if(arrayDiff(oldI || [], i).length > 0
-            || arrayDiff(oldX || [], x).length > 0) {
-                console.log(
-                    `${initiative.meta.name} : x (${logDiff(oldX, x)}). i (${logDiff(oldI, i)})`);
+            if(arrayDiff(old || [], t).length > 0) {
+                console.log(initiative.meta.name + ': ' + logDiff(old, t));
             }
             return {
                 ...initiative,
                 meta: {
                     ...initiative.meta,
-                    tagsInteresting: i,
-                    tagsRelevant: x,
+                    tags: t,
                 }
             };
             return initiative;

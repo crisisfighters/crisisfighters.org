@@ -7,14 +7,14 @@ function numberOfInitiatives() {
 function queryInitiatives(query) {
     return exports.initiatives
         .filter(initiative => query(
-            [...initiative.meta.tagsInteresting, ...initiative.meta.tagsRelevant],
+            [...initiative.meta.tags],
             ))
         .sort((a, b) => 
-            [...b.meta.tagsInteresting, ...b.meta.tagsRelevant]
+            b.meta.tags
             .filter(t => t.indexOf('good-') === 0)
             .length
             -
-            [...a.meta.tagsInteresting, ...a.meta.tagsRelevant]
+            a.meta.tags
             .filter(t => t.indexOf('good-') === 0)
             .length
         );
