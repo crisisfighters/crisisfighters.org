@@ -8,6 +8,7 @@ exports.tagLabels = {
   'user-role-none': 'None of the above.',
   'user-company-building': 'I work in the building industry.',
   'user-company-leadership': 'I\'m part of my company\'s leadership.',
+  'user-company-less-than-1000-employees': 'My company has less than 1000 employees.',
   'user-company-none': 'None of the above.',
   'user-contribution-time': 'Time',
   'user-contribution-money': 'Money',

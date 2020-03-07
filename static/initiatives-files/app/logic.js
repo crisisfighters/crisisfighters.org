@@ -8,12 +8,19 @@ exports.logic = {
         const posA = sortOrder.indexOf(aStart);
         const posB = sortOrder.indexOf(bStart);
         return aStart === bStart
+        // Both tags have the same start: Sort based on locale
             ? a.localeCompare(b)
             : posA >= 0 && posB >=0
+                // Both tags' starts are part of sortOrder: sort by SortOrder
                 ? posA - posB
-                : posA === -1
-                    ? 1
-                    : -1;
+                : posA === -1 && posB === -1
+                    // Both tags' starts are not part of sortOrder: sort based on locale
+                    ? a.localeCompare(b)
+                    : posA === -1
+                        // start of b is part of sortOrder
+                        ? 1
+                        // start of a is part of sortOrder
+                        : -1;
     },
     possibleParams: ['investment-area', 'role', 'company', 'contribution', 'time'],
     questionToLabel: param => ({
