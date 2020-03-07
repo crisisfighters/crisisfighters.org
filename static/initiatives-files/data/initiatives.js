@@ -3,15 +3,14 @@ exports.initiatives = [
     "meta": {
       "name": "Urgewald",
       "link": "https://www.urgewald.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "urgewald",
+      "tags": [
         "is-ngo",
         "goal-divestment",
         "use-stock-voting-rights",
         "lobby-companies",
         "target-companies"
-      ],
-      "label": "urgewald"
+      ]
     },
     "description": {
       "content": "Urgewald campaigns corporations and politicians for divestment from fossil resources, weapons and projects endangering human rights. They ask shareholders of companies to delegate their right to speak at annual general meetings to them to speak up for their concerns.",
@@ -53,8 +52,7 @@ exports.initiatives = [
     "meta": {
       "name": "CERES",
       "link": "https://www.ceres.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "is-network",
         "join-paid",
@@ -106,15 +104,14 @@ exports.initiatives = [
     "meta": {
       "name": "Climate Action Network",
       "link": "http://climatenetwork.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "climate-action-network",
+      "tags": [
         "is-ngo",
         "is-network",
         "join-internship",
         "support-connect-activists-or-initiatives",
         "l-global"
-      ],
-      "label": "climate-action-network"
+      ]
     },
     "description": {
       "content": "The Climate Action Network (CAN) is an umbrella group of >1300 NGOs working on the climate crisis. It coordinates information exchange and NGO strategy between its members ",
@@ -146,8 +143,7 @@ exports.initiatives = [
     "meta": {
       "name": "350.org",
       "link": "https://350.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-grassroots",
         "is-ngo",
         "is-network",
@@ -208,10 +204,7 @@ exports.initiatives = [
     "meta": {
       "name": "Extinction Rebellion",
       "link": "https://rebellion.earth",
-      "tagsInteresting": [
-        "target-government"
-      ],
-      "tagsRelevant": [
+      "tags": [
         "is-grassroots",
         "skill-jurist",
         "skill-flyering",
@@ -264,10 +257,7 @@ exports.initiatives = [
     "meta": {
       "name": "Fridays for Future",
       "link": "https://fridaysforfuture.org/",
-      "tagsInteresting": [
-        "skill-jurist"
-      ],
-      "tagsRelevant": [
+      "tags": [
         "is-grassroots",
         "skill-flyering",
         "skill-creative-media",
@@ -328,14 +318,7 @@ exports.initiatives = [
     "meta": {
       "name": "Sunrise Movement",
       "link": "https://www.sunrisemovement.org/",
-      "tagsInteresting": [
-        "skill-jurist",
-        "skill-creative-media",
-        "skill-project-or-event-management",
-        "lobby-government",
-        "target-government"
-      ],
-      "tagsRelevant": [
+      "tags": [
         "is-grassroots",
         "is-ngo",
         "skill-flyering",
@@ -381,16 +364,8 @@ exports.initiatives = [
     "meta": {
       "name": "Ende Gelände",
       "link": "https://www.ende-gelaende.org/",
-      "tagsInteresting": [
-        "skill-influencer",
-        "skill-project-or-event-management",
-        "skill-social-media-aficionado",
-        "skill-translator",
-        "join-unpaid",
-        "support-connect-activists-or-initiatives",
-        "target-government"
-      ],
-      "tagsRelevant": [
+      "label": "ende-gelaende",
+      "tags": [
         "is-grassroots",
         "skill-jurist",
         "skill-flyering",
@@ -400,8 +375,7 @@ exports.initiatives = [
         "use-protests",
         "target-companies",
         "l-de"
-      ],
-      "label": "ende-gelaende"
+      ]
     },
     "established": {
       "content": "2015",
@@ -443,16 +417,8 @@ exports.initiatives = [
     "meta": {
       "name": "Hambacher Forst",
       "link": "https://hambacherforst.org/",
-      "tagsInteresting": [
-        "skill-flyering",
-        "skill-influencer",
-        "skill-project-or-event-management",
-        "skill-social-media-aficionado",
-        "skill-translator",
-        "join-unpaid",
-        "support-connect-activists-or-initiatives"
-      ],
-      "tagsRelevant": [
+      "label": "hambacher-forst",
+      "tags": [
         "is-grassroots",
         "skill-jurist",
         "skill-creative-media",
@@ -464,8 +430,7 @@ exports.initiatives = [
         "target-government",
         "target-companies",
         "l-de"
-      ],
-      "label": "hambacher-forst"
+      ]
     },
     "description": {
       "content": "In 2012 the first treehouse was built by anti-coal activists in the Hambacher Forest. The Forest itself got mostly already cut down and nearby villages had been sold and destroyed. It was the last little piece of forest one of the major four energy suppliers of Germany RWE was trying to cut down to dig more coal. Activists are still living within these structures. In 2018 evacuation began and forced a big public discussion about coal energy. In the end of 2018 german government decided on leaving the dying industry by 2038.",
@@ -512,16 +477,8 @@ exports.initiatives = [
     "meta": {
       "name": "Limity Jsme My",
       "link": "https://limityjsmemy.cz/en/",
-      "tagsInteresting": [
-        "skill-project-or-event-management",
-        "skill-translator",
-        "join-unpaid",
-        "goal-conservation",
-        "support-connect-activists-or-initiatives",
-        "lobby-government",
-        "target-government"
-      ],
-      "tagsRelevant": [
+      "label": "limity-jsme-my",
+      "tags": [
         "is-grassroots",
         "is-ngo",
         "skill-jurist",
@@ -531,21 +488,19 @@ exports.initiatives = [
         "use-protests",
         "target-companies",
         "l-pl"
-      ],
-      "label": "limity-jsme-my"
+      ]
     }
   },
   {
     "meta": {
       "name": "Development YES - Open Pit Mines NO",
       "link": "https://rozwojtak-odkrywkinie.pl",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "development-yes-open-pit-mines-no",
+      "tags": [
         "is-ngo",
         "goal-fight-fossil",
         "use-protests"
-      ],
-      "label": "development-yes-open-pit-mines-no"
+      ]
     },
     "description": {
       "content": "This movement aims to prevent plans to build new lignite open-pit mines and transform the Polish economy to higher efficiency and renewables. From their website its unclear if it's still active and whether the initiative has their own actions or is rather a network of other initiatives.",
@@ -557,11 +512,8 @@ exports.initiatives = [
     "meta": {
       "name": "Fossil Free",
       "link": "https://gofossilfree.org/",
-      "tagsInteresting": [
-        "is-think-tank",
-        "goal-decentralized-energy-ownership"
-      ],
-      "tagsRelevant": [
+      "label": "fossil-free",
+      "tags": [
         "is-ngo",
         "is-network",
         "good-energy-transformation",
@@ -573,8 +525,7 @@ exports.initiatives = [
         "target-government",
         "lobby-companies",
         "target-companies"
-      ],
-      "label": "fossil-free"
+      ]
     },
     "description": {
       "content": "A network of local grassroots initiatives that individually petition governments and companies to go fossil free. Local groups are present in virtually all major city and are independent in how they pursue their goals and who they talk to.",
@@ -591,13 +542,8 @@ exports.initiatives = [
     "meta": {
       "name": "Europe Beyond Coal",
       "link": "https://www.beyond-coal.eu",
-      "tagsInteresting": [
-        "is-think-tank",
-        "goal-decentralized-energy-ownership",
-        "knowledge-science-and-education",
-        "target-public"
-      ],
-      "tagsRelevant": [
+      "label": "europe-beyond-coal",
+      "tags": [
         "is-ngo",
         "is-network",
         "good-energy-transformation",
@@ -610,8 +556,7 @@ exports.initiatives = [
         "lobby-companies",
         "target-companies",
         "l-europe"
-      ],
-      "label": "europe-beyond-coal"
+      ]
     },
     "description": {
       "content": "They raise awareness with decision makers and the public about the impact of current and planned coal-based power-supplies. This puts pressure governments, investors and insurers to stop supporting extraction and burning of coal in Europe. They track all planned and running [coal plants in the EU](https://beyond-coal.eu/data/) with data on health impact and emissions Europe Beyond Coal is supported by HEAL, WWF, Foundation “Development YES – Open-Pit Mines NO”, Greenpeace, CEE Bankwatch, ClientEarth and CAN Europe",
@@ -623,8 +568,8 @@ exports.initiatives = [
     "meta": {
       "name": "Bankwatch",
       "link": "https://bankwatch.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "bank-watch",
+      "tags": [
         "is-ngo",
         "is-network",
         "goal-divestment",
@@ -632,8 +577,7 @@ exports.initiatives = [
         "propagate-divestment",
         "lobby-government",
         "l-europe"
-      ],
-      "label": "bank-watch"
+      ]
     },
     "description": {
       "content": "They investigate the impacts of public finance on communities and help protect their rights and livelihoods. Bankwatch monitors the European Bank for Reconstruction and Development, the European Investment Bank, the Asian Infrastructure Investment Bank and the EU in creating future budgets. They meet their representatives to make local voices heard to fight for more sustainable and fair investments. In addition Bankwatch works on the People's Budget, a proposed budget for the EU that (among others) aims at ending funding for fossil fuels.",
@@ -645,16 +589,12 @@ exports.initiatives = [
     "meta": {
       "name": "12/06/2020 Olympia",
       "link": "https://www.startnext.com/12062020",
-      "tagsInteresting": [
-        "support-connect-activists-or-initiatives",
-        "lobby-government"
-      ],
-      "tagsRelevant": [
+      "label": "12-06-2020-olympia",
+      "tags": [
         "knowledge-propose-legislation",
         "target-government",
         "l-de"
-      ],
-      "label": "12-06-2020-olympia"
+      ]
     },
     "description": {
       "content": "One-time event where up to 90,000+ people come together to rent the Olympia stadium Berlin to sign various petitions. In Germany, petitions must be discussed by parliament if they get more than 50,000 signatures. In addition there will be talks and presentations on currently pressing social and environmental problems.",
@@ -671,13 +611,7 @@ exports.initiatives = [
     "meta": {
       "name": "ClientEarth",
       "link": "https://www.clientearth.org/",
-      "tagsInteresting": [
-        "skill-flyering",
-        "skill-influencer",
-        "skill-translator",
-        "join-unpaid"
-      ],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "skill-jurist",
         "join-paid",
@@ -720,13 +654,8 @@ exports.initiatives = [
     "meta": {
       "name": "Earthjustice",
       "link": "https://earthjustice.org/",
-      "tagsInteresting": [
-        "skill-flyering",
-        "skill-influencer",
-        "skill-translator",
-        "join-unpaid"
-      ],
-      "tagsRelevant": [
+      "label": "earthjustice",
+      "tags": [
         "is-ngo",
         "skill-jurist",
         "join-paid",
@@ -737,8 +666,7 @@ exports.initiatives = [
         "target-government",
         "target-companies",
         "l-us"
-      ],
-      "label": "earthjustice"
+      ]
     },
     "description": {
       "content": "Earth Justice focuses on environmental law and litigation. Members of this US-based organization include lawyers, scientists, policy experts and research analysts. Key fields they are working in are protection of wildlife, clean energy and human health.",
@@ -780,12 +708,8 @@ exports.initiatives = [
     "meta": {
       "name": "Protect the Planet",
       "link": "https://www.protect-the-planet.de",
-      "tagsInteresting": [
-        "skill-flyering",
-        "skill-influencer",
-        "join-unpaid"
-      ],
-      "tagsRelevant": [
+      "label": "protect-the-planet",
+      "tags": [
         "is-ngo",
         "skill-jurist",
         "goal-fight-fossil",
@@ -793,8 +717,7 @@ exports.initiatives = [
         "target-government",
         "target-companies",
         "l-de"
-      ],
-      "label": "protect-the-planet"
+      ]
     },
     "description": {
       "content": "Protect the Planet is suing the European Union over the EU's climate targets for 2030 not contributing enough to avert the dangerous consequences of the climate crisis. They also organize yearly talks.",
@@ -821,12 +744,7 @@ exports.initiatives = [
     "meta": {
       "name": "urgenda",
       "link": "https://www.urgenda.nl",
-      "tagsInteresting": [
-        "skill-flyering",
-        "skill-influencer",
-        "join-unpaid"
-      ],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "skill-jurist",
         "use-litigation",
@@ -860,11 +778,7 @@ exports.initiatives = [
     "meta": {
       "name": "WWF",
       "link": "http://wwf.panda.org/",
-      "tagsInteresting": [
-        "skill-flyering",
-        "join-unpaid"
-      ],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "join-paid",
         "join-internship",
@@ -908,11 +822,7 @@ exports.initiatives = [
     "meta": {
       "name": "Greenpeace",
       "link": "https://www.greenpeace.org/international/",
-      "tagsInteresting": [
-        "skill-flyering",
-        "join-unpaid"
-      ],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "join-paid",
         "join-internship",
@@ -961,8 +871,7 @@ exports.initiatives = [
     "meta": {
       "name": "Sierra Club",
       "link": "https://www.sierraclub.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "join-paid",
         "join-internship",
@@ -1018,8 +927,8 @@ exports.initiatives = [
     "meta": {
       "name": "Friends of the Earth",
       "link": "https://www.foei.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "friends-of-the-earth",
+      "tags": [
         "is-grassroots",
         "is-ngo",
         "is-network",
@@ -1031,8 +940,7 @@ exports.initiatives = [
         "lobby-government",
         "target-government",
         "l-global"
-      ],
-      "label": "friends-of-the-earth"
+      ]
     },
     "description": {
       "content": "FOEI (Friends of the Earth International) calls itself the worlds largest grassroots environmental network. Local groups run diverse campaigns base on internationally agreed-upon priorities: Climate justice and energy, economic justice and resisting neoliberalism, food sovereignty, forests and biodiversity, food sovereignty, human rights, gender justice and sustainability. FOEI has 73 national member groups, about 5,000 activists and 2 million members worldwide. They challenge the current model of economic and corporate globalization. FOEI works with local communities, indigenous peoples, farmers’ movements, trade unions, human rights groups and others to shape their global strategy.",
@@ -1049,15 +957,14 @@ exports.initiatives = [
     "meta": {
       "name": "Conservation International",
       "link": "https://www.conservation.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "conservation",
+      "tags": [
         "is-ngo",
         "goal-conservation",
         "propagate-conservation",
         "lobby-government",
         "target-government"
-      ],
-      "label": "conservation"
+      ]
     },
     "description": {
       "content": "Conservation International (CI) is an established NGO protecting land, sea, wildlife and sustainable relationships between human and nature worldwide.  CI works with local communities, governments and businesses to conserve as much nature as possible.",
@@ -1089,18 +996,14 @@ exports.initiatives = [
     "meta": {
       "name": "Rainforest Foundation US",
       "link": "https://rainforestfoundation.org",
-      "tagsInteresting": [
-        "lobby-government",
-        "target-government"
-      ],
-      "tagsRelevant": [
+      "label": "rainforest-foundation",
+      "tags": [
         "is-ngo",
         "goal-reforestation",
         "goal-conservation",
         "propagate-conservation",
         "l-us"
-      ],
-      "label": "rainforest-foundation"
+      ]
     },
     "description": {
       "content": "The Rainforest Foundation works on-the-ground to secure land rights for indigenous people. They train indigenous communities to use technology to protect their forests. The Foundation invests directly in indigenous communities and provides them with the tools, training, and resources necessary to protect their rainforests. So far they protected [more than 134 km² of rainforest](https://rainforestfoundation.org/what-we-do/).",
@@ -1117,8 +1020,7 @@ exports.initiatives = [
     "meta": {
       "name": "World Resources Institute",
       "link": "https://www.wri.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "join-paid",
         "join-internship",
@@ -1166,8 +1068,7 @@ exports.initiatives = [
     "meta": {
       "name": "NRDC",
       "link": "https://www.nrdc.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "skill-jurist",
         "join-paid",
@@ -1181,8 +1082,8 @@ exports.initiatives = [
     "meta": {
       "name": "Union of concerned Scientists",
       "link": "http://ucsusa.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "ucs",
+      "tags": [
         "is-ngo",
         "skill-scientist",
         "join-paid",
@@ -1191,8 +1092,7 @@ exports.initiatives = [
         "lobby-government",
         "target-government",
         "l-global"
-      ],
-      "label": "ucs"
+      ]
     },
     "description": {
       "content": "The UCS is a group of scientists, engineers, economists, activists, and everyday people propagating using science to protect health, safety, and environment.",
@@ -1229,18 +1129,14 @@ exports.initiatives = [
     "meta": {
       "name": "IPCC",
       "link": "https://www.ipcc.ch/",
-      "tagsInteresting": [
-        "goal-divestment",
-        "knowledge-educate-students"
-      ],
-      "tagsRelevant": [
+      "label": "IPCC",
+      "tags": [
         "is-public",
         "knowledge-projections",
         "knowledge-science-and-education",
         "lobby-government",
         "l-global"
-      ],
-      "label": "IPCC"
+      ]
     },
     "established": {
       "content": "[1988 by WMO & UN](https://www.ipcc.ch/about/)",
@@ -1277,17 +1173,14 @@ exports.initiatives = [
     "meta": {
       "name": "Climate Reality Project",
       "link": "https://www.climaterealityproject.org/",
-      "tagsInteresting": [
-        "skill-influencer"
-      ],
-      "tagsRelevant": [
+      "label": "climate-realtiy-project",
+      "tags": [
         "is-ngo",
         "knowledge-science-and-education",
         "support-connect-activists-or-initiatives",
         "support-train-activists",
         "l-global"
-      ],
-      "label": "climate-realtiy-project"
+      ]
     },
     "description": {
       "content": "Founded by former Vice President Al Gore, the Climate Reality works to establish a global network of climate activists by regular trainings and supporting them in spreading the word.",
@@ -1334,17 +1227,14 @@ exports.initiatives = [
     "meta": {
       "name": "Green Climate Fund",
       "link": "https://www.greenclimate.fund/home",
-      "tagsInteresting": [
-        "support-train-activists"
-      ],
-      "tagsRelevant": [
+      "label": "Green Climate Fund",
+      "tags": [
         "is-ngo",
         "is-fund",
         "join-paid",
         "join-internship",
         "l-global"
-      ],
-      "label": "Green Climate Fund"
+      ]
     },
     "established": {
       "content": "2010",
@@ -1366,18 +1256,15 @@ exports.initiatives = [
     "meta": {
       "name": "ClimateWorks",
       "link": "https://www.climateworks.org/",
-      "tagsInteresting": [
-        "join-internship"
-      ],
-      "tagsRelevant": [
+      "label": "climate-works",
+      "tags": [
         "is-ngo",
         "is-fund",
         "join-paid",
         "support-grant-for-projects",
         "support-grant-for-individuals",
         "l-global"
-      ],
-      "label": "climate-works"
+      ]
     },
     "description": {
       "content": "The ClimateWorks foundation funnels philanthropy money to NGOs to help to fight the climate crisis.",
@@ -1419,8 +1306,8 @@ exports.initiatives = [
     "meta": {
       "name": "Climate Emergency Fund",
       "link": "https://climateemergencyfund.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "climate-emergency-fund",
+      "tags": [
         "is-ngo",
         "is-fund",
         "skill-influencer",
@@ -1429,8 +1316,7 @@ exports.initiatives = [
         "support-grant-for-individuals",
         "target-government",
         "l-global"
-      ],
-      "label": "climate-emergency-fund"
+      ]
     },
     "description": {
       "content": "The Climate Emergency Fund provides support to individuals and organizations influencing governments and societies to take adequate action to address the climate crisis. ",
@@ -1467,11 +1353,7 @@ exports.initiatives = [
     "meta": {
       "name": "CrisisFighters.org",
       "link": "https://www.CrisisFighters.org",
-      "tagsInteresting": [
-        "skill-translator",
-        "join-unpaid"
-      ],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "skill-software-engineer",
         "skill-flyering",
@@ -1492,17 +1374,14 @@ exports.initiatives = [
     "meta": {
       "name": "German Zero",
       "link": "https://germanzero.de/",
-      "tagsInteresting": [
-        "target-public"
-      ],
-      "tagsRelevant": [
+      "label": "12-06-2020-olympia",
+      "tags": [
         "is-ngo",
         "knowledge-propose-legislation",
         "lobby-government",
         "target-government",
         "l-de"
-      ],
-      "label": "12-06-2020-olympia"
+      ]
     },
     "description": {
       "content": "GermanZero is creating a climate action plan to meet Germany's 1.5C commitment that will be turned into proposed legislation before 2022. A nation-wide campaign will then try to get that legislation passed in parliament.",
@@ -1519,15 +1398,14 @@ exports.initiatives = [
     "meta": {
       "name": "Hamburg muss handeln",
       "link": "http://hamburg-muss-handeln.de/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "hamburg-muss-handeln",
+      "tags": [
         "is-ngo",
         "is-network",
         "lobby-government",
         "lobby-companies",
         "l-de"
-      ],
-      "label": "hamburg-muss-handeln"
+      ]
     },
     "description": {
       "content": "An open letter addresses at local governments to embrace Fridays for Future's demands. 300+ companies and organizations from Hamburg signed it. Hamburg muss handeln also provides climate-focused advice for upcoming state elections.",
@@ -1539,17 +1417,14 @@ exports.initiatives = [
     "meta": {
       "name": "Scientists for Future",
       "link": "https://www.scientists4future.org/",
-      "tagsInteresting": [
-        "join-unpaid"
-      ],
-      "tagsRelevant": [
+      "label": "scientists-for-future",
+      "tags": [
         "is-ngo",
         "knowledge-science-and-education",
         "knowledge-educate-students",
         "use-protests",
         "lobby-government"
-      ],
-      "label": "scientists-for-future"
+      ]
     },
     "description": {
       "content": "An interdisciplinary group of scientists working for a sustainable future. They support Fridays for Future and established [Lectures for Future](https://www.scientists4future.org/infomaterial/vortragsreihen/) to push the climate crisis onto the agenda in universities.",
@@ -1566,16 +1441,12 @@ exports.initiatives = [
     "meta": {
       "name": "REDD.plus",
       "link": "https://www.redd.plus/",
-      "tagsInteresting": [
-        "is-ppp",
-        "propagate-conservation"
-      ],
-      "tagsRelevant": [
+      "label": "redd-dot-plus",
+      "tags": [
         "is-owned-by-companies",
         "goal-carbon-regulation",
         "goal-reforestation"
-      ],
-      "label": "redd-dot-plus"
+      ]
     },
     "description": {
       "content": "REDD stands for Reducing emissions from deforestation and forest degradation and is part of the UN Framework Convention on Climate Change. It's a private-public initiative, seemingly setting up a registry to allow buying credits that support protection of forest areas. The signup link doesn't work and there are [serious concerns about REDD+](https://en.wikipedia.org/wiki/Reducing_emissions_from_deforestation_and_forest_degradation#Concerns).",
@@ -1587,15 +1458,12 @@ exports.initiatives = [
     "meta": {
       "name": "Voluntary REDD+ Database",
       "link": "http://www.fao.org/forestry/vrd/data/",
-      "tagsInteresting": [
-        "propagate-conservation"
-      ],
-      "tagsRelevant": [
+      "label": "redd-dot-plus",
+      "tags": [
         "is-public",
         "goal-carbon-regulation",
         "goal-reforestation"
-      ],
-      "label": "redd-dot-plus"
+      ]
     },
     "description": {
       "content": "This registry visualizes REDD+ initiatives in members of the [Coalition of Rainforest Nations](https://www.rainforestcoalition.org). It shows which countries (without rainforests) are funding these initiatives. The data doesn't come with dates and seems a bit abandoned overall. It's hosted by the FAO (Food and Agriculture Organization at the UN). Also there are [serious concerns about REDD+](https://en.wikipedia.org/wiki/Reducing_emissions_from_deforestation_and_forest_degradation#Concerns).",
@@ -1607,8 +1475,8 @@ exports.initiatives = [
     "meta": {
       "name": "Sandbag",
       "link": "https://sandbag.org.uk/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "sandbag",
+      "tags": [
         "is-ngo",
         "is-think-tank",
         "join-paid",
@@ -1624,8 +1492,7 @@ exports.initiatives = [
         "knowledge-transparency-of-impact-of-goods-and-services",
         "lobby-government",
         "target-government"
-      ],
-      "label": "sandbag"
+      ]
     },
     "description": {
       "content": "Sandbag is a think tank that lobbies governments for high-impact pro-climate legislation. Their mission is to provide targeted, evidence-based advocacy at the points of highest leverage by providing analyses and data tools They're based in London and Brussels.",
@@ -1637,8 +1504,8 @@ exports.initiatives = [
     "meta": {
       "name": "C2ES",
       "link": "https://www.c2es.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "c2es",
+      "tags": [
         "is-think-tank",
         "knowledge-projections",
         "knowledge-assess-companies",
@@ -1648,8 +1515,7 @@ exports.initiatives = [
         "knowledge-propose-legislation",
         "target-government",
         "lobby-companies"
-      ],
-      "label": "c2es"
+      ]
     },
     "description": {
       "content": "The Center for Climate and Energy Solutions prepares and pushes for strong climate policy reduce greenhouse gas emissions, promote clean energy, and strengthen resilience to climate impacts. It works internationally but has a big focus on US federal, state and municipial levels. The Center also consults businesses to become more sustainable.",
@@ -1666,8 +1532,8 @@ exports.initiatives = [
     "meta": {
       "name": "The Climate Registry",
       "link": "https://www.theclimateregistry.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "the-climate-registry",
+      "tags": [
         "is-ngo",
         "knowledge-projections",
         "knowledge-assess-companies",
@@ -1677,8 +1543,7 @@ exports.initiatives = [
         "lobby-companies",
         "target-companies",
         "l-global"
-      ],
-      "label": "the-climate-registry"
+      ]
     },
     "description": {
       "content": "The Climate Registry (TCR) runs greenhouse gas reporting programs globally that allow organizations to measure, report and verify the carbon in their operations in order to manage and reduce it. TCR also consults with governments on all aspects of greenhouse gas measurement, reporting, and verification. The Center also consults businesses to become more sustainable.",
@@ -1695,10 +1560,8 @@ exports.initiatives = [
     "meta": {
       "name": "EIT Climate-KIC",
       "link": "https://www.climate-kic.org",
-      "tagsInteresting": [
-        "support-grant-for-individuals"
-      ],
-      "tagsRelevant": [
+      "label": "eit-climate-kic",
+      "tags": [
         "is-public",
         "is-ppp",
         "is-think-tank",
@@ -1706,8 +1569,7 @@ exports.initiatives = [
         "support-train-activists",
         "support-grant-for-projects",
         "l-europe"
-      ],
-      "label": "eit-climate-kic"
+      ]
     },
     "description": {
       "content": "KIC (European Institute of Innovation and Technology Climate Knowledge and Innovation Community) is a think-tank and network that connects entrepreneurs and activists with public and private funding. In addition KIC runs educational programs for students, researchers and pupils. Their goal is to train [10% of all young people in Europe until 2030](https://www.climate-kic.org/programmes/education/#graduate).",
@@ -1719,10 +1581,8 @@ exports.initiatives = [
     "meta": {
       "name": "Energy Cities",
       "link": "https://energy-cities.eu/",
-      "tagsInteresting": [
-        "goal-deploy-nuclear"
-      ],
-      "tagsRelevant": [
+      "label": "energy-cities",
+      "tags": [
         "is-public",
         "is-think-tank",
         "is-network",
@@ -1732,8 +1592,7 @@ exports.initiatives = [
         "goal-energy-independent-housing",
         "goal-increase-communal-energy-efficiency",
         "l-europe"
-      ],
-      "label": "energy-cities"
+      ]
     },
     "description": {
       "content": "Energy Cities is a European network of 1,000 local governments in 30 countries. They focus on efficiency and wise use of resources while strengthening local participation. Energy Cities wants a radical transformation of the energy systems and policies, giving citizens the power to shape a decentralised and renewable energy future. They connect citizens, local leaders and EU & national institutions to accelerate the energy transition in Europe.",
@@ -1760,14 +1619,8 @@ exports.initiatives = [
     "meta": {
       "name": "Transition",
       "link": "https://transitionnetwork.org",
-      "tagsInteresting": [
-        "skill-flyering",
-        "goal-sustainable-consumption",
-        "goal-conservation",
-        "support-connect-activists-or-initiatives",
-        "propagate-conservation"
-      ],
-      "tagsRelevant": [
+      "label": "transition",
+      "tags": [
         "is-grassroots",
         "is-ngo",
         "is-network",
@@ -1780,8 +1633,7 @@ exports.initiatives = [
         "goal-increase-communal-energy-efficiency",
         "support-train-activists",
         "l-global"
-      ],
-      "label": "transition"
+      ]
     },
     "description": {
       "content": "Transition is an international network of local groups. They work inside their communities to find local responses to the climate crisis and other challenges. A big focus is on energy efficiency, distributed energy management, a circular economy and health.",
@@ -1808,8 +1660,8 @@ exports.initiatives = [
     "meta": {
       "name": "World Business Council for Sustainable Development",
       "link": "https://www.wbcsd.org/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "wbcsd",
+      "tags": [
         "is-think-tank",
         "is-owned-by-companies",
         "is-network",
@@ -1817,8 +1669,7 @@ exports.initiatives = [
         "lobby-companies",
         "target-companies",
         "l-global"
-      ],
-      "label": "wbcsd"
+      ]
     },
     "description": {
       "content": "WBCSD is a network of 200 of the largest cooperations (8.5T $ combined revenue, 19M employees). It includes food multinationals as well as large petrochemical corporations. Its stated mission is a sustainable economy until 2050. The economic interests of its membership make it seem unlikely that WBCSD can be a pivotal force in that endeavor. WBCSD creates business cases on a multitude of topics to assist its members in becoming more sustainable and reducing the harm they inflict on Earth.",
@@ -1840,18 +1691,13 @@ exports.initiatives = [
     "meta": {
       "name": "Clean Air Taskforce",
       "link": "https://www.catf.us/",
-      "tagsInteresting": [
-        "goal-fight-fossil",
-        "goal-sustainable-consumption",
-        "use-litigation"
-      ],
-      "tagsRelevant": [
+      "label": "catf",
+      "tags": [
         "is-ngo",
         "is-think-tank",
         "use-protests",
         "l-us"
-      ],
-      "label": "catf"
+      ]
     },
     "description": {
       "content": "The CATF lobbies US governmental institutions to reduce emissions of greenhouse gases. In addition they work to structure future [technical options for carbon-reduced energy production](https://www.catf.us/work/advanced-energy-systems/). CATF lobbies and supports corporates and governments in designing future energy systems based on renewables, biofuels, nuclear and systemic improvements of grids and consumption.",
@@ -1863,12 +1709,11 @@ exports.initiatives = [
     "meta": {
       "name": "Giving Green",
       "link": "https://www.idinsight.org/givinggreen",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "giving-green",
+      "tags": [
         "knowledge-assess-initiatives",
         "l-global"
-      ],
-      "label": "giving-green"
+      ]
     },
     "description": {
       "content": "[IDinsight](https://www.idinsight.org/) works on assessing the efficiency (ratio of effort to impact) of initiatives fighting poverty. Giving Green is a project by IDinsight that tries to give clear funding recommendations to potential investors. The website describes the project as being in Beta stage. Many of the recommendations are drawn from [IDinsight itself](https://www.idinsight.org/giving-green-short-term-recommendations) or are sourced from a [report by the Founder's Pledge](https://founderspledge.com/stories/climate-change-executive-summary) and [recommend initiatives focusing on US politics or the REDD+ mechanism](https://www.idinsight.org/giving-green-long-term-recommendations). Giving Green attempts to solve a key question in the fight against the climate crisis but seems to be in a very early stage in doing so.",
@@ -1880,12 +1725,11 @@ exports.initiatives = [
     "meta": {
       "name": "ImpactMatters - Climate Change",
       "link": "https://www.impactmatters.org/top-lists/climate-change/",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "label": "impact-matters",
+      "tags": [
         "knowledge-assess-initiatives",
         "l-global"
-      ],
-      "label": "impact-matters"
+      ]
     },
     "description": {
       "content": "On this website, Impact Matters analyses the efficiency of tree planting initiatives. It is an attempt to provide donors with the most efficient ways of fighting climate change. [Research](https://www.pnas.org/content/117/5/2354) shows that other fields than tree planting are equally or more important, yet they're omitted here. Also they state to rely on impact statements by the organizations they list without independent scientific assessment. Their claim to have analyzed the suggested initiatives can be considered misleading. The same holds for their suggestion to offset years of your personal carbon emissions without asking anything about your consumption.",
@@ -1897,8 +1741,7 @@ exports.initiatives = [
     "meta": {
       "name": "3Degrees",
       "link": "https://3degreesinc.com",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-consultancy",
         "knowledge-assess-companies",
         "certify-companies",
@@ -1912,32 +1755,28 @@ exports.initiatives = [
     "meta": {
       "name": "American Society of Adaptation Professionals",
       "link": "https://adaptationprofessionals.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Arbor Day Foundation",
       "link": "https://www.arborday.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Better Energy",
       "link": "https://www.betterenergy.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Beyond Coal Australia",
       "link": "https://www.beyondcoal.org.au",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "is-network",
         "lobby-government",
@@ -1952,8 +1791,7 @@ exports.initiatives = [
     "meta": {
       "name": "Beyond Coal US",
       "link": "https://coal.sierraclub.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "is-network",
         "lobby-government",
@@ -1968,8 +1806,7 @@ exports.initiatives = [
     "meta": {
       "name": "BSR",
       "link": "https://www.bsr.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-consultancy",
         "knowledge-assess-companies",
         "certify-companies",
@@ -1983,16 +1820,14 @@ exports.initiatives = [
     "meta": {
       "name": "Carbon Capture Coalition",
       "link": "https://carboncapturecoalition.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "CDP",
       "link": "https://www.cdp.net",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-consultancy",
         "knowledge-assess-companies",
         "certify-companies",
@@ -2007,8 +1842,7 @@ exports.initiatives = [
     "meta": {
       "name": "Climate Action 100+",
       "link": "http://www.climateaction100.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "target-companies"
       ]
     }
@@ -2017,16 +1851,14 @@ exports.initiatives = [
     "meta": {
       "name": "Climate Central",
       "link": "https://www.climatecentral.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Climate Disclosure Standards Board",
       "link": "https://www.cdsb.net",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-consultancy",
         "knowledge-assess-companies",
         "certify-companies",
@@ -2041,8 +1873,7 @@ exports.initiatives = [
     "meta": {
       "name": "Climate Voice",
       "link": "https://climatevoice.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "target-students"
       ]
     }
@@ -2051,24 +1882,21 @@ exports.initiatives = [
     "meta": {
       "name": "E2",
       "link": "https://e2.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Earth Guardians",
       "link": "https://www.earthguardians.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "ecoact",
       "link": "https://eco-act.com",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-consultancy",
         "knowledge-assess-companies",
         "certify-companies",
@@ -2083,8 +1911,7 @@ exports.initiatives = [
     "meta": {
       "name": "ecoAmerica",
       "link": "https://ecoamerica.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "target-faith-leaders",
         "target-medical-workers",
         "l-us"
@@ -2095,8 +1922,7 @@ exports.initiatives = [
     "meta": {
       "name": "Environmental Defense Fund",
       "link": "https://www.edf.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "support-train-professionals"
       ]
     }
@@ -2105,8 +1931,7 @@ exports.initiatives = [
     "meta": {
       "name": "EPA Center for Corporate Climate Leadership",
       "link": "https://www.epa.gov/climateleadership",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "consult-companies-disclose",
         "target-companies"
       ]
@@ -2116,8 +1941,7 @@ exports.initiatives = [
     "meta": {
       "name": "ICF",
       "link": "https://www.icf.com",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-consultancy",
         "knowledge-assess-companies",
         "certify-companies",
@@ -2131,8 +1955,7 @@ exports.initiatives = [
     "meta": {
       "name": "International Climate Initiative",
       "link": "https://www.international-climate-initiative.com",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-public",
         "is-fund"
       ]
@@ -2142,8 +1965,7 @@ exports.initiatives = [
     "meta": {
       "name": "International Living Future Institute",
       "link": "https://living-future.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-think-tank",
         "is-consultancy",
         "knowledge-assess-companies",
@@ -2160,16 +1982,14 @@ exports.initiatives = [
     "meta": {
       "name": "Local Governments for Sustainability",
       "link": "https://www.iclei.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Metabolic",
       "link": "https://www.metabolic.nl",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-think-tank",
         "is-fund",
         "is-consultancy",
@@ -2188,8 +2008,7 @@ exports.initiatives = [
     "meta": {
       "name": "München muss handeln",
       "link": "https://muenchen-muss-handeln.de",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "target-companies",
         "l-de"
       ]
@@ -2199,40 +2018,35 @@ exports.initiatives = [
     "meta": {
       "name": "Nature Conservancy",
       "link": "https://www.nature.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "One Tree Planted",
       "link": "https://onetreeplanted.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Parents for Future Germany",
       "link": "https://parentsforfuture.de/",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Parents for Future UK",
       "link": "https://www.parentsforfuture.org.uk",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Plan A",
       "link": "https://plana.earth",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-consultancy",
         "knowledge-assess-companies",
         "consult-companies-reduce",
@@ -2245,8 +2059,7 @@ exports.initiatives = [
     "meta": {
       "name": "RE100",
       "link": "http://there100.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-network",
         "target-companies",
         "l-global"
@@ -2257,16 +2070,14 @@ exports.initiatives = [
     "meta": {
       "name": "Rocky Mountain Institute",
       "link": "https://rmi.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Science Based Targets",
       "link": "https://sciencebasedtargets.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "is-think-tank",
         "is-network",
@@ -2284,16 +2095,14 @@ exports.initiatives = [
     "meta": {
       "name": "Second Nature",
       "link": "https://secondnature.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Sustainable Development Technology Canada",
       "link": "https://www.sdtc.ca",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-public",
         "is-fund"
       ]
@@ -2303,24 +2112,21 @@ exports.initiatives = [
     "meta": {
       "name": "Sustainable Energy for All",
       "link": "https://www.seforall.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "The Climate Group",
       "link": "https://www.theclimategroup.org",
-      "tagsInteresting": [],
-      "tagsRelevant": []
+      "tags": []
     }
   },
   {
     "meta": {
       "name": "Under 2 Coalition",
       "link": "https://www.under2coalition.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "target-companies"
       ]
     }
@@ -2329,8 +2135,7 @@ exports.initiatives = [
     "meta": {
       "name": "We Mean Business Coalition",
       "link": "https://www.wemeanbusinesscoalition.org",
-      "tagsInteresting": [],
-      "tagsRelevant": [
+      "tags": [
         "is-ngo",
         "is-network",
         "knowledge-assess-companies",
