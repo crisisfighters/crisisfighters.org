@@ -13,7 +13,8 @@ function resultScreenApp() {
         locality: urlParams.get('locality'),
         country: urlParams.get('country'),
         countryCode: urlParams.get('countryCode'),
-    }
+        economicArea: economicArea(urlParams.get('countryCode')),
+    };
     const resultDescriptor = exports.logic.determineResultDescriptor(userParams, location);
 
     console.log(userParams);
@@ -23,4 +24,13 @@ function resultScreenApp() {
         renderResultScreen(userParams, resultDescriptor, location);
     }
     logInvalidTags();
+}
+
+function economicArea(code) {
+    for(let area in exports.logic.economicAreas) {
+        if(exports.logic.economicAreas[area].includes(code)) {
+            return 'l-' + area;
+        }
+    }
+    return null
 }

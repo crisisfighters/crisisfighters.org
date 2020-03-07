@@ -59,6 +59,7 @@ article h1:first-child {
     margin-top: 0
 }
 
+
 article.initiatives-wrapper th,
 article.initiatives-wrapper td {
     font-size: 10px 
@@ -70,6 +71,14 @@ article.initiatives-wrapper > p,
 article.initiatives-wrapper > ul {
     margin: 1rem 10vw;
     max-width: 80vw;
+}
+
+#recruiter-screen p {
+    line-height: 1.3
+}
+
+.initiative-description {
+    line-height: 1.2
 }
 
 article h1,

@@ -166,6 +166,7 @@ const renderElements = elements => {
             case 'contribute': return contribute(realIndex);
             case 'creative-brief': return creativeBrief(realIndex);
             case 'aaa': return aaa(realIndex);
+            case 'climate-pledge': return climatePledge(realIndex);
             default: return `<p>Unknown: ${element.type}</p>`;
         }
     }).join('');
@@ -196,14 +197,14 @@ const ideas = index => `
 <div class="results-element results-ideas">
     <h2>Suggestion ${index}: Start Your Own</h2>
     <p>There are many good ideas out there for how you can invest your time best. We collect some of them. Check them out, use them and add your own!</p>
-    ${button('/what-else/ideas', 'Ideas')}
+    ${button('/what-else/ideas', 'Check out **Ideas**', {primary: true})}
 </div>`;
 
 const contribute = index => `
 <div class="results-element results-contribute">
-    <h2>Suggestion ${index}: Help CrisisFighters.org!</h2>
-    <p>TODO copy. Crowd-sourcing, talking about it</p>
-    ${button('/contribute', 'Contribute')}
+    <h2>Suggestion ${index}: Contribute to CrisisFighters.org!</h2>
+    <p>We created CrisisFighters to help you and others to do something meaningful against the climate crisis. By contributing to this website you help others put their energy to the best possible use. And we need the wisdom of the many to keep content up-to-date and accurate!</p>
+    ${button('/contribute', '**Improve** CrisisFighters', {primary: true})}
 
 </div>`;
 
@@ -212,6 +213,15 @@ const creativeBrief = index => `
     <h2>Suggestion ${index}: Run your own campaign!</h2>
     <p>TODO copy. Crowd-sourcing, talking about it</p>
     ${button('https://docs.google.com/document/d/1xrc1t-8ps30AXfwR2cogCuFc3FBbfFTX-VOwJCkW5-4', 'Check out our **Creative Brief** (draft)')}
+
+</div>`;
+
+const climatePledge = index => `
+<div class="results-element results-creative-brief">
+    <h2>Suggestion ${index}: Sign the Climate Pledge!</h2>
+    <p>This is a new initiative to mobilize current and future workers to urge companies to take a pro-climate policy stand.</p>
+    <p>By signing this pledge you can state that <b>you will try hard to avoid working at companies that don't take bold steps</b> to become sustainable and advocate for pro-climate policies. This pledge has the power to put pressure on businesses worldwide to take meaningful action.</p>
+    ${button('https://climatevoice.org/', 'Sign the **Climate Pledge**', {})}
 
 </div>`;
 
@@ -235,7 +245,7 @@ const aaa = index => `
 const initiativeSet = (headline, description, initiatives, index) =>`
     <div class="results-element results-initiative-set">
         <h2>Suggestion ${index}: ${renderMd(headline)}</h2>
-        <p>${renderMdParagraph(description)}</p>
+        <div class="results-element-description">${renderMdParagraph(description)}</div>
         <div class="results-initiatives-wrapper">
         ${initiatives.map(initiative).join('')}
         </div>
@@ -267,8 +277,10 @@ const initiative = initiative => {
                 .filter(tagShouldBeVisibleInList)
                 .map(tag(false))
                 .join('')}
-            </div
-            <p>${renderMdParagraph(initiative.description ? initiative.description.content : '')}</p>
+            </div>
+            <div class="initiative-description">
+            ${renderMdParagraph(initiative.description ? initiative.description.content : '')}
+            </div>
         </div>`
     };
 

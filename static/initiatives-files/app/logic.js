@@ -1,6 +1,6 @@
 exports.logic = {
     surveyLink: 'https://services342876.typeform.com/to/jkPJe0',
-    sortOrder: ['good', 'is', 'goal', 'use', 'support'],
+    sortOrder: ['good', 'is', 'goal', 'use', 'support', 'l'],
     possibleParams: ['role', 'company', 'contribution', 'time', 'investment-area'],
     questionToLabel: param => ({
         role: 'Role',
@@ -31,16 +31,16 @@ exports.logic = {
     },
     tagShouldBeVisibleInList: tag => tag.indexOf('skill-') !== 0
         && tag.indexOf('join-') !== 0
-        && tag.indexOf('l-') !== 0
         && tag.indexOf('propagate-') !== 0,
 
     determineResultDescriptor: (userParams, location) => {
 
-        const locationMatches = tags => tags.includes('l-global') || tags.includes('l-' + location.countryCode);
+        const locationMatches = tags => tags.includes('l-global')
+                                        || (location.economicArea && tags.includes(location.economicArea))
+                                        || tags.includes('l-' + location.countryCode);
 
         const result = {
             locationMissing: !location.countryCode,
-
             result: [],
         };
         // clone non-atomic values to make mutable;
@@ -51,11 +51,15 @@ exports.logic = {
         const investmentArea = [...userParams['investment-area']];
 
         if(time.includes('user-time-none')) {
-            // Because of possible logical jumps in between the question how the user wants to
-            // spend their time doesn't come right after the user stated that they want to invest time
-            // Therefore when asked how much time they want to spend, they can opt out off spending any
-            // time at all. The following lines make the data consistent again
-            contribution = contribution.filter(r => r !== 'user-contribution-time');
+            if(time.length === 1) {
+                // Because of possible logical jumps in between the question how the user wants to
+                // spend their time doesn't come right after the user stated that they want to invest time
+                // Therefore when asked how much time they want to spend, they can opt out off spending any
+                // time at all. The following lines make the data consistent again.
+                contribution = contribution.filter(r => r !== 'user-contribution-time');
+                
+            }
+            // If the user selected multiple options, we can disregard user-time-none.
             time = time.filter(t => t !== 'user-time-none');
         }
 
@@ -106,16 +110,18 @@ exports.logic = {
                         ? 'TODO Reduce your carbon footprint and with support and certification from these organizations'
                         : 'TODO organize to',
                 query: tags => 
-                        (
-                            tags.includes('consult-companies-disclose')
-                            || tags.includes('consult-companies-reduce')
-                        )
-                        && (
-                            !company.includes('user-company-building')
-                            || tags.includes('consult-building-companies')
-                        )
-                        && locationMatches(tags),
+                        tags.includes('consult-companies-reduce') && locationMatches(tags),
             });
+            if(company.includes('user-company-building')) {
+                result.result.push({
+                    type: 'initiatives',
+                    headline: 'There are Special Certifications for the Building Industry',
+                    description: company.includes('user-company-leadership')
+                            ? 'TODO Reduce your carbon footprint and with support and certification from these organizations'
+                            : 'TODO organize to',
+                    query: tags => tags.includes('consult-building-companies') && locationMatches(tags),
+                });
+            }
             result.result.push({
                 type: 'initiatives',
                 headline: 'Is your Company part of these networks?',
@@ -131,8 +137,8 @@ exports.logic = {
             result.locationMissing = false;
             result.result.push({
                 type: 'initiatives',
-                headline: 'These Funds might support your NGO',
-                description: 'Of course this depends on what kind of NGO you run and your financial needs. These funds try their best at providing resources to individuals or initiatives that fight the climate crisis.',
+                headline: 'Get Financial Support for your Project',
+                description: 'Of course this depends on what kind of NGO you run and your financial needs. These initiatives run funds that try their best at providing resources to individuals or initiatives that fight the climate crisis.\nCheck out their websites to find out which ones match your criteria and if they\'re currently making new grants.',
                 query: tags => tags.includes('is-fund'),
             });
             result.result.push({
@@ -149,6 +155,7 @@ exports.logic = {
                 query: tags => tags.includes('support-train-activists'),
             });
         }
+
         if(role.includes('user-role-health-worker')) {
             result.result.push({
                 type: 'initiatives',
@@ -166,6 +173,10 @@ exports.logic = {
             });
         }
     
+        if(!role.includes('user-role-employed')) {
+            result.result.push({type: 'climate-pledge'});
+        }
+
         if(!role.includes('user-role-employed')
             && !role.includes('user-role-active-in-ngo')
             && !role.includes('user-role-city-official')
@@ -195,5 +206,10 @@ exports.logic = {
         result.result.push({ type: 'ideas' });
         result.result.push({ type: 'contribute' });
         return result;
+    },
+    economicAreas: {
+        europe: [
+            'al','ad','at', 'bg', 'ba', 'be', 'by', 'ch', 'cy', 'cz', 'ee', 'de', 'dk', 'es', 'fi', 'fr', 'gb', 'gf', 'hr', 'tf', 'gi', 'gr', 'gl', 'va', 'hu', 'is', 'ie', 'im', 'it', 'lv', 'li', 'lt', 'lu', 'md', 'mc', 'mn', 'ms', 'me', 'ma', 'nl', 'no', 'pl', 'pt', 'ro', 'ru', 'rs', 'sk', 'si', 'se', 'pf', 'tr',
+        ],
     },
 };
