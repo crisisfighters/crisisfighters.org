@@ -27,9 +27,8 @@ Everybody can update the content on CrisisFighters.org. To make that possible, w
 
 ## Contribute by Tagging and Categorizing Initiatives
 
-This is easy for everybody with minimal experience in Spreadsheets (Excel, Google Sheets).
-
-Head over to our [Initiatives Spreadsheet](https://docs.google.com/spreadsheets/d/1xEOXzWAGNjygaft40AFTzucoQSGj2ZdCQ4xsQCtBZhQ) and follow the instructions to help improve our content.
+* This is easy for everybody with minimal experience in Spreadsheets (Excel, Google Sheets).
+* Head over to our [Initiatives Spreadsheet](https://docs.google.com/spreadsheets/d/1xEOXzWAGNjygaft40AFTzucoQSGj2ZdCQ4xsQCtBZhQ) and follow the instructions to help improve our content.
 
 ---
 
