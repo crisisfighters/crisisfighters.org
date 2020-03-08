@@ -7,7 +7,7 @@ In addition we collect must read's and our own perspective on how we can stop th
 
 > 📈 Please learn more about the emergency. Our [must reads section](https://www.crisisfighters.org/must-read/) is a good start as is XR's [The Emergency](https://rebellion.earth/the-truth/the-emergency/).
 
-## Contribute
+## Contribute to Texts and Content
 
 Everybody can update the content on CrisisFighters.org. To make that possible, we use a technology called [Git](https://git-scm.com). It allows us to keep track of every little change anybody ever did on the website. Also, because everything is stored on [GitHub](https://github.com/crisisfighters/crisisfighters.org), every change can (but doesn't have to be) scrutinized and discussed. Again, all that information ist stored forever and publicly available.
 
@@ -19,13 +19,17 @@ Everybody can update the content on CrisisFighters.org. To make that possible, w
 * Please send a email with the place and the updated text to [contribute@crisisfighters.org](mailto:contribute@crisisfighters.org).
 * We'll take care of it and confirm via email.
 
-
 ### 👩‍💻 If you know what git, forking and pull requests are
 
 * Fork this [repository on GitHub](https://github.com/crisisfighters/crisisfighters.org) and create a pull request.
 * Alternatively [ask us to become a contributor](mailto:contribute@crisisfighters.org). Please mention what kind of changes you're planning to do.
 * To update our database of initiatives, please for the [initiatives repository on GitHub](https://github.com/crisisfighters/initiatives) instead and create a pull request.
 
+## Contribute by Tagging and Categorizing Initiatives
+
+This is easy for everybody with minimal experience in Spreadsheets (Excel, Google Sheets).
+
+Head over to our [Initiatives Spreadsheet](https://docs.google.com/spreadsheets/d/1xEOXzWAGNjygaft40AFTzucoQSGj2ZdCQ4xsQCtBZhQ) and follow the instructions to help improve our content.
 
 ---
 
