@@ -1,12 +1,41 @@
 function renderMd(input) {
     if(!window.md) {
-        window.md = window.markdownit();
+        window.md = window.markdownit('zero', {
+            core: {
+                rules: [
+                  'normalize',
+                  'block',
+                  'inline'
+                ]
+              },
+            block: {
+                rules: [
+                  'blockquote',
+                  'code',
+                  'fence',
+                  'heading',
+                  'hr',
+                  'html_block',
+                  'lheading',
+                  'list',
+                  'reference',
+                  'paragraph'
+                ]
+              },
+        });
         setLinkTargetToBlank(window.md);
     }
     return window.md.renderInline(input);
 }
 
 function renderMdParagraph(input) {
+
+    // To keeop the code more readable some literal markdown blocks have indentation.
+    // This removes that indentation, using indendation in the first line as signal.
+    const spaceMatches = input.match(/ +/);
+    if(spaceMatches && spaceMatches[0]) {
+        input = input.replace(new RegExp('\n' + spaceMatches[0], 'g'), '\n');
+    }
     if(!window.md) {
         window.md = window.markdownit();
         setLinkTargetToBlank(window.md);

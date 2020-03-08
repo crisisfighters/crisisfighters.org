@@ -6,20 +6,32 @@ function button(link, label, flags) {
 };
 
 function renderStartPage() {
+
+    const tagCount = Object.keys(exports.tagLabels).filter(t => !t.startsWith('l-')).length;
+
     document.getElementById('recruiter-screen').innerHTML = `
     <div class="flex-l mw8 center">
     <article class="center cf pb5 mw7">
-      <header>
+
       <div class="nested-copy-line-height lh-copy f4 nested-img mid-gray">
-        <h1>Find Initiatives with Crisis Recruiter</h1>
-        <ul>
-            <li>So far, we've collected and tagged ${numberOfInitiatives()} initiatives that fight the climate crisis.</li>
-            <li><b>This page is a technical preview.</b> The designer is on their way to save the day.</li>
-        </ul>
-        
-        <p>By answering a few quick questions, we can show you what initiatives you should invest your time or money into.</p>
+      ${renderMdParagraph(`
+      # How can you make a difference?
+      We spent months talking to people, doing research and learning how people can have real impact against the climate crisis: Our **Crisis Recruiter** makes this knowledge available to you. It's free, open source and only takes a few minutes.
+
+      ### It takes four steps.
+      1. Get an update to the latest science by reading the [Must Reads](/must-reads).
+      2. Read this page.
+      3. We show you a quick survey that takes up to two minutes.
+      4. We show you how can make a real difference.
+
+      ## How Crisis Recruiter works
+      * We collected ${numberOfInitiatives()} initiatives and matched them against ${tagCount} properties.
+      * That allows us to make useful recommendations to you, just like in a real conversation.
+      * To identify the most impactful initiatives, we rely on a study by the Potsdam Institute for Climate Impact. They identified key areas where your effort has the highest impact on stopping the crisis.
+      * For the curious, we put an article together on [how we recommend](/what-else/how-we-recommend).
+      `)}
         ${button(exports.logic.surveyLink, 'Launch **Crisis Recruiter**', {primary: true})}
-      </header>
+      
     </article>
   </div>
         `;
