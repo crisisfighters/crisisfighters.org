@@ -9,15 +9,7 @@ function queryInitiatives(query) {
         .filter(initiative => query(
             [...initiative.meta.tags],
             ))
-        .sort((a, b) => 
-            b.meta.tags
-            .filter(t => t.indexOf('good-') === 0)
-            .length
-            -
-            a.meta.tags
-            .filter(t => t.indexOf('good-') === 0)
-            .length
-        );
+        .sort(exports.logic.sortInitiatives);
 }
 
 function labelToTag(label) {

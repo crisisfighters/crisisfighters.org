@@ -1264,10 +1264,10 @@ exports.initiatives = [
       "label": "Green Climate Fund",
       "tags": [
         "is-ngo",
-        "is-fund",
         "suggest-employment",
         "suggest-internship",
         "suggest-money",
+        "support-funds-initiatives",
         "l-global"
       ]
     },
@@ -1294,12 +1294,10 @@ exports.initiatives = [
       "label": "climate-works",
       "tags": [
         "is-ngo",
-        "is-fund",
         "suggest-employment",
         "suggest-internship",
         "suggest-money",
-        "support-grant-for-projects",
-        "support-grant-for-individuals",
+        "support-funds-initiatives",
         "l-global"
       ]
     },
@@ -1346,12 +1344,11 @@ exports.initiatives = [
       "label": "climate-emergency-fund",
       "tags": [
         "is-ngo",
-        "is-fund",
         "skill-influencer",
         "suggest-money",
         "support-connect-activists-or-initiatives",
-        "support-grant-for-projects",
-        "support-grant-for-individuals",
+        "support-funds-initiatives",
+        "support-funds-individuals",
         "l-global"
       ]
     },
@@ -1613,7 +1610,6 @@ exports.initiatives = [
         "is-think-tank",
         "support-connect-activists-or-initiatives",
         "support-train-activists",
-        "support-grant-for-projects",
         "l-europe"
       ]
     },
@@ -1994,7 +1990,8 @@ exports.initiatives = [
       "link": "https://www.epa.gov/climateleadership",
       "tags": [
         "consult-companies-disclose",
-        "target-companies"
+        "target-companies",
+        "l-us"
       ]
     }
   },
@@ -2018,7 +2015,7 @@ exports.initiatives = [
       "link": "https://www.international-climate-initiative.com",
       "tags": [
         "is-public",
-        "is-fund"
+        "support-funds-initiatives"
       ]
     }
   },
@@ -2062,7 +2059,6 @@ exports.initiatives = [
       "link": "https://www.metabolic.nl",
       "tags": [
         "is-think-tank",
-        "is-fund",
         "is-consultancy",
         "suggest-money",
         "knowledge-assess-companies",
@@ -2187,7 +2183,7 @@ exports.initiatives = [
       "link": "https://www.sdtc.ca",
       "tags": [
         "is-public",
-        "is-fund"
+        "support-funds-initiatives"
       ]
     }
   },

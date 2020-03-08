@@ -9,6 +9,18 @@ type: page
 
 Our mission is to help you have the biggest impact on the climate crisis. To do that we recommend you the best initiatives. Let us explain what that means.
 
+
+## What initiatives do we select?
+For us an initiative is a group of people that try the best they can to mitigate the climate crisis in accordance with the latest science. We don't consider for-profit companies (but of course many of the initiatives listed successfully help companies to reduce their carbon footprint).
+
+## How we build our result pages
+
+## How we categorize intitiatives
+
+## How we order initiatives
+
+# Background
+
 ### Effort-to-Impact Ratio
 The methods people employ to tackle the climate crisis range from occupying plants to consulting corporations to become more sustainable. A similar diversity exists in industries and areas, for example energy efficient housing, tree planting and public pressure through creative forms of protest.
 We need the whole variety of methods and areas. They depend on and support each other. For example public pressure from civil disobedience shifts mainstream values and influences decisions by company executives. That in turn influences public opinion.
@@ -18,8 +30,6 @@ Of course we could wait - time will tell what worked and what didn’t.
 
 That’s not satisfactory for one the most relevant open questions for the climate movement.
 Luckily, some smart people are on it.
-### Business can have their impact assessed, reduced and certified today
-TODO
 
 ### Science to the Rescue
 Shouldn’t all our action be guided by identifying the most efficient levers? The [Potsdam Institute for Climate Impact](https://www.pik-potsdam.de) recently published the study [Social Tipping Points for Stabilizing Earth’s Climate before 2050](https://www.pnas.org/content/117/5/2354#T2). It is the first attempt at identifying areas where - within a few years - we can get to self-reinforcing developments that exponentially increase the impact of whatever effort we put in before. One example is to push solar and wind energy to the point that due to economies of scale they’re cheaper than fossil fuels for average use cases.

@@ -94,6 +94,25 @@ article ul {
     padding-left: 1.25rem
 }
 
+article table {
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+article table thead {
+    background: #f0f0f0
+}
+
+article table tr:nth-child(2n){
+    background: #f0f0f0
+}
+article table td:first-child {
+    white-space: nowrap;
+}
+article table td {
+    padding: 0.2rem;
+}
+
 .button {
     margin: 2rem auto;
     margin-bottom: 3rem;

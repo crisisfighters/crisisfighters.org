@@ -50,10 +50,10 @@ exports.logic = {
                 }
                : null;
     },
-    tagShouldBeVisibleInList: tag => tag.indexOf('skill-') !== 0
-        && tag.indexOf('join-') !== 0
-        && tag.indexOf('propagate-') !== 0
-        && tag.indexOf('suggest-') !==0,
+    tagShouldBeVisibleInList: tag => !tag.startsWith('skill-')
+        && !tag.startsWith('join-')
+        && !tag.startsWith('propagate-')
+        && !tag.startsWith('suggest-'),
 
     determineResultDescriptor: (userParams, location) => {
 
@@ -182,8 +182,8 @@ exports.logic = {
             result.result.push({
                 type: 'initiatives',
                 headline: 'Get Financial Support for your Project',
-                description: 'Of course this depends on what kind of NGO you run and your financial needs. These initiatives run funds that try their best at providing resources to individuals or initiatives that fight the climate crisis.\nCheck out their websites to find out which ones match your criteria and if they\'re currently making new grants.',
-                query: tags => tags.includes('is-fund'),
+                description: 'Of course this depends on what kind of NGO you run and your financial needs. These initiatives run funds that try their best at providing resources to initiatives that fight the climate crisis.\nCheck out their websites to find out which ones match your criteria and if they\'re currently making new grants.',
+                query: tags => tags.includes('support-funds-initiatives'),
             });
             result.result.push({
                 type: 'initiatives',
@@ -216,7 +216,6 @@ exports.logic = {
                 query: tags => tags.includes('target-faith-leaders') && locationMatches(tags),
             });
         }
-
         if(!role.includes('user-role-employed')
             && !role.includes('user-role-city-official')
             && contribution.includes('user-contribution-time')) {
@@ -238,6 +237,14 @@ exports.logic = {
     
         if(!role.includes('user-role-employed') && !role.includes('user-role-faith-leader')) {
             result.result.push({type: 'climate-pledge'});
+            result.result.push({
+                type: 'initiatives',
+                headline: 'Could you do more with a little money?',
+                description: 'These initiatives can support you with cash for projects or campaigns. Check them out!',
+                query: tags => 
+                    tags.includes('support-funds-individuals')
+                    && locationMatches(tags),
+            });
         }
 
         result.result.push({
@@ -250,6 +257,17 @@ exports.logic = {
         result.result.push({ type: 'contribute' });
         return result;
     },
+    scoreInitiative: ({meta: {tags}}) =>
+        100 * tags.filter(t => t.startsWith('good-') || t === 'good-high-momentum').length
+        + 10 * tags.length,
+    sortInitiatives: (a, b) => exports.logic.scoreInitiative(b) - exports.logic.scoreInitiative(a),
+        // b.meta.tags
+        // .filter(t => t.startsWith('good-'))
+        // .length
+        // -
+        // a.meta.tags
+        // .filter(t => t.startsWith('good-'))
+        // .length,
     economicAreas: {
         europe: [
             'al','ad','at', 'bg', 'ba', 'be', 'by', 'ch', 'cy', 'cz', 'ee', 'de', 'dk', 'es', 'fi', 'fr', 'gb', 'gf', 'hr', 'tf', 'gi', 'gr', 'gl', 'va', 'hu', 'is', 'ie', 'im', 'it', 'lv', 'li', 'lt', 'lu', 'md', 'mc', 'mn', 'ms', 'me', 'ma', 'nl', 'no', 'pl', 'pt', 'ro', 'ru', 'rs', 'sk', 'si', 'se', 'pf', 'tr',
