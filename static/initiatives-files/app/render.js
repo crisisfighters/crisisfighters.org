@@ -210,9 +210,10 @@ const contribute = index => `
 
 const creativeBrief = index => `
 <div class="results-element results-creative-brief">
-    <h2>Suggestion ${index}: Run your own campaign!</h2>
-    <p>TODO copy. Crowd-sourcing, talking about it</p>
-    ${button('https://docs.google.com/document/d/1xrc1t-8ps30AXfwR2cogCuFc3FBbfFTX-VOwJCkW5-4', 'Check out our **Creative Brief** (draft)')}
+    <h2>Suggestion ${index}: Run Your Own Campaign!</h2>
+    <p>Can you make time between projects? Maybe your team can even work together on this. We put together a creative brief with context, key facts, messages, do's and dont's for you to create your own campaign with your own branding.</p>
+    <p>Please <a href="/contact" target="_blank">reach out</a> if you have questions - we're happy to help!</p>
+    ${button('https://docs.google.com/document/d/1xrc1t-8ps30AXfwR2cogCuFc3FBbfFTX-VOwJCkW5-4', 'Show **Creative Brief** (draft)', {primary: true})}
 
 </div>`;
 

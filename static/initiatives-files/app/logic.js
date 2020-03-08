@@ -216,10 +216,6 @@ exports.logic = {
                 query: tags => tags.includes('target-faith-leaders') && locationMatches(tags),
             });
         }
-    
-        if(!role.includes('user-role-employed') && !role.includes('user-role-faith-leader')) {
-            result.result.push({type: 'climate-pledge'});
-        }
 
         if(!role.includes('user-role-employed')
             && !role.includes('user-role-city-official')
@@ -238,13 +234,16 @@ exports.logic = {
                 query: tags => tags.some(tag => suggestTags.includes(tag))
                                 && locationMatches(tags),
             });
-
+        }
+    
+        if(!role.includes('user-role-employed') && !role.includes('user-role-faith-leader')) {
+            result.result.push({type: 'climate-pledge'});
         }
 
         result.result.push({
             type: 'initiatives',
             headline: 'Stop High-Carbon Projects',
-            description: 'In the [2016 Paris Agreement](https://en.wikipedia.org/wiki/Paris_Agreement), 194 states agreed bindingly to limit global heating to 1.5C. \n\n**Do you know of a planned high-carbon project in your town or country?**\n\nIf the Paris agreement hasn\'t been considered during planning or the project or policy would make it much harder for your country to meet its commitment in the Paris Agreement, **there\'s a chance that it can be stopped**. The first successes include the fight against a [third runway for London Heathrow](https://www.theguardian.com/environment/2020/feb/27/heathrow-third-runway-ruled-illegal-over-climate-change) and a judgment in favor of [Urgenda](https://www.urgenda.nl) to [force the Dutch Government to abide by the Paris Agreement](https://www.urgenda.nl/en/themas/climate-case/).\n\nHistory: This worked before. When 35 countries, including the USSR agreed to upholding human rights in the [1975 Helsinki Accord](https://en.wikipedia.org/wiki/Helsinki_Accords), that had [far-reaching political impact](https://en.wikipedia.org/wiki/Helsinki_Accords#Reception_and_impact) and contributed Glasnost and Perestroika.\n\nThe initiatives below can help you challenge high-carbon projects:',
+            description: 'In the [2016 Paris Agreement](https://en.wikipedia.org/wiki/Paris_Agreement), 194 states agreed bindingly to limit global heating to 1.5C. \n\n**Do you know of a planned high-carbon project in your town or country?**\n\nIf the Paris agreement hasn\'t been considered during planning or the project or policy would make it much harder for your country to meet its commitment in the Paris Agreement, **there\'s a chance that it can be stopped**. The first successes include the fight against a [third runway for London Heathrow](https://www.theguardian.com/environment/2020/feb/27/heathrow-third-runway-ruled-illegal-over-climate-change) and a judgment in favor of [Urgenda](https://www.urgenda.nl) to [force the Dutch Government to abide by the Paris Agreement](https://www.urgenda.nl/en/themas/climate-case/).\n\nHistoric Excourse: This worked before. When 35 countries, including the USSR agreed to upholding human rights in the [1975 Helsinki Accord](https://en.wikipedia.org/wiki/Helsinki_Accords), that had [far-reaching political impact](https://en.wikipedia.org/wiki/Helsinki_Accords#Reception_and_impact) and contributed Glasnost and Perestroika.\n\nThe initiatives below can help you challenge high-carbon projects:',
             query: tags => tags.includes('use-litigation') && locationMatches(tags),
         });
         result.result.push({ type: 'ideas' });
