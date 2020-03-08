@@ -110,6 +110,7 @@ const renderResults = (userParams, location, elements) => `
         ]
         .join('. ')}
         </p>
+        <p>In case you're interested how we came to our recommendations: We wrote an article on <a href="/what-else/how-we-recommend" target="_blank">how we recommend</a>.</p>
         ${renderElements(elements)}
         `;
 
