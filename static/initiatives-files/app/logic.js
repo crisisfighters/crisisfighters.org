@@ -173,9 +173,9 @@ exports.logic = {
                     && tags.includes('target-companies')
                     && locationMatches(tags),
             });
-            if(company.includes('user-company-less-than-1000-employees')) {
-                result.result.push({ type: 'cf-b2b' });
-            }
+            // if(company.includes('user-company-less-than-1000-employees')) {
+                // result.result.push({ type: 'cf-b2b' });
+            // }
         }
         if(role.includes('user-role-active-in-ngo')) {
             result.locationMissing = false;
