@@ -114,10 +114,9 @@ const renderResults = (userParams, location, elements) => `
         ${renderElements(elements)}
         `;
 
-const tag = relevant => tag => {
+const tag = tag => {
     const classes = [
         'tag',
-        ...(relevant ? ['tag-relevant'] : []),
         'tag-' + tag.substr(0, tag.indexOf('-')),
         'tag-' + tag
     ];
@@ -130,14 +129,7 @@ const renderInputTagGroup = (param, responseTags) =>
     `<span class="results-input-tag-group">
         <span class="results-input-tag-group-question">${exports.logic.questionToLabel(param)}: </span>
         ${responseTags
-            .map(tag => {
-                const classes = [
-                    'tag',
-                    'tag-' + tag.substr(0, tag.indexOf('-')),
-                    'tag-' + tag
-                ];
-                return `<span class="${classes.join(' ')}">${tagToLabel(tag)}</span>`
-            })
+            .map(tag)
             .join('')}</span>`;
 
 const renderElements = elements => {
@@ -270,7 +262,7 @@ const initiative = (initiative, style) => {
             ${initiative.meta.tags
                 .sort(exports.logic.sortTags)
                 .filter(tagShouldBeVisibleInList)
-                .map(tag(true))
+                .map(tag)
                 .join('')}
             </div>
             `}
