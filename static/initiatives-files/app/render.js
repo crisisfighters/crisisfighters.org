@@ -55,18 +55,18 @@ function renderLocationSelector(params, resultDescriptor) {
             `&locality=${lastResult.locality}&country=${lastResult.country}&countryCode=${lastResult.countryCode}`
         : true;
 
-    input.onfocus = function geolocate() {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(position => {
-            const geolocation = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
-            autocomplete.setBounds(new google.maps.Circle(
-                {center: geolocation, radius: position.coords.accuracy}).getBounds());
-          });
-        }
-      };
+    // input.onfocus = function geolocate() {
+    //     if (navigator.geolocation) {
+    //       navigator.geolocation.getCurrentPosition(position => {
+    //         const geolocation = {
+    //           lat: position.coords.latitude,
+    //           lng: position.coords.longitude
+    //         };
+    //         autocomplete.setBounds(new google.maps.Circle(
+    //             {center: geolocation, radius: position.coords.accuracy}).getBounds());
+    //       });
+    //     }
+    // };
 
       const autocomplete = new google.maps.places.Autocomplete(
         input,
