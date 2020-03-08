@@ -21,4 +21,4 @@ This page is crowdsourced, that means you [can change and improve everything](co
 
 It's to late to avoid damage to earth and our children (takes decades to become visible), but we stop the crisis before it kills more of our future.
 
-<a href="https://www.crisisfighters.org/initiatives/ideas/" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>
+<a href="/initiatives" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>

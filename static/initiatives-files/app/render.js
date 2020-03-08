@@ -2,7 +2,7 @@
 
 function button(link, label, flags) {
     const {primary, blank}  = flags || {};
-    return `<a href="${link}" ${blank ? 'target="_blank' : ''}class="button ${primary ? 'button-primary' : ''}">${renderMd(label)}</a>`
+    return `<a href="${link}" ${blank ? 'target="_blank"' : ''}class="button ${primary ? 'button-primary' : ''}">${renderMd(label)}</a>`
 };
 
 function renderStartPage() {
@@ -197,14 +197,14 @@ const ideas = index => `
 <div class="results-element results-ideas">
     <h2>Suggestion ${index}: Start Your Own</h2>
     <p>There are many good ideas out there for how you can invest your time best. We collect some of them. Check them out, use them and add your own!</p>
-    ${button('/what-else/ideas', 'Check out **Ideas**', {primary: true})}
+    ${button('/what-else/ideas', 'Check out **Ideas**', {primary: true, blank: true})}
 </div>`;
 
 const contribute = index => `
 <div class="results-element results-contribute">
     <h2>Suggestion ${index}: Contribute to CrisisFighters.org!</h2>
     <p>We created CrisisFighters to help you and others to do something meaningful against the climate crisis. By contributing to this website you help others put their energy to the best possible use. And we need the wisdom of the many to keep content up-to-date and accurate!</p>
-    ${button('/contribute', '**Improve** CrisisFighters', {primary: true})}
+    ${button('/contribute', '**Improve** CrisisFighters', {primary: true, blank: true})}
 
 </div>`;
 
@@ -213,7 +213,11 @@ const creativeBrief = index => `
     <h2>Suggestion ${index}: Run Your Own Campaign!</h2>
     <p>Can you make time between projects? Maybe your team can even work together on this. We put together a creative brief with context, key facts, messages, do's and dont's for you to create your own campaign with your own branding.</p>
     <p>Please <a href="/contact" target="_blank">reach out</a> if you have questions - we're happy to help!</p>
-    ${button('https://docs.google.com/document/d/1xrc1t-8ps30AXfwR2cogCuFc3FBbfFTX-VOwJCkW5-4', 'Show **Creative Brief** (draft)', {primary: true})}
+    ${button(
+        'https://docs.google.com/document/d/1xrc1t-8ps30AXfwR2cogCuFc3FBbfFTX-VOwJCkW5-4',
+        'Show **Creative Brief** (draft)',
+        {primary: true, blank: true}
+    )}
 
 </div>`;
 
@@ -222,7 +226,7 @@ const climatePledge = index => `
     <h2>Suggestion ${index}: Sign the Climate Pledge!</h2>
     <p>This is a new initiative to mobilize current and future workers to urge companies to take a pro-climate policy stand.</p>
     <p>By signing this pledge you can state that <b>you will try hard to avoid working for companies that don't take bold steps</b> to become sustainable and advocate for pro-climate policies. This pledge has the power to put pressure on businesses worldwide to take meaningful action.</p>
-    ${button('https://climatevoice.org/', 'Sign the **Climate Pledge**', {primary: true})}
+    ${button('https://climatevoice.org/', 'Sign the **Climate Pledge**', {primary: true, blank: true})}
 
 </div>`;
 
