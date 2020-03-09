@@ -9,13 +9,14 @@ type: page
 
 Our mission is to help you have the biggest impact on the climate crisis. To do that we recommend you the best initiatives. Let us explain what that means.
 
-## What initiatives do we select?
+## What we mean by "initiative"
 For us an initiative is a group of people that try the best they can to mitigate the climate crisis in accordance with the latest science. We don't consider for-profit companies (but of course many of the initiatives listed successfully help companies to reduce their carbon footprint).
 
 ## How we build our result pages
 The results we show you reflect what we would suggest you in person in a conversation. They cover the most important suggestions from joining or financing initiatives to starting your own and convincing your company to decarbonize.
 
 ## How we categorize intitiatives
+To make the best possible recommendations we came up with almost a hundred attributes that can be applied to an initiative. We manually research initiatives and assign these attributes.
 
 ## How we order initiatives
 
@@ -56,3 +57,6 @@ TODO
 * **New Norms and Values**, e.g. awareness sustainable economies and the dangers of greenhouse gases
 * **Transforming Education**, e.g. making the latest science available to schools, universities and adults.
 * **Transparency and Information Feedbacks**, e.g. labeling products based on climate impact, revealing political influence of the fossil industry
+
+
+<a href="/initiatives" class="button button-primary">Go to <b>Crisis Recruiter</b></a>

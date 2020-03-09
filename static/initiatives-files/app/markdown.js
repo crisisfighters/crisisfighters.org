@@ -53,11 +53,14 @@ function setLinkTargetToBlank(md) {
     md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
         // If you are sure other plugins can't add `target` - drop check below
         const aIndex = tokens[idx].attrIndex('target');
+        const href = tokens[idx].attrs.find(a => a[0] ==='href')[1];
     
-        if (aIndex < 0) {
-            tokens[idx].attrPush(['target', '_blank']); // add new attribute
-        } else {
-            tokens[idx].attrs[aIndex][1] = '_blank';    // replace value of existing attr
+        if(href.startsWith('http')) {
+            if (aIndex < 0) {
+                tokens[idx].attrPush(['target', '_blank']); // add new attribute
+            } else {
+                tokens[idx].attrs[aIndex][1] = '_blank';    // replace value of existing attr
+            }
         }
         // pass token to default renderer.
         return defaultRender(tokens, idx, options, env, self);
