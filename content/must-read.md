@@ -69,3 +69,8 @@ The first book on climate change addressed at a wider audience. The author offer
 
 Nature has been replaced by an artificial nature in whose processes human beings play a part. 
 McKibben points out that humanity's impact is unlike anything experienced before. We cannot escape by fleeing to the woods.
+
+--- 
+Read enough? Time to join the fight!
+
+<a href="/initiatives" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>
