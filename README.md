@@ -5,7 +5,7 @@ In addition we collect must read's and our own perspective on how we can stop th
 
 > 📝 We're open-source so please contribute to add more content and improve what's already there!
 
-> 📈 Please learn more about the emergency. Our [must reads section](https://www.crisisfighters.org/must-read/) is a good start as is XR's [The Emergency](https://rebellion.earth/the-truth/the-emergency/).
+> 📈 Please learn more about the emergency. Our [must reads section](https://www.crisisfighters.org/must-read/) is a good start.
 
 ## Contribute to Texts and Content on the website
 
