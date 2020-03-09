@@ -1,7 +1,8 @@
 ---
-title: "Initiatives"
+title: "Crisis Recruiter"
 omit_header_text: true
 type: initiatives
+aliases: ['/initiatives']
 menu:
   main:
     weight: 10

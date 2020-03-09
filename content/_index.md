@@ -13,7 +13,7 @@ There are initiatives that change how billions of dollars are spent, get entire 
 
 Find out how you can best spend your time or money:
 
-<a href="/initiatives" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>
+<a href="/recruiter" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>
 
 ## Contribute and improve everything
-This page is crowdsourced, that means you [can change and improve everything](contribute). We compile [initiatives](initiatives), [events](/what-else/calendar), [ideas](ideas) and more so you quickly find out where your skills make the most impact.
+This page is crowdsourced, that means you're invited to [change and improve everything](contribute).

@@ -5,7 +5,7 @@ description: ""
 weight: 30
 ---
 
-Our main focus is the [Crisis Recruiter](/initiatives). Below is a list of what else you can find on this web page:
+Our main focus is the [Crisis Recruiter](/recruiter). Below is a list of what else you can find on this web page:
 
 * We collect the year's most important events in our [calendar](calendar).
 * We collect various [inspiring ideas](ideas) for you to start your own thing.

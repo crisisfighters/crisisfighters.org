@@ -43,4 +43,4 @@ The authors state that more research in the field is needed and identified these
 
 In our recommendations to you we therefore push initiatives up that are strong in one or more of these areas.
 
-<a href="/initiatives" class="button button-primary">Start <b>Crisis Recruiter</b></a>
+<a href="/recruiter" class="button button-primary">Start <b>Crisis Recruiter</b></a>

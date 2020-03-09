@@ -2,7 +2,7 @@
 const { writeFileSync, readFileSync } = require('fs');
 const { join } = require('path');
 
-const path = join(__dirname, '..','static', 'initiatives-files','data', 'initiatives.js');
+const path = join(__dirname, '..','static', 'recruiter-files','data', 'initiatives.js');
 const newTags = JSON.parse(readFileSync(join(__dirname, 'input.json')).toString());
 const initiatives = JSON.parse(
     readFileSync(path)

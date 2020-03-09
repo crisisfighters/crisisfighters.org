@@ -67,7 +67,7 @@ The majority lacks information that's vital for our survival. There's little und
 Efficiency is the ratio between impact (slow down and stop climate change) and invested resources (your time and money). There's no simple way to find, assess and compare the efficiency of initiatives. That makes it harder for people to get engaged in an efficient way. Therefore a lot of energy put against the climate crisis is wasted.
 
 ### Let's collect and assess the efficiency of initiatives!
-Success depends on our ability to quickly alter public opinion and policy. Many initiatives are doing great already (e.g. [Extinction Rebellion](https://rebellion.earth/), [ClientEarth](https://www.clientearth.org/), and [Fridays for Future](https://www.fridaysforfuture.org/)).
+Success depends on our ability to quickly alter public opinion and policy. Many initiatives are doing great already.
 
 We can't precisely calculate an initiative's impact on stopping the climate crisis. But there is science that tells us what areas of action have the highest likelihood to change things for the better.
 
@@ -89,6 +89,6 @@ We have little time and lots of work to do. Whatever our efforts are, it's cruci
 
 # Putting everything together
 
-* We built the [Crisis Recruiter](/initiatives) to tell you where to best put your time and energy.
+* We built the [Crisis Recruiter](/recruiter) to tell you where to best put your time and energy.
 * We reach out to our networks in the business world to get others to join successful initiatives.
 * We convince employers to let teams support the fight a few hours per week! Who would leave a company that saves the world?

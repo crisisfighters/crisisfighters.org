@@ -82,4 +82,4 @@ A handbook for anyone who wants to effectively (and peacefully) improve your nei
 
 Read enough? Time to join the fight!
 
-<a href="/initiatives" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>
+<a href="/recruiter" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>

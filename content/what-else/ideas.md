@@ -7,7 +7,7 @@ weight: 20
 type: page
 ---
 
-In addition to the great [initiatives](/initiatives) that are already out there, we want to collect inspiring ideas. [Email us](mailto:hi@crisisfighters.org) to discuss them or add more.
+To complement the [Crisis Recruiter](/recruiter), we collect inspiring ideas. [Email us](mailto:hi@crisisfighters.org) to discuss them or add more.
 
 # flyGood.io
 > A mobile web app that allows offsetting flights and tipping initiatives
