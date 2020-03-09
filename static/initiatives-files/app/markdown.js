@@ -1,28 +1,6 @@
 function renderMd(input) {
     if(!window.md) {
-        window.md = window.markdownit('zero', {
-            core: {
-                rules: [
-                  'normalize',
-                  'block',
-                  'inline'
-                ]
-              },
-            block: {
-                rules: [
-                  'blockquote',
-                  'code',
-                  'fence',
-                  'heading',
-                  'hr',
-                  'html_block',
-                  'lheading',
-                  'list',
-                  'reference',
-                  'paragraph'
-                ]
-              },
-        });
+        window.md = window.markdownit();
         setLinkTargetToBlank(window.md);
     }
     return window.md.renderInline(input);
