@@ -5,18 +5,10 @@ description: ""
 weight: 30
 ---
 
-We help you in supporting the best [Initiatives](/initiatives). Read what else we're up to:
+Our main focus is the [Crisis Recruiter](/initiatives). Below is a list of what else you can find on this web page:
 
-# Our Motivation
-Read our thoughts on how to stop the crisis. They're the [motivation behind CrisisFighters](/what-else/motivation)
-
-# Ideas
-We collect inspiring ideas that could help the movement. Some are tiny, some are unrealistically big. [Reach out]((mailto:hi@crisisfighters.org)) to talk about them and to add ideas! 
-
-
-<a href="/what-else/ideas" class="button">Check out <span class="button-text-highlight">Ideas</span></a>
-
-# Calendar
-Let's collect what important events and conferences are happening throughout the year.
-
-<a href="/what-else/calendar" class="button">Check out the <span class="button-text-highlight">Calendar</span></a>
+* We collect the year's most important events in our [calendar](calendar).
+* We collect various [inspiring ideas](ideas) for you to start your own thing.
+* We explain [how we recommend](how-we-recommend) in the Crisis Recruiter.
+* Read our [motivation and thoughts](motivation) on how to stop the crisis.
+* We created a [glossary](glossary) with abbreviations and important terms.
