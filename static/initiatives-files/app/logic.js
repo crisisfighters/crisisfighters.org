@@ -128,19 +128,19 @@ exports.logic = {
                 isInCompanyLeadership: company.includes('user-company-leadership'),
             });
 
-            const description = [
-                'In addition to using the AA framework at your company, we can recommend these resources:',
-                '* CarbonNeutral.com [provides case studies](https://www.carbonneutral.com/examples) for companies of different sizes ($ 10M to $ 1B+ anual revenue) that go carbon neutral.',
-                '* The American Energy Star initiative provides a [23 page guide to create fun competitions](https://www.energystar.gov/buildings/tools-and-resources/energy-efficiency-competition-guide) for sustainable energy and water use.',
-                '* The US Environmental Protection Agency [provides a lot of resources](https://www.epa.gov/climateleadership) to start yourself.',
+            const description = `
+                In addition to using the AA framework at your company, we can recommend these resources:
+                * TCFD provides a [knowledge hub](https://www.tcfdhub.org/) with tutorials, case studies and online courses about reporting emissions.
+                * The American Energy Star initiative provides a [23 page guide to create fun competitions](https://www.energystar.gov/buildings/tools-and-resources/energy-efficiency-competition-guide) for sustainable energy and water use.
+                The US Environmental Protection Agency [provides a lot of resources](https://www.epa.gov/climateleadership) to start yourself.
                 
-                // TODO find and add resource on how non-leadership members can organize
+                ${/*TODO find and add resource on how non-leadership members can organize*/
                 company.includes('user-company-leadership')
                     ? ''
-                    : '',
+                    : ''}
                 
-                'There are many consultancies that help making companies sustainable. Most of them are not-for profit. They provide you with free resources and concrete help on how to get started. And if your company takes that path, they\'re experienced guides along the way. Check out their websites to find out more.',
-            ].join('\n');
+                There are many consultancies that help making companies sustainable. Most of them are not-for profit. They provide you with free resources and concrete help on how to get started. And if your company takes that path, they\'re experienced guides along the way. Check out their websites to find out more.
+                `;
 
             result.result.push({
                 type: 'initiatives',
