@@ -21,6 +21,7 @@ There is an good [glossary by the BBC](https://www.bbc.com/news/science-environm
 | [Deforestation](https://en.wikipedia.org/wiki/Deforestation)         | The removal of a forest from land. Results in habitat damage, biodiversity loss, aridity, extinction, changes to climatic conditions, desertification, and displacement of populations. |
 | Disclosure | Refers to companies creating *GHG Inventories* and disclosing their inventory to investors as part of their regular reporting. Increasingly requested by investors, especially pension and souveraign wealth funds to *Divest* and reallocate money based on climate risk and impact. |
 | Divestment | |
+| [ESG](https://en.wikipedia.org/wiki/Environmental%2C_social_and_corporate_governance) | *Environmental, Social, and Governance* refers to the three central factors in measuring the sustainability and societal impact of an investment in a company or business. They help to better determine the future financial performance of companies (return and risk). |
 | [FOLU](https://en.wikipedia.org/wiki/Land_use,_land-use_change,_and_forestry)                  | Stands for *Forestry and other land use*. Also referred to as *Land use, land-use change, and forestry* (*LULUCF*).|
 | [GHG](https://en.wikipedia.org/wiki/Greenhouse_gas)                   | *Greenhouse Gas*, causes the *Greenhouse Effect*. They include CO2, Methane, Nitrous Oxide and Ozone |
 | [Greenhouse Effect](https://en.wikipedia.org/wiki/Greenhouse_effect) | The process by which radiation from a planet's atmosphere warms the planet's surface. |
