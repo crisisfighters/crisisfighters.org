@@ -10,7 +10,7 @@ menu:
 ---
 
 # Quick-Charge your Knowledge
-Let's start by looking into the past, the present and the future:
+Let's start with three scientifically sound, influential articles that looking into the past, the present and the future:
 
 <img style="float: left; width: 20%; margin-right: 10px" src="/images/must-read/Keeling.png" />
 
