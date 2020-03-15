@@ -8,15 +8,10 @@ sections:
   path: content
   label: Pages
   create: all
-  match: "*"
+  match: "**/*"
 - type: directory
   path: content/posts
   label: Posts
-  create: all
-  match: "**/*"
-- type: directory
-  path: content/what-else
-  label: What else
   create: all
   match: "**/*"
 upload_dir: static/uploads
