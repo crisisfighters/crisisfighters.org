@@ -1,7 +1,6 @@
 ---
 title: Must Read
 featured_image: '/images/wildfire.jpg'
-omit_header_text: true
 description: Key articles to boost your understanding of the crisis
 type: page
 menu:

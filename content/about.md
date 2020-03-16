@@ -1,7 +1,6 @@
 ---
 title: About Us
 featured_image: '/images/wildfire.jpg'
-omit_header_text: true
 description: ''
 menu:
   main:

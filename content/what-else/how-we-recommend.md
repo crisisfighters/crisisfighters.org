@@ -1,7 +1,6 @@
 ---
 title: How we recommend
 featured_image: '/images/desert.jpg'
-omit_header_text: true
 type: page
 ---
 

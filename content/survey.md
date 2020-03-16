@@ -1,7 +1,6 @@
 ---
 title: Survey
 featured_image: '/images/wildfire.jpg'
-omit_header_text: true
 description: The most convincing facts.
 type: page
 # menu:

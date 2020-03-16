@@ -1,7 +1,12 @@
+
 {{ define "main" }}
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy">
-    {{ .Content }}
+<div class="flex-l mw8 center">
+  <article class="center cf pb5 ph3 ph4-ns mw7">
+    <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+      {{ .Content }}
+    </div>
   </article>
+</div>
   {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
   {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
   {{/* Create a variable with that section to use in multiple places. */}}

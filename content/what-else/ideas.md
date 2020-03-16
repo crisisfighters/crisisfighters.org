@@ -1,7 +1,6 @@
 ---
 title: Ideas
 featured_image: '/images/desert.jpg'
-omit_header_text: false
 description: To support the fight
 weight: 20
 type: page

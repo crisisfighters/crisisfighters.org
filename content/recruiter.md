@@ -1,6 +1,5 @@
 ---
 title: "Crisis Recruiter"
-omit_header_text: true
 type: initiatives
 aliases: ['/initiatives']
 menu:

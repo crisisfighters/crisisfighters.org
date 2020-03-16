@@ -1,7 +1,6 @@
 ---
 title: Calendar
 featured_image: '/images/desert.jpg'
-omit_header_text: false
 description: ""
 type: page
 ---

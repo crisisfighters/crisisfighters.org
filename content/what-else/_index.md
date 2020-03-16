@@ -1,7 +1,6 @@
 ---
 title: What else?
 featured_image: '/images/desert.jpg'
-omit_header_text: true
 weight: 30
 ---
 
