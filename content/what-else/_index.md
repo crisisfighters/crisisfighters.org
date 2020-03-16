@@ -13,3 +13,4 @@ Our main focus is the [Crisis Recruiter](/recruiter). Below is a list of what el
 * We explain [how we recommend](how-we-recommend) in the Crisis Recruiter.
 * Read our [motivation and thoughts](motivation) on how to stop the crisis.
 * We created a [glossary](glossary) with abbreviations and important terms.
+* It's easy to [contribute](/contribute) to this website!
