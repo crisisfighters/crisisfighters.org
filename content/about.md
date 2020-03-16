@@ -17,9 +17,7 @@ Work on this website is currently done by [Alexander](mailto:alexander@crisisfig
 
 ## Contact
 
-Join the revolution, suggest changes on this page and ask us any question using this little form:
-
-{{< form-contact action="https://formspree.io/xnqqpvkn"  >}}
+We'd be delighted to receive to hear from you! Mail us at <a href="mailto:hi@crisisfighters.org">hi@crisisfighters.org</a>.
 
 
 --- 

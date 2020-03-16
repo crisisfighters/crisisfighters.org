@@ -1,6 +1,6 @@
 .theme {
     shade: #195C9C;
-    red: #EC3026;
+    red: #e7040f;
     highlight: #0F81E9;
     primary: #ECFF1C;
     primary-shade: #8F9C02;
@@ -11,8 +11,9 @@
     vertical-align: text-top;
 }
 
-main {
-    /* background: #195C9C; */
+.bg1 {
+    background: url(/images/Wildfire_2010_-_panoramio.jpg);
+    background-size: cover;
 }
 
 article {
@@ -24,15 +25,14 @@ article > section:first-child {
 }
 
 article h1 {
-    background: #EC3026;
+    background: #e7040f;
     color: white;
     padding: 0 2rem;
-    margin: 2rem -2rem 0;
+    margin: 4rem -2rem 0;
 }
 article h1:first-child {
     margin-top: 0
 }
-
 
 article.initiatives-wrapper th,
 article.initiatives-wrapper td {
@@ -104,14 +104,14 @@ article table td {
     padding: 0.1rem 1rem;
     font-weight: 400;
     text-align: center;
-    background: #9AFF2B;
+    background: #137752;
     display: block;
     width: fit-content;
     border-radius: 2rem;
     border: 1px solid transparent;
     justify-content: center;
     text-decoration: none;
-    color: black;
+    color: white !important;
 }
 .button:hover {
     color: #195C9C;

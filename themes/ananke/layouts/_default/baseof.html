@@ -46,13 +46,19 @@
     {{ end }}
   </head>
 
-  <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+  <body class="ma0 avenir bg-near-white">
+    <div class="bg1">
+      <div class="bg2">
+        <div class="bg3">
 
-    {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
-    <main role="main">
-      {{ block "main" . }}{{ end }}
-    </main>
-    {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
-    {{ block "scripts" . }}{{ partialCached "site-scripts.html" . }}{{ end }}
+          {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+          <main role="main">
+                  {{ block "main" . }}{{ end }}
+          </main>
+          {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
+          {{ block "scripts" . }}{{ partialCached "site-scripts.html" . }}{{ end }}
+        </div>
+      </div>
+    </div>
   </body>
 </html>
