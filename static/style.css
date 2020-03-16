@@ -35,6 +35,10 @@ article h1:first-child {
     margin-top: 0
 }
 
+article hr {
+    border: 1px solid gray
+}
+
 article.initiatives-wrapper th,
 article.initiatives-wrapper td {
     font-size: 10px 
