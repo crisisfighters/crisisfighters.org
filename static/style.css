@@ -6,35 +6,9 @@
     primary-shade: #8F9C02;
 }
 
-header {
-    /* There's an ugly white grayish bar between header and content that this hack effectively hides */
-    /* margin-bottom: -10x; */
-}
-
-.header-logo-wrapper {
-    /* background: #9AFF2B; */
-    /* color: black; */
-}
-.header-logo-wrapper:hover {
-    color: #8F9C02;
-}
-
 .header-logo {
     height: 2rem;
     vertical-align: text-top;
-}
-
-.header-title-inner {
-    background:#0F81E9;
-    font-weight: bold;
-}
-
-.header-subtitle-inner {
-    background:#0F81E9;
-}
-
-.header-nav {
-    background: #EC3026;
 }
 
 main {
