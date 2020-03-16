@@ -178,7 +178,10 @@ exports.logic = {
             // }
         }
         if(role.includes('user-role-active-in-ngo')) {
-            result.locationMissing = false;
+            // Only change locationMissing if this is the only selected role
+            if(role.length === 1) {
+                result.locationMissing = false;
+            }
             result.result.push({
                 type: 'initiatives',
                 headline: 'Get Financial Support for your Project',

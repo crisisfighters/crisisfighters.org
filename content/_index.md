@@ -18,4 +18,4 @@ Find out how you can best spend your time or money:
 <a href="/recruiter" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>
 
 ## Contribute and improve everything
-This page is crowdsourced, that means you're invited to [change and improve everything](contribute).
+This page is crowdsourced, that means you're invited to [change and improve everything](/contribute).

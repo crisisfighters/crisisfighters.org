@@ -13,7 +13,8 @@
 
 .bg1 {
     background: url(/images/Wildfire_2010_-_panoramio.jpg);
-    background-size: cover;
+    background-size: 100vmax;
+    background-attachment: fixed;
 }
 
 article {

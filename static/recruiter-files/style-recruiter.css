@@ -1,22 +1,42 @@
 
-.results-element {
-    border: 1px dashed green;
-    margin: 10px;
-    padding: 10px;
+.results-element h1 {
+    font-size: 1.7rem;
+}
+.results-element h1 .headline {
+    font-weight: bold;
+}
+.results-element h1 .headline:before {
+    content: '\a';
+    white-space: pre;
+}
+.results-element h1:first-line {
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+.initiative {
+    margin: 0 -2rem;
 }
 
-.initiative {
-    background-color: aqua;
+.initiative:nth-child(2n+1) {
+    background: #cdecff
 }
-.initiative:nth-child(2) {
-background-color: aquamarine;
+
+.initiative h3 {
+    margin: 0
 }
+.initiative-description {
+    padding: 1rem 0 0;
+}
+.initiative h3 a {
+    color: black;
+}
+
 
 .tag {
     border-radius: 5px;
     background-color: #e0e0e0;
     display: inline-block;
-    padding: 4px 6px;
+    padding: 2px 6px;
     margin: 1px;
     font-size: 0.8rem;
 }

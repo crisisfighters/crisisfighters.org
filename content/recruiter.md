@@ -30,4 +30,4 @@ menu:
 async defer></script>
 
 ## Contribute and improve everything
-This page is crowdsourced, please help us by [contributing](contribute) - it's easy and impactful.
+This page is crowdsourced, please help us by <a href="/contribute" target="_blank">contributing</a> - it's easy and impactful.

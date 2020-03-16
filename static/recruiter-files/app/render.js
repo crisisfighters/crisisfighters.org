@@ -10,10 +10,7 @@ function renderStartPage() {
     const tagCount = Object.keys(exports.tagLabels).filter(t => !t.startsWith('l-')).length;
 
     document.getElementById('recruiter-screen').innerHTML = `
-    <div class="flex-l mw8 center">
-    <article class="center cf pb5 mw7">
 
-      <div class="nested-copy-line-height lh-copy f4 nested-img mid-gray">
       ${renderMdParagraph(`
       # How can you make a difference?
       We spent months talking to people, doing research and learning how people can have real impact against the climate crisis: Our **Crisis Recruiter** makes this knowledge available to you. It's free, open source and only takes a few minutes.
@@ -33,26 +30,18 @@ function renderStartPage() {
       `)}
         ${button(exports.logic.surveyLink, 'Launch **Crisis Recruiter**', {primary: true})}
       
-    </article>
-  </div>
         `;
 }
 
 function renderLocationSelector(params, resultDescriptor) {
     
     document.getElementById('recruiter-screen').innerHTML = `
-    <div class="flex-l mw8 center">
-      <article class="center cf pb5 mw7">
-        <header>
-          <div class="nested-copy-line-height lh-copy f4 nested-img mid-gray">
             <h1>Please select a country</h1>
             <p>This allows us to only suggest initiatives that are either global or present in your country.
             </p>
             <input id="result-town-input" autofocus placeholder="Region or country..." type="text"/>
             <button id="result-town-submit" class="button button-primary" disabled>Show <span style="font-weight: bold">Results</span></button>
-        </header>
-      </article>
-    </div>
+    
     `;
     const input = document.getElementById('result-town-input');
     const submit = document.getElementById('result-town-submit');
@@ -178,37 +167,42 @@ const renderElements = elements => {
     }).join('');
 }
 
+const suggestionHeadline = (caption, index) => 
+    `<h1>${index ? `Suggestion ${index}: ` : ''}
+      <span class="headline">${caption}</span>
+    </h1>`;
+
 const restartLink = () => `
 <div class="results-element results-help-others">
-    <h2>Interested in other initiatives?</h2>
+    ${suggestionHeadline('Interested in other initiatives?')}
     <p>There are other, very interesting initiatives that you could join as an individual.</p>
     ${button(exports.logic.surveyLink, 'Start Over')}
 </div>`;
 
 const nothingFound = () => `
 <div class="results-element results-help-others">
-    <h2>No Initiatives Match your Criteria</h2>
+    ${suggestionHeadline('No Initiatives Match your Criteria')}
     <p>Don't worry. This happens. The easy solution is to select more options that could be relevant to you.</p>
     ${button(exports.logic.surveyLink, 'Start Over')}
 </div>`;
 
 const crisisFightersB2B = index => `
 <div class="results-element results-crisisfighters-b2b">
-    <h2>Suggestion ${index}: Your Company can join CrisisFighters</h2>
+    ${suggestionHeadline('Your Company can join CrisisFighters', index)}
     <p>Ask your employees to put one hour per month into improving CrisisFighters and talk about it to get more people to engage.</p>
     ${button('/b2b', '**CrisisFighters B2B**', {primary: true})}
 </div>`;
 
 const ideas = index => `
 <div class="results-element results-ideas">
-    <h2>Suggestion ${index}: Start Your Own</h2>
+    ${suggestionHeadline('Start Your Own', index)}
     <p>There are many good ideas out there for how you can invest your time best. We collect some of them. Check them out, use them and add your own!</p>
     ${button('/what-else/ideas', 'Check out **Ideas**', {primary: true, blank: true})}
 </div>`;
 
 const contribute = index => `
 <div class="results-element results-contribute">
-    <h2>Suggestion ${index}: Contribute to CrisisFighters.org!</h2>
+    ${suggestionHeadline('Contribute to CrisisFighters.org!', index)}
     <p>We created CrisisFighters to help you and others to do something meaningful against the climate crisis. By contributing to this website you help others put their energy to the best possible use. And we need the wisdom of the many to keep content up-to-date and accurate!</p>
     ${button('/contribute', '**Improve** CrisisFighters', {primary: true, blank: true})}
 
@@ -216,7 +210,7 @@ const contribute = index => `
 
 const creativeBrief = index => `
 <div class="results-element results-creative-brief">
-    <h2>Suggestion ${index}: Run Your Own Campaign!</h2>
+    ${suggestionHeadline('Run Your Own Campaign!', index)}
     <p>Can you make time between projects? Maybe your team can even work together on this. We put together a creative brief with context, key facts, messages, do's and dont's for you to create your own campaign with your own branding.</p>
     <p>Please <a href="/contact" target="_blank">reach out</a> if you have questions - we're happy to help!</p>
     ${button(
@@ -229,7 +223,7 @@ const creativeBrief = index => `
 
 const climatePledge = index => `
 <div class="results-element results-creative-brief">
-    <h2>Suggestion ${index}: Sign the Climate Pledge!</h2>
+    ${suggestionHeadline('Sign the Climate Pledge!', index)}
     <p>This is a new initiative to mobilize current and future workers to urge companies to take a pro-climate policy stand.</p>
     <p>By signing this pledge you can state that <b>you will try hard to avoid working for companies that don't take bold steps</b> to become sustainable and advocate for pro-climate policies. This pledge has the power to put pressure on businesses worldwide to take meaningful action.</p>
     ${button('https://climatevoice.org/', 'Sign the **Climate Pledge**', {primary: true, blank: true})}
@@ -238,7 +232,7 @@ const climatePledge = index => `
 
 const aaa = index => `
 <div class="results-element results-creative-brief">
-    <h2>Suggestion ${index}: Transform your company with the AAA framework</h2>
+    ${suggestionHeadline('Transform your company with the AAA framework', index)}
     <p>The Environmental Defense Fund created a powerful but easy 3-step framework to allow your company to execute a <b>science-based climate policy agenda</b>.</p>
 
     <img align="right" src="https://business.edf.org/wp-content/uploads/AAA_GFX_1500.jpg" width="353" height="212">
@@ -255,7 +249,7 @@ const aaa = index => `
 
     const initiativeSet = ({headline, description, style}, initiatives, index) =>`
     <div class="results-element results-initiative-set">
-        <h2>Suggestion ${index}: ${renderMd(headline)}</h2>
+        ${suggestionHeadline(renderMd(headline), index)}
         <div class="results-element-description">${renderMdParagraph(description)}</div>
         <div class="results-initiatives-wrapper">
         ${initiatives.map(i => initiative(i, style)).join('')}
@@ -266,7 +260,7 @@ const initiative = (initiative, style) => {
     const {tagShouldBeVisibleInList} = exports.logic;
     const {small} = style || {};
     return`
-        <div class="initiative">
+        <div class="initiative pa4">
             <h3><a href="${initiative.meta.link}" target="_blank">${initiative.meta.name}</a></h3>
             ${small
             ? ''
@@ -279,9 +273,13 @@ const initiative = (initiative, style) => {
                 .join('')}
             </div>
             `}
-            <div class="initiative-description">
-            ${renderMdParagraph(initiative.description ? initiative.description.content : '')}
-            </div>
+            ${
+                initiative.description && initiative.description.content
+                ? `<div class="initiative-description">
+                    ${renderMdParagraph(initiative.description.content)}
+                    </div>`
+                : ''
+            }
         </div>`
     };
 
