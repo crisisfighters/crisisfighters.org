@@ -121,6 +121,7 @@ article table td {
     justify-content: center;
     text-decoration: none;
     color: white !important;
+    line-height: normal;
 }
 .button:hover {
     color: #195C9C;
@@ -130,7 +131,7 @@ article table td {
 
 .button:disabled {
     transition: none;
-    color: #8F9C02;
+    color: lightgray !important;
     cursor: default
 }
 
