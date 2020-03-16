@@ -9,6 +9,10 @@
 .header-logo {
     height: 2rem;
     vertical-align: text-top;
+    transition: filter 300ms
+}
+a:hover .header-logo  {
+    filter: sepia(1) hue-rotate(-40deg) brightness(1.2) saturate(2);
 }
 
 .bg1 {
