@@ -1514,9 +1514,9 @@ exports.initiatives = [
   },
   {
     "meta": {
-      "name": "Sandbag",
-      "link": "https://sandbag.org.uk/",
-      "label": "sandbag",
+      "name": "Ember",
+      "link": "https://ember-climate.org",
+      "label": "ember",
       "tags": [
         "is-ngo",
         "is-think-tank",
@@ -1536,7 +1536,7 @@ exports.initiatives = [
       ]
     },
     "description": {
-      "content": "Sandbag is a think tank that lobbies governments for high-impact pro-climate legislation. Their mission is to provide targeted, evidence-based advocacy at the points of highest leverage by providing analyses and data tools They're based in London and Brussels.",
+      "content": "Ember is a think tank that lobbies governments for high-impact pro-climate legislation. Their mission is to provide targeted, evidence-based advocacy at the points of highest leverage by providing analyses and data tools They're based in London and Brussels.",
       "updatedBy": "Alexander",
       "updatedAt": "2020-02-15"
     }
