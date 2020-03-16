@@ -1,12 +1,14 @@
 ---
 title: Our Future Needs You.
 featured_image: '/images/desert.jpg'
-description: Go out and save the world.
+# description: Go out and save the world.
 ---
 
+# We make it easy for people to start fighting the crisis.
+
 * Our climate system is [breaking down](https://rebellion.earth/the-truth/the-emergency).
-* You probably ask yourself how you can stop that.
-* We spent months researching and interviewing people about that question.
+* How can you stop that?
+* We spent months collecting answers to that question.
 
 
 There are initiatives that change how billions of dollars are spent, get entire countries and large corporations to take meaningful action and change the norms and values of societies.
