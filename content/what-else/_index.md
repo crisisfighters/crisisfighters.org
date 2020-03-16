@@ -1,9 +1,11 @@
 ---
 title: What else?
 featured_image: '/images/desert.jpg'
-description: ""
+omit_header_text: true
 weight: 30
 ---
+
+# What else?
 
 Our main focus is the [Crisis Recruiter](/recruiter). Below is a list of what else you can find on this web page:
 

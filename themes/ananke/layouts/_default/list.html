@@ -1,10 +1,10 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
 {{ define "main" }}
-<div class="flex-l mw8 center">
-  <article class="center cf pb5 ph3 ph4-ns mw7">
-    <header>
-    <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-      {{ .Content }}
-    </div>
-  </article>
-</div>
+  <div class="flex-l mw8 center">
+    <article class="center cf pb5 ph3 ph4-ns mw7">
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+        {{ .Content }}
+      </div>
+    </article>
+  </div>
 {{ end }}
