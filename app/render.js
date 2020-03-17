@@ -5,6 +5,7 @@ import {surveyLink,
     tagShouldBeVisibleInList} from './logic';
 import {numberOfInitiatives, tagToLabel, queryInitiatives} from './initiatives';
 import {renderMd, renderMdParagraph} from './markdown';
+import {tagLabels} from './data/tagLabels';
 
 export function renderResultScreen(userParams, {result: elements}, location) {
     document.getElementById('recruiter-screen').innerHTML = renderResults(userParams, location, elements);
@@ -12,7 +13,7 @@ export function renderResultScreen(userParams, {result: elements}, location) {
 
 export function renderStartPage() {
 
-    const tagCount = Object.keys(exports.tagLabels).filter(t => !t.startsWith('l-')).length;
+    const tagCount = Object.keys(tagLabels).filter(t => !t.startsWith('l-')).length;
 
     document.getElementById('recruiter-screen').innerHTML = `
 
