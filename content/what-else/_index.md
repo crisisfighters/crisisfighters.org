@@ -12,5 +12,6 @@ Our main focus is the [Crisis Recruiter](/recruiter). Below is a list of what el
 * We collect various [inspiring ideas](ideas) for you to start your own thing.
 * We explain [how we recommend](how-we-recommend) in the Crisis Recruiter.
 * Read our [motivation and thoughts](motivation) on how to stop the crisis.
+* There's ongoing work on [Why Societies Fail at Reacting to Threats](why-societies-fail).
 * We created a [glossary](glossary) with abbreviations and important terms.
 * It's easy to [contribute](/contribute) to this website!
