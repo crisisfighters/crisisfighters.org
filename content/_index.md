@@ -4,12 +4,11 @@ featured_image: '/images/desert.jpg'
 # description: Go out and save the world.
 ---
 
-# We make it easy for people to start fighting the crisis.
+# How can you stop the climate crisis?
 
 * Our climate system is [breaking down](https://rebellion.earth/the-truth/the-emergency).
-* How can you stop that?
-* We spent months collecting answers to that question.
-
+* CrisisFighters can tell you how to have meaningful impact.
+* We make it easy for you to start fighting the crisis.
 
 There are initiatives that change how billions of dollars are spent, get entire countries and large corporations to take meaningful action and change the norms and values of societies.
 
