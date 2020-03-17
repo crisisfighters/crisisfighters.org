@@ -14,7 +14,7 @@ This article is a crowd-sourced collection of reasons why societies fail at reac
 
 <table>
 <tr>
-    <th style="width: 50%">Behavior / Problem</th> <th style="width: 50%">How to counteract it / Examples</th>
+    <th style="width: 50%">Behavior / Problem</th> <th style="width: 50%">Solutions and Examples</th>
 </tr>
 <tr>
 <td>
@@ -38,11 +38,12 @@ This article is a crowd-sourced collection of reasons why societies fail at reac
 <td>
 
 #### Lack of knowledge about impact of actions
+There is no widespread knowledge about important mechanisms:
 * Erosion (from deforestation)
-* Soil degradation (overfarming, lowering water table, killing of sustaining vegetation)
-* Salinization (drought, lowering water table, rising water table, underground salty streams)
-* Vicious circles (e.g. heating-melting-heating)
-* Tipping points (gulf stream reverse, vicious cycles)
+* Soil degradation (from overfarming, lowering water table, killing of sustaining vegetation)
+* Salinization (from drought, lowering water table, rising water table, underground salty streams)
+* Vicious circles (e.g. heating ↺ land ice melting)
+* Tipping points, often triggering vicious cycles (gulf stream reversal, thawing perma frost)
 
 </td>
 <td>🏗</td>
@@ -52,7 +53,7 @@ This article is a crowd-sourced collection of reasons why societies fail at reac
 <td>
 
 #### Inability to learn from the past
-* Reduced demand of cars right after the oil crisis. Back to ever-increasing demand after two years and today spread of SUVs
+After the oil crisis, demand of cars plummeted. After a few years, it bounced back and cars got even bigger (e.g. SUVs).
 
 </td>
 <td>🏗</td>
@@ -62,9 +63,8 @@ This article is a crowd-sourced collection of reasons why societies fail at reac
 <td>
 
 #### False analogy
-* Confusing scientists warning of the climate crisis with medieval doomsayers and artists with fin-de-siecle desperation
-* Europeans kept clearing forests in colonies even if the soil was quickly blown away because clearing forests in Europe's heavy clay oils doesn't have the same effect but instead results in good farm land.
-  * The French preparation for WW2 based on WW1, wrongfully assuming another trench warfare
+* Many confuse empirical scientists' warnings of the climate crisis with medieval doomsayers or artists with fin-de-siecle desperation
+* On European soils, clearing forests results in sustainable farm land. During colonialism, the practice was exported, resulting in rapid errosion because soils are much less heavy in clay.
 
 </td>
 <td>🏗</td>
@@ -79,11 +79,11 @@ This article is a crowd-sourced collection of reasons why societies fail at reac
 </td>
 <td>
 
-* French-German and European integration to avoid another war overcame existing nationalism
-* The inhabitants of Tikopia island killed off all pigs to protect the vegetation although pigs were highly valued
-* The Tokugawa shoguns enacted drastic forest protection policies before deforestation became irreversible
-* Joaquin Balaguer, a horrible dictator of the Dominican Republic, enacted costly and far-reaching environmental protection measures despite political cost
-* Costa Rica abandoned its army and invests heavily in protecting its environment
+* The French-German and European integrations overcame long-lasting nationalism to avoid another war.
+* The inhabitants of Tikopia island survived because they killed off all pigs to protect the vegetation although pigs were highly valued.
+* The Tokugawa shoguns enacted drastic forest protection policies before deforestation became irreversible.
+* Joaquin Balaguer, a horrible dictator of the Dominican Republic, enacted costly and far-reaching environmental protection measures despite the political cost.
+* Costa Rica abandoned its army and invests heavily in protecting its environment.
 </td>
 </tr>
 
@@ -93,18 +93,18 @@ This article is a crowd-sourced collection of reasons why societies fail at reac
 
 <table>
 <tr>
-    <th style="width: 50%">Behavior / Problem</th> <th style="width: 50%">How to counteract it / Examples</th>
+    <th style="width: 50%">Behavior / Problem</th> <th style="width: 50%">Solutions and Examples</th>
 </tr>
 <tr>
 <td>
 
 #### Imperceptibility
 * Nutrients play a major role for farming and water quality but they're invisible for the eye.
-Australian environment looked as healthy and resilient as Europe's. It was invisible that flora and fauna are incredibly slow-growing because of the low nutrient levels, damage quickly became irreversible.
+* When colonized by Europeans, the Australian environment looked as healthy and resilient as Europe's. It was invisible that flora and fauna are incredibly slow-growing because of the low nutrient levels, damage quickly became irreversible.
 * Many soils are low-nutrient, the vegetation contains all the nutrients. Cutting it off quickly damages the soils irreperably.
-* Large quantities of salt deep in the ground that only becomes a problem when farming meddles with the water table (e.g. Montana, Australia)
-* Miners initially couldn't know that mine runoff elements are toxic
-* Distant managers who have a hard time perceiving local problems if they don't know such problems
+* In some areas, there are large quantities of salt deep in the ground. It becomes a problem when farming meddles with the water table (e.g. Montana, Australia)
+* Miners initially couldn't know that mine runoff elements are toxic.
+* Distant managers have a hard time perceiving local problems if they can't easily relate.
 * “Creeping Normalcy”, changes are so slow or hidden behind fluctuations that they become imperceptible. Unnoticed, people’s baselines shift with these invisible changes.
 
 </td>
@@ -120,15 +120,15 @@ Australian environment looked as healthy and resilient as Europe's. It was invis
 
 <table>
 <tr>
-    <th style="width: 50%">Behavior / Problem</th> <th style="width: 50%">How to counteract it / Examples</th>
+    <th style="width: 50%">Behavior / Problem</th> <th style="width: 50%">Solutions and Examples</th>
 </tr>
 <tr>
 <td>
 
 #### Obviously selfish behavior
-* Using privileges access to deplete shared resources (e.g. upriver farmers extracting too much water)
-* Exploiting natural resources
-* Shifting cleanup costs for operations to society (mining, nuclear, farming)
+* Using privileged access to deplete shared resources (e.g. upriver farmers extracting too much water).
+* Exploiting natural resources.
+* Shifting cleanup costs for operations to society (mining, nuclear, farming).
 
 </td>
 <td>🏗</td>
@@ -137,9 +137,13 @@ Australian environment looked as healthy and resilient as Europe's. It was invis
 <tr>
 <td>
 
-#### Imbalance between big, certain, individual profits and losses spread over a large number of individuals
-* For each individual there’s little motivation to fight that specific perpetrator because the damage is so small.
-* Examples: Subsidized (direct or indirect, e.g. irrigation, environmental and economic fallout, …) fishery, sugar-growing in the US, cotton-growing in Australia. These industries tend to lobby tenaciously for subsidies that represent a huge part of their profits while the losers (all taxpayers) are less vocal because the subsidies are only a small fraction of a country’s total expenses
+#### Imbalance between big, certain, individual profits and losses spread among many of individuals
+For each individual there’s little motivation to fight that specific perpetrator because the damage is so small. Examples:
+* Subsidized (direct or indirect, e.g. irrigation, environmental and economic fallout, …) fishery
+* Sugar-growing in the US
+* Cotton-growing in Australia.
+
+These industries tend to lobby tenaciously for subsidies that represent a huge part of their profits while the losers (all taxpayers) are less vocal because the subsidies are only a small fraction of a country’s total expenses.
 
 </td>
 <td>🏗</td>
@@ -154,7 +158,7 @@ Australian environment looked as healthy and resilient as Europe's. It was invis
 </td>
 <td>
 
-* Long-term ownership over limited resources boosts ownership and accountability
+* Long-term ownership over limited resources boosts sense of ownership and accountability
 
 </td>
 </tr>
@@ -163,7 +167,7 @@ Australian environment looked as healthy and resilient as Europe's. It was invis
 <td>
 
 #### The Tragedy of the Commons
-* In the absence of strong regulation, every consumer of a shared resource (fish, water, ore, …) has an interest in using up as much of it as possible to avoid competitors from doing so. This is a classic vicious circle
+In the absence of strong regulation, every consumer of a shared resource (fish, water, ore, …) has an interest in using up as much of it as possible to avoid competitors from doing so. This is a classic vicious circle
 
 </td>
 <td>🏗
@@ -191,7 +195,7 @@ Australian environment looked as healthy and resilient as Europe's. It was invis
 </td>
 <td>
 
-* If elites cannot insulate themselves from the consequences of their actions, they act much more in the common interest
+If elites cannot insulate themselves from the consequences of their actions, they act much more in the common interest
 
 </td>
 </tr>
@@ -204,22 +208,26 @@ Australian environment looked as healthy and resilient as Europe's. It was invis
 
 <table>
 <tr>
-    <th style="width: 50%">Behavior / Problem</th> <th style="width: 50%">How to counteract it / Examples</th>
+    <th style="width: 50%">Behavior / Problem</th> <th style="width: 50%">Solutions and Examples</th>
 </tr>
 <tr>
 <td>
 
 #### Sticking to cultural/religious beliefs that make adaptation harder
 * Harmful industries are often (past) pillars of a society and its cultural identity and still perceived as such.
-* Options are often perceived as important cultural/individual achievements to be protected (e.g. using private transportation, owning multiple cars, an array of home appliances, eating meat).
-* Conservatives often maintain a high trust in the markets and low willingness for drastic change, even if both will obviously destroy what they’re set out to preserve.
-
+* Their contributions frequently constitute important cultural/individual achievements to be protected (e.g. using private transportation, owning multiple cars, an array of home appliances, eating meat).
+* Conservatives tend to maintain the status quo, even in cases where it contains the seed for its own destruction.
 
 </td>
 <td>
 
-* It’s difficult to find out what core values to replace.
-Countries (partly) replace values core to their identity all the time (army in Japan, legal racism in Europe and the US, communism in Russia, subordination of women and legalized homophobia in most countries)
+* It’s difficult to find out what core values to replace with what.
+* Countries replace some core values all the time:
+  * The Japanese Army in Japan
+  * Legal racism in Europe and the US
+  * Communism in Russia
+  * Subordination of women
+  * Legalized homophobia in most countries
 
 </td>
 </tr>
@@ -238,7 +246,7 @@ Countries (partly) replace values core to their identity all the time (army in J
 
 #### Dismissing warnings because of previous false alarms
 
-* Superficially this can be rational
+It's a natural instinct when making sense of the world. It feels rational.
 
 </td>
 <td>🏗</td>
@@ -248,8 +256,8 @@ Countries (partly) replace values core to their identity all the time (army in J
 <td>
 
 #### Clash of short-term and long-term interests
-* Every day, millions of desperately poor are forced to undermine their own long-term prospects of betterment to survive and keep their families alive
-* Governments overly focus on problems that are on the verge of explosion
+* Every day, millions of desperately poor are forced to undermine their own long-term prospects of betterment to survive and keep their families alive.
+* Governments overly focus on problems that are on the verge of explosion.
 
 </td>
 <td>🏗</td>
@@ -259,9 +267,9 @@ Countries (partly) replace values core to their identity all the time (army in J
 <td>
 
 #### Groupthink
-* People adjust their thinking and actions to groups they belong to
+* People adjust their thinking and actions to groups they belong to.
 * Trying to reach a decision under stressful, high-stakes circumstances may lead to the suppression of doubts and critical thinking, sharing of illusions, a premature consensus, and ultimately a disastrous decision.
-* Crowd psychology and groupthink may operate over periods of hours or years
+* Crowd psychology and groupthink may operate over periods of hours to years.
 
 </td>
 <td>🏗 (note: This has the same effect as group inertia. It can also be utilized)</td>
@@ -273,7 +281,7 @@ Countries (partly) replace values core to their identity all the time (army in J
 #### Psychological denial and confirmation bias
 * Things arousing painful emotions are sometimes subconsciously or consciously suppressed, even if avoidance turns out to be ultimately disastrous.
 * Denial is a way of maintaining psychological sanity in the face of dangers.
-Confirmation bias reinforces that denial as new information confirming previous beliefs are given preference. Over time, irrational and dangerous beliefs solidify
+* Confirmation bias reinforces that denial as new information confirming previous beliefs are given preference. Over time, irrational and dangerous beliefs solidify.
 
 </td>
 <td>🏗</td>
@@ -286,7 +294,7 @@ Confirmation bias reinforces that denial as new information confirming previous 
 
 <table>
 <tr>
-    <th style="width: 50%">Behavior / Problem</th> <th style="width: 50%">How to counteract it / Examples</th>
+    <th style="width: 50%">Behavior / Problem</th> <th style="width: 50%">Solutions and Examples</th>
 </tr>
 <tr>
 <td>
@@ -301,7 +309,7 @@ Confirmation bias reinforces that denial as new information confirming previous 
 <td>
 
 #### A solution exists but is prohibitively expensive
-* Fight bushfires by thinning out forests on a large scale to reduce fuel load
+We could decarbonize our economy within a few years but colelctively we're not willing to pay the price.
 
 </td>
 <td>🏗</td>
@@ -321,9 +329,9 @@ Confirmation bias reinforces that denial as new information confirming previous 
 
 #### Too late
 
-* Choosing between multiple courses of action sometimes takes so much time that all of them become unfeasible
-* Political decisions take time
-* Florida’s Dusky Seaside Sparrow died out, although the US Fish and Wildlife Service bought the last habitat in the late 1980s at a high price. It was already degraded and deciding whether to breed sparrows in captivity or mixing with the closely related Dusky Seaside Sparrows and then back-crossing the hybrids took so much time that all Sparrows had died out.
+* Choosing between multiple courses of action sometimes takes so much time that all of them become unfeasible.
+* Political decisions take time.
+* Example: Florida’s Dusky Seaside Sparrow died out, although the US Fish and Wildlife Service bought the last habitat in the late 1980s at a high price. It was already degraded and deciding whether to breed sparrows in captivity or mixing with the closely related Dusky Seaside Sparrows and then back-crossing the hybrids took so much time that all Sparrows had died out.
 
 
 </td>
@@ -334,10 +342,10 @@ Confirmation bias reinforces that denial as new information confirming previous 
 <td>
 
 #### A solution backfires and makes the problem worse
-* Lack of understanding of interdependencies and complexities easily lead to oversimplified solutions
-* Attempts at (geo-)engineering environmental threats often devastatingly failed in the past
+* Lack of understanding of interdependencies and complexities easily lead to oversimplified solutions.
+* Attempts at (geo-)engineering environmental threats often devastatingly failed in the past. Examples:
   * Introducing the cane toad to Australia to control insect pests resulted in a much worse cane toad pest
-  * Forest fire suppression can strengthen vegetation prone to burn and lead to much more devastating fires in the long term
+  * Forest fire suppression can strengthen vegetation prone to burn and lead to much more devastating fires in the long term.
 
 </td>
 <td>🏗</td>
@@ -347,7 +355,7 @@ Confirmation bias reinforces that denial as new information confirming previous 
 <td>
 
 #### Lack of Diversity / Putting all one's eggs into one basket
-* Failure to survive environmental threats is a common outcome for beings, groups, societies and species. Diversity is what enabled nature and human societies to not only survive a changing environment but also gradually increase complexity.
+Failure to survive environmental threats is a common outcome for beings, groups, societies and species. Diversity is what enabled nature and human societies to not only survive a changing environment but also gradually increase complexity.
 * For example, thanks to its high genetic diversity, the killfish is able to survive extreme levels of toxicity and even survive within oil spills.
 * Historically human civilization consisted of thousands of largely independent societies, resulting in natural selection of coping strategies towards any conceivable threat.
 * Merging all these societies into one global civilization reduces our ability to react in a distributed, independent manner and basically means that both failure and success are global.
