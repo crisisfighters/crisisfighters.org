@@ -1,6 +1,3 @@
-+++
-
-+++
 # Make a difference
 
 We spent months talking to people, doing research and learning how people can have real impact against the climate crisis: Our **Crisis Recruiter** makes this knowledge available to you. It's free, open source and only takes a few minutes.
