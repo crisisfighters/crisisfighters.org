@@ -100,11 +100,10 @@ article table thead {
 article table tr:nth-child(2n){
     background: #f0f0f0
 }
-article table td:first-child {
-    white-space: nowrap;
-}
+
 article table td {
     padding: 0.2rem;
+    vertical-align: top;
 }
 
 .button {
