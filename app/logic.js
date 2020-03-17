@@ -83,7 +83,6 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
             // Therefore when asked how much time they want to spend, they can opt out off spending any
             // time at all. The following lines make the data consistent again.
             contribution = contribution.filter(r => r !== 'user-contribution-time');
-            
         }
         // If the user selected multiple options, we can disregard user-time-none.
         time = time.filter(t => t !== 'user-time-none');
