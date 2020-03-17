@@ -6,29 +6,29 @@ import {surveyLink,
 import {numberOfInitiatives, tagToLabel, queryInitiatives} from './initiatives';
 import {renderMd, renderMdParagraph} from './markdown';
 import {tagLabels} from './data/tagLabels';
-import welcome from './content-partials/recruiter/welcome.md';
-import selectCountry from './content-partials/recruiter/select-country.md';
+import welcomeMd from './content-partials/recruiter/welcome.md';
+import selectCountryMd from './content-partials/recruiter/select-country.md';
+import aaaMd from './content-partials/recruiter/aaa.md';
 
 export function renderResultScreen(userParams, {result: elements}, location) {
     document.getElementById('recruiter-screen').innerHTML = renderResults(userParams, location, elements);
 }
 
 export function renderStartPage() {
-
     const tagCount = Object.keys(tagLabels).filter(t => !t.startsWith('l-')).length;
 
     document.getElementById('recruiter-screen').innerHTML = renderMdParagraph(
-          welcome
-            .replace('numberOfInitiatives', numberOfInitiatives())
-            .replace('numberOfTags', tagCount)
-            + button(surveyLink, 'Launch **Crisis Recruiter**', {primary: true})
-        );
+          welcomeMd
+            .replace('{{numberOfInitiatives}}', numberOfInitiatives())
+            .replace('{{numberOfTags}}', tagCount)
+        )
+        + button(surveyLink, 'Launch **Crisis Recruiter**', {primary: true});
 }
 
 export function renderLocationSelector(params, resultDescriptor) {
     
     document.getElementById('recruiter-screen').innerHTML = 
-    renderMdParagraph(selectCountry) + `
+    renderMdParagraph(selectCountryMd) + `
         <input id="result-town-input" autofocus placeholder="Region or country..." type="text"/>
         <button id="result-town-submit" class="button button-primary" disabled>Show <span style="font-weight: bold">Results</span></button>
     `;
@@ -45,19 +45,6 @@ export function renderLocationSelector(params, resultDescriptor) {
         ? document.location.href= document.location.href + 
             `&locality=${lastResult.locality}&country=${lastResult.country}&countryCode=${lastResult.countryCode}`
         : true;
-
-    // input.onfocus = function geolocate() {
-    //     if (navigator.geolocation) {
-    //       navigator.geolocation.getCurrentPosition(position => {
-    //         const geolocation = {
-    //           lat: position.coords.latitude,
-    //           lng: position.coords.longitude
-    //         };
-    //         autocomplete.setBounds(new google.maps.Circle(
-    //             {center: geolocation, radius: position.coords.accuracy}).getBounds());
-    //       });
-    //     }
-    // };
 
       const autocomplete = new google.maps.places.Autocomplete(
         input,
@@ -228,12 +215,7 @@ const climatePledge = index => `
 const aaa = index => `
 <div class="results-element results-creative-brief">
     ${suggestionHeadline('Transform your company with the AAA framework', index)}
-    <p>The Environmental Defense Fund created a powerful but easy 3-step framework to allow your company to execute a <b>science-based climate policy agenda</b>.</p>
-
-    <img align="right" src="https://business.edf.org/wp-content/uploads/AAA_GFX_1500.jpg" width="353" height="212">
-    
-    <p>Climate change poses an unprecedented threat to companies’ operations, value chains, employees and communities. The economic costs of climate change – from damage to facilities, disrupted operations and supply chains and lost productivity – are already in the hundreds of millions of dollars and expected to reach trillions. While voluntary actions to reduce emissions are important, only public policy can deliver reductions at the speed and scale needed to limit the worst impacts of climate change.<br><strong><em>That’s why climate policy advocacy is an essential element of corporate sustainability leadership.</em></strong></p><p><strong>As a company, your political influence is a critical tool in the fight against climate change</strong>.</p>
-
+    ${renderMdParagraph(aaaMd)}
     ${button(
         'https://business.edf.org/insights/aaa-leadership-framework/',
         'Check out the **AAA Framework**',
