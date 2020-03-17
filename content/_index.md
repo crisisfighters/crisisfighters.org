@@ -1,10 +1,9 @@
 ---
 title: Our Future Needs You.
-featured_image: '/images/desert.jpg'
-# description: Go out and save the world.
----
+featured_image: "/images/desert.jpg"
 
-# How can you stop the climate crisis?
+---
+# How can You stop the climate crisis?
 
 * Our climate system is [breaking down](https://rebellion.earth/the-truth/the-emergency).
 * CrisisFighters can tell you how to have meaningful impact.
@@ -17,4 +16,5 @@ Find out how you can best spend your time or money:
 <a href="/recruiter" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>
 
 ## Contribute and improve everything
+
 This page is crowdsourced, that means you're invited to [change and improve everything](/contribute).
