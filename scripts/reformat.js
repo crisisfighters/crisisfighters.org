@@ -2,15 +2,15 @@
 const { writeFileSync, readFileSync } = require('fs');
 const { join } = require('path');
 
-const path = join(__dirname, '..','static', 'recruiter-files', 'data', 'initiatives.js');
+const path = join(__dirname, '..','app', 'data', 'initiatives.js');
 
 writeFileSync(
     path,
-    'exports.initiatives = ' + JSON.stringify(
+    'export const initiatives = ' + JSON.stringify(
         JSON.parse(
             readFileSync(path)
             .toString()
-            .replace(/^exports\.initiatives = /, '')
+            .replace(/^export const initiatives = /, '')
             .replace(/;$/, '')
         ),
         null,
