@@ -6,6 +6,8 @@ import {surveyLink,
 import {numberOfInitiatives, tagToLabel, queryInitiatives} from './initiatives';
 import {renderMd, renderMdParagraph} from './markdown';
 import {tagLabels} from './data/tagLabels';
+import welcome from './content-partials/recruiter/welcome.md';
+import selectCountry from './content-partials/recruiter/select-country.md';
 
 export function renderResultScreen(userParams, {result: elements}, location) {
     document.getElementById('recruiter-screen').innerHTML = renderResults(userParams, location, elements);
@@ -15,39 +17,20 @@ export function renderStartPage() {
 
     const tagCount = Object.keys(tagLabels).filter(t => !t.startsWith('l-')).length;
 
-    document.getElementById('recruiter-screen').innerHTML = `
-
-      ${renderMdParagraph(`
-      # Make a difference
-      We spent months talking to people, doing research and learning how people can have real impact against the climate crisis: Our **Crisis Recruiter** makes this knowledge available to you. It's free, open source and only takes a few minutes.
-
-      ### It takes four steps.
-      1. Get an update to the latest science by reading the [Must Reads](/must-reads).
-      2. Read this page.
-      3. We show you a quick survey that takes up to two minutes.
-      4. We show you how can make a real difference.
-
-      ## How Crisis Recruiter works
-      * We collected ${numberOfInitiatives()} initiatives, groups of people fighting the crisis (e.g. NGOs).
-      * We matched these initiatives against ${tagCount} properties.
-      * That data lets us give you useful recommendations, just like in a real conversation.
-      * To identify the most impactful initiatives, we rely on a study by the Potsdam Institute for Climate Impact. They identified key areas where your effort has the highest impact on stopping the crisis.
-      * For the curious, we put an article together on [how we recommend](/what-else/how-we-recommend).
-      `)}
-        ${button(surveyLink, 'Launch **Crisis Recruiter**', {primary: true})}
-      
-        `;
+    document.getElementById('recruiter-screen').innerHTML = renderMdParagraph(
+          welcome
+            .replace('numberOfInitiatives', numberOfInitiatives())
+            .replace('numberOfTags', tagCount)
+            + button(surveyLink, 'Launch **Crisis Recruiter**', {primary: true})
+        );
 }
 
 export function renderLocationSelector(params, resultDescriptor) {
     
-    document.getElementById('recruiter-screen').innerHTML = `
-            <h1>Please select a country</h1>
-            <p>This allows us to only suggest initiatives that are either global or present in your country.
-            </p>
-            <input id="result-town-input" autofocus placeholder="Region or country..." type="text"/>
-            <button id="result-town-submit" class="button button-primary" disabled>Show <span style="font-weight: bold">Results</span></button>
-    
+    document.getElementById('recruiter-screen').innerHTML = 
+    renderMdParagraph(selectCountry) + `
+        <input id="result-town-input" autofocus placeholder="Region or country..." type="text"/>
+        <button id="result-town-submit" class="button button-primary" disabled>Show <span style="font-weight: bold">Results</span></button>
     `;
     const input = document.getElementById('result-town-input');
     const submit = document.getElementById('result-town-submit');
