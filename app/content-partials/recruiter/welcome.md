@@ -1,13 +1,19 @@
++++
+
++++
 # Make a difference
+
 We spent months talking to people, doing research and learning how people can have real impact against the climate crisis: Our **Crisis Recruiter** makes this knowledge available to you. It's free, open source and only takes a few minutes.
 
 ### It takes four steps.
+
 1. Get an update to the latest science by reading the [Must Reads](/must-reads).
 2. Read this page.
 3. We show you a quick survey that takes up to two minutes.
-4. We show you how can make a real difference.
+4. We show you how you will make a real difference.
 
 ## How Crisis Recruiter works
+
 * We collected {{numberOfInitiatives}} initiatives, groups of people fighting the crisis (e.g. NGOs).
 * We matched these initiatives against {{numberOfTags}} properties.
 * That data lets us give you useful recommendations, just like in a real conversation.
