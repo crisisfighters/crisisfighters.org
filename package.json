@@ -1,0 +1,34 @@
+{
+  "name": "crisisfighters.org",
+  "version": "0.0.1",
+  "description": "At [CrisisFighters.org](https://www.CrisisFighters.org) we collect all initatives that fight the climate emergency. For each one we collect additional data to allow you to find out how you can contribute to saving the world.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf public",
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crisisfighters/crisisfighters.org.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crisisfighters/crisisfighters.org/issues"
+  },
+  "homepage": "https://github.com/crisisfighters/crisisfighters.org#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/register": "^7.8.6",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
