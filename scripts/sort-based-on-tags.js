@@ -2,12 +2,12 @@
 const { writeFileSync, readFileSync } = require('fs');
 const { join } = require('path');
 
-const path = join(__dirname, '..','static', 'recruiter-files','data', 'initiatives.js');
+const path = join(__dirname, '..','app','data', 'initiatives.js');
 const newTags = JSON.parse(readFileSync(join(__dirname, 'input.json')).toString());
 const initiatives = JSON.parse(
     readFileSync(path)
     .toString()
-    .replace(/^exports\.initiatives = /, '')
+    .replace(/^export const initiatives = /, '')
     .replace(/;$/, '')
 );
 
@@ -28,7 +28,7 @@ const sort = ({meta: {name: a}}, b) => {
 
 writeFileSync(
     path,
-    'exports.initiatives = ' + JSON.stringify(
+    'export const initiatives = ' + JSON.stringify(
         initiatives.sort(sort),
         null,
         2
