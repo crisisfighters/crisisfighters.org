@@ -226,7 +226,7 @@ const creativeBrief = index => `
     <p>Can you make time between projects? Maybe your team can even work together on this. We put together a creative brief with context, key facts, messages, do's and dont's for you to create your own campaign with your own branding.</p>
     <p>Please <a href="/contact" target="_blank">reach out</a> if you have questions - we're happy to help!</p>
     ${button(
-        'https://docs.google.com/document/d/1xrc1t-8ps30AXfwR2cogCuFc3FBbfFTX-VOwJCkW5-4',
+        'https://docs.google.com/document/d/1gQAjdS_FU4Ijx4OTbiIhNngsR8haO9llvgHIMThwqiQ',
         'Show **Creative Brief** (draft)',
         {primary: true, blank: true}
     )}
