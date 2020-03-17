@@ -6,11 +6,6 @@ const browserSync = BrowserSync.create();
 const webpackOptions = ["--colors", "--display-error-details"];
 const hugoOptions = ["-v"];
 
-gulp.task("build", gulp.parallel(
-  () => runWebpack(["--mode", "production", "--profile"]),
-  () => runHugo()
-));
-
 gulp.task("watch", () => {
 //   runWebpack(["--mode=development", "--watch"]);
   runHugo(["--buildDrafts", "--buildFuture", "--watch"]);
