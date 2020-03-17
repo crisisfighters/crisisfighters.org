@@ -4,7 +4,7 @@ publish = "public"
 command = "npm run webpack -- --mode=production --profile && hugo --gc --minify"
 
 [context.production.environment]
-HUGO_VERSION = "0.59.1"
+HUGO_VERSION = "0.64.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
