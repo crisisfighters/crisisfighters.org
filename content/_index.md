@@ -13,7 +13,7 @@ There are initiatives that change how billions of dollars are spent, get entire 
 
 Find out how you can best spend your time or money:
 
-<a href="/recruiter" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>
+<a href="/recruiter" class="button button-primary">Go to <span class="button-text-highlight">Crisis Recruiter</span></a>
 
 ## Contribute and improve everything
 
