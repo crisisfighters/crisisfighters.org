@@ -1,6 +1,6 @@
 import {numberOfInitiatives, labelToTag} from './initiatives';
-
 export const surveyLink = 'https://services342876.typeform.com/to/jkPJe0';
+// TODO move most copy into markdown partials
 
 export const sortOrder = ['good', 'is', 'goal', 'use', 'support', 'l'];
 export const sortTags = (a, b) => {
@@ -235,7 +235,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         result.result.push({
             type: 'initiatives',
             headline: 'Help Here',
-            description: `From the ${numberOfInitiatives()} initiatives in our databse, they best match your responnses and have the highest impact. Please check out their websites to learn more!`,
+            description: `From the ${numberOfInitiatives()} initiatives in our database, they best match your responses and have the highest impact. Please check out their websites to learn more!`,
             query: tags => tags.some(tag => suggestTags.includes(tag))
                             && locationMatches(tags),
         });

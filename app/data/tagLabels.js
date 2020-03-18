@@ -5,11 +5,11 @@ export const tagLabels = {
   'user-role-faith-leader': 'I\'m a faith leader.',
   'user-role-health-worker': 'I\'m a physician / health worker.',
   'user-role-creative': 'I\'m a creative or work in Advertising or the Media.',
-  'user-role-none': 'None of the above.',
+  'user-role-none': 'None.',
   'user-company-building': 'I work in the building industry.',
   'user-company-leadership': 'I\'m part of my company\'s leadership.',
   'user-company-less-than-1000-employees': 'My company has less than 1000 employees.',
-  'user-company-none': 'None of the above.',
+  'user-company-none': 'None.',
   'user-contribution-time': 'Time',
   'user-contribution-money': 'Money',
   'user-time-employment': 'I\'m open to a new employment.',
@@ -52,7 +52,7 @@ export const tagLabels = {
   'goal-conservation': 'Conservation',
   'good-high-momentum': 'High Momentum',
   'good-identifying-best-levers': 'Good at Identifying Levers',
-  'good-energy-transformation': 'Good at Energy Transformation',
+  'good-energy': 'Good at Energy Production and Storage',
   'good-cities-and-housing': 'Good at Cities and Housing',
   'good-finance-and-subsidies': 'Good at Finance and Subsidies',
   'good-new-norms-and-values': 'Good at New Norms and Values',
@@ -342,4 +342,4 @@ export const tagLabels = {
   'l-ye': 'Yemen',
   'l-zm': 'Zambia',
   'l-zw': 'Zimbabwe'
-}
+};
