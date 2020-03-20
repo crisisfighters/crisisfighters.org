@@ -4,7 +4,7 @@ We spent months talking to people, doing research and learning how people can ha
 
 ### It takes four steps.
 
-1. Get an update to the latest science by reading the [Must Reads](/must-reads).
+1. Get an update to the latest science by reading the [Must Reads](/must-read).
 2. Read this page.
 3. We ask you up to five questions. This takes less than two minutes.
 4. We show you how you will make a real difference.
