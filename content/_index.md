@@ -1,7 +1,6 @@
 ---
 title: Our Future Needs You.
-featured_image: "/images/desert.jpg"
-bigTitle: 'You can Fight the Crisis!'
+bigTitle: 'You can fight the Crisis!'
 ---
 # We help with that.
 
