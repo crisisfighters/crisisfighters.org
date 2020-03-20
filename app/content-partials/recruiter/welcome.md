@@ -6,7 +6,7 @@ We spent months talking to people, doing research and learning how people can ha
 
 1. Get an update to the latest science by reading the [Must Reads](/must-reads).
 2. Read this page.
-3. We show you a quick survey that takes up to two minutes.
+3. We ask you up to five questions. This takes less than two minutes.
 4. We show you how you will make a real difference.
 
 ## How Crisis Recruiter works

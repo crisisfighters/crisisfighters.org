@@ -9,7 +9,7 @@ menu:
 ---
 
 # Quick-Charge your Knowledge
-Let's start with three scientifically sound, influential articles that looking into the past, the present and the future:
+Let's start with three trustworthy, influential articles that looking into the past, the present and the future:
 
 <img style="float: left; width: 20%; margin-right: 10px" src="/images/must-read/Keeling.png" />
 
@@ -67,7 +67,7 @@ It is the first documentary to win two Oscars and remains influential to today.
 The first book on climate change addressed at a wider audience. The author offers two paths forward: "The Defiant Reflex" or a "more humble" way of living.
 
 Nature has been replaced by an artificial nature in whose processes human beings play a part. 
-McKibben points out that humanity's impact is unlike anything experienced before. We cannot escape by fleeing to the woods.
+McKibben, who subsequently founded [350.org](https://350.org) points out that humanity's impact is unlike anything experienced before. We cannot escape by fleeing to the woods.
 
 --- 
 

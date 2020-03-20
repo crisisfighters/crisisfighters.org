@@ -1,9 +1,9 @@
 ---
 title: Our Future Needs You.
 featured_image: "/images/desert.jpg"
-
+bigTitle: 'You can Fight the Crisis!'
 ---
-# How can You stop the climate crisis?
+# We help with that.
 
 * Our climate system is [breaking down](https://rebellion.earth/the-truth/the-emergency).
 * CrisisFighters can tell you how to have meaningful impact.

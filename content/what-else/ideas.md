@@ -6,7 +6,7 @@ weight: 20
 type: page
 ---
 
-To complement the [Crisis Recruiter](/recruiter), we collect inspiring ideas. [Email us](mailto:hi@crisisfighters.org) to discuss them or add more.
+We collect inspiring ideas. [Email us](mailto:hi@crisisfighters.org) to discuss them, volunteer or add more!
 
 # flyGood.io
 > A mobile web app that allows offsetting flights and tipping initiatives
@@ -29,11 +29,15 @@ flyGood.io will be a mobile webapp that allows users of modern smartphones to pa
 
 # Monthly Crisis Mitigation Meetups in Hamburg and Berlin, Germany
 > Meeting monthly to share the latest science and discuss strategy
+
 The idea is to give updated overviews on global initiatives that try to change the political mainstream and influence governments. In addition to that an open discussion on how to stop the crisis could be held.
 
 # A Global Festival on Fighting the Climate Crisis
 > What strategies work in which country? How can we connect activists worldwide?
+
 There is no global conference on mitigating the climate crisis that's open to the paying public. The UN organizes very important conferences organized by governments but there is no place for NGOs and activists to exchange strategies and most importantly to network and collaborate on a global scale.
 
-# Find out What the temperatures will be like in 2200 and 2300
-Today’s debate focuses on how hot it will be in 2100. With our current policies we’re most likely to hit 4C, (In 2015, [leading scientists said there’s a 10% chance to end up at 6C](https://www.independent.co.uk/environment/climate-change/global-warming-experts-say-temperatures-could-rise-by-6c-by-2100-with-cataclysmic-results-10193506.html). Emissions kept rising since). What’s not being looked at is that without bringing a halt to emissions soon, temperatures will continue rising afterwards. There’s little point in having an earth that by 2100 at least a few billion people can still inhabit if it becomes uninhabitable a century later.
+# Online Volunteering Matchmaking
+> A platform that allows posting project ideas and matching them to self-registered volunteers.
+
+[VolunteerMatch](https://www.volunteermatch.org/) and [helpwithcovid.com](https://helpwithcovid.com/projects) are easy to use match-making systems. It would be great to work with them or create something similar to stop the climate breakdown.
