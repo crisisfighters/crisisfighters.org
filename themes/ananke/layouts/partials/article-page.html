@@ -1,8 +1,8 @@
 {{ $wide := .Params.wide }}
 {{ $bigTitle := .Params.bigTitle }}
 {{ if $bigTitle }}
-<h1 style="text-align: center; font-size: 4.4rem" class="{{ if $wide }}mw7{{ else }}mw8{{ end }} center cf mv5f1 white">
-  <span class="bg-blue pa2 ">{{ .Params.bigTitle }}</span>
+<h1 style="text-align: center; line-height: normal; font-size: 4.4rem; font-weight: normal" class="{{ if $wide }}mw7{{ else }}mw8{{ end }} center cf mv5f1 white">
+  <span class="bg-blue ">{{ .Params.bigTitle }}</span>
 </h1>
 {{ end }}
 <div class="flex-l {{ if $wide }}mw8{{ else }}mw7{{ end }} center">

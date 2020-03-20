@@ -1,8 +1,8 @@
 ---
 title: Our Future Needs You.
-bigTitle: 'You can fight the Crisis!'
+bigTitle: 'You can fight the Climate Crisis!'
 ---
-# We help with that.
+# We help you get started.
 
 * Our climate system is [breaking down](https://rebellion.earth/the-truth/the-emergency).
 * CrisisFighters can tell you how to have meaningful impact.
