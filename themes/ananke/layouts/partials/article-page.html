@@ -1,13 +1,13 @@
 {{ $wide := .Params.wide }}
 {{ $bigTitle := .Params.bigTitle }}
 {{ if $bigTitle }}
-<h1 style="text-align: center; line-height: normal; font-size: 4.4rem; font-weight: normal" class="{{ if $wide }}mw7{{ else }}mw8{{ end }} center cf mv5f1 white">
+<h1 style="text-align: center; line-height: normal; font-weight: normal" class="f1 {{ if $wide }}mw7{{ else }}mw8{{ end }} center cf mv5f1 white">
   <span class="bg-blue ">{{ .Params.bigTitle }}</span>
 </h1>
 {{ end }}
-<div class="flex-l {{ if $wide }}mw8{{ else }}mw7{{ end }} center">
-  <article class="center cf pb5 ph3 ph4-ns {{ if $bigTitle }}mb5{{ else }}mv5{{ end }}">
-    <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+<div class="flex-l {{ if $wide }}mw8{{ else }}mw7{{ end }} center f5">
+  <article class="center cf pb5 ph3 ph4-ns bg-white {{ if $bigTitle }}mb5{{ else }}mv5{{ end }}">
+    <div class="nested-copy-line-height lh-copy nested-links mid-gray">
       {{ .Content }}
     </div>
   </article>

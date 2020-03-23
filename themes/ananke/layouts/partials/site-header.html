@@ -6,18 +6,18 @@
   {{ end }}
 
   <header class="bg-white">
-  <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <nav class="pv2 ph2 ph3-ns" role="navigation">
     <div class="flex-l justify-between items-center center">
-      <a href="{{ .Site.BaseURL }}" class="f3 fw5 hover-dark-red no-underline black-90 dib">
-        <img src="/images/favicon.png" class="header-logo" />
+      <a href="{{ .Site.BaseURL }}" class="flex items-center f4 f3-ns fw5 hover-dark-red no-underline black-90">
+        <img src="/images/favicon.png" class="header-logo mr2" />
         {{ .Site.Title }}
       </a>
       <div class="flex-l items-center">
         {{ partial "i18nlist.html" . }}
         {{ if .Site.Menus.main }}
-          <ul class="pl0 mr3 header-nav">
+          <ul class="pl0 header-nav">
             {{ range .Site.Menus.main }}
-            <li class="list f5 f4-ns fw5 dib pl2 pr2">
+            <li class="list f5 fw5 dib pl2 pr2">
               <a class="hover-white no-underline black-90 hover-dark-red" href="{{ .URL }}" title="{{ .Name }}">
                 {{ .Name }}
               </a>

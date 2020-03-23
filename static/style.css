@@ -8,9 +8,7 @@
 
 .header-logo {
     height: 3rem;
-    margin-bottom: 0.4rem;
-    vertical-align: middle;
-    transition: filter 300ms
+    transition: filter 300ms;
 }
 a:hover .header-logo  {
     filter: sepia(1) hue-rotate(-40deg) brightness(1.2) saturate(2);
@@ -20,10 +18,6 @@ a:hover .header-logo  {
     background: url(/images/Wildfire_2010_-_panoramio.jpg);
     background-size: 100vmax;
     background-attachment: fixed;
-}
-
-article {
-    background: white;
 }
 
 article > section:first-child {
