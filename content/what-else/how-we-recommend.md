@@ -35,7 +35,7 @@ Luckily, some smart people are on it.
 
 ### Science to the Rescue
 
-Shouldn’t all our action be guided by identifying the most efficient levers? The [Potsdam Institute for Climate Impact](https://www.pik-potsdam.de) recently published the study [Social Tipping Points for Stabilizing Earth’s Climate before 2050](https://www.pnas.org/content/117/5/2354#T2). It is the first attempt at identifying areas where - within a few years - we can get to self-reinforcing developments that exponentially increase the impact of whatever effort we put in before. One example is to push solar and wind energy to the point that due to economies of scale they’re cheaper than fossil fuels for average use cases.
+Shouldn’t all our action be guided by identifying the most efficient levers? The [Potsdam Institute for Climate Impact Research](https://www.pik-potsdam.de) recently published the study [Social Tipping Points for Stabilizing Earth’s Climate before 2050](https://www.pnas.org/content/117/5/2354#T2). It is the first attempt at identifying areas where - within a few years - we can get to self-reinforcing developments that exponentially increase the impact of whatever effort we put in before. One example is to push solar and wind energy to the point that due to economies of scale they’re cheaper than fossil fuels for average use cases.
 The authors state that more research in the field is needed and identified these areas:
 
 * **Energy Production and Storage**, e.g. decarbonizing production and grids
