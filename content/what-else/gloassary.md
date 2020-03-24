@@ -38,4 +38,5 @@ There is an good [glossary by the BBC](https://www.bbc.com/news/science-environm
 | [TCFD](https://www.fsb-tcfd.org/)                  | Task Force on Climate-Related Financial Disclosures |
 | [UNEP](https://en.wikipedia.org/wiki/United_Nations_Environment_Programme)                  | The United Nations Environment Programme |
 | [UNFCCC](https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change)                | The United Nations Framework Convention on Climate Change is an international treaty to stabilize *Greenhouse Gas* contentrations to prevent dangerous anthropocentic interference with the climate system. |
+| [Warming Stripes](https://en.wikipedia.org/wiki/Warming_stripes) | Charts using only color to convey heating trends in global surface temperature. Make trends easier to grasp without distracting articacts or smoothing. |
 | [WMO](https://en.wikipedia.org/wiki/World_Meteorological_Organization)                   | World Meteorological Organization |
