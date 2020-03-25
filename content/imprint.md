@@ -7,7 +7,7 @@ menu: false
 
 We'd be delighted to receive to hear from you! Mail us at <a href="mailto:hi@crisisfighters.org">hi@crisisfighters.org</a>.
 
-### Send us a letter!
+### Want to send us a letter?
 
 CrisisFighters
 <br/>
