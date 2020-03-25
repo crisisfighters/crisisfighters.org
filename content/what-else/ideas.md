@@ -47,3 +47,7 @@ There is no global conference on mitigating the climate crisis that's open to th
 Deploying the best groupware, structuring ideation processes, using iterative development approaches, designing solutions data-driven or customer-centric, building a data lake with beautiful visualizations - there are thousands of building blocks that are common in startups and other business environments.
 NGOs are often constrained in their expenses. For many, tools, problem solving approaches and experience with tech are less in focus than for tech startups. Bringing these two worlds together allows startup professionals to improve the world with what they already know and broaden their horizon by learning how NGOs work.
 And NGOs can ask for specific injections of knowledge and help from the business world at no cost.
+
+# An up-to-date collection of key datasets related to the climate crisis
+> Data experts can easily see for themselves and make new connections visible.
+(Pre-)historic temperature trends, glacier melting, greenhouse gas emissions, sea level rise, desertification, erosion of soils, deforestation, the accelerating sixth mass extinction, fossil fuel extraction and uncounted other dangerous developments leave a data trail. Making existing data sets easy to find and working with public and scientific authorities to make more available allows for a better understanding of what is really happening. It will allow businesses, governments, thinktanks and activists a more comprehensive view on biodiversity and climate crisis.
