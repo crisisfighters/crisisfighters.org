@@ -41,3 +41,9 @@ There is no global conference on mitigating the climate crisis that's open to th
 > A platform that allows posting project ideas and matching them to self-registered volunteers.
 
 [VolunteerMatch](https://www.volunteermatch.org/), [crowdfightcovid19.org](https://crowdfightcovid19.org) and [helpwithcovid.com](https://helpwithcovid.com/projects) are easy to use match-making systems. It would be great to work with them or create something similar to stop the climate breakdown.
+
+# Free-of-charge non-profit consultancy for NGOs
+> Experienced professionals group together to provide NGOs with free advice.
+Deploying the best groupware, structuring ideation processes, using iterative development approaches, designing solutions data-driven or customer-centric, building a data lake with beautiful visualizations - there are thousands of building blocks that are common in startups and other business environments.
+NGOs are often constrained in their expenses. For many, tools, problem solving approaches and experience with tech are less in focus than for tech startups. Bringing these two worlds together allows startup professionals to improve the world with what they already know and broaden their horizon by learning how NGOs work.
+And NGOs can ask for specific injections of knowledge and help from the business world at no cost.
