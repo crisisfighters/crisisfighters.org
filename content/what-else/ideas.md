@@ -40,7 +40,7 @@ There is no global conference on mitigating the climate crisis that's open to th
 # Online Volunteering Matchmaking
 > A platform that allows posting project ideas and matching them to self-registered volunteers.
 
-[VolunteerMatch](https://www.volunteermatch.org/), [crowdfightcovid19.org](https://crowdfightcovid19.org) and [helpwithcovid.com](https://helpwithcovid.com/projects) are easy to use match-making systems. It would be great to work with them or create something similar to stop the climate breakdown.
+[VolunteerMatch](https://www.volunteermatch.org/), [usdigitalresponse.org](https://www.usdigitalresponse.org/), [crowdfightcovid19.org](https://crowdfightcovid19.org) and [helpwithcovid.com](https://helpwithcovid.com/projects) are easy to use match-making systems. It would be great to work with them or create something similar to stop the climate breakdown.
 
 # Free-of-charge non-profit consultancy for NGOs
 > Experienced professionals group together to provide NGOs with free advice.
