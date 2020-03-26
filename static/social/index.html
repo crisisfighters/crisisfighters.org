@@ -34,43 +34,6 @@
                 transition: opacity 100ms;
             }
         </style>
-<script>
-    window.addEventListener('load', () => {
-        console.log("d1");
-        const clipBoardSource = document.getElementById('clipboard-source');
-        const confirmation = document.getElementById('confirmation');
-        const showSuccess = () => {           
-            confirmation.style.opacity = 1;
-            confirmation.style.visibility = "visible";
-            setTimeout(() => {
-                confirmation.style.opacity = 0
-                setTimeout(() => confirmation.style.visibility = "hidden", 100);
-            }, 200);
-        }
-        function copyUrl() {
-            if(this.localName !== 'img') {
-                return false;
-            }
-            const url = this.currentSrc;
-            
-            navigator.clipboard.writeText(url).then(
-                showSuccess,
-                error => {
-                    clipBoardSource.value = url;
-                    clipBoardSource.select();
-                    clipBoardSource.setSelectionRange(0, 99999);
-                    document.execCommand("copy");
-                    showSuccess();
-                }
-            );
-            return false;
-        }
-        for(let img of document.getElementsByTagName('img')) {
-            img.addEventListener('click', () => copyUrl(img));
-            img.onclick = copyUrl;
-        }
-    });
-</script>
     </head>
   <body>
     <input type="text" id="clipboard-source" />
@@ -208,5 +171,41 @@
     <img src="xr/XR-Support-Banners-7000x1000-QuarterSize-V1_Page_2.jpg" />
     <img src="xr/XR-Support-Banners-7000x1000-QuarterSize-V1_Page_3.jpg" />
     <img src="xr/XR-Support-Banners-7000x1000-QuarterSize-V1_Page_4.jpg" />
+
+    <script>
+        (() => {
+            const clipBoardSource = document.getElementById('clipboard-source');
+            const confirmation = document.getElementById('confirmation');
+            const showSuccess = () => {           
+                confirmation.style.opacity = 1;
+                confirmation.style.visibility = "visible";
+                setTimeout(() => {
+                    confirmation.style.opacity = 0
+                    setTimeout(() => confirmation.style.visibility = "hidden", 100);
+                }, 200);
+            }
+            function copyUrl() {
+                if(this.localName !== 'img') {
+                    return false;
+                }
+                const url = this.currentSrc;
+                
+                navigator.clipboard.writeText(url).then(
+                    showSuccess,
+                    error => {
+                        clipBoardSource.value = url;
+                        clipBoardSource.select();
+                        clipBoardSource.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+                        showSuccess();
+                    }
+                );
+                return false;
+            }
+            for(let img of document.getElementsByTagName('img')) {
+                img.onclick = copyUrl;
+            }
+        })();
+    </script>
 </body>
 </html>
