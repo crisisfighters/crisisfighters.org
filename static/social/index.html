@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Content for Social Media</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+        <style>
+            img {
+                max-width: 7rem;
+                max-height: 7rem;
+            }
+            #clipboard-source {
+                visibility: hidden;
+            }
+            #confirmation {
+                position: fixed;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                line-height: 100%;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: black;
+                color: white;
+                font-size: 5rem;
+                cursor: default;
+                visibility: hidden;
+                opacity: 0;
+                transition: opacity 100ms;
+            }
+        </style>
+<script>
+    window.addEventListener('load', () => {
+        console.log("d1");
+        const clipBoardSource = document.getElementById('clipboard-source');
+        const confirmation = document.getElementById('confirmation');
+        const showSuccess = () => {           
+            confirmation.style.opacity = 1;
+            confirmation.style.visibility = "visible";
+            setTimeout(() => {
+                confirmation.style.opacity = 0
+                setTimeout(() => confirmation.style.visibility = "hidden", 100);
+            }, 200);
+        }
+        function copyUrl() {
+            if(this.localName !== 'img') {
+                return false;
+            }
+            const url = this.currentSrc;
+            
+            navigator.clipboard.writeText(url).then(
+                showSuccess,
+                error => {
+                    clipBoardSource.value = url;
+                    clipBoardSource.select();
+                    clipBoardSource.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                    showSuccess();
+                }
+            );
+            return false;
+        }
+        for(let img of document.getElementsByTagName('img')) {
+            img.addEventListener('click', () => copyUrl(img));
+            img.onclick = copyUrl;
+        }
+    });
+</script>
+    </head>
+  <body>
+    <input type="text" id="clipboard-source" />
+    <div id="confirmation">URL copied to clipboard</div>
+    <h1>Content for Social Media (<a href="/social">CrisisFighters.org/social</a>)</h1>
+    <ul><li>This page will contain a growing selection of content for you to share on social media.</li>
+        <li>You can create your own content by taking a look at our creative brief (<a href="/brief">CrisisFighters.org/brief</a>) and a growing collection of facts and messages (<a href="/facts">CrisisFighters.org/facts</a>).</li>
+        </ul>
+    <h2>Artwork by Extinction Rebellion</h2>
+    <p>Extinction Rebellion's <a href="https://rebellion.earth/act-now/resources/art-group/">Art Group</a> does a wonderful job at creating artwork. All artwork below is taken <a href="https://rebellion.earth/act-now/resources/art-group/">from their website</a> where you can find PDF versions.</p>
+    <img src="2323-XR-A3-Flyposters-RICHBLACK-FIN.jpg" />
+    <img src="2323-XR-A3-FlypostersBRIGHTYELLOW_Ben_03-FIN.jpg" />
+    <img src="2323-XR-A3-FlypostersLIGHTBLUE_JW_V1-FIN.jpg" />
+    <img src="2323-XR-A3-FlypostersLIGHTGREEN-PJN-FIN.jpg" />
+    <img src="2323-XR-A3-FlypostersPASTELYELLOW.jpg" />
+    <img src="2323-XR-A4-BW-Window-Posters-V1.jpg" />
+    <img src="2383-XR-R4L-1500x700mm-V1_Page_2.jpg" />
+    <img src="2494-XR-PAINT-THE-STREETS-AR-FIN.jpg" />
+    <img src="2494-XR-PAINT-THE-STREETS-B-FIN.jpg" />
+    <img src="2494-XR-PAINT-THE-STREETS-BL-FIN.jpg" />
+    <img src="2494-XR-PAINT-THE-STREETS-BY-FIN.jpg" />
+    <img src="2494-XR-PAINT-THE-STREETS-DG-FIN.jpg" />
+    <img src="2494-XR-PAINT-THE-STREETS-LG-FIN.jpg" />
+    <img src="2494-XR-PAINT-THE-STREETS-LY-FIN.jpg" />
+    <img src="2494-XR-PAINT-THE-STREETS-P-FIN.jpg" />
+    <img src="2494-XR-PAINT-THE-STREETS-PU-FIN.jpg" />
+    <img src="2494-XR-PAINT-THE-STREETS-R-FIN.jpg" />
+    <img src="2511-XR-ACTNOW-1.2x1.6metre_Page_1.jpg" />
+    <img src="2511-XR-EMPATHY-1.2x1.6metre_Page_1.jpg" />
+    <img src="2511-XR-LOVE-1.2x1.6metre_Page_1.jpg" />
+    <img src="2511-XR-NON-VIOLENT-1.2x1.6metre_Page_1.jpg" />
+    <img src="2511-XR-PEACE-1.2x1.6metre_Page_1.jpg" />
+    <img src="2511-XR-RESTORE-1.2x1.6metre_Page_1.jpg" />
+    <img src="EXTINCTION-A3-Posters-V1b.jpg" />
+    <img src="XR-placards-Support-A2-V1_Page_1.jpg" />
+    <img src="XR-placards-Support-A2-V1_Page_2.jpg" />
+    <img src="XR-placards-Support-A2-V1_Page_3.jpg" />
+    <img src="XR-placards-Support-A2-V1_Page_4.jpg" />
+    <img src="XR_Alarm-poster.jpg" />
+    <img src="XR_DeadPlanet-poster.jpg" />
+    <img src="XR_Sticker_Sammebestellung_20190716_printA7+3mm_1.jpg" />
+    <img src="XR_Sticker_Sammebestellung_20190716_printA7+3mm_2.jpg" />
+    <img src="XR_Sticker_Sammebestellung_20190716_printA7+3mm_3.jpg" />
+    <img src="XR_Sticker_Sammebestellung_20190716_printA7+3mm_4.jpg" />
+    <img src="XR_Sticker_Sammebestellung_20190716_printA7+3mm_5.jpg" />
+    <img src="XR_Sticker_Sammebestellung_20190716_printA7+3mm_6.jpg" />
+    <img src="FACE-A3-Posters-V1a.jpg" />
+    <img src="FACE-REBEL4LIFE-A3-ShockPoster-V1.jpg" />
+    <img src="REBEL4LIFE-A3-Posters-V1c.jpg" />
+    <img src="XR-A4-BW-General-Posters-V1-Alt_Page_1.jpg" />
+    <img src="XR-A4-BW-General-Posters-V1-Alt_Page_2.jpg" />
+    <br />
+    <img src="XR-Banners-CandEemergency-7000x1000-QuarterSize-V1.jpg" />
+    <img src="XR-Banners-Emergency-7000x1000-QuarterSize-V1.jpg" />
+    <img src="XR-Banners-LorD-7000x1000-QuarterSize-V2.jpg" />
+    <img src="XR-Main-Banners-7000x1000-QuarterSize-V1_Page_1.jpg" />
+    <img src="XR-Main-Banners-7000x1000-QuarterSize-V1_Page_3.jpg" />
+    <img src="XR-Main-Banners-7000x1000-QuarterSize-V1_Page_4.jpg" />
+    <img src="XR-Support-Banners-7000x1000-QuarterSize-V1_Page_1.jpg" />
+    <img src="XR-Support-Banners-7000x1000-QuarterSize-V1_Page_2.jpg" />
+    <img src="XR-Support-Banners-7000x1000-QuarterSize-V1_Page_3.jpg" />
+    <img src="XR-Support-Banners-7000x1000-QuarterSize-V1_Page_4.jpg" />
+</body>
+</html>
