@@ -1,12 +1,11 @@
 ---
 title: What else?
-featured_image: '/images/desert.jpg'
 weight: 30
 ---
 
 # What else?
 
-Our main focus is the [Crisis Recruiter](/recruiter). Below is a list of what else you can find on this web page:
+We mainly work on the [Crisis Recruiter](/recruiter). Below is a list of what else you can find on this web page:
 
 * We collect the year's most important events in our [calendar](calendar).
 * We collect various [inspiring ideas](ideas) for you to start your own thing.
