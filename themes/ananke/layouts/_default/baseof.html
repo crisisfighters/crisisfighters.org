@@ -55,8 +55,8 @@
           <main role="main">
                   {{ block "main" . }}{{ end }}
           </main>
-          {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
-          {{ block "scripts" . }}{{ partialCached "site-scripts.html" . }}{{ end }}
+          {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
+          {{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
         </div>
       </div>
     </div>

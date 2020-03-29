@@ -2,9 +2,21 @@
   <div class="flex-l justify-between items-center f5">
     <span class="flex fw4 black-70 dn pv1 ph2">
       {{ T "footer_text1" }}
-      <a class="ph1 fw4 hover-black black-70" href="{{ .LanguagePrefix }}/contribute" target="_blank">{{ T "footer_text2" }}</a>
+      <a class="ph1 fw4 hover-black black-70" href="{{ T "prefix" }}contribute" target="_blank">{{ T "footer_text2" }}</a>
     </span>  
-    <a style="margin-left: auto" class="flex ph2 fw4 hover-black black-70" href="{{ .LanguagePrefix }}/imprint">{{ T "footer_imprint" }}</a>
+    <div style="margin-left: auto" class="flex ph2 fw4 hover-black black-70">
+      {{ if .IsTranslated }}    
+        <ul class="pa0 ma0">
+            {{ range .Translations }}
+            <li class="list fw4 dib pr3">
+                <a class="no-underline" href="{{ .Permalink }}">{{ if eq .Lang "en" }}🇬🇧🇺🇸{{ else }}🇩🇪{{ end }}</a>
+            </li>
+            {{ end}}
+        </ul>
+        {{ end }}
+   
+      <a href="{{ T "prefix" }}imprint">{{ T "footer_imprint" }}</a>
+    </div>
     <div>{{ partial "social-follow.html" . }}</div>
   </div>
 </footer>
