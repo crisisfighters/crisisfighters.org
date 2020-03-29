@@ -1,10 +1,10 @@
 <footer class="bg-white bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex-l justify-between items-center f5">
     <span class="flex fw4 black-70 dn pv1 ph2">
-      Made with 😀 and ❤️ on 🌏. You can
-      <a class="fw4 hover-black black-70" href="https://www.github.com/crisisfighters/crisisfighters.org" target="_blank">edit everything</a> on GitHub!
+      {{ T "footer_text1" }}
+      <a class="ph1 fw4 hover-black black-70" href="{{ .LanguagePrefix }}/contribute" target="_blank">{{ T "footer_text2" }}</a>
     </span>  
-    <a style="margin-left: auto" class="flex ph2 fw4 hover-black black-70" href="/imprint">Imprint</a>
+    <a style="margin-left: auto" class="flex ph2 fw4 hover-black black-70" href="{{ .LanguagePrefix }}/imprint">{{ T "footer_imprint" }}</a>
     <div>{{ partial "social-follow.html" . }}</div>
   </div>
 </footer>

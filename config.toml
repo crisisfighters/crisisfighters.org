@@ -29,11 +29,11 @@ enableRobotsTXT = true
 DefaultContentLanguage = "en"
 languageCode = "en-us"
 
-# [languages]
-#  [languages.en]
-#    weight = 1
-#    [languages.en.params]
-#  [languages.de]
-#    weight = 2
-#    [languages.de.params]
-#      languageCode = "de-de"
+[languages]
+  [languages.en]
+    weight = 1
+    [languages.en.params]
+  [languages.de]
+    weight = 2
+    [languages.de.params]
+      languageCode = "de-de"

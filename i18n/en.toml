@@ -1,0 +1,33 @@
+footer_imprint.other = "Imprint"
+footer_text1.other = "Made with 😀 and ❤️ on 🌏. You can"
+footer_text2.other = "edit everything!"
+
+[allTitle]
+other = "All {{.Title }}"
+
+[recentTitle]
+other = "Recent {{.Title }}"
+
+[readMore]
+other = "read more"
+
+[whatsInThis]
+other = "What's in this {{ .Type }}"
+
+[related]
+other = "Related"
+
+[yourName]
+other = "Your Name"
+
+[emailAddress]
+other = "Email Address"
+
+[message]
+other = "Message"
+
+[emailRequiredNote]
+other = "An email address is required."
+
+[send]
+other = "Send"

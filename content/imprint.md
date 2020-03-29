@@ -1,5 +1,6 @@
 ---
 title: Imprint
+translationKey: imprint
 menu: false
 ---
 

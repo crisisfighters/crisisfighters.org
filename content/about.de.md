@@ -1,13 +1,12 @@
 ---
-title: About Us
+title: Über Uns
 translationKey: "about"
 menu:
   main:
-    name: About
     weight: 100
 ---
 
-# About CrisisFighters
+# Über CrisisFighters
 We are an initiative of former C-Level executives, managers and professionals from startups and non-profits in Germany and the US. We’re building a database of existing initiatives fighting the climate crisis. A recommendation tool allows other professionals to easily deploy their time and money where it has the highest impact.
 
 We believe that using the latest science to identify effective initiatives and removing entry barriers will help the movement.
