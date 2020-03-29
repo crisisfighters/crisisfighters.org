@@ -6,7 +6,6 @@ import {surveyLink,
 import {numberOfInitiatives, tagToLabel, queryInitiatives} from './initiatives';
 import {renderMd, renderMdParagraph} from './markdown';
 import {tagLabels} from './data/tagLabels';
-import welcomeMd from './content-partials/recruiter/welcome.md';
 import selectCountryMd from './content-partials/recruiter/select-country.md';
 
 export function renderResultScreen(userParams, {result: elements}, location) {
@@ -17,11 +16,11 @@ export function renderStartPage() {
     const tagCount = Object.keys(tagLabels).filter(t => !t.startsWith('l-')).length;
 
     document.getElementById('recruiter-screen').innerHTML = renderMdParagraph(
-          welcomeMd
+          window.cfStrings.recruiter.welcome.text
             .replace('{{numberOfInitiatives}}', numberOfInitiatives())
             .replace('{{numberOfTags}}', tagCount)
         )
-        + button(surveyLink, 'Launch **Crisis Recruiter**', {primary: true});
+        + button(surveyLink, window.cfStrings.recruiter.welcome.button, {primary: true});
 }
 
 export function renderLocationSelector(params, resultDescriptor) {
