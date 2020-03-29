@@ -8,7 +8,6 @@ import {renderMd, renderMdParagraph} from './markdown';
 import {tagLabels} from './data/tagLabels';
 import welcomeMd from './content-partials/recruiter/welcome.md';
 import selectCountryMd from './content-partials/recruiter/select-country.md';
-import aaaMd from './content-partials/recruiter/aaa.md';
 
 export function renderResultScreen(userParams, {result: elements}, location) {
     document.getElementById('recruiter-screen').innerHTML = renderResults(userParams, location, elements);
@@ -214,11 +213,11 @@ const climatePledge = index => `
 
 const aaa = index => `
 <div class="results-element results-creative-brief">
-    ${suggestionHeadline('Transform your company with the AAA framework', index)}
-    ${renderMdParagraph(aaaMd)}
+    ${suggestionHeadline(window.cfStrings.recruiter.aaa.headline, index)}
+    ${renderMdParagraph(window.cfStrings.recruiter.aaa.description)}
     ${button(
         'https://business.edf.org/insights/aaa-leadership-framework/',
-        'Check out the **AAA Framework**',
+        window.cfStrings.recruiter.aaa.cta,
         {primary: true, blank: true}
     )}
 

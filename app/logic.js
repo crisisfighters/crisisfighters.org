@@ -169,8 +169,8 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         }
         result.result.push({
             type: 'initiatives',
-            headline: 'Is your Company part of these networks?',
-            description: 'These initiatives connect companies to support each other in realizing a more sustainable vision for the future.',
+            headline: window.cfStrings.recruiter.companyNetworks.headline,
+            description: window.cfStrings.recruiter.companyNetworks.description,
             query: tags => 
                 tags.includes('is-network')
                 && tags.includes('target-companies')

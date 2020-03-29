@@ -12,6 +12,7 @@ menu:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/9.1.0/markdown-it.min.js"
         integrity="sha256-TkN8s0Xn8oiroeIyHkXDjt+W71FdPsdjFmn3jKbLgxQ=" crossorigin="anonymous"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdWGGzRnF_DNDDDonCyv1FWxRK4dBWt7U&libraries=places" async defer></script>
+<script src="/js/strings.en.bundle.js" async defer></script>
 <script src="/js/app.bundle.js" async defer></script>
 
 ## Contribute and improve everything

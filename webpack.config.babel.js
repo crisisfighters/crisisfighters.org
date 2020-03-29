@@ -4,7 +4,8 @@ import path from "path";
 
 export default {
   entry: {
-    app: ["./app/app.js"]
+    app: ["./app/app.js"],
+    'strings.en': ["./app/strings.en.js"]
   },
   output: {
     path: path.resolve(__dirname, "public", "js"),
