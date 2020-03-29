@@ -1,34 +1,34 @@
 ---
-title: Must Read
+title: Leseliste
 translationKey: must-read
 menu:
   main:
     weight: 20
 ---
 
-# Quick-Charge your Knowledge
-Let's start with three trustworthy, influential articles that looking into the past, the present and the future:
+# Der Einstieg
+Zuerst empfehlen wir drei vertrauenswürdige, einflussreiche Artikel, die Vergangenheit, Gegenwart und Zukunft betrachten:
 
 <img style="float: left; width: 20%; margin-right: 10px" src="/images/must-read/Keeling.png" />
 
-### *The Past*: [Losing Earth](https://www.nytimes.com/interactive/2018/08/01/magazine/climate-change-losing-earth.html) by Nathaniel Rich, New York Times, 2018
-The impact of fossil fuel on the climate was discovered in the 50s. It will come as an agonizing revelation to many readers to understand how thoroughly the problem was grasped and how the crisis was almost avoided in the 70s and 80s.
+### *Vergangenheit*: [Losing Earth](https://www.nytimes.com/interactive/2018/08/01/magazine/climate-change-losing-earth.html) von Nathaniel Rich, New York Times, 2018
+Der Treibhauseffekt wurde in den 50ern entdeckt. Für viele Leser ist es vermutlich irritierend zu lesen, wie präzise Politik und Wirtschaft in den 70ern und 80ern das Problem verstanden haben und wie der Klimawandel fast aufgehalten worden wäre.
 
 ---
 
 <img style="float: left; width: 20%; margin-right: 10px" src="/images/must-read/xr-logo.jpg" />
 
-### *The Present*: [The Emergency](https://rebellion.earth/the-truth/the-emergency) by Extinction Rebellion
-Extinction Rebellion are doing an outstanding job at collecting and maintaining an overview of the latest science. Including charts and covering topics from the climate breakdown to the [Sixth Extinction](https://en.wikipedia.org/wiki/Holocene_extinction) currently under way.
+### *Gegenwart*: [The Emergency](https://rebellion.earth/the-truth/the-emergency) von Extinction Rebellion
+Extinction Rebellion machen einen sehr guten Job darin, den aktuellen wissenschaftlichen Stand zusammenzufassen. Die Sprache ist klarer als die des IPCC, inhaltlich stimmen sie überein. Der Artikel enthält außerdem Grafiken und Visualisierungen und dreht sich um Themen vom Zusammenbruch unseres Klimasystems bis zum [sechsten Massensterben](https://en.wikipedia.org/wiki/Holocene_extinction), das gerade stattfindet.
 
 ---
 
 <img style="float: left; width: 20%; margin-right: 10px" src="/images/must-read/The_Uninhabitable_Earth_-_cover.jpg" />
 
-### *The Future*: [The Uninhabitable Earth](http://nymag.com/intelligencer/2017/07/climate-change-earth-too-hot-for-humans.html) by David Wallace-Wells, New York Magazine, 2017
-Our current policies will lead to a heating of 3-6C by 2100 (and much more afterwards). This influential article explores what earth will like at various degrees of heating.
+### *Zukunft*: [The Uninhabitable Earth](http://nymag.com/intelligencer/2017/07/climate-change-earth-too-hot-for-humans.html) von David Wallace-Wells, New York Magazine, 2017
+Unsere aktuelle Politik wird zu 3-6C Erhitzung im Jahr 2100 (und mehr danach) führen. Dieser einflussreiche Artikel erkundet, wie die Erde dann aussehen wird.
 
-# Must Read Books
+# Wichtige Bücher
 
 <img style="float: left; width: 20%; margin-right: 10px" src="/images/must-read/Collapse_cover.jpg" />
 
@@ -80,6 +80,7 @@ A handbook for anyone who wants to effectively (and peacefully) improve your nei
 
 --- 
 
-Read enough? Time to join the fight!
 
-<a href="/recruiter" class="button button-primary">Launch <span class="button-text-highlight">Crisis Recruiter</span></a>
+Genug gelesen? Mach mit!
+
+<a href="/recruiter" class="button button-primary"><span class="button-text-highlight">Crisis Recruiter</span> starten</a>
