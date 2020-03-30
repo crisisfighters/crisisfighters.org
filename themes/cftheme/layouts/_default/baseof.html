@@ -30,7 +30,8 @@
     <script>
     window.cfLanguages = {
       current: '{{ T "langCode" }}',
-      others: [
+      fallback: '{{ .Param "defaultContentLanguage" }}',
+      available: [
         {{ range .Translations }}
         { lang: "{{ .Lang }}", permalink: "{{ .Permalink }}" },
         {{ end}}

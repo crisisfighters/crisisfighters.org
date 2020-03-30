@@ -17,15 +17,15 @@ enableRobotsTXT = true
   priority = 0.5
   filename = "sitemap.xml"
 
-[params]
-  favicon = ""
-  description = "The last theme you'll ever need. Maybe."
-  custom_css = ["style.css"]
-
 [blackfriday]
   plainIDAnchors = true
   # Thanks to https://code.luasoftware.com/tutorials/hugo/how-to-create-link-with-target-blanks-in-hugo-markdown/
   hrefTargetBlank = true
+
+[params]
+  favicon = ""
+  description = "The last theme you'll ever need. Maybe."
+  custom_css = ["style.css"]
 
 defaultContentLanguage = "en-us"
 languageCode = "en-us"
