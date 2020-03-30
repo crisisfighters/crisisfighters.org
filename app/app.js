@@ -12,7 +12,7 @@ const pathFromPermalink = p => p.replace(/^https?:\/\/[^\/]+(\/.*)$/, '$1');
 const cookieContent = Cookies.get().language;
 const hasCookie = typeof cookieContent === "string" && cookieContent.length > 0;
 
-let navigatorLanguages = navigator.languages || [navigator.language];
+let navigatorLanguages = navigator.languages.map(l => l.toLowerCase()) || [navigator.language];
 const availableLanguages = [
     window.cfLanguages.current,
     window.cfLanguages.available.map(l => l.lang),
@@ -20,15 +20,13 @@ const availableLanguages = [
 if(!navigatorLanguages.some(l => availableLanguages.includes(l))) {
     // UA likes no language we have in store.
     // Let's pretend the UA likes our fallback language.
+
     navigatorLanguages = [window.cfLanguages.fallback];
 }
 
 if(!navigatorLanguages.includes(cfLanguages.current) && !hasCookie) {
     console.log('Switching language')
     let newLanguage = window.cfLanguages.available.filter(l => navigatorLanguages.includes(l.lang))[0];
-    if(!newLanguage) {
-       newLanguage = window.cfLanguages.available.filter(l => l.lang === window.cfLanguages.fallback)[0];
-    }
     console.log(newLanguage);
     const href = pathFromPermalink(newLanguage.permalink);
     document.location.href = href;
