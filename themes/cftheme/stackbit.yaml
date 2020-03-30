@@ -86,11 +86,6 @@ models:
           - type: string
             name: description
             label: Description
-          - type: string
-            name: description
-            label: Description
-            name: background_color_class
-            label: background_color_class
           - type: number
             name: recent_posts_number
             label: recent_posts_number
