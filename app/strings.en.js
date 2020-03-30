@@ -1,12 +1,69 @@
 import welcome from './content-partials/recruiter/welcome.md';
+import locationSelectorText from './content-partials/recruiter/select-country.md';
 import aaa from './content-partials/recruiter/aaa.md';
 import litigation from './content-partials/recruiter/litigation.md';
 
 window.cfStrings = {
     recruiter: {
+        general: {
+            yourData: 'The data you entered',
+            startOver: 'start over',
+            country: 'Country',
+            resultText: `
+            <p>In case you're interested how we came to our recommendations:
+              We wrote an article on <a href="/what-else/how-we-recommend" target="_blank">how we recommend</a>.
+            </p>`,
+            suggestionHeadlinePrefix: 'Suggestion'
+        },
         welcome: {
             text: welcome,
             button: 'Launch **Crisis Recruiter**',
+        },
+        locationSelector: {
+            text: locationSelectorText,
+            placeholder: 'Region or country...',
+            button: 'Show **Results**',
+        },
+        restart: {
+            headline: 'Interested in different results?',
+            text: 'There are other, very interesting initiatives that you could join as an individual.',
+            button: 'Start Over',
+        },
+        noInitiativesFound: {
+            headline: 'No Initiatives Match your Criteria',
+            text: "Don't worry. This happens. The easy solution is to select more options that could be relevant to you.",
+            button: 'Start Over',        
+        },
+        cfb2b: {
+            headline: 'Your Company can join CrisisFighters',
+            text: "Ask your employees to put one hour per month into improving CrisisFighters and talk about it to get more people to engage.",
+            button: '**CrisisFighters B2B**',
+        },
+        ideas: {
+            headline: 'Start Your Own',
+            text: 'There are many good ideas out there for how you can invest your time best. We collect some of them. Check them out, use them and add your own!',
+            button: 'Check out **Ideas**',
+        },
+        contribute: {
+            headline: 'Contribute to CrisisFighters.org',
+            text: 'We created CrisisFighters to help you and others to do something meaningful against the climate crisis. By contributing to this website you help others put their energy to the best possible use. And we need the wisdom of the many to keep content up-to-date and accurate!',
+            button: '**Improve** CrisisFighters',
+        },
+        creativeBrief: {
+            headline: 'Run Your Own Campaign!',
+            text: `
+            Can you make time between projects? Maybe your team can even work together on this. We put together a creative brief with context, key facts, messages, do's and dont's for you to create your own campaign with your own branding.
+        `,
+            button: 'Show **Creative Brief**',
+        },
+        climatePledge: {
+            headline: 'Sign the Climate Pledge!',
+            text: `
+            This is a new initiative to mobilize current and future workers to urge companies to take a pro-climate policy stand.
+
+            By signing this pledge you can state that **you will try hard to avoid working for companies that don't take bold steps** to become sustainable and advocate for pro-climate policies. This pledge has the power to put pressure on businesses worldwide to take meaningful action.
+        `,
+            button: 'Sign the **Climate Pledge**',
         },
         municipalityNetwork: {
             headline: 'Is your municipality a member of these networks?',
