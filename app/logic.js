@@ -88,25 +88,27 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         time = time.filter(t => t !== 'user-time-none');
     }
 
+    const t = ({headline, description}) => ({
+        headline: headline,
+        description: description.replace('{{numberOfInitiatives}}', numberOfInitiatives()),
+    })
+
     if(role.includes('user-role-city-official')) {
         result.result.push({
             type: 'initiatives',
-            headline: 'Is your municipality a member of these networks?',
-            description: 'These networks connect and help cities to make housing more energy-efficient and move cities closer to the goal of net carbon neutrality.',
+            ...t(window.cfStrings.recruiter.municipalityNetwork),
             query: tags => tags.includes('good-cities-and-housing')
-                            && tags.includes('is-network')
-                            && locationMatches(tags),
+                    && tags.includes('is-network')
+                    && locationMatches(tags),
         });
         result.result.push({
             type: 'initiatives',
-            headline: 'Does your municipality own stock?',
-            description: 'These initiatives let you transfer your stock voting rights. They then go to annual meetings to exercise these rights in the best interest of sustainable development, fighting the climate crisis and protecting human rights.',
+            ...t(window.cfStrings.recruiter.municipalityStock),
             query: tags => tags.includes('use-stock-voting-rights'),
         });
         result.result.push({
             type: 'initiatives',
-            headline: 'Support Grassroots Initiatives',
-            description: 'It\'s likely that one or more of these initiatives have local groups in your city. Grassroots initiatives often have a hard time finding space to do workshops or meet. Probably you know how to provide them with desperately needed space at no or small cost.',
+            ...t(window.cfStrings.recruiter.supportGrassroots),
             query: tags => tags.includes('is-grassroots') && locationMatches(tags),
         });
     }
@@ -114,8 +116,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
     if(contribution.includes('user-contribution-money')) {
         result.result.push({
             type: 'initiatives',
-            headline: 'Invest Here',
-            description: 'Each of the these initiatives is effective in at least one of the areas you want to invest in. Check out their websites to find out more and donate.',
+            ...t(window.cfStrings.recruiter.investHere),
             query: tags => tags.some(tag => investmentArea.includes(tag))
                             && tags.includes('suggest-money')
                             && locationMatches(tags),
@@ -131,46 +132,26 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
             isInCompanyLeadership: company.includes('user-company-leadership'),
         });
 
-        const description = `
-            In addition to using the AA framework at your company, we can recommend these resources:
-            * TCFD provides a [knowledge hub](https://www.tcfdhub.org/) with tutorials, case studies and online courses about reporting emissions.
-            * The American Energy Star initiative provides a [23 page guide to create fun competitions](https://www.energystar.gov/buildings/tools-and-resources/energy-efficiency-competition-guide) for sustainable energy and water use.
-            The US Environmental Protection Agency [provides a lot of resources](https://www.epa.gov/climateleadership) to start yourself.
-            
-            ${/*TODO find and add resource on how non-leadership members can organize*/
-            company.includes('user-company-leadership')
-                ? ''
-                : ''}
-            
-            There are many consultancies that help making companies sustainable. Most of them are not-for profit. They provide you with free resources and concrete help on how to get started. And if your company takes that path, they\'re experienced guides along the way. Check out their websites to find out more.
-            `;
-
+        /*TODO find and add resource on how non-leadership members can organize*/
         result.result.push({
             type: 'initiatives',
-            headline: 'Your Company should disclose and reduce its emissions.',
             style: {small: true},
-            description,
-            query: tags => 
-                    tags.includes('consult-companies-reduce') && locationMatches(tags),
+            ...t(window.cfStrings.recruiter.companyReduce),
+            query: tags => tags.includes('consult-companies-reduce') && locationMatches(tags),
         });
 
         if(company.includes('user-company-building')) {
             result.result.push({
                 type: 'initiatives',
-                headline: 'There are Special Certifications for the Building Industry',
                 style: {small: true},
-                description: 'Building infrastructure to last is energy-intensive. These consultancies are specialized on the industry and are happy to help.'
-                + // TODO find and add resource on how non-leadership members can organize
-                company.includes('user-company-leadership')
-                    ? ''
-                    : '',
+                // TODO find and add resource on how non-leadership members can organize
+                ...t(window.cfStrings.recruiter.buildingCompanyReduce),
                 query: tags => tags.includes('consult-building-companies') && locationMatches(tags),
             });
         }
         result.result.push({
             type: 'initiatives',
-            headline: window.cfStrings.recruiter.companyNetworks.headline,
-            description: window.cfStrings.recruiter.companyNetworks.description, 
+            ...window.cfStrings.recruiter.companyNetworks,
             query: tags => 
                 tags.includes('is-network')
                 && tags.includes('target-companies')
@@ -187,21 +168,18 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         }
         result.result.push({
             type: 'initiatives',
-            headline: 'Get Financial Support for your Project',
-            description: 'Of course this depends on what kind of NGO you run and your financial needs. These initiatives run funds that try their best at providing resources to initiatives that fight the climate crisis.\nCheck out their websites to find out which ones match your criteria and if they\'re currently making new grants.',
+            ...t(window.cfStrings.recruiter.receiveInitiativeFunding),
             query: tags => tags.includes('support-funds-initiatives'),
         });
         result.result.push({
             type: 'initiatives',
-            headline: 'Thought about joining a network?',
-            description: 'The movement is stronger together. These networks connect initiatives and individuals to exchange ideas and coordinate.',
+            ...t(window.cfStrings.recruiter.ngoNetworks),
             query: tags => tags.includes('is-network')
                 && tags.includes('support-connect-activists-or-initiatives'),
         });
         result.result.push({
             type: 'initiatives',
-            headline: 'Here your NGO\'s members can get training',
-            description: 'Many initiatives offer training and educational resources for activists. Your NGO can benefit from these resources.',
+            ...t(window.cfStrings.recruiter.ngoTraining),
             query: tags => tags.includes('support-train-activists'),
         });
     }
@@ -209,16 +187,14 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
     if(role.includes('user-role-health-worker')) {
         result.result.push({
             type: 'initiatives',
-            headline: 'Connect with Health Workers to Raise Awareness',
-            description: 'These initiatives connect physicians and health workers who fight for protecting our environment.Check out their websites!',
+            ...t(window.cfStrings.recruiter.healthWorker),
             query: tags => tags.includes('target-health-workers') && locationMatches(tags),
         });
     }
     if(role.includes('user-role-faith-leader')) {
         result.result.push({
             type: 'initiatives',
-            headline: 'Connect with Faith Leaders to Raise Awareness',
-            description: 'These initiatives connect faith leaders who fight for protecting our environment. Check out their websites!',
+            ...window.cfStrings.recruiter.faithLeader,
             query: tags => tags.includes('target-faith-leaders') && locationMatches(tags),
         });
     }
@@ -234,8 +210,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
 
         result.result.push({
             type: 'initiatives',
-            headline: 'Help Here',
-            description: `From the ${numberOfInitiatives()} initiatives in our database, they best match your responses and have the highest impact. Please check out their websites to learn more!`,
+            ...t(window.cfStrings.recruiter.join),
             query: tags => tags.some(tag => suggestTags.includes(tag))
                             && locationMatches(tags),
         });
@@ -245,8 +220,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         result.result.push({type: 'climate-pledge'});
         result.result.push({
             type: 'initiatives',
-            headline: 'Could you do more with a little money?',
-            description: 'These initiatives can support you with cash for projects or campaigns. Check them out!',
+            ...t(window.cfStrings.recruiter.receiveIndividualFunding),
             query: tags => 
                 tags.includes('support-funds-individuals')
                 && locationMatches(tags),
@@ -255,8 +229,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
 
     result.result.push({
         type: 'initiatives',
-        headline: window.cfStrings.recruiter.litigation.headline,
-        description: window.cfStrings.recruiter.litigation.description,
+        ...t(window.cfStrings.recruiter.litigation),
         query: tags => tags.includes('use-litigation') && locationMatches(tags),
     });
     result.result.push({ type: 'ideas' });

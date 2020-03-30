@@ -21,5 +21,9 @@ window.cfStrings = {
             description: aaa,
             cta: 'Zeig mir das **AAA Framework**',
         },
+        receiveIndividualFunding: {
+            headline: 'Could you do more with a little money?',
+            description: 'These initiatives can support you with cash for projects or campaigns. Check them out!',
+        },
     },
 };
