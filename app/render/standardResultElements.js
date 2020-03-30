@@ -20,7 +20,7 @@ export const nothingFound = () => standardElement({
 });
 
 export const crisisFightersB2B = index => standardElement({
-    strings: cfStrings.recruiter.cfb12b,
+    strings: cfStrings.recruiter.cfb2b,
     index,
     link: '/b2b',
     options: {primary: true, blank: true},
