@@ -25,6 +25,8 @@
       <link rel="stylesheet" href="{{ relURL ($.Site.BaseURL) }}{{ . }}">
     {{ end }}
 
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+
     {{ block "favicon" . }}
       {{ partialCached "site-favicon.html" . }}
     {{ end }}
@@ -56,7 +58,6 @@
                   {{ block "main" . }}{{ end }}
           </main>
           {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
-          {{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
         </div>
       </div>
     </div>
