@@ -1,4 +1,4 @@
-import {surveyLink,
+import {
     possibleParams,
     questionToLabel,
     sortTags,
@@ -30,7 +30,7 @@ export function renderStartPage() {
             .replace('{{numberOfInitiatives}}', numberOfInitiatives())
             .replace('{{numberOfTags}}', tagCount)
         )
-        + button(surveyLink, cfStrings.recruiter.welcome.button, {primary: true});
+        + button(cfStrings.recruiter.surveyLink, cfStrings.recruiter.welcome.button, {primary: true});
 }
 
 export function renderLocationSelector(params, resultDescriptor) {
@@ -78,7 +78,7 @@ export function renderLocationSelector(params, resultDescriptor) {
 }
 const renderResults = (userParams, location, elements) => `
         <h4>${cfStrings.recruiter.general.yourData}
-        (<a href="${surveyLink}">${cfStrings.recruiter.general.startOver}</a>)
+        (<a href="${cfStrings.recruiter.surveyLink}">${cfStrings.recruiter.general.startOver}</a>)
         </h4>
         <p>
         ${[
@@ -128,7 +128,7 @@ const renderElements = elements => {
             case 'initiatives': {
                 const initiatives = queryInitiatives(element.query);
                 if(initiatives.length === 0) {
-                    console.log('Didn\'t find anything for query', element.query);
+                    console.log('Didn\'t find anything for query', element.headline, element.query);
                     gaps++;
                     if(showedInitiatives || showedNotFoundMessage) {
                         return '';

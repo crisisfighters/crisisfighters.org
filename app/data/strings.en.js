@@ -7,6 +7,7 @@ import litigation from './content-partials/recruiter/litigation.md';
 window.cfStrings = {
     tagLabels,
     recruiter: {
+        surveyLink: 'https://services342876.typeform.com/to/jkPJe0',
         general: {
             yourData: 'The data you entered',
             startOver: 'start over',
@@ -17,6 +18,13 @@ window.cfStrings = {
             </p>`,
             suggestionHeadlinePrefix: 'Suggestion',
             unknown: 'unknown',
+        },
+        tags: {
+            role: 'You',
+            company: 'Your Company',
+            contribution: 'Your Contribution',
+            time: 'Time Commitment',
+            investmentArea: 'Areas',
         },
         welcome: {
             text: welcome,

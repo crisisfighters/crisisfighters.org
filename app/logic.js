@@ -1,6 +1,4 @@
 import {numberOfInitiatives, labelToTag} from './initiatives';
-export const surveyLink = 'https://services342876.typeform.com/to/jkPJe0';
-// TODO move most copy into markdown partials
 
 export const sortOrder = ['good', 'is', 'goal', 'use', 'support', 'l'];
 export const sortTags = (a, b) => {
@@ -26,11 +24,11 @@ export const sortTags = (a, b) => {
 
 export const possibleParams = ['investment-area', 'role', 'company', 'contribution', 'time'];
 export const questionToLabel = param => ({
-    role: 'You',
-    company: 'Your Company',
-    contribution: 'Your Contribution',
-    time: 'Time Commitment',
-    'investment-area': 'Areas',
+    role: cfStrings.recruiter.tags.role,
+    company: cfStrings.recruiter.tags.company,
+    contribution: cfStrings.recruiter.tags.contribution,
+    time: cfStrings.recruiter.tags.time,
+    'investment-area': cfStrings.recruiter.tags.investmentArea,
 })[param];
 
 export const extractParams = urlParams => {

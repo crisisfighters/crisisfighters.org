@@ -12,12 +12,12 @@ const standardElement = ({strings: {headline, text, button: buttonLabel}, index,
 
 export const restartLink = () => standardElement({
     strings: cfStrings.recruiter.restart,
-    link: surveyLink
+    link: cfStrings.recruiter.surveyLink
 });
 
 export const nothingFound = () => standardElement({
     strings: cfStrings.recruiter.noInitiativesFound,
-    link: surveyLink
+    link: cfStrings.recruiter.surveyLink
 });
 
 export const crisisFightersB2B = index => standardElement({

@@ -531,7 +531,7 @@ export const initiatives = [
         "is-network",
         "suggest-volunteer",
         "suggest-money",
-        "good-energy-transformation",
+        "good-energy",
         "goal-decentralized-energy-ownership",
         "goal-fight-fossil",
         "goal-divestment",
@@ -565,7 +565,7 @@ export const initiatives = [
         "is-network",
         "suggest-volunteer",
         "suggest-money",
-        "good-energy-transformation",
+        "good-energy",
         "goal-decentralized-energy-ownership",
         "goal-fight-fossil",
         "goal-divestment",
@@ -1628,7 +1628,7 @@ export const initiatives = [
         "is-public",
         "is-think-tank",
         "is-network",
-        "good-energy-transformation",
+        "good-energy",
         "goal-deploy-renewables",
         "good-cities-and-housing",
         "goal-carbon-neutral-cities",
@@ -1669,7 +1669,7 @@ export const initiatives = [
         "is-network",
         "skill-influencer",
         "suggest-money",
-        "good-energy-transformation",
+        "good-energy",
         "goal-decentralized-energy-ownership",
         "goal-deploy-renewables",
         "good-cities-and-housing",
@@ -1944,7 +1944,8 @@ export const initiatives = [
       "link": "https://www.earthguardians.org",
       "tags": [
         "suggest-volunteer",
-        "suggest-money"
+        "suggest-money",
+        "use-litigation"
       ]
     }
   },
@@ -2043,7 +2044,7 @@ export const initiatives = [
       "tags": [
         "is-public",
         "is-network",
-        "good-energy-transformation",
+        "good-energy",
         "goal-deploy-renewables",
         "good-cities-and-housing",
         "goal-carbon-neutral-cities",
