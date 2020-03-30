@@ -1,5 +1,5 @@
 import {sortInitiatives} from './logic';
-import {initiatives} from './data/initiatives';
+import {initiatives} from '../data/initiatives';
 
 const invalidTags = [];
 

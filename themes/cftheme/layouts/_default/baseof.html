@@ -26,6 +26,19 @@
     {{ end }}
 
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    {{ if .IsTranslated }}
+    <script>
+    window.cfLanguages = {
+      current: '{{ .Site.Language.Lang }}',
+      available: [
+        {{ range .Translations }}
+        { lang: "{{ .Lang }}", permalink: "{{ .Permalink }}" },
+        {{ end}}
+      ]
+    };
+    </script>
+    {{ end }}
+    <script src="/js/app.bundle.js" async defer></script>
 
     <link rel="shortcut icon" href="/{{ .Site.Params.favicon }}" type="image/x-icon" />
 

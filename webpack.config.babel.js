@@ -5,6 +5,7 @@ import path from "path";
 export default {
   entry: {
     app: ["./app/app.js"],
+    recruiter: ["./app/recruiter/recruiter.js"],
     'strings.en': ["./app/data/strings.en.js"],
     'strings.de': ["./app/data/strings.de.js"],
   },

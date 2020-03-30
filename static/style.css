@@ -14,6 +14,12 @@ a:hover .header-logo  {
     filter: sepia(1) hue-rotate(-40deg) brightness(1.2) saturate(2);
 }
 
+.language-link .language-link-cookie-consent {
+    display: none;
+}
+.language-link:hover .language-link-cookie-consent {
+    display: inline;
+}
 .bg1 {
     background: url(/images/Wildfire_2010_-_panoramio.jpg);
     background-size: 100vmax;

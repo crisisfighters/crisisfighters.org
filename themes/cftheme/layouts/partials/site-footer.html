@@ -5,11 +5,11 @@
       <a class="ph1 fw4 hover-black black-70" href="{{ T "langPrefix" }}contribute" target="_blank">{{ T "footer_text2" }}</a>
     </span>  
     <div style="margin-left: auto" class="flex ph2 fw4 hover-black black-70">
-      {{ if .IsTranslated }}    
+      {{ if .IsTranslated }}
         <ul class="pa0 ma0">
             {{ range .Translations }}
-            <li class="list fw4 dib pr3">
-                <a class="no-underline" href="{{ .Permalink }}">{{ if eq .Lang "en" }}🇬🇧🇺🇸{{ else }}🇩🇪{{ end }}</a>
+            <li class="list fw4 dib pr3 language-link-wrapper">
+                <a class="no-underline language-link" data-lang="{{ .Lang }}" href="{{ .Permalink }}">{{ if eq .Lang "en" }}🇬🇧🇺🇸{{ else }}🇩🇪{{ end }}<span class="language-link-cookie-consent"> (remember in cookie)</span></a>
             </li>
             {{ end}}
         </ul>

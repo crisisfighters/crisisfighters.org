@@ -5,8 +5,8 @@ import {
     tagShouldBeVisibleInList} from './logic';
 import {numberOfInitiatives, tagToLabel, queryInitiatives} from './initiatives';
 import {renderMd, renderMdParagraph} from './markdown';
-import suggestionHeadline from './render/suggestionHeadline';
-import button from './render/button';
+import suggestionHeadline from '../render/suggestionHeadline';
+import button from '../render/button';
 import {
     restartLink,
     nothingFound,
@@ -16,7 +16,7 @@ import {
     creativeBrief,
     climatePledge,
     aaa,
-} from './render/standardResultElements';
+} from '../render/standardResultElements';
 
 export function renderResultScreen(userParams, {result: elements}, location) {
     document.getElementById('recruiter-screen').innerHTML = renderResults(userParams, location, elements);

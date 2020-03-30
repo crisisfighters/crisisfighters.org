@@ -1,39 +1,41 @@
-import {extractParams, determineResultDescriptor, economicAreas} from './logic';
-import {renderStartPage, renderLocationSelector, renderResultScreen} from './render';
-import {logInvalidTags} from './initiatives';
+import Cookies from 'js-cookie';
 
-function resultScreenApp() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const userParams = extractParams(urlParams);
-   
-    if(!userParams) {
-        return renderStartPage();
-    }
+// console.log(
+//     navigator.language,
+//     navigator.languages,
+//     Cookies.get(),
+// );
 
-    const location = {
-        locality: urlParams.get('locality'),
-        country: urlParams.get('country'),
-        countryCode: urlParams.get('countryCode'),
-        economicArea: economicArea(urlParams.get('countryCode')),
-    };
-    const resultDescriptor = determineResultDescriptor(userParams, location);
+const pathFromPermalink = p => p.replace(/^https?:\/\/[^\/]+(\/.*)$/, '$1');
 
-    console.log(userParams);
-    if(resultDescriptor.locationMissing) {
-        renderLocationSelector(userParams, resultDescriptor);
-    } else {
-        renderResultScreen(userParams, resultDescriptor, location);
-    }
-    logInvalidTags();
+// Very weirdly, Cookies.get('language') returns '' even if the cookie is set.
+const cookieContent = Cookies.get().language;
+const hasCookie = typeof cookieContent === "string" && cookieContent.length > 0;
+
+if(!navigator.languages.includes(cfLanguages.current) && !hasCookie) {
+    console.log('Switching language')
+    const newLanguage = window.cfLanguages.available.filter(l => navigator.languages.includes(l.lang))[0] || 0;
+    const href = pathFromPermalink(newLanguage.permalink);
+    document.location.href = href;
 }
 
-function economicArea(code) {
-    for(let area in economicAreas) {
-        if(economicAreas[area].includes(code)) {
-            return 'l-' + area;
-        }
-    }
-    return null
-}
+window.addEventListener('load', e => {
+    for(let a of document.getElementsByClassName('language-link')) {
+        // Remove protocol, host and port to ease local testing
+        a.setAttribute('data-href', pathFromPermalink(a.getAttribute('href')));
+        a.setAttribute('href', "javascript:void(0);");
 
-window.onload = resultScreenApp;
+        a.addEventListener('click', e => {
+            const target = e.target.nodeName === 'a'
+                ? e.target
+                : e.target.parentElement;
+
+            Cookies.set(
+                'language',
+                target.getAttribute('data-lang'),
+                { expires: 30 }
+            );
+            document.location.href = target.getAttribute('data-href');
+        });
+    }
+});
