@@ -6,8 +6,8 @@ export default {
   entry: {
     app: ["./app/app.js"],
     recruiter: ["./app/recruiter/recruiter.js"],
-    'strings.en': ["./app/data/strings.en.js"],
-    'strings.de': ["./app/data/strings.de.js"],
+    'strings.en-us': ["./app/data/strings.js"],
+    'strings.de-de': ["./app/data/strings.de-de.js"],
   },
   output: {
     path: path.resolve(__dirname, "public", "js"),

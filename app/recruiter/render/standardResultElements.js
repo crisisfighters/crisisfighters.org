@@ -1,4 +1,4 @@
-import {renderMdParagraph} from '../markdown';
+import {renderMdParagraph} from './markdown';
 import button from './button';
 import suggestionHeadline from './suggestionHeadline';
 

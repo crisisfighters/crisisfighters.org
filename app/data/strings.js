@@ -1,4 +1,4 @@
-import {tagLabels} from './tagLabels.de';
+import {tagLabels} from './tagLabels';
 import welcome from './content-partials/recruiter/welcome.md';
 import locationSelectorText from './content-partials/recruiter/select-country.md';
 import aaa from './content-partials/recruiter/aaa.md';
@@ -9,26 +9,26 @@ window.cfStrings = {
     recruiter: {
         surveyLink: 'https://services342876.typeform.com/to/jkPJe0',
         general: {
-            yourData: 'Was du eingegeben hast',
-            startOver: 'Von vorn beginnen',
-            country: 'Land',
+            yourData: 'The data you entered',
+            startOver: 'start over',
+            country: 'Country',
             resultText: `
             <p>In case you're interested how we came to our recommendations:
               We wrote an article on <a href="/what-else/how-we-recommend" target="_blank">how we recommend</a>.
             </p>`,
-            suggestionHeadlinePrefix: 'Vorschlag',
+            suggestionHeadlinePrefix: 'Suggestion',
             unknown: 'unknown',
         },
         tags: {
-            role: 'Du',
-            company: 'Deine Firma',
-            contribution: 'Dein Beitrag',
-            time: 'Zeitinvestition',
-            investmentArea: 'Bereiche',
+            role: 'You',
+            company: 'Your Company',
+            contribution: 'Your Contribution',
+            time: 'Time Commitment',
+            investmentArea: 'Areas',
         },
         welcome: {
             text: welcome,
-            button: '**Crisis Recruiter** starten',
+            button: 'Launch **Crisis Recruiter**',
         },
         locationSelector: {
             text: locationSelectorText,
@@ -77,9 +77,9 @@ window.cfStrings = {
             button: 'Sign the **Climate Pledge**',
         },
         aaa: {
-            headline: 'Mach deine Firma nachhaltig mit dem AAA framework',
+            headline: 'Transform your company with the AAA framework',
             text: aaa,
-            button: 'Zeig mir das **AAA Framework**',
+            button: 'Check out the **AAA Framework**',
         },
         municipalityNetwork: {
             headline: 'Is your municipality a member of these networks?',
@@ -113,11 +113,11 @@ window.cfStrings = {
             description: 'Building infrastructure to last is energy-intensive. These consultancies are specialized on the industry and are happy to help.'
         },
         companyNetworks: {
-            headline: 'Ist deine Firma Teil dieser Netzwerke?',
-            description: 'Diese Initiativen vernetzen Firmen und unterstützen sie dabei, nachhaltiger zu werden.',
+            headline: 'Is your Company part of these networks?',
+            description: 'These initiatives connect companies and support them to become more sustainable.',
         },
         litigation : {
-            headline: 'Stoppe Fossile Projekte',
+            headline: 'Stop High-Carbon Projects',
             description: litigation
         },
         receiveInitiativeFunding: {

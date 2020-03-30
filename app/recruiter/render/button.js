@@ -1,4 +1,4 @@
-import {renderMd} from '../markdown';
+import {renderMd} from './markdown';
 
 export default function button(link, label, flags) {
     const {primary, blank}  = flags || {};

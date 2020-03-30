@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.LanguageCode | default "en" }}">
+<html lang="{{ T "langCode" }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -29,8 +29,8 @@
     {{ if .IsTranslated }}
     <script>
     window.cfLanguages = {
-      current: '{{ .Site.Language.Lang }}',
-      available: [
+      current: '{{ T "langCode" }}',
+      others: [
         {{ range .Translations }}
         { lang: "{{ .Lang }}", permalink: "{{ .Permalink }}" },
         {{ end}}

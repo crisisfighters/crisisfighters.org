@@ -1,34 +1,34 @@
-import {tagLabels} from './tagLabels.en';
-import welcome from './content-partials/recruiter/welcome.md';
-import locationSelectorText from './content-partials/recruiter/select-country.md';
-import aaa from './content-partials/recruiter/aaa.md';
-import litigation from './content-partials/recruiter/litigation.md';
+import {tagLabels} from './tagLabels.de-de';
+import welcome from './content-partials/recruiter/welcome.de-de.md';
+import locationSelectorText from './content-partials/recruiter/select-country.de-de.md';
+import aaa from './content-partials/recruiter/aaa.de-de.md';
+import litigation from './content-partials/recruiter/litigation.de-de.md';
 
 window.cfStrings = {
     tagLabels,
     recruiter: {
         surveyLink: 'https://services342876.typeform.com/to/jkPJe0',
         general: {
-            yourData: 'The data you entered',
-            startOver: 'start over',
-            country: 'Country',
+            yourData: 'Was du eingegeben hast',
+            startOver: 'Von vorn beginnen',
+            country: 'Land',
             resultText: `
             <p>In case you're interested how we came to our recommendations:
               We wrote an article on <a href="/what-else/how-we-recommend" target="_blank">how we recommend</a>.
             </p>`,
-            suggestionHeadlinePrefix: 'Suggestion',
+            suggestionHeadlinePrefix: 'Vorschlag',
             unknown: 'unknown',
         },
         tags: {
-            role: 'You',
-            company: 'Your Company',
-            contribution: 'Your Contribution',
-            time: 'Time Commitment',
-            investmentArea: 'Areas',
+            role: 'Du',
+            company: 'Deine Firma',
+            contribution: 'Dein Beitrag',
+            time: 'Zeitinvestition',
+            investmentArea: 'Bereiche',
         },
         welcome: {
             text: welcome,
-            button: 'Launch **Crisis Recruiter**',
+            button: '**Crisis Recruiter** starten',
         },
         locationSelector: {
             text: locationSelectorText,
@@ -77,9 +77,9 @@ window.cfStrings = {
             button: 'Sign the **Climate Pledge**',
         },
         aaa: {
-            headline: 'Transform your company with the AAA framework',
+            headline: 'Mach deine Firma nachhaltig mit dem AAA framework',
             text: aaa,
-            button: 'Check out the **AAA Framework**',
+            button: 'Zeig mir das **AAA Framework**',
         },
         municipalityNetwork: {
             headline: 'Is your municipality a member of these networks?',
@@ -113,11 +113,11 @@ window.cfStrings = {
             description: 'Building infrastructure to last is energy-intensive. These consultancies are specialized on the industry and are happy to help.'
         },
         companyNetworks: {
-            headline: 'Is your Company part of these networks?',
-            description: 'These initiatives connect companies and support them to become more sustainable.',
+            headline: 'Ist deine Firma Teil dieser Netzwerke?',
+            description: 'Diese Initiativen vernetzen Firmen und unterstützen sie dabei, nachhaltiger zu werden.',
         },
         litigation : {
-            headline: 'Stop High-Carbon Projects',
+            headline: 'Stoppe Fossile Projekte',
             description: litigation
         },
         receiveInitiativeFunding: {

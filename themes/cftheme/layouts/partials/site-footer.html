@@ -9,7 +9,7 @@
         <ul class="pa0 ma0">
             {{ range .Translations }}
             <li class="list fw4 dib pr3 language-link-wrapper">
-                <a class="no-underline language-link" data-lang="{{ .Lang }}" href="{{ .Permalink }}">{{ if eq .Lang "en" }}🇬🇧🇺🇸{{ else }}🇩🇪{{ end }}<span class="language-link-cookie-consent"> (remember in cookie)</span></a>
+                <a class="no-underline language-link" data-lang="{{ .Lang }}" href="{{ .Permalink }}"><span class="language-link-flag-{{ .Lang }}"></span><span class="language-link-cookie-consent"> (remember in cookie)</span></a>
             </li>
             {{ end}}
         </ul>

@@ -1,3 +1,6 @@
+
+defaultContentLanguage = "en-us"
+
 baseURL = "https://www.crisisfighters.org/"
 title = "CrisisFighters.org"
 theme = "cftheme"
@@ -24,14 +27,14 @@ enableRobotsTXT = true
   # Thanks to https://code.luasoftware.com/tutorials/hugo/how-to-create-link-with-target-blanks-in-hugo-markdown/
   hrefTargetBlank = true
 
-DefaultContentLanguage = "en"
+defaultContentLanguage = "en-us"
 languageCode = "en-us"
 
 [languages]
-  [languages.en]
+  [languages.en-us]
     weight = 1
-    [languages.en.params]
-  [languages.de]
+    [languages.en-us.params]
+  [languages.de-de]
     weight = 2
-    [languages.de.params]
+    [languages.de-de.params]
       languageCode = "de-de"
