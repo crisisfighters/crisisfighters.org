@@ -5,8 +5,8 @@ import path from "path";
 export default {
   entry: {
     app: ["./app/app.js"],
-    'strings.en': ["./app/strings.en.js"],
-    'strings.de': ["./app/strings.de.js"],
+    'strings.en': ["./app/data/strings.en.js"],
+    'strings.de': ["./app/data/strings.de.js"],
   },
   output: {
     path: path.resolve(__dirname, "public", "js"),

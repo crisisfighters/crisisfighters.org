@@ -1,6 +1,5 @@
 import {sortInitiatives} from './logic';
 import {initiatives} from './data/initiatives';
-import {tagLabels} from './data/tagLabels';
 
 const invalidTags = [];
 
@@ -17,8 +16,8 @@ export function queryInitiatives(query) {
 }
 
 export function labelToTag(label) {
-    for(let tag in tagLabels) {
-        if(tagLabels[tag] === label) {
+    for(let tag in cfStrings.tagLabels) {
+        if(cfStrings.tagLabels[tag] === label) {
             return tag;
         }
     }
@@ -29,9 +28,9 @@ export function labelToTag(label) {
 }
 
 export function tagToLabel(tag) {
-    for(let tagEntry in tagLabels) {
+    for(let tagEntry in cfStrings.tagLabels) {
         if(tagEntry === tag) {
-            return tagLabels[tag];
+            return cfStrings.tagLabels[tag];
         }
     }
     if(!invalidTags.includes(tag)) {

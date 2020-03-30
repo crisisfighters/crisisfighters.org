@@ -1,9 +1,11 @@
+import {tagLabels} from './tagLabels.en';
 import welcome from './content-partials/recruiter/welcome.md';
 import locationSelectorText from './content-partials/recruiter/select-country.md';
 import aaa from './content-partials/recruiter/aaa.md';
 import litigation from './content-partials/recruiter/litigation.md';
 
 window.cfStrings = {
+    tagLabels,
     recruiter: {
         general: {
             yourData: 'The data you entered',
@@ -13,7 +15,8 @@ window.cfStrings = {
             <p>In case you're interested how we came to our recommendations:
               We wrote an article on <a href="/what-else/how-we-recommend" target="_blank">how we recommend</a>.
             </p>`,
-            suggestionHeadlinePrefix: 'Suggestion'
+            suggestionHeadlinePrefix: 'Suggestion',
+            unknown: 'unknown',
         },
         welcome: {
             text: welcome,
@@ -65,6 +68,11 @@ window.cfStrings = {
         `,
             button: 'Sign the **Climate Pledge**',
         },
+        aaa: {
+            headline: 'Transform your company with the AAA framework',
+            text: aaa,
+            button: 'Check out the **AAA Framework**',
+        },
         municipalityNetwork: {
             headline: 'Is your municipality a member of these networks?',
             description: 'These networks connect and help cities to make housing more energy-efficient and move cities closer to the goal of net carbon neutrality.',
@@ -103,11 +111,6 @@ window.cfStrings = {
         litigation : {
             headline: 'Stop High-Carbon Projects',
             description: litigation
-        },
-        aaa: {
-            headline: 'Transform your company with the AAA framework',
-            description: aaa,
-            cta: 'Check out the **AAA Framework**',
         },
         receiveInitiativeFunding: {
             headline: 'Get Financial Support for your Project',

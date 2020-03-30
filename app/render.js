@@ -5,29 +5,40 @@ import {surveyLink,
     tagShouldBeVisibleInList} from './logic';
 import {numberOfInitiatives, tagToLabel, queryInitiatives} from './initiatives';
 import {renderMd, renderMdParagraph} from './markdown';
-import {tagLabels} from './data/tagLabels';
+import suggestionHeadline from './render/suggestionHeadline';
+import button from './render/button';
+import {
+    restartLink,
+    nothingFound,
+    crisisFightersB2B,
+    ideas,
+    contribute,
+    creativeBrief,
+    climatePledge,
+    aaa,
+} from './render/standardResultElements';
 
 export function renderResultScreen(userParams, {result: elements}, location) {
     document.getElementById('recruiter-screen').innerHTML = renderResults(userParams, location, elements);
 }
 
 export function renderStartPage() {
-    const tagCount = Object.keys(tagLabels).filter(t => !t.startsWith('l-')).length;
+    const tagCount = Object.keys(cfStrings.tagLabels).filter(t => !t.startsWith('l-')).length;
 
     document.getElementById('recruiter-screen').innerHTML = renderMdParagraph(
-          window.cfStrings.recruiter.welcome.text
+          cfStrings.recruiter.welcome.text
             .replace('{{numberOfInitiatives}}', numberOfInitiatives())
             .replace('{{numberOfTags}}', tagCount)
         )
-        + button(surveyLink, window.cfStrings.recruiter.welcome.button, {primary: true});
+        + button(surveyLink, cfStrings.recruiter.welcome.button, {primary: true});
 }
 
 export function renderLocationSelector(params, resultDescriptor) {
     
     document.getElementById('recruiter-screen').innerHTML = 
-    renderMdParagraph(window.cfStrings.recruiter.locationSelector.text) + `
-        <input id="result-town-input" autofocus placeholder="${window.cfStrings.recruiter.locationSelector.placeholder}" type="text"/>
-        <button id="result-town-submit" class="button button-primary" disabled>${renderMd(window.cfStrings.recruiter.locationSelector.button)}</button>
+    renderMdParagraph(cfStrings.recruiter.locationSelector.text) + `
+        <input id="result-town-input" autofocus placeholder="${cfStrings.recruiter.locationSelector.placeholder}" type="text"/>
+        <button id="result-town-submit" class="button button-primary" disabled>${renderMd(cfStrings.recruiter.locationSelector.button)}</button>
     `;
     const input = document.getElementById('result-town-input');
     const submit = document.getElementById('result-town-submit');
@@ -66,8 +77,8 @@ export function renderLocationSelector(params, resultDescriptor) {
       });
 }
 const renderResults = (userParams, location, elements) => `
-        <h4>${window.cfStrings.recruiter.general.yourData}
-        (<a href="${surveyLink}">${window.cfStrings.recruiter.general.startOver}</a>)
+        <h4>${cfStrings.recruiter.general.yourData}
+        (<a href="${surveyLink}">${cfStrings.recruiter.general.startOver}</a>)
         </h4>
         <p>
         ${[
@@ -80,20 +91,14 @@ const renderResults = (userParams, location, elements) => `
             }, []),
             // ... and add the Country if it has been selected
             ...(location && location.country
-                 ? [`${window.cfStrings.recruiter.general.country}: ${location.country}.`]
+                 ? [`${cfStrings.recruiter.general.country}: ${location.country}.`]
                 : [])
         ]
         .join('. ')}
         </p>
-        ${window.cfStrings.recruiter.general.resultText}
+        ${cfStrings.recruiter.general.resultText}
         ${renderElements(elements)}
         `;
-
-function button(link, label, flags) {
-    const {primary, blank}  = flags || {};
-    return `<a href="${link}" ${blank ? 'target="_blank"' : ''}class="button ${primary ? 'button-primary' : ''}">${renderMd(label)}</a>`
-};
-        
 
 const tag = tag => {
     const classes = [
@@ -141,89 +146,20 @@ const renderElements = elements => {
             case 'creative-brief': return creativeBrief(realIndex);
             case 'aaa': return aaa(realIndex);
             case 'climate-pledge': return climatePledge(realIndex);
-            default: return `<p>Unknown: ${element.type}</p>`;
+            default: return `<p>${cfStrings.recruiter.general.unknown}: ${element.type}</p>`;
         }
     }).join('');
 }
 
-const standardElement = ({strings: {headline, text, button: buttonLabel}, index, link, options}) => `
-<div class="results-element">
-    ${suggestionHeadline(headline, index)}
-    ${renderMdParagraph(text)}
-    ${button(link, buttonLabel, options)}
-    
+
+const initiativeSet = ({headline, description, style}, initiatives, index) =>`
+<div class="results-element results-initiative-set">
+    ${suggestionHeadline(renderMd(headline), index)}
+    <div class="results-element-description">${renderMdParagraph(description)}</div>
+    <div class="results-initiatives-wrapper">
+    ${initiatives.map(i => initiative(i, style)).join('')}
+    </div>
 </div>`;
-
-const suggestionHeadline = (caption, index) => 
-    `<h1>${index ? `${window.cfStrings.recruiter.general.suggestionHeadlinePrefix} ${index}: ` : ''}
-      <span class="headline">${caption}</span>
-    </h1>`;
-
-const restartLink = () => standardElement({
-    strings: window.cfStrings.recruiter.restart,
-    link: surveyLink
-});
-
-const nothingFound = () => standardElement({
-    strings: window.cfStrings.recruiter.noInitiativesFound,
-    link: surveyLink
-});
-
-const crisisFightersB2B = index => standardElement({
-    strings: window.cfStrings.recruiter.cfb12b,
-    index,
-    link: '/b2b',
-    options: {primary: true, blank: true},
-});
-
-const ideas = index => standardElement({
-    strings: window.cfStrings.recruiter.ideas,
-    index,
-    link: '/what-else/ideas',
-    options: {primary: true, blank: true},
-});
-
-const contribute = index => standardElement({
-    strings: window.cfStrings.recruiter.contribute,
-    index,
-    link: '/contribute',
-    options: {primary: true, blank: true},
-});
-
-const creativeBrief = index => standardElement({
-    strings: window.cfStrings.recruiter.creativeBrief,
-    index,
-    link: 'https://docs.google.com/document/d/1gQAjdS_FU4Ijx4OTbiIhNngsR8haO9llvgHIMThwqiQ',
-    options: {primary: true, blank: true}, 
-});
-
-const climatePledge = index => standardElement({
-    strings: window.cfStrings.recruiter.climatePledge,
-    index,
-    link: 'https://climatevoice.org/',
-    options: {primary: true, blank: true},
-});
-
-const aaa = index => `
-<div class="results-element results-creative-brief">
-    ${suggestionHeadline(window.cfStrings.recruiter.aaa.headline, index)}
-    ${renderMdParagraph(window.cfStrings.recruiter.aaa.description)}
-    ${button(
-        'https://business.edf.org/insights/aaa-leadership-framework/',
-        window.cfStrings.recruiter.aaa.cta,
-        {primary: true, blank: true}
-    )}
-
-</div>`;
-
-    const initiativeSet = ({headline, description, style}, initiatives, index) =>`
-    <div class="results-element results-initiative-set">
-        ${suggestionHeadline(renderMd(headline), index)}
-        <div class="results-element-description">${renderMdParagraph(description)}</div>
-        <div class="results-initiatives-wrapper">
-        ${initiatives.map(i => initiative(i, style)).join('')}
-        </div>
-    </div>`;
 
 const initiative = (initiative, style) => {
     const {small} = style || {};

@@ -96,19 +96,19 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
     if(role.includes('user-role-city-official')) {
         result.result.push({
             type: 'initiatives',
-            ...t(window.cfStrings.recruiter.municipalityNetwork),
+            ...t(cfStrings.recruiter.municipalityNetwork),
             query: tags => tags.includes('good-cities-and-housing')
                     && tags.includes('is-network')
                     && locationMatches(tags),
         });
         result.result.push({
             type: 'initiatives',
-            ...t(window.cfStrings.recruiter.municipalityStock),
+            ...t(cfStrings.recruiter.municipalityStock),
             query: tags => tags.includes('use-stock-voting-rights'),
         });
         result.result.push({
             type: 'initiatives',
-            ...t(window.cfStrings.recruiter.supportGrassroots),
+            ...t(cfStrings.recruiter.supportGrassroots),
             query: tags => tags.includes('is-grassroots') && locationMatches(tags),
         });
     }
@@ -116,7 +116,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
     if(contribution.includes('user-contribution-money')) {
         result.result.push({
             type: 'initiatives',
-            ...t(window.cfStrings.recruiter.investHere),
+            ...t(cfStrings.recruiter.investHere),
             query: tags => tags.some(tag => investmentArea.includes(tag))
                             && tags.includes('suggest-money')
                             && locationMatches(tags),
@@ -136,7 +136,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         result.result.push({
             type: 'initiatives',
             style: {small: true},
-            ...t(window.cfStrings.recruiter.companyReduce),
+            ...t(cfStrings.recruiter.companyReduce),
             query: tags => tags.includes('consult-companies-reduce') && locationMatches(tags),
         });
 
@@ -145,13 +145,13 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
                 type: 'initiatives',
                 style: {small: true},
                 // TODO find and add resource on how non-leadership members can organize
-                ...t(window.cfStrings.recruiter.buildingCompanyReduce),
+                ...t(cfStrings.recruiter.buildingCompanyReduce),
                 query: tags => tags.includes('consult-building-companies') && locationMatches(tags),
             });
         }
         result.result.push({
             type: 'initiatives',
-            ...window.cfStrings.recruiter.companyNetworks,
+            ...cfStrings.recruiter.companyNetworks,
             query: tags => 
                 tags.includes('is-network')
                 && tags.includes('target-companies')
@@ -168,18 +168,18 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         }
         result.result.push({
             type: 'initiatives',
-            ...t(window.cfStrings.recruiter.receiveInitiativeFunding),
+            ...t(cfStrings.recruiter.receiveInitiativeFunding),
             query: tags => tags.includes('support-funds-initiatives'),
         });
         result.result.push({
             type: 'initiatives',
-            ...t(window.cfStrings.recruiter.ngoNetworks),
+            ...t(cfStrings.recruiter.ngoNetworks),
             query: tags => tags.includes('is-network')
                 && tags.includes('support-connect-activists-or-initiatives'),
         });
         result.result.push({
             type: 'initiatives',
-            ...t(window.cfStrings.recruiter.ngoTraining),
+            ...t(cfStrings.recruiter.ngoTraining),
             query: tags => tags.includes('support-train-activists'),
         });
     }
@@ -187,14 +187,14 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
     if(role.includes('user-role-health-worker')) {
         result.result.push({
             type: 'initiatives',
-            ...t(window.cfStrings.recruiter.healthWorker),
+            ...t(cfStrings.recruiter.healthWorker),
             query: tags => tags.includes('target-health-workers') && locationMatches(tags),
         });
     }
     if(role.includes('user-role-faith-leader')) {
         result.result.push({
             type: 'initiatives',
-            ...window.cfStrings.recruiter.faithLeader,
+            ...cfStrings.recruiter.faithLeader,
             query: tags => tags.includes('target-faith-leaders') && locationMatches(tags),
         });
     }
@@ -210,7 +210,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
 
         result.result.push({
             type: 'initiatives',
-            ...t(window.cfStrings.recruiter.join),
+            ...t(cfStrings.recruiter.join),
             query: tags => tags.some(tag => suggestTags.includes(tag))
                             && locationMatches(tags),
         });
@@ -220,7 +220,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         result.result.push({type: 'climate-pledge'});
         result.result.push({
             type: 'initiatives',
-            ...t(window.cfStrings.recruiter.receiveIndividualFunding),
+            ...t(cfStrings.recruiter.receiveIndividualFunding),
             query: tags => 
                 tags.includes('support-funds-individuals')
                 && locationMatches(tags),
@@ -229,7 +229,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
 
     result.result.push({
         type: 'initiatives',
-        ...t(window.cfStrings.recruiter.litigation),
+        ...t(cfStrings.recruiter.litigation),
         query: tags => tags.includes('use-litigation') && locationMatches(tags),
     });
     result.result.push({ type: 'ideas' });
