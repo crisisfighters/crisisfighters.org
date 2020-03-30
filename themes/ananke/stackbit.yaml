@@ -89,31 +89,6 @@ models:
           - type: string
             name: description
             label: Description
-          - type: string
-            name: facebook
-            label: Facebook
-          - type: string
-            name: twitter
-            label: Twitter
-          - type: string
-            name: instagram
-            label: Instagram
-          - type: string
-            name: youtube
-            label: Youtube
-          - type: string
-            name: github
-            label: Github
-          - type: string
-            name: gitlab
-            label: Gitlab
-          - type: string
-            name: linkedin
-            label: Linkedin
-          - type: string
-            name: mastodon
-            label: Mastodon
-          - type: string
             name: background_color_class
             label: background_color_class
           - type: number
