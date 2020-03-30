@@ -7,7 +7,6 @@ const standardElement = ({strings: {headline, text, button: buttonLabel}, index,
     ${suggestionHeadline(headline, index)}
     ${renderMdParagraph(text)}
     ${button(link, buttonLabel, options)}
-    
 </div>`;
 
 export const restartLink = () => standardElement({
