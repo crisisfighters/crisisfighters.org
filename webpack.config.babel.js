@@ -4,14 +4,15 @@ import path from "path";
 
 export default {
   entry: {
-    app: ["./app/app.js"],
-    recruiter: ["./app/recruiter/recruiter.js"],
-    'strings.en-us': ["./app/data/strings.js"],
-    'strings.de-de': ["./app/data/strings.de-de.js"],
+    'dist-functions/proxy': ["./app/proxy/proxy.js"],
+    'public/js/app': ["./app/app.js"],
+    'public/js/recruiter': ["./app/recruiter/recruiter.js"],
+    'public/js/strings.en-us': ["./app/data/strings.js"],
+    'public/js/strings.de-de': ["./app/data/strings.de-de.js"],
   },
   output: {
-    path: path.resolve(__dirname, "public", "js"),
-    filename: "[name].bundle.js",
+    path: path.resolve(__dirname),
+    filename: "[name].js",
   },
   module: {
     rules: [
