@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf public",
-    "watch": "gulp watch",
-    "webpack": "webpack"
+    "watch": "./scripts/watch.sh",
+    "webpack": "webpack",
+    "start": "node app/server.js"
   },
   "repository": {
     "type": "git",
@@ -27,11 +28,15 @@
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
+    "hugo-cli": "^0.11.0",
     "raw-loader": "^4.0.0",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-request-language": "^1.1.15",
     "js-cookie": "^2.2.1"
   }
 }

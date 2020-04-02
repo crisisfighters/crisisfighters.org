@@ -13,6 +13,15 @@
             </li>
             {{ end}}
         </ul>
+XX
+<ul class="pa0 ma0">
+  {{ range .Translations }}
+  <li class="list fw4 dib pr3 language-link-wrapper">
+      <a class="no-underline" href="/languages/{{ .Lang }}"><span class="language-link-flag-{{ .Lang }}"></span></a>
+  </li>
+  {{ end}}
+</ul>
+
         {{ end }}
    
       <a href="{{ T "langPrefix" }}imprint">{{ T "footer_imprint" }}</a>
