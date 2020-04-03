@@ -7,20 +7,12 @@
     <div style="margin-left: auto" class="flex ph2 fw4 hover-black black-70">
       {{ if .IsTranslated }}
         <ul class="pa0 ma0">
-            {{ range .Translations }}
-            <li class="list fw4 dib pr3 language-link-wrapper">
-                <a class="no-underline language-link" data-lang="{{ .Lang }}" href="{{ .Permalink }}"><span class="language-link-flag-{{ .Lang }}"></span></a>
-            </li>
-            {{ end}}
+          {{ range .Translations }}
+          <li class="list fw4 dib pr3 language-link-wrapper">
+              <a class="no-underline" href="/languages/{{ .Lang }}"><span class="language-link-flag-{{ .Lang }}"></span></a>
+          </li>
+          {{ end}}
         </ul>
-XX
-<ul class="pa0 ma0">
-  {{ range .Translations }}
-  <li class="list fw4 dib pr3 language-link-wrapper">
-      <a class="no-underline" href="/languages/{{ .Lang }}"><span class="language-link-flag-{{ .Lang }}"></span></a>
-  </li>
-  {{ end}}
-</ul>
 
         {{ end }}
    
