@@ -42,6 +42,6 @@ app.get('*', function (req, res, next) {
 })
 
   
-app.listen(3003);
+app.listen(process.env.PORT || 3000);
 
 console.log('running')
