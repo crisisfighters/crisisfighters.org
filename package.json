@@ -9,7 +9,7 @@
     "watch": "./scripts/watch.sh",
     "webpack": "webpack",
     "start": "node app/server.js",
-    "build": "webpack --mode=production --display-error-details; HUGO_VERSION=0.68.3 hugo"
+    "build": "HUGO_VERSION=0.68.3 hugo; webpack --mode=production --display-error-details"
   },
   "repository": {
     "type": "git",
