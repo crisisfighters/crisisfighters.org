@@ -1,4 +1,5 @@
 const {readdirSync} = require('fs');
+var {join} = require('path');
 var express = require('express');
 var app = express();
 var cookieParser = require('cookie-parser');
@@ -7,7 +8,7 @@ var requestLanguage = require('express-request-language');
 app.use(cookieParser());
 
 const defaultLang = 'en-us';
-const languageCodes = readdirSync('./i18n').map(f => f.substr(0, f.length - 5));
+const languageCodes = readdirSync(join(__dirname, '..', '/i18n')).map(f => f.substr(0, f.length - 5));
 const otherLanguages = languageCodes.filter(c => c !== defaultLang)
 
 app.use(requestLanguage({
@@ -34,7 +35,7 @@ const middlewares = otherLanguages.reduce(
 app.get('*', function (req, res, next) {
 
   if(req.url.endsWith('/')) {
-    console.log(req.url);
+    console.log(req.language + ' - ' + req.url);
     middlewares[req.language.toLowerCase()](req, res, next);
   } else {
     defaultMiddleware(req, res, next);
