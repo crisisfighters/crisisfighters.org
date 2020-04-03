@@ -2,7 +2,7 @@
   <div class="flex-l justify-between items-center f5">
     <span class="flex fw4 black-70 dn pv1 ph2">
       {{ T "footer_text1" }}
-      <a class="ph1 fw4 hover-black black-70" href="{{ T "langPrefix" }}contribute" target="_blank">{{ T "footer_text2" }}</a>
+      <a class="ph1 fw4 hover-black black-70" href="/contribute" target="_blank">{{ T "footer_text2" }}</a>
     </span>  
     <div style="margin-left: auto" class="flex ph2 fw4 hover-black black-70">
       {{ if .IsTranslated }}
@@ -13,10 +13,8 @@
           </li>
           {{ end}}
         </ul>
-
         {{ end }}
-   
-      <a href="{{ T "langPrefix" }}imprint">{{ T "footer_imprint" }}</a>
+      <a href="/imprint">{{ T "footer_imprint" }}</a>
     </div>
   </div>
 </footer>
