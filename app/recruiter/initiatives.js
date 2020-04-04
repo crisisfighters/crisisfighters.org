@@ -1,4 +1,3 @@
-import {sortInitiatives} from './logic';
 import {initiatives} from '../data/initiatives';
 
 const invalidTags = [];
@@ -7,12 +6,12 @@ export function numberOfInitiatives() {
     return initiatives.length;
 }
 
-export function queryInitiatives(query) {
+export function queryInitiatives(query, sort) {
     return initiatives
         .filter(initiative => query(
             [...initiative.meta.tags],
             ))
-        .sort(sortInitiatives);
+        .sort(sort);
 }
 
 export function labelToTag(label) {

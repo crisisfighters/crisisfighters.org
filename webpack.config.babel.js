@@ -4,7 +4,6 @@ import path from "path";
 
 export default {
   entry: {
-    'public/js/app': ["./app/app.js"],
     'public/js/recruiter': ["./app/recruiter/recruiter.js"],
     'public/js/strings.en-us': ["./app/data/strings.js"],
     'public/js/strings.de-de': ["./app/data/strings.de-de.js"],

@@ -1,5 +1,3 @@
-import {numberOfInitiatives, labelToTag} from './initiatives';
-
 export const sortOrder = ['good', 'is', 'goal', 'use', 'support', 'l'];
 export const sortTags = (a, b) => {
     const aStart = a.substr(0, a.indexOf('-'));
@@ -31,7 +29,7 @@ export const questionToLabel = param => ({
     'investment-area': cfStrings.recruiter.tags.investmentArea,
 })[param];
 
-export const extractParams = urlParams => {
+export const extractParams = (urlParams, labelToTag) => {
     
     const convert = (name, m) => urlParams
         .get(name)
@@ -86,27 +84,22 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         time = time.filter(t => t !== 'user-time-none');
     }
 
-    const t = ({headline, description}) => ({
-        headline: headline,
-        description: description.replace('{{numberOfInitiatives}}', numberOfInitiatives()),
-    })
-
     if(role.includes('user-role-city-official')) {
         result.result.push({
             type: 'initiatives',
-            ...t(cfStrings.recruiter.municipalityNetwork),
+            ...cfStrings.recruiter.municipalityNetwork,
             query: tags => tags.includes('good-cities-and-housing')
                     && tags.includes('is-network')
                     && locationMatches(tags),
         });
         result.result.push({
             type: 'initiatives',
-            ...t(cfStrings.recruiter.municipalityStock),
+            ...cfStrings.recruiter.municipalityStock,
             query: tags => tags.includes('use-stock-voting-rights'),
         });
         result.result.push({
             type: 'initiatives',
-            ...t(cfStrings.recruiter.supportGrassroots),
+            ...cfStrings.recruiter.supportGrassroots,
             query: tags => tags.includes('is-grassroots') && locationMatches(tags),
         });
     }
@@ -114,7 +107,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
     if(contribution.includes('user-contribution-money')) {
         result.result.push({
             type: 'initiatives',
-            ...t(cfStrings.recruiter.investHere),
+            ...cfStrings.recruiter.investHere,
             query: tags => tags.some(tag => investmentArea.includes(tag))
                             && tags.includes('suggest-money')
                             && locationMatches(tags),
@@ -134,7 +127,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         result.result.push({
             type: 'initiatives',
             style: {small: true},
-            ...t(cfStrings.recruiter.companyReduce),
+            ...cfStrings.recruiter.companyReduce,
             query: tags => tags.includes('consult-companies-reduce') && locationMatches(tags),
         });
 
@@ -143,7 +136,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
                 type: 'initiatives',
                 style: {small: true},
                 // TODO find and add resource on how non-leadership members can organize
-                ...t(cfStrings.recruiter.buildingCompanyReduce),
+                ...cfStrings.recruiter.buildingCompanyReduce,
                 query: tags => tags.includes('consult-building-companies') && locationMatches(tags),
             });
         }
@@ -166,18 +159,18 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         }
         result.result.push({
             type: 'initiatives',
-            ...t(cfStrings.recruiter.receiveInitiativeFunding),
+            ...(cfStrings.recruiter.receiveInitiativeFunding),
             query: tags => tags.includes('support-funds-initiatives'),
         });
         result.result.push({
             type: 'initiatives',
-            ...t(cfStrings.recruiter.ngoNetworks),
+            ...cfStrings.recruiter.ngoNetworks,
             query: tags => tags.includes('is-network')
                 && tags.includes('support-connect-activists-or-initiatives'),
         });
         result.result.push({
             type: 'initiatives',
-            ...t(cfStrings.recruiter.ngoTraining),
+            ...cfStrings.recruiter.ngoTraining,
             query: tags => tags.includes('support-train-activists'),
         });
     }
@@ -185,7 +178,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
     if(role.includes('user-role-health-worker')) {
         result.result.push({
             type: 'initiatives',
-            ...t(cfStrings.recruiter.healthWorker),
+            ...cfStrings.recruiter.healthWorker,
             query: tags => tags.includes('target-health-workers') && locationMatches(tags),
         });
     }
@@ -208,7 +201,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
 
         result.result.push({
             type: 'initiatives',
-            ...t(cfStrings.recruiter.join),
+            ...cfStrings.recruiter.join,
             query: tags => tags.some(tag => suggestTags.includes(tag))
                             && locationMatches(tags),
         });
@@ -218,7 +211,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
         result.result.push({type: 'climate-pledge'});
         result.result.push({
             type: 'initiatives',
-            ...t(cfStrings.recruiter.receiveIndividualFunding),
+            ...cfStrings.recruiter.receiveIndividualFunding,
             query: tags => 
                 tags.includes('support-funds-individuals')
                 && locationMatches(tags),
@@ -227,7 +220,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
 
     result.result.push({
         type: 'initiatives',
-        ...t(cfStrings.recruiter.litigation),
+        ...cfStrings.recruiter.litigation,
         query: tags => tags.includes('use-litigation') && locationMatches(tags),
     });
     result.result.push({ type: 'ideas' });

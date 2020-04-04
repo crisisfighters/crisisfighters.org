@@ -1,11 +1,12 @@
 import {
     possibleParams,
-    questionToLabel,
-    sortTags,
-    tagShouldBeVisibleInList} from './logic';
-import {numberOfInitiatives, tagToLabel, queryInitiatives} from './initiatives';
+    questionToLabel
+} from './common/logic';
+import {numberOfInitiatives, tagToLabel as convertTagToLabel, queryInitiatives} from './initiatives';
+import {sortInitiatives} from './common/logic';
 import {renderMd, renderMdParagraph} from './render/markdown';
-import suggestionHeadline from './render/suggestionHeadline';
+import initiativeSet from './render/initiativeSet';
+import tag from './render/tag';
 import button from './render/button';
 import {
     restartLink,
@@ -100,22 +101,12 @@ const renderResults = (userParams, location, elements) => `
         ${renderElements(elements)}
         `;
 
-const tag = tag => {
-    const classes = [
-        'tag',
-        'tag-' + tag.substr(0, tag.indexOf('-')),
-        'tag-' + tag
-    ];
-    return `
-        <span class="${classes.join(' ')}">${tagToLabel(tag)}</span>
-    `;
-}
 
 const renderInputTagGroup = (param, responseTags) => 
     `<span class="results-input-tag-group">
         <span class="results-input-tag-group-question">${questionToLabel(param)}: </span>
         ${responseTags
-            .map(tag)
+            .map(t => tag(t, convertTagToLabel))
             .join('')}</span>`;
 
 const renderElements = elements => {
@@ -126,7 +117,7 @@ const renderElements = elements => {
         const realIndex = index + 1  - gaps;
         switch(element.type){
             case 'initiatives': {
-                const initiatives = queryInitiatives(element.query);
+                const initiatives = queryInitiatives(element.query, sortInitiatives);
                 if(initiatives.length === 0) {
                     console.log('Didn\'t find anything for query', element.headline, element.query);
                     gaps++;
@@ -137,7 +128,13 @@ const renderElements = elements => {
                     return nothingFound();
                 }
                 showedInitiatives = true;
-                return initiativeSet(element, initiatives, realIndex);
+                return initiativeSet({
+                    element,
+                    initiatives,
+                    index: realIndex,
+                    tagToLabel: convertTagToLabel,
+                    numberOfInitiatives: numberOfInitiatives(),
+                });
             }
             case 'restart-link': return restartLink(realIndex);
             case 'cf-b2b': return crisisFightersB2B(realIndex);
@@ -150,40 +147,3 @@ const renderElements = elements => {
         }
     }).join('');
 }
-
-
-const initiativeSet = ({headline, description, style}, initiatives, index) =>`
-<div class="results-element results-initiative-set">
-    ${suggestionHeadline(renderMd(headline), index)}
-    <div class="results-element-description">${renderMdParagraph(description)}</div>
-    <div class="results-initiatives-wrapper">
-    ${initiatives.map(i => initiative(i, style)).join('')}
-    </div>
-</div>`;
-
-const initiative = (initiative, style) => {
-    const {small} = style || {};
-    return`
-        <div class="initiative pa4">
-            <h3><a href="${initiative.meta.link}" target="_blank">${initiative.meta.name}</a></h3>
-            ${small
-            ? ''
-            : `
-            <div class="initiative-tag-wrapper">
-            ${initiative.meta.tags
-                .sort(sortTags)
-                .filter(tagShouldBeVisibleInList)
-                .map(tag)
-                .join('')}
-            </div>
-            `}
-            ${
-                initiative.description && initiative.description.content
-                ? `<div class="initiative-description">
-                    ${renderMdParagraph(initiative.description.content)}
-                    </div>`
-                : ''
-            }
-        </div>`
-    };
-

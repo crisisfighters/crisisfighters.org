@@ -1,10 +1,11 @@
-import {extractParams, determineResultDescriptor, economicAreas} from './logic';
+import {extractParams, determineResultDescriptor, economicAreas} from './common/logic';
 import {renderStartPage, renderLocationSelector, renderResultScreen} from './render';
+import {labelToTag} from './initiatives';
 import {logInvalidTags} from './initiatives';
 
 function resultScreenApp() {
     const urlParams = new URLSearchParams(window.location.search);
-    const userParams = extractParams(urlParams);
+    const userParams = extractParams(urlParams, labelToTag);
    
     if(!userParams) {
         return renderStartPage();

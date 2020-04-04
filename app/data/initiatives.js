@@ -194,7 +194,7 @@ export const initiatives = [
       "updatedBy": "Andre",
       "updatedAt": "2019-12-11"
     },
-    "participation": {
+    "participants": {
       "content": "They have local fossil-free groups and regional hubs on [five continents](https://350.org/] (including [160+ local groups in the US](https://350.org/2018-annual-report-organizing/)).",
       "updatedBy": "Andre",
       "updatedAt": "2019-12-11"
@@ -309,7 +309,7 @@ export const initiatives = [
       "updatedBy": "Andre",
       "updatedAt": "2019-11-24"
     },
-    "participation": {
+    "participants": {
       "content": "4 million people at the biggest [street protest](https://www.vox.com/energy-and-environment/2019/9/20/20876143/climate-strike-2019-september-20-crowd-estimate) on 2019-11-20.",
       "updatedBy": "Andre",
       "updatedAt": "2019-11-24"
@@ -475,7 +475,7 @@ export const initiatives = [
       "updatedBy": "Andre",
       "updatedAt": "2019-11-24"
     },
-    "participation": {
+    "participants": {
       "content": "50,000 at the biggest [street protest](https://www.general-anzeiger-bonn.de/news/politik/deutschland/veranstalter-50000-demo-teilnehmer-am-hambacher-forst_aid-43923783) in 2018 near the forest",
       "updatedBy": "Andre",
       "updatedAt": "2019-11-24"
@@ -895,7 +895,27 @@ export const initiatives = [
       "content": "- Actions done / pa \n- Participants in actions\n- Members\n- Press Mentions",
       "updatedBy": "Andre",
       "updatedAt": "2019-08-06"
-    }
+    },
+    "participation": [
+      {
+        "type": "custom",
+        "label": "Record your Climate Change story",
+        "link": "https://greenpeacevoices.gv-one.com/requests.html?gId=900&rId=3062",
+      },
+      {
+        "type": "custom",
+        "label": "Sail",
+        "link": "https://www.greenpeace.org/international/act/sail-aboard-a-greenpeace-ship/",
+      },
+      {
+        "type": "litigation",
+        "link": "https://www.greenpeace.org/international/publication/19818/holding-your-government-accountable-for-climate-change-a-peoples-guide/",
+      },
+      {
+        "type": "training",
+        "link": "https://www.greenpeace.org/international/act/volunteer-leadership-training/"
+      }
+    ]
   },
   {
     "meta": {
@@ -949,7 +969,7 @@ export const initiatives = [
       "updatedBy": "Alexander",
       "updatedAt": "2011-11-19"
     },
-    "participation": {
+    "participants": {
       "content": "[More than 3 million petition signatures](https://www.sierraclub.org/about-sierra-club)",
       "updatedBy": "Alexander",
       "updatedAt": "2011-11-19"
@@ -1153,7 +1173,7 @@ export const initiatives = [
       "updatedBy": "Alexander",
       "updatedAt": "2019-08-18"
     },
-    "participation": {
+    "participants": {
       "content": "- 200,000+ members\n- 500,000+ supporters",
       "updatedBy": "Alexander",
       "updatedAt": "2019-08-18"
@@ -1192,7 +1212,7 @@ export const initiatives = [
       "updatedBy": "Alexander",
       "updatedAt": "2019-12-24"
     },
-    "participation": {
+    "participants": {
       "content": "[195 member countries](https://www.ipcc.ch/site/assets/uploads/2019/02/ipcc_members.pdf), [41 of them contributing financially](https://www.ipcc.ch/site/assets/uploads/2019/01/080320190344-Doc2-Budget.pdf).",
       "updatedBy": "Andre",
       "updatedAt": "2019-12-02"
@@ -1251,7 +1271,7 @@ export const initiatives = [
       "updatedBy": "Andre",
       "updatedAt": "2020-01-20"
     },
-    "participation": {
+    "participants": {
       "content": "[20,000 People](https://www.climaterealityproject.org/our-mission) (so called [Climate Reality Leaders](https://climaterealityproject.org/climatespeakers)) presenting on the topic of climate crisis & [100 team meetings](https://www.climaterealityproject.org/our-mission|) (so called [chaperts](https://www.climaterealityproject.org/chapters))",
       "updatedBy": "Andre",
       "updatedAt": "2020-01-20"
