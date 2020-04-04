@@ -1,10 +1,10 @@
-import suggestionHeadline from './suggestionHeadline';
-import tag from './tag';
 import {renderMd, renderMdParagraph} from './markdown';
 import {
     sortTags,
     tagShouldBeVisibleInList
 } from '../common/logic';
+import suggestionHeadline from './suggestionHeadline';
+import tag from './tag';
 
 const initiativeSet = ({
     element,

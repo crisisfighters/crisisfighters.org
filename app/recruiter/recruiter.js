@@ -1,14 +1,16 @@
 import {extractParams, determineResultDescriptor, economicAreas} from './common/logic';
-import {renderStartPage, renderLocationSelector, renderResultScreen} from './render';
-import {labelToTag} from './initiatives';
-import {logInvalidTags} from './initiatives';
+import {labelToTag, logInvalidTags} from './initiatives';
+import showStartPage from './render/showStartPage';
+import showLocationSelector from './render/showLocationSelector';
+import showResultScreen from './render/showResultScreen';
 
 function resultScreenApp() {
     const urlParams = new URLSearchParams(window.location.search);
     const userParams = extractParams(urlParams, labelToTag);
    
     if(!userParams) {
-        return renderStartPage();
+        showStartPage();
+        return;
     }
 
     const location = {
@@ -21,9 +23,9 @@ function resultScreenApp() {
 
     console.log(userParams);
     if(resultDescriptor.locationMissing) {
-        renderLocationSelector(userParams, resultDescriptor);
+        showLocationSelector(userParams, resultDescriptor);
     } else {
-        renderResultScreen(userParams, resultDescriptor, location);
+        showResultScreen(userParams, resultDescriptor, location);
     }
     logInvalidTags();
 }

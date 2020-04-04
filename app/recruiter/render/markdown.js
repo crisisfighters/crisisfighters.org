@@ -1,15 +1,15 @@
 let md;
 
-function init() {
+function getMd() {
     if(!md) {
         md = markdownit();
         setLinkTargetsToBlank(md);
     }
+    return md;
 }
 
 export function renderMd(input) {
-    init();
-    return md.renderInline(input);
+    return getMd().renderInline(input);
 }
 
 export function renderMdParagraph(input) {
@@ -20,8 +20,7 @@ export function renderMdParagraph(input) {
     if(spaceMatches && spaceMatches[0]) {
         input = input.replace(new RegExp('\n' + spaceMatches[0], 'g'), '\n');
     }
-    init();
-    return md.render(input);
+    return getMd().render(input);
 }
 
 function setLinkTargetsToBlank(md) {
