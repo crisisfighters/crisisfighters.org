@@ -1,9 +1,10 @@
 const {readdirSync} = require('fs');
-var {join} = require('path');
-var express = require('express');
-var app = express();
-var cookieParser = require('cookie-parser');
-var requestLanguage = require('express-request-language');
+const {join} = require('path');
+const express = require('express');
+const app = express();
+const cookieParser = require('cookie-parser');
+const requestLanguage = require('express-request-language');
+const redirects = require('./redirects');
 
 app.use(cookieParser());
 
@@ -31,8 +32,16 @@ const middlewares = otherLanguages.reduce(
     [defaultLang]: defaultMiddleware,
   });
 
-// respond with "hello world" when a GET request is made to the homepage
 app.get('*', function (req, res, next) {
+
+  const redirect = Object.keys(redirects).find(url => req.url === `/${url}/` || req.url === `/${url}`);
+  if(redirect) {
+    res.writeHead(302, {
+      Location: redirects[redirect],
+    });
+    res.end();
+    return;
+  }
 
   if(req.url.endsWith('/')) {
     // console.log(req.language + ' - ' + req.url);

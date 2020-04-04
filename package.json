@@ -8,7 +8,7 @@
     "clean": "rm -rf public",
     "watch": "./scripts/watch.sh",
     "webpack": "webpack",
-    "start": "node app/server.js",
+    "start": "node app-server/index.js",
     "build": "HUGO_VERSION=0.68.3 hugo; webpack --mode=production --display-error-details"
   },
   "repository": {
