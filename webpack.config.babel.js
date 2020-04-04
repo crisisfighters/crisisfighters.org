@@ -4,9 +4,9 @@ import path from "path";
 
 export default {
   entry: {
-    'public/js/recruiter': ["./app/recruiter/recruiter.js"],
-    'public/js/strings.en-us': ["./app/data/strings.js"],
-    'public/js/strings.de-de': ["./app/data/strings.de-de.js"],
+    'public/js/recruiter': ["./app-client/recruiter/recruiter.js"],
+    'public/js/strings.en-us': ["./app-client/data/strings.js"],
+    'public/js/strings.de-de': ["./app-client/data/strings.de-de.js"],
   },
   output: {
     path: path.resolve(__dirname),
