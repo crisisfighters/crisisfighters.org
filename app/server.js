@@ -35,7 +35,8 @@ const middlewares = otherLanguages.reduce(
 app.get('*', function (req, res, next) {
 
   if(req.url.endsWith('/')) {
-    console.log(req.language + ' - ' + req.url);
+    // console.log(req.language + ' - ' + req.url);
+    res.set('Cache-Control', 'no-store, must-revalidate');
     middlewares[req.language.toLowerCase()](req, res, next);
   } else {
     defaultMiddleware(req, res, next);
