@@ -15,7 +15,7 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: app/content-partials
+  path: app-client/data/content-partials
   label: Partials
   create: all
   match: "**/*"
