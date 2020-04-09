@@ -23,9 +23,23 @@ flyGood.io will be a mobile webapp that allows users of modern smartphones to pa
 * Technical implementation is trivial
 * It’s not clear yet whether this requires a lot of book-keeping or if it can be set up without a legal entity. Please reach out if you know more!
 
-# Platform to let startup professionals help NGOs
-* Most NGOs have big needs when it comes to collecting, storing and analyzing data, project management, software engineering.
-* A small organization could match up NGOs and professionals in startups. This can work bottom-up by asking people to invest their private time and top-down with senior management (e.g. companies providing office space outside work hours to employees to help NGOs or (voluntarily) allocating work time to helping NGOs).
+# GoodHub.io - Free-of-charge non-profit consultancy for NGOs
+> Experienced professionals group together to provide NGOs with free advice.
+
+Deploying the best groupware, structuring ideation processes, using iterative development approaches, designing solutions data-driven or customer-centric, building a data lake with beautiful visualizations - there are thousands of building blocks that are common in startups and other business environments.
+NGOs are often constrained in their expenses. For many, tools, problem solving approaches and experience with tech are less in focus than for tech startups. Bringing these two worlds together allows startup professionals to improve the world with what they already know and broaden their horizon by learning how NGOs work.
+And NGOs can ask for specific injections of knowledge and help from the business world at no cost.
+
+# An up-to-date collection of key datasets related to the climate crisis
+> Data experts can easily see for themselves and make new connections visible.
+
+(Pre-)historic temperature trends, glacier melting, greenhouse gas emissions, sea level rise, desertification, erosion of soils, deforestation, the accelerating sixth mass extinction, fossil fuel extraction and uncounted other dangerous developments leave a data trail. Making existing data sets easy to find and working with public and scientific authorities to make more available allows for a better understanding of what is really happening. It will allow businesses, governments, thinktanks and activists a more comprehensive view on biodiversity and climate crisis.
+
+# Distributed Lobbying 
+> Strengthen pro-sustainability actors in companies by giving them science-based information.
+
+Chief Sustainability Officers and Corporate Social Responsibility departments often face internal challenges in their organisations as they try to prioritise topics and implement changes which affect the bottom-line or attempt to change the company culture. We can increase the political leverage of such actors by engaging a company's employees in conversations, or simply supplying them with information, which prove how important it is for the organisation to care about the subject. 
+We'd research companies with discrepancies between corporate values and actual business practices. Target: approach the employees of such companies with “broad” and “narrow” messaging alike, which spreads awareness and sparks a mindset change. Engagement happens in a curious, open and helpful manner, not by explaining the world or demanding change.
 
 # Monthly Crisis Mitigation Meetups in Hamburg and Berlin, Germany
 > Meeting monthly to share the latest science and discuss strategy
@@ -41,15 +55,3 @@ There is no global conference on mitigating the climate crisis that's open to th
 > A platform that allows posting project ideas and matching them to self-registered volunteers.
 
 [VolunteerMatch](https://www.volunteermatch.org/), [usdigitalresponse.org](https://www.usdigitalresponse.org/), [crowdfightcovid19.org](https://crowdfightcovid19.org) and [helpwithcovid.com](https://helpwithcovid.com/projects) are easy to use match-making systems. It would be great to work with them or create something similar to stop the climate breakdown.
-
-# Free-of-charge non-profit consultancy for NGOs
-> Experienced professionals group together to provide NGOs with free advice.
-
-Deploying the best groupware, structuring ideation processes, using iterative development approaches, designing solutions data-driven or customer-centric, building a data lake with beautiful visualizations - there are thousands of building blocks that are common in startups and other business environments.
-NGOs are often constrained in their expenses. For many, tools, problem solving approaches and experience with tech are less in focus than for tech startups. Bringing these two worlds together allows startup professionals to improve the world with what they already know and broaden their horizon by learning how NGOs work.
-And NGOs can ask for specific injections of knowledge and help from the business world at no cost.
-
-# An up-to-date collection of key datasets related to the climate crisis
-> Data experts can easily see for themselves and make new connections visible.
-
-(Pre-)historic temperature trends, glacier melting, greenhouse gas emissions, sea level rise, desertification, erosion of soils, deforestation, the accelerating sixth mass extinction, fossil fuel extraction and uncounted other dangerous developments leave a data trail. Making existing data sets easy to find and working with public and scientific authorities to make more available allows for a better understanding of what is really happening. It will allow businesses, governments, thinktanks and activists a more comprehensive view on biodiversity and climate crisis.
