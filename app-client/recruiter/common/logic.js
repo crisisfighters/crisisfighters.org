@@ -55,7 +55,7 @@ export const tagShouldBeVisibleInList = tag => !tag.startsWith('skill-')
     && !tag.startsWith('propagate-')
     && !tag.startsWith('suggest-');
 
-    export const determineResultDescriptor = (userParams, location) => {
+export const determineResultDescriptor = (userParams, location) => {
 
     const locationMatches = tags => tags.includes('l-global')
                                     || (location.economicArea && tags.includes(location.economicArea))
