@@ -35,6 +35,7 @@ There is an good [glossary by the BBC](https://www.bbc.com/news/science-environm
 | [Paris Agreement](https://en.wikipedia.org/wiki/Paris_Agreement)       | Agreed upon during *COP21* in Paris. Binding commitment by 189 countries to limit global heating to 1.5C |
 | [REDD](https://en.wikipedia.org/wiki/United_Nations_REDD_Programme)                 | A UN program to reduce forest emissions and enhance carbon stock in forests. It's the basis of *REDD+*. |
 | [REDD+](https://en.wikipedia.org/wiki/Reducing_emissions_from_deforestation_and_forest_degradation) | A voluntary initiative to allow emitting countries to balance out their emissions by supporting developing countries in protecting and expanding their forests. |
+| [SDG](https://sdg-tracker.org/)                  | UN Sustainable Development Goal |
 | [TCFD](https://www.fsb-tcfd.org/)                  | Task Force on Climate-Related Financial Disclosures |
 | [UNEP](https://en.wikipedia.org/wiki/United_Nations_Environment_Programme)                  | The United Nations Environment Programme |
 | [UNFCCC](https://en.wikipedia.org/wiki/United_Nations_Framework_Convention_on_Climate_Change)                | The United Nations Framework Convention on Climate Change is an international treaty to stabilize *Greenhouse Gas* contentrations to prevent dangerous anthropocentic interference with the climate system. |
