@@ -157,7 +157,7 @@ These industries tend to lobby tenaciously for subsidies that represent a huge p
 
 </td>
 <td>
-
+* Decades of research show how [temporal discounting](https://en.wikipedia.org/wiki/Time_preference#Temporal_discounting) lets us optimize for small present benefits in favor of large future benefits. [That is exacerbated](https://hbr.org/2018/10/why-people-arent-motivated-to-address-climate-change) if future threats cannot be intuitively perceived at their full magnitude because they grow nonlinear.
 * Long-term ownership over limited resources boosts sense of ownership and accountability
 
 </td>
