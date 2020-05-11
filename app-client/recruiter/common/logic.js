@@ -39,7 +39,10 @@ export const extractParams = (urlParams, labelToTag) => {
         .map(labelToTag)
         .filter(tag => tag);
 
-    return urlParams.has('role') && urlParams.has('contribution') && urlParams.has('time')
+    return urlParams.has('role')
+            && urlParams.has('contribution')
+            && urlParams.has('time')
+            && urlParams.has('investement-area')
             ? {
                 role: convert('role'),
                 company: convert('company'),
